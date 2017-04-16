@@ -1,4 +1,5 @@
-* { box-sizing: border-box; font-family: 'Roboto', sans-serif; }
+* { box-sizing: border-box; outline: none }
+body {font-family: 'Roboto', sans-serif;}
 .left {float: left;padding-left: 10px}
 .right {float: right;padding-right: 10px;}
 .align-left {text-align: left;}
@@ -6,3 +7,7 @@
 .align-right {text-align: right;}
 .icon { font-size: 28px;}
 img {max-width: 100%}
+p {margin-top: 5px;margin-bottom:5px}
+.has-header {padding-top: 52px !important}
+.has-footer {padding-bottom: 52px !important}
+.padding {padding: 10px}

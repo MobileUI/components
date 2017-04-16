@@ -1,0 +1,58 @@
+button {
+  font-size: 14px;
+  border: none;
+  background-color: none;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  color: #444;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0 12px;
+  min-height: 42px;
+  vertical-align: top;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  line-height: 42px;
+  cursor: pointer;
+}
+button .icon {
+  position: absolute;
+  left: 10px;
+}
+button.icon-text {
+  padding-left: 35px;
+}
+button.icon-text i {
+  font-size: 22px;
+}
+button[class*="border-"] {
+  min-height: 40px;
+  line-height: 40px;
+}
+button.full {
+  width: 100%;
+}
+button.big {
+  font-size: 22px;
+  min-height: 50px;
+  line-height: 50px;
+}
+button.big.icon-text {
+  padding-left: 40px;
+}
+button.big.icon-text i {
+  font-size: 26px;
+}
+button.small {
+  font-size: 12px;
+  min-height: 30px;
+  line-height: 30px;
+}
+button.small.icon-text {
+  padding-left: 30px;
+}
+button.small.icon-text i {
+  font-size: 18px;
+}

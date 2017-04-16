@@ -3,6 +3,8 @@
   display: inline-block;
   width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
   height: 52px;
 }
 .header .left, .header .right, .header .title {
@@ -18,12 +20,16 @@
   display: inline-block;
 }
 .header button {
+  margin-top: -10px;
+}
+.header button.icon {
   color: rgba(255, 255, 255, 0.9);
   font-size: 30px;
   margin-top: -10px;
   z-index: 99;
   background: none;
   border: none;
+  padding: 0 6px;
 }
 .header button:hover, .header button:active {
   color: rgba(255, 255, 255, 1);
