@@ -1,0 +1,37 @@
+.header {
+  font-size: 18px;
+  display: inline-block;
+  width: 100%;
+  position: fixed;
+  height: 52px;
+}
+.header .left, .header .right, .header .title {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.header .title {
+  margin-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+.header .title {
+  display: inline-block;
+}
+.header button {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 30px;
+  margin-top: -10px;
+  z-index: 99;
+  background: none;
+  border: none;
+}
+.header button:hover, .header button:active {
+  color: rgba(255, 255, 255, 1);
+}
+.header .title.align-center {
+  width: 100%;
+  position: inherit;
+  padding-right: 15px;
+  left: 0;
+  z-index: 9;
+}
