@@ -11,6 +11,12 @@
   margin-top: 15px;
   margin-bottom: 5px;
 }
+.header .left {
+  padding-left: 5px
+}
+.header .right {
+  padding-right: 5px
+}
 .header .title {
   margin-bottom: 15px;
   padding-left: 10px;

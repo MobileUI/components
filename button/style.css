@@ -2,7 +2,6 @@ button {
   font-size: 14px;
   border: none;
   background-color: none;
-  border-radius: 4px;
   background-color: #f8f8f8;
   color: #444;
   position: relative;
@@ -55,4 +54,20 @@ button.small.icon-text {
 }
 button.small.icon-text i {
   font-size: 18px;
+}
+.buttons-group {
+  display: inline-block;
+}
+.buttons-group button {
+  float: left;
+  margin-left: -1px;
+}
+.buttons-group button:first-child {
+  margin-left: 0;
+}
+.buttons-group.full {
+  display: flex;
+}
+.buttons-group.full button {
+  flex: 1;
 }
