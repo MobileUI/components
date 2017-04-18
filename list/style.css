@@ -51,9 +51,16 @@
   align-items: baseline;
   margin-top: 10px;
 }
+.list .avatar {
+  height: 50px;
+}
 .avatar-badge {
   position: absolute;
   margin-left: -4px;
   margin-top: -3px;
   border-radius: 8px;
+}
+.list .item small,
+.list .item small .icon {
+  font-size: 14px;
 }

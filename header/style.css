@@ -47,3 +47,10 @@
   left: 0;
   z-index: 9;
 }
+.header .icon-badge {
+  position: absolute;
+  margin-left: -6px;
+  margin-top: -8px;
+  border-radius: 8px;
+  z-index: 9999;
+}
