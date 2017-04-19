@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway:400,700|Roboto:300,400,900," rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+    <link rel="stylesheet" href="../base/reset.css">
+    <link rel="stylesheet" href="../base/mobileui.css">
+    <link rel="stylesheet" href="../base/colors.css">
+    <link rel="stylesheet" href="../base/icons.css">
+    <link rel="stylesheet" href="../header/style.css">
+    <link rel="stylesheet" href="../button/style.css">
+    <link rel="stylesheet" href="../cover/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/master.css">
+    <style>
+      .content { margin-left:50px}
+    </style>
+  </head>
+  <body class="content">
+    <!-- BEGIN -->
+    <h2 class="title-doc" id="_DOC_GENERATE_SPACE_">List</h2>
+    <p>
+    For use this components you need install with command:
+    </p>
+    <div class="dependency tooltip">
+    <strong>Dependency:</strong> <code>base</code>.
+    <span class="tooltiptext">The dependencies will be installed together with this module</span>
+    </div>
+    <pre>mobileui install list</pre>
+
+
+<textarea class="bind-code" mode="text/html">
+<div class="list">
+  <div class="item">
+    <h2>Jeanette Fletcher</h2>
+    <p class="text-grey-500">jeanette.fletcher15@example.com</p>
+  </div>
+  <div class="item">
+    <h2>Chad Black</h2>
+    <p class="text-grey-500">chad.black48@example.com</p>
+  </div>
+  <div class="item">
+    <h2>Carter hudson</h2>
+    <p class="text-grey-500">carter.hudson17@example.com</p>
+  </div>
+  <div class="item">
+    <h2>Vanessa brown</h2>
+    <p class="text-grey-500">vanessa.brown96@example.com</p>
+  </div>
+</div></textarea>
+    <p>You can combinate with others components and class.</p>
+<textarea class="bind-code" mode="text/html" replace="body,div">
+<body class="padding grey-100">
+  <h1 class="bold">List of contacts</h1>
+  <p>List of your contacts save in this deivce.</p>
+  <div class="list radius white">
+    <div class="item">
+      <div class="left">
+        <img class="avatar" src="../assets/img/80.jpg">
+      </div>
+      <h2>Jeanette Fletcher</h2>
+      <p class="text-grey-500">jeanette.fletcher15@example.com</p>
+      <div class="right">
+          <i class="icon ion-ios-arrow-right"></i>
+      </div>
+    </div>
+    <div class="item">
+      <h2>Chad Black</h2>
+      <div class="right">
+        <button class="blue small radius">Edit</button>
+      </div>
+    </div>
+    <div class="item">
+      <img class="avatar left" src="../assets/img/33.jpg">
+      <i class="right align-top icon ion-ios-arrow-right"></i>
+      <h2>Carter Hudson</h2>
+      <p class="text-grey-500">Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="item">
+      <span class="avatar-badge text-small red radius padding">4</span>
+      <img class="avatar left" src="../assets/img/96.jpg">
+      <h2>Juster Mark Slow</h2>
+      <span class="text-small green radius padding">new</span>
+      <span class="text-small purple radius padding">family</span>
+      <span class="text-small pink radius padding">university</span>
+    </div>
+  </div>
+</body></textarea>
+    <p>Another example of a combination of components <a href="#header">header</a>, <a href="#button">button</a> and <a href="#cover">cover</a>.</p>
+<textarea class="bind-code" mode="text/html" header-absolute="true" hidden="true">
+<div class="header text-white">
+  <div class="left">
+    <button class="icon ion-navicon-round"></button>
+  </div>
+  <div class="right">
+    <span class="icon-badge text-small red radius padding">3</span>
+    <button class="icon ion-chatbox"></button>
+  </div>
+</div>
+<div class="cover padding align-center" style="background-image:url(../assets/img/backtop.png)">
+  <div class="space"></div>
+  <img class="avatar border-white shadow" src="../assets/img/33.jpg">
+  <h1 class="text-white">Carter Hudson</h1>
+  <div class="space"></div>
+  <div class="buttons-group full">
+    <button class="grey-200 text-red-600 radius-left">Contacts</button>
+    <button class="grey-900 text-grey-700 radius-right">Groups</button>
+  </div>
+</div>
+<div class="list">
+  <div class="item">
+    <div class="left">
+      <img class="avatar" src="../assets/img/80.jpg">
+    </div>
+    <h2>Jeanette Fletcher</h2>
+    <p class="text-grey">+55 7979 325 655</p>
+    <div class="right">
+      <small class="text-grey">
+        5 min
+        <i class="icon ion-android-happy text-green"></i>
+      </small>
+    </div>
+  </div>
+  <div class="item">
+    <div class="left">
+      <img class="avatar" src="../assets/img/53.jpg">
+    </div>
+    <h2>Emilio Dias</h2>
+    <p class="text-grey">+55 8989 325 655</p>
+    <div class="right">
+      <small class="text-grey">
+        12 min
+        <i class="icon ion-android-sad text-red"></i>
+      </small>
+    </div>
+  </div>
+  <div class="item">
+    <div class="left">
+      <img class="avatar" src="../assets/img/96.jpg">
+    </div>
+    <h2>Marcos Paulo</h2>
+    <p class="text-grey">+55 1245 325 655</p>
+    <div class="right">
+      <small class="text-grey">
+        32 min
+        <i class="icon ion-android-sad text-red"></i>
+      </small>
+    </div>
+  </div>
+  <div class="item">
+    <div class="left">
+      <img class="avatar" src="../assets/img/33.jpg">
+    </div>
+    <h2>Carter Hudson</h2>
+    <p class="text-grey">+55 8797 325 655</p>
+    <div class="right">
+      <small class="text-grey">
+        1h 12 min
+        <i class="icon ion-android-happy text-green"></i>
+      </small>
+    </div>
+  </div>
+</div>
+</textarea>
+    <!-- DONE -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+    <script type="text/javascript" src="../assets/js/main.js"></script>
+  </body>
+</html>

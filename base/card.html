@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway:400,700|Roboto:300,400,900," rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="mobileui.css">
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="icons.css">
+    <link rel="stylesheet" href="../assets/css/master.css">
+    <style>
+      .content { margin-left:50px}
+    </style>
+  </head>
+  <body class="content">
+    <!-- BEGIN -->
+    <h2 class="title-doc" id="_DOC_GENERATE_SPACE_">Card</h2>
+    <p>Card is a popular component in apps mobile. In MobileUI you can create a card using base classes.</p>
+    <p>
+      If you have installed any component, the base classes are already installed. Otherwise run the command:
+    </p>
+    <pre>mobileui install base</pre>
+    <textarea class="bind-code" mode="text/html">
+    <div class="padding border-grey-400 shadow radius">
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+    </div></textarea>
+    <p>You can combinate card style and <a href="#list">list</a> component, just add class <code>shadow</code>.</p>
+    <textarea class="bind-code" mode="text/html" replace="body,div">
+    <body class="padding grey-100">
+    <div class="padding border-grey-400 shadow radius white">
+    <button class="small icon ion-grid white"></button>
+    <button class="small icon ion-navicon-round white text-grey-400"></button>
+    <button class="small icon ion-ios-location white text-grey-400"></button>
+    <div class="right">
+      <button class="small white text-grey-400">Last updated</button>
+    </div>
+    </div>
+    <div class="space"></div>
+    <div class="list shadow radius white">
+    <div class="item">
+      <div class="left">
+        <img class="avatar" src="/img/80.jpg">
+      </div>
+      <h2>Jeanette Fletcher</h2>
+      <p>jeanette.fletcher15@example.com</p>
+      <p class="text-grey-500 text-small">
+        <i class="icon ion-ios-location"></i> Brazil - Maringá-PR
+      </p>
+    </div>
+    <div class="item full">
+      <img src="/img/maringa.jpg">
+    </div>
+    <div class="item text-grey-600">
+      Catedral is a beautiful built in Maringá
+    </div>
+    </div>
+    </body></textarea>
+    <!-- DONE -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+    <script type="text/javascript" src="../assets/js/main.js"></script>
+  </body>
+</html>

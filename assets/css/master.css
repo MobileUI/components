@@ -1,0 +1,264 @@
+.font-dosis {
+  font-family: 'Dosis', sans-serif;
+}
+.font-raleway {
+  font-family: 'Raleway', sans-serif;
+}
+a {
+  opacity: 0.8;
+  transition: .1s ease-in-out;
+  transition-property: opacity, border-color;
+  color: #4F8EF7;
+  text-decoration: none;
+}
+.dependency {
+  color: rgba(0, 0, 0, 0.4);
+  float: right;
+  font-size: 14px;
+}
+.dependency strong {
+  font-weight: 700;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 320px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.top {
+  background-color: #24292e;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 80px;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.top img {
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 0;
+  max-width: 150px;
+}
+.top ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+}
+.top li {
+  white-space: nowrap;
+  margin: 0 28px 0 0;
+  padding: 0;
+  position: relative;
+}
+.top a {
+  color: rgba(255, 255, 255, 0.7);
+}
+.top a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+.menu {
+  position: absolute;
+  width: 280px;
+  overflow: auto;
+  padding: 50px;
+}
+.menu h1,
+.content h2.title-doc {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #24292e;
+  text-transform: uppercase;
+}
+.content h2.title-doc {
+  padding-top: 50px;
+}
+.menu h1:first-child {
+  margin-top: 0;
+}
+.menu a {
+  color: rgba(0, 0, 0, 0.8);
+}
+.menu li {
+  padding: 10px;
+}
+.menu li:hover, .menu a.active li {
+  background-color: #7fc7af;
+}
+.menu::-webkit-scrollbar {
+    display: none;
+}
+.menu a:target li{
+  border-left: 4px solid #7fc7af;
+}
+.menu.hasScrolled {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+}
+.content {
+  max-width: 100%;
+  margin-left: 320px;
+  font-size: 18px;
+  padding-right: 50px
+}
+.content p {
+  line-height: 30px;
+  padding-bottom: 15px;
+  font-size: 16px;
+}
+.content p.text-small {
+  font-size: 14px;
+}
+pre, .CodeMirror {
+  padding: 20px;
+  background-color: #ebebeb;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.CodeMirror-scroll {
+  overflow-y: hidden !important;
+  overflow-x: auto !important;
+}
+.color-group {
+  float: left;
+  width: 50%;
+  font-family: arial;
+  font-size: 12px;
+  padding: 10px;
+}
+.color-group .color {
+  float: left;
+  padding: 12px;
+  color: #fff;
+  width: 50%;
+}
+.color-group .color.main-color {
+  width: 100%;
+}
+.color-group .color.dark {
+  color: rgba(0, 0, 0, 0.8);
+}
+.color-group .color span {
+  display: block;
+  font-size: 11px;
+  font-weight: 300;
+}
+.color-palettes {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.sub-title-doc {
+  margin-top: 20px;
+}
+.result {
+  font-family: 'Roboto', sans-serif;
+  max-width: 400px;
+  position: relative;
+}
+.result.height-change > div{
+  height: 100%;
+}
+.result p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0;
+  line-height: 20px;
+}
+.header {
+  position: inherit;
+}
+.header.header-absolute {
+  position: absolute;
+  max-width: 400px;
+}
+textarea.bind-code {
+  display: none;
+}
+.cm-s-hidden-code {
+  display: none;
+}
+@media only screen and (min-width: 1300px) {
+    .color-group {
+      width: 33.33%;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .color-group {
+      width: 25%;
+    }
+}
+@media only screen and (min-width: 1900px) {
+    .color-group {
+      width: 20%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    body, html {
+      width: 100% !important;
+    }
+    body {
+      padding: 10px;
+    }
+    .top {
+      text-align: center;
+      display: block;
+      padding-top: 20px;
+    }
+    .top img{
+      display: inline-block;
+      margin:auto;
+    }
+    .top ul {
+      display: none;
+    }
+    .menu {
+      display: none;
+    }
+    .content {
+      margin:0;
+      padding: 0;
+    }
+    .color-group {
+      width: 100%;
+    }
+}

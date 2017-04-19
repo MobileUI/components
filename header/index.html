@@ -4,24 +4,177 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway:400,700|Roboto:300,400,900," rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
     <link rel="stylesheet" href="../base/reset.css">
     <link rel="stylesheet" href="../base/mobileui.css">
     <link rel="stylesheet" href="../base/colors.css">
     <link rel="stylesheet" href="../base/icons.css">
+    <link rel="stylesheet" href="../button/style.css">
+    <link rel="stylesheet" href="../list/style.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/master.css">
+    <style>
+      .content { margin-left:50px}
+    </style>
   </head>
-  <body>
-    <div class="header blue">
-      <div class="left">
-        <button class="icon ion-navicon-round"></button>
-      </div>
-      <div class="title">
-         Application title
-      </div>
-      <div class="right">
-        <button class="icon ion-search"></button>
-        <button class="icon ion-android-more-vertical"></button>
-      </div>
+  <body class="content">
+    <!-- BEGIN -->
+    <h2 class="title-doc" id="_DOC_GENERATE_SPACE_">Header</h2>
+    <p>
+      Headers are fixed regions at the top of a screen that can contain a title label, and left/right buttons for navigation or to carry out various actions.
+    </p>
+    <p>
+      For use this components you need install with command:
+    </p>
+    <div class="dependency tooltip">
+      <strong>Dependency:</strong> <code>base</code> and <code>button</code>.
+      <span class="tooltiptext">The dependencies will be installed together with this module</span>
     </div>
+    <pre>mobileui install header</pre>
+
+
+<textarea class="bind-code" mode="text/html">
+<div class="header purple">
+  <div class="title">
+   Application title
+  </div>
+</div></textarea>
+
+  <p>
+    You can put the title in center or right add class <code>align-center</code> or <code>align-right</code>.
+  </p>
+<textarea class="bind-code" mode="text/html">
+<div class="header red">
+  <div class="title align-center">
+   Application title in center
+  </div>
+</div></textarea>
+
+  <p>
+  For put buttons in left and right you need create a div with class <code>left</code> or <code>right</code>.
+  </p>
+<textarea class="bind-code" mode="text/html">
+<div class="header blue">
+  <div class="left">
+    <button class="icon ion-navicon-round"></button>
+  </div>
+  <div class="title">
+    Application title
+  </div>
+  <div class="right">
+    <button class="icon ion-search"></button>
+    <button class="icon ion-android-more-vertical"></button>
+  </div>
+</div></textarea>
+  <p>
+    You can put buttons with text and another options of buttons settings, see section <a href="#button">Button</a>.
+  </p>
+<textarea class="bind-code" mode="text/html">
+<div class="header blue-grey">
+  <div class="left">
+    <button class="icon-text blue-grey-900">
+      <i class="icon ion-android-arrow-back"></i>
+      Back
+    </button>
+  </div>
+  <div class="right">
+    <button class="cyan">New</button>
+  </div>
+</div></textarea>
+  <p>
+    If you need the header transparent just add text color class.
+  </p>
+<textarea class="bind-code" mode="text/html" header-absolute="true">
+<div class="header text-white">
+  <div class="left">
+    <button class="icon ion-navicon-round"></button>
+  </div>
+  <div class="title">
+    Application title
+  </div>
+  <div class="right">
+    <button class="icon ion-search"></button>
+    <button class="icon ion-android-more-vertical"></button>
+  </div>
+</div>
+<img src="../assets/img/city.jpg" /></textarea>
+  <p>
+  If you don't use transparent header you need add class <code>has-header</code> in your body or div for top position add margin. For this example the component <a href="#list">list</a> was used too.
+  </p>
+<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div">
+<body class="has-header pink-50 padding">
+  <div class="header pink">
+    <div class="left">
+      <button class="icon ion-android-arrow-back"></button>
+    </div>
+    <div class="title align-center">
+       Contacts
+    </div>
+    <div class="right">
+      <button class="icon ion-person-add"></button>
+    </div>
+    </div>
+    <p>List of contacts.</p>
+    <div class="list white">
+    <div class="item">
+      <h2>Fábio Rogério</h2>
+      <p>fabio.rogerio@mail.com</p>
+    </div>
+    <div class="item">
+      <h2>Silva José</h2>
+      <p>silva.jose@mail.com</p>
+    </div>
+    <div class="item">
+      <h2>Rosangela Oliveira</h2>
+      <p>rosangela.oliveira@mail.com</p>
+    </div>
+  </div>
+</body></textarea>
+  <p>A secondary header bar can be placed below the original header bar. There are quite a few more ways to customize Headers.</p>
+<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div">
+<body class="has-header has-sub-header grey-50 padding">
+  <div class="header green-900">
+    <div class="left">
+      <button class="icon ion-android-arrow-back"></button>
+    </div>
+    <div class="title">
+       Contacts
+    </div>
+    </div>
+    <div class="header sub green-800">
+    <div class="title">
+       List of contacts
+    </div>
+  </div>
+  <p>Content here.</p>
+</body></textarea>
+  <p>
+    You can create a header in bottom of screen, just add class <code>bottom</code>.
+    In anothers UIKIT the name of this component is footer, becase footers are regions at
+    the bottom of a screen that can contain various types of content.
+  </p>
+<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div" height-preview="400px">
+<body class="has-footer has-sub-footer grey-50 padding">
+  <div class="header bottom green-900">
+    <div class="right">
+      <button class="icon ion-gear-b"></button>
+    </div>
+    <div class="title">
+       Device connected
+    </div>
+    </div>
+    <div class="header bottom sub green-800">
+    <div class="title">
+       All itens is ready!
+    </div>
+  </div>
+  <p>Content here.</p>
+</body></textarea>
+    <!-- DONE -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+    <script type="text/javascript" src="../assets/js/main.js"></script>
   </body>
 </html>

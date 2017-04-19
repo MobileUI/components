@@ -7,6 +7,29 @@
   left: 0;
   height: 52px;
 }
+.header.sub {
+  top:52px;
+}
+.header.bottom {
+  top: initial;
+  bottom: 0;
+}
+.header.sub.bottom {
+  top: initial;
+  bottom: 52px;
+}
+.has-header {
+  padding-top: 52px !important;
+}
+.has-header.has-sub-header {
+  padding-top: 104px !important;
+}
+.has-footer {
+  padding-bottom: 52px !important
+}
+.has-footer.has-sub-footer {
+  padding-bottom: 104px !important
+}
 .header .left, .header .right, .header .title {
   margin-top: 15px;
   margin-bottom: 5px;

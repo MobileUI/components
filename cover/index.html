@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway:400,700|Roboto:300,400,900," rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+    <link rel="stylesheet" href="../base/reset.css">
+    <link rel="stylesheet" href="../base/mobileui.css">
+    <link rel="stylesheet" href="../base/colors.css">
+    <link rel="stylesheet" href="../base/icons.css">
+    <link rel="stylesheet" href="../header/style.css">
+    <link rel="stylesheet" href="../button/style.css">
+    <link rel="stylesheet" href="../list/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/master.css">
+    <style>
+      .content { margin-left:50px}
+    </style>
+  </head>
+  <body class="content">
+    <!-- BEGIN -->
+    <h2 class="title-doc" id="_DOC_GENERATE_SPACE_">Cover</h2>
+    <p>This component allows you to create teasers using images.
+      Regardless of what kind of element, it will always be centered vertically and horizontally and cover
+      its container without losing its proportions. You can also place additional content, like text or image,
+      on top of the image.</p>
+      <p>
+        For use this components you need install with command:
+      </p>
+      <div class="dependency tooltip">
+        <strong>Dependency:</strong> <code>base</code>.
+        <span class="tooltiptext">The dependencies will be installed together with this module</span>
+      </div>
+      <pre>mobileui install cover</pre>
+<textarea class="bind-code" mode="text/html">
+<div class="cover align-center" style="background-image:url(/img/aurora-boreal-rosa.jpg)">
+  <div class="space"></div>
+  <h1 class="text-huge text-white text-light">About Northern Lights</h1>
+  <p class="text-small text-white text-light">
+    The bright dancing lights of the aurora are actually collisions between
+    electrically charged particles from the sun that enter the earth's atmosphere.
+  </p>
+  <div class="space"></div>
+</div></textarea>
+    <p>
+      You can add color with transparent layer adding class <code>blend-soft-light</code>, <code>blend-darken</code>,
+      <code>blend-luminosity</code>, <code>blend-multiply</code>, <code>blend-screen</code> and <code>blend-overlay</code>.
+      See this example with <a href="#header">header</a> component.</p>
+<textarea class="bind-code" mode="text/html" header-absolute="true">
+<div class="header text-white">
+  <div class="left">
+    <button class="icon ion-location"></button>
+  </div>
+  <div class="right">
+    <button class="icon ion-share"></button>
+  </div>
+</div>
+<div class="cover blend-soft-light align-center blue-800" style="background-image:url(/img/business.jpg)">
+  <div class="space"></div>
+  <div class="space"></div>
+  <div class="space"></div>
+  <h1 class="text-huge text-white text-light">Event On This Day</h1>
+  <p class="text-small text-white text-light">
+    To know new places around the world
+  </p>
+  <div class="space"></div>
+</div>
+<p>Without blend mode:</p>
+<div class="cover align-center" style="background-image:url(/img/business.jpg)">
+  <div class="space"></div>
+  <div class="space"></div>
+  <div class="space"></div>
+  <h1 class="text-huge text-white text-light">Event On This Day</h1>
+  <p class="text-small text-white text-light">
+    To know new places around the world
+  </p>
+  <div class="space"></div>
+</div></textarea>
+    <!-- DONE -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+    <script type="text/javascript" src="../assets/js/main.js"></script>
+  </body>
+</html>

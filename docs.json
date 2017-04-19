@@ -1,0 +1,60 @@
+{
+  "site_dir": "../mobileui.github.io",
+  "docs": [
+    {
+      "category": "Getting started",
+      "itens": [
+        {
+          "key":"getting-started",
+          "label":"Install",
+          "path":"./base/install.html"
+        }
+      ]
+    },
+    {
+      "category": "Components",
+      "itens": [
+        {
+          "key":"colors",
+          "label":"Colors",
+          "path":"./base/colors.html"
+        },
+        {
+          "key":"icons",
+          "label":"Icons",
+          "path":"./base/icons.html"
+        },
+        {
+          "key":"header",
+          "label":"Header",
+          "path":"./header/index.html"
+        },
+        {
+          "key":"button",
+          "label":"Button",
+          "path":"./button/index.html"
+        },
+        {
+          "key":"list",
+          "label":"List",
+          "path":"./list/index.html"
+        },
+        {
+          "key":"card",
+          "label":"Card",
+          "path":"./base/card.html"
+        },
+        {
+          "key":"badge",
+          "label":"Badge",
+          "path":"./base/badge.html"
+        },
+        {
+          "key":"cover",
+          "label":"Cover",
+          "path":"./cover/index.html"
+        }
+      ]
+    }
+  ]
+}

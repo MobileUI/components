@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway:400,700|Roboto:300,400,900," rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+    <link rel="stylesheet" href="../base/reset.css">
+    <link rel="stylesheet" href="../base/mobileui.css">
+    <link rel="stylesheet" href="../base/colors.css">
+    <link rel="stylesheet" href="../base/icons.css">
+    <link rel="stylesheet" href="../header/style.css">
+    <link rel="stylesheet" href="../list/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/master.css">
+    <style>
+      .content { margin-left:50px}
+    </style>
+  </head>
+  <body class="content">
+    <!-- BEGIN -->
+    <h2 class="title-doc" id="_DOC_GENERATE_SPACE_">Button</h2>
+    <p>
+      You can use <a href="#colors">colors theme</a> and <a href="#icons">icons</a> in button. If you need use base mode just add theme color name,
+      you can alter border color using class <code>border-[COLOR]</code>, alter text color using class <code>text-[COLOR]</code> and add radius border using class <code>radius</code>.
+    </p>
+    <p>For use icon in button you need add class <code>icon-text</code> and you can use diferents size, see the examples below.</p>
+    <p>
+      For use this components you need install with command:
+    </p>
+    <div class="dependency tooltip">
+      <strong>Dependency:</strong> <code>base</code>.
+      <span class="tooltiptext">The dependencies will be installed together with this module</span>
+    </div>
+    <pre>mobileui install button</pre>
+
+
+<textarea class="bind-code" mode="text/html">
+<button class="green">Login with email</button>
+<button class="border-green text-green">Create a new user</button>
+<p>Customize as you wish:</p>
+<button class="brown border-brown-800 text-brown-50 radius icon-text">
+  <i class="icon ion-ios-settings-strong"></i>
+  Configure your workspace
+</button>
+<p>Social login:</p>
+<button class="blue icon-text">
+  <i class="icon ion-social-facebook"></i>
+  Login width Facebook
+</button>
+<p>Diferent sizes:</p>
+<button class="red icon-text big">
+  <i class="icon ion-trash-b"></i>
+  Delete
+</button>
+<button class="cyan">Edit</button>
+<button class="purple small">View</button>
+<p>Full size:</p>
+<button class="pink full">View more detail</button>
+<p>Group buttons:</p>
+<div class="buttons-group full">
+  <button class="teal border-teal-700 radius-left">Left</button>
+  <button class="teal border-teal-700">Middle</button>
+  <button class="teal-700 border-teal-700">Middle</button>
+  <button class="teal border-teal-700 radius-right">Right</button>
+</div></textarea>
+    <!-- DONE -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+    <script type="text/javascript" src="../assets/js/main.js"></script>
+  </body>
+</html>

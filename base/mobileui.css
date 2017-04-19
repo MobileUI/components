@@ -8,8 +8,6 @@ body {font-family: 'Roboto', sans-serif;}
 .icon { font-size: 28px;}
 img {max-width: 100%}
 p {margin-top: 5px;margin-bottom:5px}
-.has-header {padding-top: 52px !important}
-.has-footer {padding-bottom: 52px !important}
 .padding {padding: 10px}
 span.padding {padding: 5px;padding-top: 0;padding-bottom: 0}
 .radius {border-radius: 4px}
