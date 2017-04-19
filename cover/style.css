@@ -4,6 +4,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  position: relative;
 }
 .cover .avatar {
   height: 100px;
@@ -27,4 +28,17 @@
 }
 .cover.blend-overlay {
   background-blend-mode: overlay;
+}
+.cover .float-bottom-right,
+.cover .float-bottom-left {
+  margin-bottom: -30px;
+  z-index: 99;
+}
+.cover .big.float-bottom-right,
+.cover .big.float-bottom-left {
+  margin-bottom: -35px;
+}
+.cover .small.float-bottom-right,
+.cover .small.float-bottom-left {
+  margin-bottom: -25px;
 }

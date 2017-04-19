@@ -35,7 +35,7 @@
       </div>
       <pre>mobileui install cover</pre>
 <textarea class="bind-code" mode="text/html">
-<div class="cover align-center" style="background-image:url(/img/aurora-boreal-rosa.jpg)">
+<div class="cover align-center" style="background-image:url(../assets/img/aurora-boreal-rosa.jpg)">
   <div class="space"></div>
   <h1 class="text-huge text-white text-light">About Northern Lights</h1>
   <p class="text-small text-white text-light">
@@ -57,7 +57,7 @@
     <button class="icon ion-share"></button>
   </div>
 </div>
-<div class="cover blend-soft-light align-center blue-800" style="background-image:url(/img/business.jpg)">
+<div class="cover blend-soft-light align-center blue-800" style="background-image:url(../assets/img/business.jpg)">
   <div class="space"></div>
   <div class="space"></div>
   <div class="space"></div>
@@ -68,7 +68,7 @@
   <div class="space"></div>
 </div>
 <p>Without blend mode:</p>
-<div class="cover align-center" style="background-image:url(/img/business.jpg)">
+<div class="cover align-center" style="background-image:url(../assets/img/business.jpg)">
   <div class="space"></div>
   <div class="space"></div>
   <div class="space"></div>
@@ -78,6 +78,78 @@
   </p>
   <div class="space"></div>
 </div></textarea>
+    <p>You can combinate with <a href="#button">button</a> circle and <a href="#list">list</a> component.</p>
+<textarea class="bind-code" mode="text/html" header-absolute="true" hidden="true" replace="body,div">
+<body class="has-header">
+  <div class="header text-white blue-900">
+    <div class="left">
+      <button class="icon ion-android-arrow-back"></button>
+    </div>
+    <div class="right">
+      <button class="icon ion-android-more-vertical"></button>
+    </div>
+  </div>
+  <div class="cover blue align-center blend-soft-light" style="background-image:url(../assets/img/backtop.png)">
+    <img class="avatar border-white shadow" src="../assets/img/33.jpg">
+    <h1 class="text-white">Carter Hudson</h1>
+    <p>+55 45 9878 9878</p>
+    <button class="blue-900 big circle float-bottom-right icon ion-ios-telephone"></button>
+  </div>
+  <div class="list">
+    <div class="item">
+      <div class="left">
+        <img class="avatar" src="../assets/img/80.jpg">
+      </div>
+      <h2>Jeanette Fletcher</h2>
+      <p class="text-grey">+55 7979 325 655</p>
+      <div class="right">
+        <small class="text-grey">
+          5 min
+          <i class="icon ion-android-happy text-green"></i>
+        </small>
+      </div>
+    </div>
+    <div class="item">
+      <div class="left">
+        <img class="avatar" src="../assets/img/53.jpg">
+      </div>
+      <h2>Emilio Dias</h2>
+      <p class="text-grey">+55 8989 325 655</p>
+      <div class="right">
+        <small class="text-grey">
+          12 min
+          <i class="icon ion-android-sad text-red"></i>
+        </small>
+      </div>
+    </div>
+    <div class="item">
+      <div class="left">
+        <img class="avatar" src="../assets/img/96.jpg">
+      </div>
+      <h2>Marcos Paulo</h2>
+      <p class="text-grey">+55 1245 325 655</p>
+      <div class="right">
+        <small class="text-grey">
+          32 min
+          <i class="icon ion-android-sad text-red"></i>
+        </small>
+      </div>
+    </div>
+    <div class="item">
+      <div class="left">
+        <img class="avatar" src="../assets/img/33.jpg">
+      </div>
+      <h2>Carter Hudson</h2>
+      <p class="text-grey">+55 8797 325 655</p>
+      <div class="right">
+        <small class="text-grey">
+          1h 12 min
+          <i class="icon ion-android-happy text-green"></i>
+        </small>
+      </div>
+    </div>
+  </div>
+</body></textarea>
     <!-- DONE -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>

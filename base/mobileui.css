@@ -26,3 +26,5 @@ span.padding {padding: 5px;padding-top: 0;padding-bottom: 0}
 .text-huge {font-size: 32px}
 .text-huge .icon {font-size: 32px}
 .text-light {font-weight: 300;}
+.float-bottom-right {position: absolute;right: 15px;bottom: 15px}
+.float-bottom-left {position: absolute;left: 15px;bottom: 15px}

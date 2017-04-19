@@ -20,6 +20,14 @@ button .icon {
   position: absolute;
   left: 10px;
 }
+button.circle {
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  padding: 0;
+  line-height: 0;
+  font-size: 22px;
+}
 button.icon-text {
   padding-left: 35px;
 }
@@ -38,6 +46,11 @@ button.big {
   min-height: 50px;
   line-height: 50px;
 }
+button.circle.big {
+  width: 50px;
+  height: 50px;
+  font-size: 28px;
+}
 button.big.icon-text {
   padding-left: 40px;
 }
@@ -48,6 +61,11 @@ button.small {
   font-size: 12px;
   min-height: 30px;
   line-height: 30px;
+}
+button.circle.small {
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
 }
 button.small.icon-text {
   padding-left: 30px;

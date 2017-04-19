@@ -1,5 +1,6 @@
 const fs = require('fs')
 const path = require('path')
+const wrench = require('wrench')
 const docs = require('./docs.json')
 
 let template = fs.readFileSync(path.join(docs.site_dir,'template.html')).toString()
@@ -21,3 +22,7 @@ for(let item of docs.docs) {
 let index = template.replace(`<!-- SPACE-GENERATE-DOCS -->`, `<div class="menu font-raleway">${menu}</div><div class="content font-raleway">${content}</div>`)
 index = index.replace(new RegExp(`../assets/`, 'g'), `/`)
 fs.writeFile(path.join(docs.site_dir,'index.html'), index)
+
+wrench.copyDirSyncRecursive('./', path.join(docs.site_dir,'mobileui/'), {
+    forceDelete: true
+})
