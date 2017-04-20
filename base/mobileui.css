@@ -5,6 +5,7 @@ body {font-family: 'Roboto', sans-serif;}
 .align-left {text-align: left;}
 .align-center {text-align: center;}
 .align-right {text-align: right;}
+.align-bottom {position: absolute;bottom: 0;left:0;}
 .icon { font-size: 28px;}
 img {max-width: 100%}
 p {margin-top: 5px;margin-bottom:5px}
@@ -26,5 +27,9 @@ span.padding {padding: 5px;padding-top: 0;padding-bottom: 0}
 .text-huge {font-size: 32px}
 .text-huge .icon {font-size: 32px}
 .text-light {font-weight: 300;}
+.text-strong {font-weight: 800;}
 .float-bottom-right {position: absolute;right: 15px;bottom: 15px}
 .float-bottom-left {position: absolute;left: 15px;bottom: 15px}
+.icon-circle {width: 40px;height: 40px;border-radius: 50%;text-align: center;}
+.col {-moz-flex: 1;-ms-flex: 1;flex: 1;}
+.row {display: -moz-flex;display: -ms-flexbox;display: flex;width: 100%;}
