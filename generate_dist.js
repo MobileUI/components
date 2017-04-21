@@ -16,6 +16,7 @@ let importsAll = ''
 
 for(let item of getDirectories('./')) {
   importsAll += `@import url("./${item}.min.css");\n`
+  fs.createReadStream(`./${item}/component.json`).pipe(fs.createWriteStream(`./dist/${item}.json`));
   if(item === 'base') {
     compressor.minify({
       compressor: 'clean-css',

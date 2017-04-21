@@ -1,0 +1,6 @@
+{
+  "name":"cover",
+  "dependencies": [
+    "base"
+  ]
+}
