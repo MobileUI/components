@@ -23,6 +23,10 @@ let index = template.replace(`<!-- SPACE-GENERATE-DOCS -->`, `<div class="menu f
 index = index.replace(new RegExp(`../assets/`, 'g'), `/`)
 fs.writeFile(path.join(docs.site_dir,'index.html'), index)
 
-wrench.copyDirSyncRecursive('./', path.join(docs.site_dir,'mobileui/'), {
+if (!fs.existsSync(path.join(docs.site_dir,'mobileui/'))){
+    fs.mkdirSync(path.join(docs.site_dir,'mobileui/'));
+}
+
+wrench.copyDirSyncRecursive('./dist', path.join(docs.site_dir,'mobileui/'), {
     forceDelete: true
 })

@@ -87,3 +87,7 @@
 .list .item .icon {
   font-size: 18px;
 }
+.list .left .icon {
+  font-size: 25px;
+  vertical-align: -webkit-baseline-middle;
+}

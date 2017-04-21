@@ -4,6 +4,7 @@
   "description": "Components",
   "main": "generate_doc.js",
   "dependencies": {
+    "node-minify": "^2.0.4",
     "wrench": "^1.5.9"
   },
   "devDependencies": {},
