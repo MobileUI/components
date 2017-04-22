@@ -49,7 +49,8 @@ button[class*="border-"] {
 button.full {
   width: 100%;
 }
-button.big {
+button.big,
+.buttons-group.big button  {
   font-size: 22px;
   min-height: 50px;
   line-height: 50px;
