@@ -5,16 +5,19 @@ const wrench = require('wrench')
 
 function getDirectories (srcpath) {
   return fs.readdirSync(srcpath)
-    .filter(file => fs.statSync(path.join(srcpath, file)).isDirectory() &&
-                    file.indexOf('.') < 0 &&
-                    file !== 'node_modules' &&
-                    file !== 'dist' &&
-                    file !== 'assets')
+    .filter(function(file){
+      return fs.statSync(path.join(srcpath, file)).isDirectory() &&
+                      file.indexOf('.') < 0 &&
+                      file !== 'node_modules' &&
+                      file !== 'dist' &&
+                      file !== 'assets'
+    })
 }
 
-let importsAll = ''
-
-for(let item of getDirectories('./')) {
+var importsAll = ''
+var dir = getDirectories('./')
+for(var i in dir) {
+  var item = dir[i]
   importsAll += `@import url("./${item}.min.css");\n`
   fs.createReadStream(`./${item}/component.json`).pipe(fs.createWriteStream(`./dist/${item}.json`));
   if(item === 'base') {
@@ -49,9 +52,9 @@ for(let item of getDirectories('./')) {
   }
 }
 
-let fileNameImport = './dist/imports.css'
+var fileNameImport = './dist/imports.css'
 if (fs.existsSync(fileNameImport)) {
     fs.unlinkSync(fileNameImport)
 }
-let fd = fs.openSync(fileNameImport, 'w')
+var fd = fs.openSync(fileNameImport, 'w')
 fs.writeSync(fd, importsAll)
