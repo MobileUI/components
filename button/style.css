@@ -1,4 +1,9 @@
 button {
+  -webkit-transition: color 200ms ease;
+  -moz-transition: color 200ms ease;
+  -ms-transition: color 200ms ease;
+  -o-transition: color 200ms ease;
+  transition: color 200ms ease;
   font-size: 14px;
   border: none;
   background-color: none;
@@ -15,6 +20,9 @@ button {
   font-size: 16px;
   line-height: 42px;
   cursor: pointer;
+}
+button:active {
+  opacity: 0.8;
 }
 button .icon {
   position: absolute;
