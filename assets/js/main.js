@@ -9,9 +9,11 @@ $(document).ready(function(){
     var heightPreview = $(block).attr('height-preview')
     var idResult = $(block).attr('id-result')
     var theme = 'default'
-    replace = replace.split('|');
-    for(var i in replace){
-      code = code.replace(new RegExp(replace[i].split(',')[0], 'g'), replace[i].split(',')[1]);
+    if(replace) {
+      replace = replace.split('|');
+      for(var i in replace){
+        code = code.replace(new RegExp(replace[i].split(',')[0], 'g'), replace[i].split(',')[1]);
+      }
     }
     if(!mode) {
       mode = 'text/html'
