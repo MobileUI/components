@@ -36,6 +36,14 @@ for(var i in dir) {
         })
       }
     })
+    compressor.minify({
+      compressor: 'gcc',
+      input: './base/base.js',
+      output: './dist/base.min.js',
+      callback: function (err, min) {
+        if(err) console.log('ERROR: ', err)
+      }
+    });
   } else {
     compressor.minify({
       compressor: 'clean-css',
