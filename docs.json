@@ -53,6 +53,11 @@
           "key":"cover",
           "label":"Cover",
           "path":"./cover/index.html"
+        },
+        {
+          "key":"menu",
+          "label":"Menu",
+          "path":"./menu/index.html"
         }
       ]
     }

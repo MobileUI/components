@@ -1,14 +1,27 @@
+body {
+  -webkit-touch-callout: text;
+  -webkit-text-size-adjust: text;
+  -webkit-user-select: text;
+}
 .font-dosis {
   font-family: 'Dosis', sans-serif;
 }
 .font-raleway {
   font-family: 'Raleway', sans-serif;
 }
+ol, ul {
+    list-style: none;
+}
 a {
   opacity: 0.8;
   transition: .1s ease-in-out;
   transition-property: opacity, border-color;
   color: #4F8EF7;
+  text-decoration: none;
+}
+.result a {
+  cursor: pointer;
+  color: #000;
   text-decoration: none;
 }
 .dependency {
@@ -90,13 +103,16 @@ a {
 .top a:hover {
   color: rgba(255, 255, 255, 1);
 }
-.menu {
+.menuland {
   position: absolute;
   width: 280px;
   overflow: auto;
   padding: 50px;
 }
-.menu h1,
+.menuland li {
+  font-size: 16px;
+}
+.menuland h1,
 .content h2.title-doc {
   font-size: 18px;
   font-weight: 700;
@@ -108,25 +124,25 @@ a {
 .content h2.title-doc {
   padding-top: 50px;
 }
-.menu h1:first-child {
+.menuland h1:first-child {
   margin-top: 0;
 }
-.menu a {
+.menuland a {
   color: rgba(0, 0, 0, 0.8);
 }
-.menu li {
+.menuland li {
   padding: 10px;
 }
-.menu li:hover, .menu a.active li {
+.menuland li:hover, .menuland a.active li {
   background-color: #7fc7af;
 }
-.menu::-webkit-scrollbar {
+.menuland::-webkit-scrollbar {
     display: none;
 }
-.menu a:target li{
+.menuland a:target li{
   border-left: 4px solid #7fc7af;
 }
-.menu.hasScrolled {
+.menuland.hasScrolled {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -194,9 +210,13 @@ pre, .CodeMirror {
   font-family: 'Roboto', sans-serif;
   max-width: 400px;
   position: relative;
+  overflow: hidden;
 }
 .result.height-change > div{
   height: 100%;
+}
+.result.with-border {
+  border: 1px solid #ccc;
 }
 .result p {
   margin-top: 5px;
@@ -251,7 +271,7 @@ textarea.bind-code {
     .top ul {
       display: none;
     }
-    .menu {
+    .menuland {
       display: none;
     }
     .content {

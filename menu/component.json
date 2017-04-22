@@ -1,0 +1,7 @@
+{
+  "name":"menu",
+  "dependencies": [
+    "base",
+    "list"
+  ]
+}
