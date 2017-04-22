@@ -20,5 +20,5 @@ if (/windows phone/i.test(userAgent)) {
 }
 
 if(SO.class && document.getElementsByTagName('body').length){
-  document.getElementsByTagName('body')[0].className += SO.class
+  document.getElementsByTagName('body')[0].className += ' '+SO.class
 }

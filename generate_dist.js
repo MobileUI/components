@@ -45,18 +45,30 @@ for(var i in dir) {
       }
     });
   } else {
-    compressor.minify({
-      compressor: 'clean-css',
-      input: `./${item}/style.css`,
-      output: `./dist/${item}.min.css`,
-      options: {
-        advanced: false,
-        aggressiveMerging: false
-      },
-      callback: function (err, min) {
-        if(err) console.log('ERROR: ', err)
-      }
-    })
+    if(fs.existsSync(`./${item}/style.css`)){
+      compressor.minify({
+        compressor: 'clean-css',
+        input: `./${item}/style.css`,
+        output: `./dist/${item}.min.css`,
+        options: {
+          advanced: false,
+          aggressiveMerging: false
+        },
+        callback: function (err, min) {
+          if(err) console.log('ERROR: ', err)
+        }
+      })
+    }
+    if(fs.existsSync(`./${item}/script.js`)){
+      compressor.minify({
+        compressor: 'uglifyjs',
+        input: `./${item}/script.js`,
+        output: `./dist/${item}.min.js`,
+        callback: function (err, min) {
+          if(err) console.log('ERROR: ', err)
+        }
+      });
+    }
   }
 }
 
