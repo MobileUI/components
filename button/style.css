@@ -57,7 +57,8 @@ button.big.icon-text {
 button.big.icon-text i {
   font-size: 26px;
 }
-button.small {
+button.small,
+.buttons-group.small button {
   font-size: 12px;
   min-height: 30px;
   line-height: 30px;

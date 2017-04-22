@@ -77,3 +77,13 @@
   border-radius: 8px;
   z-index: 9999;
 }
+.header .buttons-group {
+  margin-top: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.header .buttons-group.small {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
