@@ -140,6 +140,7 @@ span.padding {
   background-color: #000;
   opacity: .01;
   z-index: 99;
+  transition-duration: 280ms;
 }
 .backdrop.show {
   opacity: 0.4;

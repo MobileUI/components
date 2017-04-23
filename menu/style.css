@@ -5,20 +5,12 @@
   width: 300px;
   height: 100%;
   z-index: 9999;
-  margin-left: -300px;
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease;
+  transform: translateX(-312px);
+  transition-duration: 280ms;
 }
 .menu.open {
-  margin-left: 0;
+  transform: translateX(0px);
 }
 .backdrop-menu {
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease;
+
 }
