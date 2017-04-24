@@ -1,0 +1,10 @@
+{
+  "name":"base",
+  "dependencies": [],
+  "files":[
+    "fonts/ionicons.woff",
+    "fonts/roboto.woff2",
+    "fonts/robotoblack.woff2",
+    "fonts/robotolight.woff2"
+  ]
+}

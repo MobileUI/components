@@ -52,16 +52,13 @@
   margin-top: -10px;
 }
 .header button.icon {
-  color: rgba(255, 255, 255, 0.9);
+  color: #fff;
   font-size: 30px;
   margin-top: -10px;
   z-index: 99;
   background: none;
   border: none;
   padding: 0 6px;
-}
-.header button:hover, .header button:active {
-  color: rgba(255, 255, 255, 1);
 }
 .header .title.align-center {
   width: 100%;
@@ -76,4 +73,14 @@
   margin-top: -8px;
   border-radius: 8px;
   z-index: 9999;
+}
+.header .buttons-group {
+  margin-top: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.header .buttons-group.small {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }

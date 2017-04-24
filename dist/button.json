@@ -1,0 +1,6 @@
+{
+  "name":"button",
+  "dependencies": [
+    "base"
+  ]
+}

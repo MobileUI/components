@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway:400,700|Roboto:300,400,900," rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+    <link rel="stylesheet" href="../base/reset.css">
+    <link rel="stylesheet" href="../base/mobileui.css">
+    <link rel="stylesheet" href="../base/colors.css">
+    <link rel="stylesheet" href="../base/icons.css">
+    <link rel="stylesheet" href="../header/style.css">
+    <link rel="stylesheet" href="../list/style.css">
+    <link rel="stylesheet" href="../button/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/master.css">
+    <style>
+      .content { margin-left:50px}
+    </style>
+    <script type="text/javascript" src="../menu/script.js"></script>
+  </head>
+  <body class="content">
+    <!-- BEGIN -->
+    <h2 class="title-doc" id="_DOC_GENERATE_SPACE_">Menu</h2>
+    <p>
+      Menu is a side-menu navigation that can be dragged out or toggled to show. The content of a menu will be hidden when the menu is closed.
+      Menu adapts to the appropriate style based on the platform.
+    </p>
+    <p>
+      For use this component you need install with command:
+    </p>
+    <div class="dependency tooltip">
+      <strong>Dependency:</strong> <code>base</code> and <code>list</code>.
+      <span class="tooltiptext">The dependencies will be installed together with this module</span>
+    </div>
+    <pre>mobileui install menu</pre>
+    <p>
+      Your menu need have <code>id</code> and for you open menu, just call function <code>openMenu('ID_YOUR_MENU')</code>, for close menu just call function <code>closeMenu('ID_YOU_MENU')</code>.
+    </p>
+    <p>See example:</p>
+<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div" id-result="resultmenu1" height-preview="400px" border="true">
+<body class="padding grey-200">
+  <div class="menu white" id="myFirstMenu">
+    <div class="list without-border">
+      <a onclick="closeMenu('myFirstMenu')" class="item">
+        <h1>Close menu</h1>
+      </a>
+    </div>
+  </div>
+  <button class="blue" onclick="openMenu('myFirstMenu')">Open menu</button>
+</body></textarea>
+    <p>
+      You can use all features of <a href="#colors">colors theme</a>, <a href="#icons">icons</a> and <a href="#list">list</a> in menu.
+    </p>
+<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div" id-result="resultmenu1" height-preview="400px" border="true">
+<body class="padding grey-200">
+  <div class="menu white" id="myMenu">
+    <div class="list without-border">
+      <div class="item blue">
+        <div class="left">
+          <img class="avatar" src="../assets/img/80.jpg">
+        </div>
+        <h1>Jeanette Fletcher</h1>
+        <p>jeanette@example.com</p>
+      </div>
+      <a class="item">
+        <div class="left">
+          <i class="icon ion-ios-list-outline"></i>
+        </div>
+        <h1>My projects</h1>
+      </a>
+      <a class="item">
+        <div class="left">
+          <i class="icon ion-ios-chatbubble-outline"></i>
+        </div>
+        <h1>Messages</h1>
+        <div class="right">
+          <span class="text-small red radius padding">6</span>
+        </div>
+      </a>
+      <a class="item">
+        <div class="left">
+          <i class="icon ion-ios-search"></i>
+        </div>
+        <h1>Search projects</h1>
+      </a>
+      <a onclick="closeMenu('myMenu')" class="item">
+        <div class="left">
+          <i class="icon ion-ios-close-outline"></i>
+        </div>
+        <h1>Close menu</h1>
+      </a>
+    </div>
+  </div>
+  <button class="blue" onclick="openMenu('myMenu')">Open menu</button>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+    deserunt mollit anim id est laborum.
+  </p>
+</body></textarea>
+    <!-- DONE -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+    <script type="text/javascript" src="../assets/js/main.js"></script>
+  </body>
+</html>

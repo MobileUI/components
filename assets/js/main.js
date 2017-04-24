@@ -2,13 +2,18 @@ $(document).ready(function(){
   $('textarea.bind-code').each(function(i, block) {
     var code = $(block).val()
     var mode = $(block).attr('mode')
+    var border = $(block).attr('border')
     var absolute = $(block).attr('header-absolute')
     var replace = $(block).attr('replace')
     var hidden = $(block).attr('hidden')
     var heightPreview = $(block).attr('height-preview')
+    var idResult = $(block).attr('id-result')
     var theme = 'default'
     if(replace) {
-      code = code.replace(new RegExp(replace.split(',')[0], 'g'), replace.split(',')[1]);
+      replace = replace.split('|');
+      for(var i in replace){
+        code = code.replace(new RegExp(replace[i].split(',')[0], 'g'), replace[i].split(',')[1]);
+      }
     }
     if(!mode) {
       mode = 'text/html'
@@ -24,15 +29,22 @@ $(document).ready(function(){
     }
     var resultStyle = ''
     var resultClass = 'result'
+    var attrs = ''
+    if(border) {
+      resultClass += ' with-border'
+    }
+    if(idResult){
+      attrs += ' id="'+idResult+'" '
+    }
     if(heightPreview) {
       resultStyle += 'height:'+heightPreview
       resultClass += ' height-change'
     }
-    $(block).after('<div class="'+resultClass+'" style="'+resultStyle+'">'+code+'<div class="cls"></div></div>')
+    $(block).after('<div '+attrs+' class="'+resultClass+'" style="'+resultStyle+'">'+code+'<div class="cls"></div></div>')
   });
 
   var $document = $(document);
-  var $element = $('.menu');
+  var $element = $('.menuland');
   var className = 'hasScrolled';
 
   var checkScroll = function(){
@@ -55,3 +67,24 @@ $(document).ready(function(){
   });
 
 })
+
+
+window.openMenuLand = function(m){
+  var m = document.getElementById(m);
+  if(m.className.indexOf('menu') >= 0 && m.className.indexOf('open') < 0) {
+    var e = document.createElement('div');
+    e.className = 'backdrop backdrop-menu';
+    $(m).parent().append(e)
+    m.className += ' open';
+    setTimeout(function(){
+      e.className += ' show';
+    });
+    e.addEventListener('click', function(evt){
+      m.className = m.className.replace('open','');
+      e.className = e.className.replace('show','');
+      setTimeout(function(){
+        e.parentNode.removeChild(e);
+      }, 500)
+    }, false);
+  }
+}

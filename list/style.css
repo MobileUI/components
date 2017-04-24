@@ -16,6 +16,10 @@
   display: -ms-flexbox;
   display: flex;
 }
+.list.without-border {
+  border: 0;
+}
+.list.without-border .item,
 .list .item.without-border {
   border: none;
 }
@@ -31,10 +35,14 @@
   padding: 0;
   display: flex;
 }
+.list .item h1,
 .list .item h2 {
   font-size: 16px;
   margin:0;
   padding: 0;
+}
+.list .item h1 {
+  margin-top: 7px;
 }
 .list .item p {
   font-size: 14px;
@@ -86,4 +94,8 @@
 }
 .list .item .icon {
   font-size: 18px;
+}
+.list .left .icon {
+  font-size: 25px;
+  vertical-align: -webkit-baseline-middle;
 }

@@ -1,0 +1,16 @@
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  z-index: 9999;
+  transform: translateX(-312px);
+  transition-duration: 280ms;
+}
+.menu.open {
+  transform: translateX(0px);
+}
+.backdrop-menu {
+
+}

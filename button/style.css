@@ -1,4 +1,9 @@
 button {
+  -webkit-transition: color 200ms ease;
+  -moz-transition: color 200ms ease;
+  -ms-transition: color 200ms ease;
+  -o-transition: color 200ms ease;
+  transition: color 200ms ease;
   font-size: 14px;
   border: none;
   background-color: none;
@@ -15,6 +20,7 @@ button {
   font-size: 16px;
   line-height: 42px;
   cursor: pointer;
+  overflow: hidden;
 }
 button .icon {
   position: absolute;
@@ -41,7 +47,8 @@ button[class*="border-"] {
 button.full {
   width: 100%;
 }
-button.big {
+button.big,
+.buttons-group.big button  {
   font-size: 22px;
   min-height: 50px;
   line-height: 50px;
@@ -57,7 +64,8 @@ button.big.icon-text {
 button.big.icon-text i {
   font-size: 26px;
 }
-button.small {
+button.small,
+.buttons-group.small button {
   font-size: 12px;
   min-height: 30px;
   line-height: 30px;
@@ -88,4 +96,31 @@ button.small.icon-text i {
 }
 .buttons-group.full button {
   flex: 1;
+}
+.ripple {
+  position: absolute;
+  background: rgba(255,255,255,.25);
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  pointer-events: none;
+}
+.ripple.show {
+  -webkit-animation: ripple .5s ease-out;
+  animation: ripple .5s ease-out;
+}
+@-webkit-keyframes
+  ripple { to {
+   -webkit-transform: scale(1.5);
+   transform: scale(1.5);
+   opacity: 0;
+  }
+}
+@keyframes
+  ripple { to {
+   -webkit-transform: scale(1.5);
+   transform: scale(1.5);
+   opacity: 0;
+  }
 }
