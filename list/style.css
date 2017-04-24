@@ -11,6 +11,13 @@
   position: relative;
   font-size: 18px;
 }
+.list .item.mark {
+  border-right: 0;
+  border-top: 0;
+}
+.list .item.mark.margin-button {
+  border-bottom: 0;
+}
 .list .item.row {
   display: -moz-flex;
   display: -ms-flexbox;

@@ -18,6 +18,7 @@
     <style>
       .content { margin-left:50px}
     </style>
+    <script type="text/javascript" src="../base/base.js"></script>
     <script type="text/javascript" src="../menu/script.js"></script>
   </head>
   <body class="content">
@@ -37,23 +38,24 @@
     <pre>mobileui install menu</pre>
     <p>
       Your menu need have <code>id</code> and for you open menu, just call function <code>openMenu('ID_YOUR_MENU')</code>, for close menu just call function <code>closeMenu('ID_YOU_MENU')</code>.
+      By default the menu is created in the left, but you can add class <code>menu-right</code> for create menu in right position.
     </p>
     <p>See example:</p>
-<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div" id-result="resultmenu1" height-preview="400px" border="true">
+<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div|grey-200,grey-200 body" height-preview="400px" border="true" multiplatform="true">
 <body class="padding grey-200">
-  <div class="menu white" id="myFirstMenu">
-    <div class="list without-border">
-      <a onclick="closeMenu('myFirstMenu')" class="item">
-        <h1>Close menu</h1>
-      </a>
-    </div>
+  <div class="menu menu purple" id="myFirstMenu">
+    <button class="purple-100 full" onclick="closeMenu('myFirstMenu')">Close menu </button>
   </div>
-  <button class="blue" onclick="openMenu('myFirstMenu')">Open menu</button>
+  <div class="menu menu-right green" id="mySecondMenu">
+    <button class="green-100 full" onclick="closeMenu('mySecondMenu')">Close menu</button>
+  </div>
+  <button class="purple" onclick="openMenu('myFirstMenu')">Open menu left</button>
+  <button class="green" onclick="openMenu('mySecondMenu')">Open menu right</button>
 </body></textarea>
     <p>
       You can use all features of <a href="#colors">colors theme</a>, <a href="#icons">icons</a> and <a href="#list">list</a> in menu.
     </p>
-<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div" id-result="resultmenu1" height-preview="400px" border="true">
+<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div|grey-200,grey-200 body" height-preview="400px" border="true" multiplatform="true">
 <body class="padding grey-200">
   <div class="menu white" id="myMenu">
     <div class="list without-border">

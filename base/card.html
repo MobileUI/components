@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="mobileui.css">
     <link rel="stylesheet" href="colors.css">
     <link rel="stylesheet" href="icons.css">
+    <link rel="stylesheet" href="../button/style.css">
+    <link rel="stylesheet" href="../list/style.css">
     <link rel="stylesheet" href="../assets/css/master.css">
     <style>
       .content { margin-left:50px}
@@ -23,13 +25,20 @@
       If you have installed any component, the base classes are already installed. Otherwise run the command:
     </p>
     <pre>mobileui install base</pre>
-    <textarea class="bind-code" mode="text/html">
-    <div class="padding border-grey-400 shadow radius">
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-    </div></textarea>
+<textarea class="bind-code" mode="text/html">
+<div class="padding border-grey-400 shadow radius">
+  <p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+</div>
+<div class="space"></div>
+<div class="padding border-purple shadow radius mark">
+  <p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+</div></textarea>
     <p>You can combinate card style and <a href="#list">list</a> component, just add class <code>shadow</code>.</p>
     <textarea class="bind-code" mode="text/html" replace="body,div">
     <body class="padding grey-100">
@@ -45,7 +54,7 @@
     <div class="list shadow radius white">
     <div class="item">
       <div class="left">
-        <img class="avatar" src="/img/80.jpg">
+        <img class="avatar" src="../assets/img/80.jpg">
       </div>
       <h2>Jeanette Fletcher</h2>
       <p>jeanette.fletcher15@example.com</p>
@@ -54,7 +63,7 @@
       </p>
     </div>
     <div class="item full">
-      <img src="/img/maringa.jpg">
+      <img src="../assets/img/maringa.jpg">
     </div>
     <div class="item text-grey-600">
       Catedral is a beautiful built in Maringá

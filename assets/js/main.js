@@ -6,6 +6,7 @@ $(document).ready(function(){
     var absolute = $(block).attr('header-absolute')
     var replace = $(block).attr('replace')
     var hidden = $(block).attr('hidden')
+    var multiplatform = $(block).attr('multiplatform')
     var heightPreview = $(block).attr('height-preview')
     var idResult = $(block).attr('id-result')
     var theme = 'default'
@@ -29,18 +30,23 @@ $(document).ready(function(){
     }
     var resultStyle = ''
     var resultClass = 'result'
-    var attrs = ''
+    var id = idResult ? idResult : new Date().getTime();
+    var attrs = ' id="'+id+'" '
     if(border) {
       resultClass += ' with-border'
-    }
-    if(idResult){
-      attrs += ' id="'+idResult+'" '
     }
     if(heightPreview) {
       resultStyle += 'height:'+heightPreview
       resultClass += ' height-change'
     }
-    $(block).after('<div '+attrs+' class="'+resultClass+'" style="'+resultStyle+'">'+code+'<div class="cls"></div></div>')
+    var multiplatformHtml = '';
+    if(multiplatform) {
+      multiplatformHtml = '<div style="margin-bottom:10px">';
+      multiplatformHtml += '<button class="small blue" onclick="previewPlatform(this, '+id+', 1)">Android</button>';
+      multiplatformHtml += '<button class="small white" onclick="previewPlatform(this, '+id+', 2)">iOS</button>';
+      multiplatformHtml += '</div>';
+    }
+    $(block).after(multiplatformHtml+'<div '+attrs+' class="'+resultClass+'" style="'+resultStyle+'">'+code+'<div class="cls"></div></div>')
   });
 
   var $document = $(document);
@@ -86,5 +92,19 @@ window.openMenuLand = function(m){
         e.parentNode.removeChild(e);
       }, 500)
     }, false);
+  }
+}
+
+window.previewPlatform = function(e, id, p){
+  $(e).parent().find('.blue').removeClass('blue').addClass('white');
+  $(e).removeClass('white').addClass('blue');
+  if(p === 1){
+    $('#'+id).removeClass('platform-ios').addClass('platform-android');
+    SO.code = 1;
+    $('#'+id).css('max-width','400px');
+  } else {
+    $('#'+id).removeClass('platform-android').addClass('platform-ios');
+    SO.code = 2;
+    $('#'+id).css('max-width','320px');
   }
 }
