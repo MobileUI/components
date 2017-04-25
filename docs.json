@@ -35,6 +35,11 @@
           "path":"./button/index.html"
         },
         {
+          "key":"input",
+          "label":"Input",
+          "path":"./input/index.html"
+        },
+        {
           "key":"list",
           "label":"List",
           "path":"./list/index.html"

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway:400,700|Roboto:300,400,900," rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+    <link rel="stylesheet" href="../base/reset.css">
+    <link rel="stylesheet" href="../base/mobileui.css">
+    <link rel="stylesheet" href="../base/colors.css">
+    <link rel="stylesheet" href="../base/icons.css">
+    <link rel="stylesheet" href="../header/style.css">
+    <link rel="stylesheet" href="../button/style.css">
+    <link rel="stylesheet" href="../list/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/master.css">
+    <style>
+      .content { margin-left:50px}
+    </style>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body class="content">
+    <!-- BEGIN -->
+    <h2 class="title-doc" id="_DOC_GENERATE_SPACE_">Input</h2>
+    <p>
+      Inputs are essential in an application to collect user data, so we need to worry about the layout and MobileUI does it for you.
+    </p>
+    <p>
+      For use this components you need install with command:
+    </p>
+    <div class="dependency tooltip">
+      <strong>Dependency:</strong> <code>base</code> and <code>list</code>.
+      <span class="tooltiptext">The dependencies will be installed together with this module</span>
+    </div>
+    <pre>mobileui install input</pre>
+<textarea class="bind-code" mode="text/html">
+<div class="list">
+  <div class="item">
+    <input type="text" placeholder="First name">
+  </div>
+  <div class="item">
+    <input type="text" placeholder="Last name">
+  </div>
+  <div class="item">
+    <button class="green radius full">Create a new user</button>
+  </div>
+</div></textarea>
+    <p>If you put label on the items, you can have a line view of the component.</p>
+<textarea class="bind-code" mode="text/html">
+<div class="list">
+  <div class="item">
+    <label class="text-orange">Username</label>
+    <input type="text">
+  </div>
+  <div class="item">
+    <label class="text-orange">Password</label>
+    <input type="password">
+  </div>
+  <div class="item">
+    <button class="orange-900 radius full">Login user</button>
+  </div>
+</div></textarea>
+    <p>Use class <code>label-fixed</code> in <code>item</code> of the list for fixed the label.</p>
+<textarea class="bind-code" mode="text/html">
+<div class="list">
+  <div class="item label-fixed">
+    <label>Username</label>
+    <input type="text">
+  </div>
+  <div class="item label-fixed">
+    <label>Password</label>
+    <input type="password">
+  </div>
+  <div class="item">
+    <button class="blue radius full">Login user</button>
+  </div>
+</div></textarea>
+    <p>Input floating is a good option for forms login, just add class <code>label-float</code> in item.</p>
+<textarea class="bind-code" mode="text/html">
+<div class="list">
+  <div class="item label-float">
+    <label>Username</label>
+    <input type="text">
+  </div>
+  <div class="item label-float">
+    <label>Password</label>
+    <input type="password">
+  </div>
+  <div class="item">
+    <button class="pink radius full">Login user</button>
+  </div>
+</div></textarea>
+    <p>You can put <code>align-right</code> for align your text in right item.</p>
+    <textarea class="bind-code" mode="text/html">
+    <div class="list">
+      <div class="item label-fixed">
+        <label>Value</label>
+        <input type="number" class="align-right">
+      </div>
+    </div></textarea>
+    <!-- DONE -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+    <script type="text/javascript" src="../assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+input, textarea {
+  border: none;
+  background: none;
+  font-size: 16px;
+  width: 100%;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.label-fixed,
+.item.label-fixed {
+  display: -moz-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  width: 100%;
+}
+.label-fixed label {
+  -webkit-flex: 0 0 100px;
+  -ms-flex: 0 0 100px;
+  flex: 0 0 100px;
+  width: 100px;
+  min-width: 100px;
+  max-width: 200px;
+}
+.label-float label {
+  margin-bottom: 0;
+  -webkit-transform: translate3d(0, 27px, 0);
+  transform: translate3d(0, 27px, 0);
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  transition: -webkit-transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+  align-self: stretch;
+  -webkit-flex: initial;
+  -ms-flex: initial;
+  flex: initial;
+  display: block;
+}
+.label-float label.focus {
+  -webkit-transform: translate3d(0, 0, 0) scale(0.8);
+  transform: translate3d(0, 0, 0) scale(0.8);
+}
