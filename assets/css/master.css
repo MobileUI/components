@@ -282,3 +282,14 @@ textarea.bind-code {
       width: 100%;
     }
 }
+.button-contribute {
+  font-size: 16px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.button-contribute .ion-social-github:before {
+  margin-left: 10px;
+  float: right;
+  margin-top: 3px;
+}

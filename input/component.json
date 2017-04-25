@@ -1,5 +1,6 @@
 {
   "name":"input",
+  "author": "fabiorogeriosj",
   "dependencies": [
     "base",
     "list"

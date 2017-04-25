@@ -14,9 +14,11 @@ for(var i in docs.docs) {
   for(var subitem of item.itens) {
       menu += `<a href="#${subitem.key}"><li>${subitem.label}</li></a>`
       var docHtml = fs.readFileSync(subitem.path).toString()
+      var urlDoc = "https://github.com/MobileUI/components/tree/master/" + subitem.path.replace('./','');
+      docHtml = docHtml.replace('<!-- DONE -->','<a href="'+urlDoc+'" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>\n<!-- DONE -->')
       docHtml = docHtml.split('<!-- BEGIN -->')[1].split('<!-- DONE -->')[0]
       docHtml = docHtml.replace(`id="_DOC_GENERATE_SPACE_"`, `id="${subitem.key}"`)
-      content += docHtml
+      content += '<div class="content-doc-reader">' + docHtml + '</div>';
   }
   menu += `</ul>`
 }

@@ -53,6 +53,12 @@ $(document).ready(function(){
   var $element = $('.menuland');
   var className = 'hasScrolled';
 
+  function checkVisible(elm) {
+    var rect = elm.getBoundingClientRect();
+    var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+    return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+  }
+
   var checkScroll = function(){
     if ($document.scrollTop() >= 80) {
       $element.addClass(className);
@@ -61,7 +67,18 @@ $(document).ready(function(){
     }
   }
   var checkHashSection = function(){
-
+    var found=false;
+    $('.content-doc-reader').each(function(i,e){
+      if(!found) {
+        if(checkVisible(e)){
+          found=true;
+          var idDoc = $(e).find('h2.title-doc').attr('id');
+          $('.menuland a').removeClass('active');
+          $('.menuland a[href="#'+idDoc+'"]').addClass('active');
+          window.history.replaceState("", document.title, '#'+idDoc);
+        }
+      }
+    });
   }
 
   checkScroll()

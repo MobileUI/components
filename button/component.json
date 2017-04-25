@@ -1,5 +1,6 @@
 {
   "name":"button",
+  "author": "fabiorogeriosj",
   "dependencies": [
     "base"
   ]

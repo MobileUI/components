@@ -1,5 +1,6 @@
 {
   "name":"header",
+  "author": "fabiorogeriosj",
   "dependencies": [
     "base",
     "button"
