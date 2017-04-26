@@ -1,3 +1,4 @@
+/*Create a fixed bar at the top of the page.*/
 .header {
   font-size: 18px;
   display: inline-block;
@@ -7,26 +8,32 @@
   left: 0;
   height: 52px;
 }
-.header.sub {
-  top:52px;
-}
+/*Create a fixed bar at the bottom of the page.*/
 .header.bottom {
   top: initial;
   bottom: 0;
+}
+/*If used with <code>header</code> create a fixed sub-bar at the top of the page, if using with <code>bottom</code> creates a fixed sub-bar at the bottom.*/
+.header.sub {
+  top:52px;
 }
 .header.sub.bottom {
   top: initial;
   bottom: 52px;
 }
+/*Used in the parent element of the <code>header</code>, or body element, to define that the page uses <code>header</code>.*/
 .has-header {
   padding-top: 52px !important;
 }
+/*Used in the parent element of the <code>header</code> and <code>sub</code>, or body element, to define that the page uses <code>sub</code>.*/
 .has-header.has-sub-header {
   padding-top: 104px !important;
 }
+/*Used in the parent element of the <code>header</code> and <code>bottom</code>, or body element, to define that the page uses <code>header</code> in bottom.*/
 .has-footer {
   padding-bottom: 52px !important
 }
+/*Used in the parent element of the <code>header</code> with <code>sub</code> and <code>bottom</code>, or body element, to define that the page uses <code>sub</code> in bottom.*/
 .has-footer.has-sub-footer {
   padding-bottom: 104px !important
 }
@@ -40,12 +47,11 @@
 .header .right {
   padding-right: 5px
 }
+/*Create a title in the header.*/
 .header .title {
   margin-bottom: 15px;
   padding-left: 10px;
   padding-right: 15px;
-}
-.header .title {
   display: inline-block;
 }
 .header button {
@@ -67,6 +73,7 @@
   left: 0;
   z-index: 9;
 }
+/*Create a floating badge next to an icon.*/
 .header .icon-badge {
   position: absolute;
   margin-left: -6px;

@@ -750,7 +750,9 @@
     text-rendering: auto;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+    -moz-osx-font-smoothing: grayscale;
+    min-width: 22px;
+    text-align: center;
 }
 
 .ion-alert:before {

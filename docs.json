@@ -15,6 +15,11 @@
       "category": "Components",
       "itens": [
         {
+          "key":"base",
+          "label":"Base",
+          "path":"./base/base.html"
+        },
+        {
           "key":"colors",
           "label":"Colors",
           "path":"./base/colors.html"

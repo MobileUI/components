@@ -1,3 +1,4 @@
+/*Define that an element has a <code>background-image</code> and must cover the space required.*/
 .cover {
   padding: 15px;
   background-position: 50% 50%;
@@ -6,46 +7,72 @@
   width: 100%;
   position: relative;
 }
+/*Limit the size of an image and add large border.*/
 .cover .avatar {
   height: 100px;
   border-width: 4px;
   margin-bottom: 5px;
 }
-.cover.blend-soft-light {
-  background-blend-mode: soft-light;
-}
-.cover.blend-darken {
-  background-blend-mode: darken;
-}
-.cover.blend-luminosity {
-  background-blend-mode: luminosity;
-}
-.cover.blend-multiply {
-  background-blend-mode: multiply;
-}
-.cover.blend-screen {
-  background-blend-mode: screen;
-}
-.cover.blend-overlay {
-  background-blend-mode: overlay;
-}
+/*Float an element in the footer on the left.*/
 .cover .float-bottom-right,
 .cover .float-bottom-left {
   margin-bottom: -30px;
   z-index: 99;
 }
-.cover .big.float-bottom-right,
-.cover .big.float-bottom-left {
+/*Float an element in the footer on the right.*/
+.cover .big.float-bottom-left,
+  .cover .big.float-bottom-right {
   margin-bottom: -35px;
 }
 .cover .small.float-bottom-right,
 .cover .small.float-bottom-left {
   margin-bottom: -25px;
 }
+/*Set a gradient effect from black to transparent in the background of an element.*/
 .cover .gradient {
   background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
   background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
   width: 100%;
   padding-bottom: 10px;
   padding-top: 20px;
+}
+/*Used when a <code>background-image</code> is set to apply the multiply effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-multiply">multiply blend mode</a>*/
+.cover.blend-multiply {
+  background-blend-mode: multiply;
+}
+/*Used when a <code>background-image</code> is set to apply the screen effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-screen">screen blend mode</a>*/
+.cover.blend-screen {
+  background-blend-mode: screen;
+}
+/*Used when a <code>background-image</code> is set to apply the overlay effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-overlay">overlay blend mode</a>*/
+.cover.blend-overlay {
+  background-blend-mode: overlay;
+}
+/*Used when a <code>background-image</code> is set to apply the darken effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-darken">darken blend mode</a>*/
+.cover.blend-darken {
+  background-blend-mode: darken;
+}
+/*Used when a <code>background-image</code> is set to apply the lighten effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-lighten">lighten blend mode</a>*/
+.cover.blend-lighten {
+  background-blend-mode: lighten;
+}
+/*Used when a <code>background-image</code> is set to apply the color-dodge effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-color-dodge">color-dodge blend mode</a>*/
+.cover.blend-color-dodge {
+  background-blend-mode: color-dodge;
+}
+/*Used when a <code>background-image</code> is set to apply the color-burn effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-color-burn">color-burn blend mode</a>*/
+.cover.blend-color-burn {
+  background-blend-mode: color-burn;
+}
+/*Used when a <code>background-image</code> is set to apply the hard-light effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-hard-light">hard-light blend mode</a>*/
+.cover.blend-hard-light {
+  background-blend-mode: hard-light;
+}
+/*Used when a <code>background-image</code> is set to apply the soft-light effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-soft-light">soft-light blend mode</a>*/
+.cover.blend-soft-light {
+  background-blend-mode: soft-light;
+}
+/*Used when a <code>background-image</code> is set to apply the luminosity effect of CSS3 in the background. See more at: <a target="_blank" href="https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-luminosity">luminosity blend mode</a>*/
+.cover.blend-luminosity {
+  background-blend-mode: luminosity;
 }

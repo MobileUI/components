@@ -10,25 +10,31 @@ a {
   color: #000;
   text-decoration: none;
 }
+/*Floats any element to the left.*/
 .left {
     float: left
 }
+/*Floats any element to the right.*/
 .right {
     float: right
 }
-.align-left {
-    text-align: left;
-}
-.align-center {
-    text-align: center;
-}
-.align-right {
-    text-align: right;
-}
-.align-bottom {
+/*Floats any element to the right bottom.*/
+.bottom {
     position: absolute;
     bottom: 0;
     left: 0;
+}
+/*Align text, icons, and elements to the left.*/
+.align-left {
+    text-align: left;
+}
+/*Align text, icons, and elements to the center.*/
+.align-center {
+    text-align: center;
+}
+/*Align text, icons, and elements to the right.*/
+.align-right {
+    text-align: right;
 }
 .icon {
     font-size: 28px;
@@ -40,6 +46,7 @@ p {
     margin-top: 5px;
     margin-bottom: 5px
 }
+/*Add an internal space.*/
 .padding {
     padding: 10px
 }
@@ -48,94 +55,106 @@ span.padding {
     padding-top: 0;
     padding-bottom: 0
 }
+/*Add a small rounded border.*/
 .radius {
     border-radius: 4px;
 }
+/*Add a large rounded border.*/
 .radius-big {
     border-radius: 22px;
 }
+/*Add a circular border.*/
 .circle {
     border-radius: 50%;
 }
+/*Adds a small border just to the left.*/
 .radius-left {
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px
 }
+/*Adds a small border just to the right.*/
 .radius-right {
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px
 }
+/*Limit the display of a text in only one line with periods at the end.*/
 .ellipsis {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.avatar {
-    border-radius: 50%;
-}
-.bold {
-    font-weight: bold;
-}
+/*Create a shadow on an element (not text).*/
 .shadow {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
+/*Add a space vertically.*/
 .space {
     width: 100%;
     height: 20px;
 }
+/*Add a margin on the bottom.*/
 .margin-button {
   margin-bottom: 10px;
 }
+/*Add a margin on the top.*/
+.margin-top {
+  margin-top: 10px;
+}
+/*Create a shadow in a text.*/
+.text-shadow {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+/*Leave the text and icons small.*/
 .text-small {
     font-size: 14px
 }
 .text-small .icon {
     font-size: 14px
 }
+/*Leave the text and icons large.*/
 .text-big {
     font-size: 22px
 }
 .text-big .icon {
     font-size: 22px
 }
+/*Leave the text and icons huge.*/
 .text-huge {
     font-size: 32px
 }
 .text-huge .icon {
     font-size: 32px
 }
+/*Leave the text thinner.*/
 .text-light {
     font-weight: 300;
 }
+/*Leave a bold text.*/
+.text-bold {
+    font-weight: bold;
+}
+/*Leave the text thicker.*/
 .text-strong {
     font-weight: 800;
 }
+/*Floats an element in the footer to the right.*/
 .float-bottom-right {
     position: absolute;
     right: 15px;
     bottom: 15px
 }
+/*Floats an element in the footer to the left.*/
 .float-bottom-left {
     position: absolute;
     left: 15px;
     bottom: 15px
 }
+/*Create a completely round icon.*/
 .icon-circle {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     text-align: center;
-}
-.col {
-    -moz-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-}
-.row {
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
 }
 .backdrop {
   position: absolute;

@@ -89,6 +89,35 @@ $(document).ready(function(){
     checkHashSection()
   });
 
+  $('.tableDoc').each(function(i,e){
+    var elm = $(e);
+    if((elm.find('tr').length-1) > 4) {
+      var trs = elm.find('tr')
+      for(i in trs){
+        if(i > 4) {
+            $(trs[i]).addClass('hidden')
+        }
+      }
+      var bt = $('<a class="show-doc">Show all '+(elm.find('tr').length-1)+' features.</a>');
+      bt.click(function(){
+        if($(this).text().indexOf('Hide') < 0) {
+          $(this).prev().find('tr').removeClass('hidden')
+          $(this).text('Hide features table');
+        } else {
+          $(this).text('Show all '+($(this).prev().find('tr').length-1)+' features');
+          var trs = $(this).prev().find('tr')
+          for(i in trs){
+            if(i > 4) {
+                $(trs[i]).addClass('hidden')
+            }
+          }
+          $document.scrollTop($(this).position().top - 295)
+        }
+      });
+      elm.parent().after(bt);
+    }
+  });
+
 })
 
 

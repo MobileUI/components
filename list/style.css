@@ -1,8 +1,10 @@
+/*Define an element as list. This feature depends on the <code>item</code> to function properly.*/
 .list {
   width: 100%;
   position: relative;
   border: 1px solid #ddd;
 }
+/*Define an element as item. This feature depends on the <code>list</code> to function properly.*/
 .list .item {
   padding: 15px;
   display: inline-block;
@@ -11,6 +13,7 @@
   position: relative;
   font-size: 18px;
 }
+/*Define a small space between the top and bottom elements.*/
 .list .item.space-small {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -27,6 +30,7 @@
   display: -ms-flexbox;
   display: flex;
 }
+/*Define that a list or an item has no borders.*/
 .list.without-border {
   border: 0;
 }
@@ -42,6 +46,7 @@
   width: -moz-calc(100% - 40px);
   width: calc(100% - 40px);
 }
+/*Define an item without internal spaces.*/
 .list .item.full {
   padding: 0;
   display: flex;
@@ -66,6 +71,7 @@
 }
 .list .left {
   margin-right: 10px;
+  min-width: 25px;
 }
 .list .right {
   margin-right: 20px;
@@ -90,9 +96,11 @@
   align-items: baseline;
   margin-top: 10px;
 }
+/*Set a fixed size for an image.*/
 .list .avatar {
   height: 50px;
 }
+/*Set a floating badge above the image.*/
 .avatar-badge {
   position: absolute;
   margin-left: -4px;

@@ -37,6 +37,7 @@
       <span class="tooltiptext">The dependencies will be installed together with this module</span>
     </div>
     <pre>mobileui install menu</pre>
+    <!-- _DOC_GENERATE_CSS_DOC -->
     <p>
       Your menu need have <code>id</code> and for you open menu, just call function <code>openMenu('ID_YOUR_MENU')</code>, for close menu just call function <code>closeMenu('ID_YOU_MENU')</code>.
       By default the menu is created in the left, but you can add class <code>menu-right</code> for create menu in right position.
@@ -44,7 +45,7 @@
     <p>See example:</p>
 <textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div|grey-200,grey-200 body" height-preview="400px" border="true" multiplatform="true">
 <body class="padding grey-200">
-  <div class="menu menu purple" id="myFirstMenu">
+  <div class="menu purple" id="myFirstMenu">
     <button class="purple-100 full" onclick="closeMenu('myFirstMenu')">Close menu </button>
   </div>
   <div class="menu menu-right green" id="mySecondMenu">
@@ -62,7 +63,7 @@
     <div class="list without-border">
       <div class="item blue">
         <div class="left">
-          <img class="avatar" src="../assets/img/80.jpg">
+          <img class="avatar circle" src="../assets/img/80.jpg">
         </div>
         <h1>Jeanette Fletcher</h1>
         <p>jeanette@example.com</p>
@@ -115,7 +116,7 @@
 <body class="padding grey-100 has-header has-sub-header">
   <div class="menu teal-900 cover blend-multiply" id="menuDiscover" style="background-image:url(../assets/img/nature1.jpg)">
     <div class="cover align-center">
-      <img class="avatar border-white shadow" src="../assets/img/33.jpg">
+      <img class="avatar circle border-white shadow" src="../assets/img/33.jpg">
       <h1 class="text-teal-300">Carter Hudson</h1>
       <p class="text-grey">carter.hudson@mail.com</p>
     </div>
@@ -179,7 +180,7 @@
   <div class="list white without-border radius shadow">
     <div class="item">
       <div class="left">
-        <img class="avatar" src="../assets/img/33.jpg" />
+        <img class="avatar radius" src="../assets/img/33.jpg" />
       </div>
       <h2 class="strong">Carter Hudson</h2>
       <p class="text-red-400">@carterhudson</p>

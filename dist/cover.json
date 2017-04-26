@@ -2,6 +2,7 @@
   "name":"cover",
   "author": "fabiorogeriosj",
   "dependencies": [
-    "base"
+    "base",
+    "grid"
   ]
 }

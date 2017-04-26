@@ -34,21 +34,36 @@ button.circle {
   line-height: 0;
   font-size: 22px;
 }
+/*Determines that the button will have an icon.*/
 button.icon-text {
-  padding-left: 35px;
+  padding-left: 40px;
 }
-button.icon-text i {
+button.icon-text i{
   font-size: 22px;
+}
+/*If the button has the class <code>icon-text</code> and <code>icon-right</code> the icon will be aligned to the right.*/
+button.icon-text.icon-right {
+  padding-left: 12px;
+  padding-right: 40px;
+  position: relative;
+}
+button.icon-right i {
+  position: absolute;
+  right: 12px;
+  text-align: right;
+  margin-top: 2px;
 }
 button[class*="border-"] {
   min-height: 40px;
   line-height: 40px;
 }
+/*Leave the button occupying 100% width of the screen.*/
 button.full {
   width: 100%;
 }
-button.big,
-.buttons-group.big button  {
+/*Leave the big button.*/
+.buttons-group.big button,
+button.big  {
   font-size: 22px;
   min-height: 50px;
   line-height: 50px;
@@ -61,11 +76,16 @@ button.circle.big {
 button.big.icon-text {
   padding-left: 40px;
 }
+button.big.icon-text.icon-right {
+  padding-left: 12px;
+  padding-right: 40px;
+}
 button.big.icon-text i {
   font-size: 26px;
 }
-button.small,
-.buttons-group.small button {
+/*Leave the small button.*/
+.buttons-group.small button,
+button.small {
   font-size: 12px;
   min-height: 30px;
   line-height: 30px;
@@ -78,9 +98,14 @@ button.circle.small {
 button.small.icon-text {
   padding-left: 30px;
 }
+button.small.icon-text.icon-right {
+  padding-left: 12px;
+  padding-right: 35px;
+}
 button.small.icon-text i {
   font-size: 18px;
 }
+/*Create groups of buttons*/
 .buttons-group {
   display: inline-block;
 }

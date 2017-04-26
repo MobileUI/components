@@ -1,0 +1,13 @@
+/*Create a line.*/
+.row {
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+/*Create a column.*/
+.col {
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
