@@ -11,6 +11,10 @@
   position: relative;
   font-size: 18px;
 }
+.list .item.space-small {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 .list .item.mark {
   border-right: 0;
   border-top: 0;

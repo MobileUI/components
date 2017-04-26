@@ -4,7 +4,7 @@
   left: 0;
   width: 300px;
   height: 100%;
-  z-index: 9999;
+  z-index: 99999;
   transform: translateX(-312px);
   transition-duration: 280ms;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
