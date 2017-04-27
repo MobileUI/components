@@ -1,6 +1,5 @@
 /*Define an element being a menu, being able to disconnect over the page or to push the page, depending on the operating system.*/
 .menu {
-  background-color: #fff;
   position: absolute;
   top: 0;
   left: 0;
