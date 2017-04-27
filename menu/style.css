@@ -10,6 +10,9 @@
   transition-duration: 280ms;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
+.menu.cover {
+  width: 300px;
+}
 /*Set a menu on the right side.*/
 .menu.menu-right {
   right: 0;
@@ -33,6 +36,9 @@
     transform: translateX(-264px);
     box-shadow: none;
 }
+.platform-ios .menu.cover {
+  width: 264px;
+}
 .platform-ios .menu.menu-right {
   transform: translateX(105%);
   transition-duration: 280ms;
@@ -46,10 +52,12 @@
   transform:none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
-.platform-ios .body {
+.platform-ios .body,
+.platform-ios body {
   transition-duration: 280ms;
 }
-.platform-ios .body.side-menu {
+.platform-ios .body.side-menu,
+.platform-ios body.side-menu {
     transform: translateX(264px);
     border-left: 1px solid rgba(0, 0, 0, 0.15);
 }
