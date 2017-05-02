@@ -12,9 +12,18 @@ window.openMenu = function(m){
       window.closeMenu(name);
     }, false);
     if(SO.code === 2) {
+      m.style.height=window.innerHeight+'px';
       var classSideMenu = ' side-menu';
       if(m.className.indexOf('menu-right') >= 0) {
         classSideMenu = ' side-menu-right';
+        var headers = document.getElementsByClassName('header');
+        if(headers.length){
+          for(i in headers){
+            if(headers[i].className && headers[i].className.indexOf('side-menu-right') < 0) {
+              headers[i].className += ' side-menu-right';
+            }
+          }
+        }
       }
       if(m.parentNode.className.indexOf('body') >= 0) {
         m.parentNode.className += classSideMenu;
@@ -28,6 +37,14 @@ window.openMenu = function(m){
 window.closeMenu = function(m){
   m = document.getElementById(m);
   m.className = m.className.replace('open','');
+  var headers = document.getElementsByClassName('header');
+  if(headers.length){
+    for(i in headers){
+      if(headers[i].className && headers[i].className.indexOf('side-menu-right') >= 0) {
+        headers[i].className = headers[i].className.replace(' side-menu-right','');
+      }
+    }
+  }
   var e = m.parentNode.getElementsByClassName('backdrop-menu')
   if(e && e.length){
     e = e[0];

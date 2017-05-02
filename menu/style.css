@@ -41,7 +41,7 @@
 }
 .platform-ios .menu.menu-right {
   transform: translateX(105%);
-  transition-duration: 280ms;
+  transition-duration: 0ms;
 }
 .platform-ios .menu.open {
   transform: translateX(-264px);
@@ -54,13 +54,15 @@
 }
 .platform-ios .body,
 .platform-ios body {
-  transition-duration: 280ms;
+  transition-duration: 0ms;
 }
 .platform-ios .body.side-menu,
-.platform-ios body.side-menu {
+.platform-ios.side-menu {
     transform: translateX(264px);
     border-left: 1px solid rgba(0, 0, 0, 0.15);
 }
-.platform-ios .body.side-menu-right {
+.platform-ios .body.side-menu-right,
+.platform-ios.side-menu-right,
+.platform-ios .header.side-menu-right {
     margin-left: -264px;
 }
