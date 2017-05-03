@@ -1,4 +1,19 @@
+var theme = 'default'
+var mode = 'text/html'
+var idGenerate = 100
 $(document).ready(function(){
+  $('textarea.bind-code-example').each(function(i, block) {
+    if($(block).attr('mode')) {
+      mode = $(block).attr('mode')
+    }
+    CodeMirror.fromTextArea(block, {
+      lineNumbers: false,
+      mode: mode,
+      theme: theme,
+      readOnly: true
+    });
+  });
+
   $('textarea.bind-code').each(function(i, block) {
     var code = $(block).val()
     var mode = $(block).attr('mode')
@@ -9,28 +24,19 @@ $(document).ready(function(){
     var multiplatform = $(block).attr('multiplatform')
     var heightPreview = $(block).attr('height-preview')
     var idResult = $(block).attr('id-result')
-    var theme = 'default'
     if(replace) {
       replace = replace.split('|');
       for(var i in replace){
         code = code.replace(new RegExp(replace[i].split(',')[0], 'g'), replace[i].split(',')[1]);
       }
     }
-    if(!mode) {
-      mode = 'text/html'
-    }
-    var editor = CodeMirror.fromTextArea(block, {
-      lineNumbers: false,
-      mode: mode,
-      theme: theme,
-      readOnly: true
-    });
     if(absolute) {
       code = code.replace(new RegExp('"header', 'g'), '"header header-absolute')
     }
     var resultStyle = ''
     var resultClass = 'result'
-    var id = idResult ? idResult : new Date().getTime();
+    var id = idResult ? idResult : ++idGenerate;
+    $(block).attr('id',id+'_code');
     var attrs = ' id="'+id+'" '
     if(border) {
       resultClass += ' with-border'
@@ -39,14 +45,16 @@ $(document).ready(function(){
       resultStyle += 'height:'+heightPreview
       resultClass += ' height-change'
     }
-    var multiplatformHtml = '';
+    var divHeader = '<div class="header-bind-code">';
     if(multiplatform) {
-      multiplatformHtml = '<div style="margin-bottom:10px">';
-      multiplatformHtml += '<button class="small blue" onclick="previewPlatform(this, '+id+', 1)">Android</button>';
-      multiplatformHtml += '<button class="small white" onclick="previewPlatform(this, '+id+', 2)">iOS</button>';
-      multiplatformHtml += '</div>';
+      divHeader += '<button class="small border-blue" onclick="previewPlatform(this, '+id+', 1)">Preview Android</button>';
+      divHeader += '<button class="small" onclick="previewPlatform(this, '+id+', 2)">Preview iOS</button>';
+    } else {
+      divHeader += '<button class="small border-blue" onclick="showPreview(this, '+id+')">Preview</button>';
     }
-    $(block).after(multiplatformHtml+'<div '+attrs+' class="'+resultClass+'" style="'+resultStyle+'">'+code+'<div class="cls"></div></div>')
+    divHeader += '<button class="small" onclick="showCode(this, '+id+')">Code</button>';
+    divHeader += '</div>'
+    $(block).after(divHeader+'<div '+attrs+' class="'+resultClass+'" style="'+resultStyle+'">'+code+'<div class="cls"></div></div><div class="line"></div>')
   });
 
   var $document = $(document);
@@ -141,9 +149,42 @@ window.openMenuLand = function(m){
   }
 }
 
+window.showPreview = function(e, id){
+  $(e).parent().find('.border-blue').removeClass('border-blue');
+  $(e).addClass('border-blue');
+  $('#'+id).removeClass('hidden');
+  if($('textarea[id="'+id+'_code"]').next().is('.CodeMirror')){
+    $('textarea[id="'+id+'_code"]').next().addClass('hidden');
+  }
+}
+
+window.showCode = function(e, id){
+  $(e).parent().find('.border-blue').removeClass('border-blue');
+  $(e).addClass('border-blue');
+  $('#'+id).addClass('hidden');
+  if(!$('textarea[id="'+id+'_code"]').is('.binded')){
+    $('textarea[id="'+id+'_code"]').addClass('binded');
+    $('#'+id).after($('textarea[id="'+id+'_code"]'));
+    CodeMirror.fromTextArea($('textarea[id="'+id+'_code"]')[0], {
+      lineNumbers: false,
+      mode: mode,
+      theme: theme,
+      readOnly: true
+    });
+  } else {
+    if($('textarea[id="'+id+'_code"]').next().is('.CodeMirror')){
+      $('textarea[id="'+id+'_code"]').next().removeClass('hidden');
+    }
+  }
+}
+
 window.previewPlatform = function(e, id, p){
-  $(e).parent().find('.blue').removeClass('blue').addClass('white');
-  $(e).removeClass('white').addClass('blue');
+  $(e).parent().find('.border-blue').removeClass('border-blue');
+  $(e).addClass('border-blue');
+  $('#'+id).removeClass('hidden');
+  if($('textarea[id="'+id+'_code"]').next().is('.CodeMirror')){
+    $('textarea[id="'+id+'_code"]').next().addClass('hidden');
+  }
   if(p === 1){
     $('#'+id).removeClass('platform-ios').addClass('platform-android');
     SO.code = 1;

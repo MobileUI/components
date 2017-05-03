@@ -28,6 +28,7 @@ a {
   color: rgba(0, 0, 0, 0.4);
   float: right;
   font-size: 14px;
+  margin-top: -10px;
 }
 .dependency strong {
   font-weight: 700;
@@ -35,7 +36,6 @@ a {
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
 }
 .tooltip .tooltiptext {
     visibility: hidden;
@@ -164,7 +164,7 @@ a {
 }
 pre, .CodeMirror {
   padding: 20px;
-  background-color: #ebebeb;
+  background-color: #f2f2f2;
   height: auto;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -283,13 +283,25 @@ textarea.bind-code {
     }
 }
 .button-contribute {
-  font-size: 16px;
+  font-size: 12px;
   padding: 5px;
   padding-left: 20px;
   padding-right: 20px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding: 0;
+  margin-top: 10px;
+  border-color: #fff;
+}
+.button-contribute:hover {
+  border-color: #ccc;
+}
+.button-contribute .icon {
+  font-size: 20px;
 }
 .button-contribute .ion-social-github:before {
-  margin-left: 10px;
+  margin-left: 5px;
   float: right;
   margin-top: 3px;
 }
@@ -297,6 +309,9 @@ textarea.bind-code {
   margin-bottom: 10px;
 }
 .content-table tr.hidden{
+  display: none;
+}
+.hidden {
   display: none;
 }
 .tableDoc {
@@ -345,4 +360,29 @@ code {
 .tableDoc td:first-child code {
     padding: 3px 9px;
     background: #fff2f2;
+}
+.border-blue {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-width: 2px;
+}
+.header-bind-code {
+  border-bottom: 1px solid #e5e5e5;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.line {
+  width: 100%;
+  background-color: #e5e5e5;
+  height: 1px;
+  display: block;
+  clear: both;
+  margin-top: 10px;
+}
+.header-bind-code button.small {
+  background: none;
+  margin-right: 10px;
+  text-transform: uppercase;
 }
