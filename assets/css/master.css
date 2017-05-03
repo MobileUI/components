@@ -9,20 +9,37 @@ body {
 .font-raleway {
   font-family: 'Raleway', sans-serif;
 }
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
 ol, ul {
     list-style: none;
 }
-a {
+.content-doc-reader a[target="_blank"] {
   opacity: 0.8;
   transition: .1s ease-in-out;
   transition-property: opacity, border-color;
-  color: #4F8EF7;
+  color: #004bc9;
   text-decoration: none;
+  font-weight: bold;
+}
+.content-doc-reader a[target="_blank"]:hover {
+  background-color: #004bc9;
+  color: #fff;
+}
+.content-doc-reader a[target="_blank"]:hover i {
+  color: #fff;
+}
+a.show-doc {
+  font-size: 14px;
 }
 .result a {
   cursor: pointer;
   color: #000;
   text-decoration: none;
+}
+.result.result-icon .icon {
+  margin: 5px;
 }
 .dependency {
   color: rgba(0, 0, 0, 0.4);
@@ -120,6 +137,9 @@ a {
   margin-top: 10px;
   color: #24292e;
   text-transform: uppercase;
+}
+.content .content-doc-reader h2.title-doc {
+  margin-top: 0;
 }
 .content h2.title-doc {
   padding-top: 50px;
@@ -282,7 +302,8 @@ textarea.bind-code {
       width: 100%;
     }
 }
-.button-contribute {
+a.button-contribute,
+.content-doc-reader a.button-contribute[target="_blank"] {
   font-size: 12px;
   padding: 5px;
   padding-left: 20px;
@@ -293,12 +314,21 @@ textarea.bind-code {
   padding: 0;
   margin-top: 10px;
   border-color: #fff;
-}
-.button-contribute:hover {
-  border-color: #ccc;
+  color: #686868;
+  font-weight: 400;
 }
 .button-contribute .icon {
   font-size: 20px;
+  color: #686868;
+}
+a.button-contribute:hover,
+.content-doc-reader a.button-contribute[target="_blank"]:hover {
+  border-color: #ccc;
+  background: none;
+  color: #000;
+}
+.content-doc-reader a.button-contribute[target="_blank"]:hover i {
+  color: #000;
 }
 .button-contribute .ion-social-github:before {
   margin-left: 5px;
@@ -361,11 +391,12 @@ code {
     padding: 3px 9px;
     background: #fff2f2;
 }
-.border-blue {
+.header-bind-code .border-green {
   border-top: 0;
   border-left: 0;
   border-right: 0;
   border-width: 2px;
+  border-color: #7fc7af;
 }
 .header-bind-code {
   border-bottom: 1px solid #e5e5e5;
@@ -385,4 +416,117 @@ code {
   background: none;
   margin-right: 10px;
   text-transform: uppercase;
+}
+.banner {
+  background-color: #24292e;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  overflow: hidden;
+  height: 500px;
+  border-bottom: 2px solid #24292e;
+}
+.banner h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 200;
+  font-size: 35px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.banner h2 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+.hero-cards {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    min-height: 41em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    visibility: hidden;
+    margin-top: 380px;
+}
+.hero-card-1,
+.hero-card-2,
+.hero-card-3,
+.hero-card-4,
+.hero-card-5,
+.hero-card-6,
+.hero-card-7,
+.hero-card-8,
+.hero-card-9 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  margin-left: -157px;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,.4);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  width: 307px;
+  height: 546px;
+  padding: 1px;
+  background-image: url(../img/sprite.jpg);
+  background-repeat: no-repeat;
+}
+.hero-card-1 {
+    z-index: 109!important;
+    display: block;
+    background-position: -2px -2027px;
+}
+.hero-card-2 {
+    z-index: 108!important;
+    display: block;
+    background-position: -2452px -1102px;
+    margin-top: 50px;
+}
+.hero-card-3 {
+    z-index: 107!important;
+    display: block;
+    background-position: -2141px -2px;
+    margin-top: 50px;
+}
+.hero-card-4 {
+    z-index: 106!important;
+    display: block;
+    background-position: -1722px -1267px;
+    margin-top: 75px;
+}
+.hero-card-5 {
+    z-index: 105!important;
+    display: block;
+    background-position: -313px -2027px;
+    margin-top: 75px;
+}
+.hero-card-6 {
+    z-index: 104!important;
+    display: block;
+    background-position: -2141px -552px;
+    margin-top: 100px;
+}
+.hero-card-7 {
+    z-index: 103!important;
+    display: block;
+    background-position: -2141px -1102px;
+    margin-top: 100px;
+}
+.hero-card-8 {
+    z-index: 102!important;
+    display: block;
+    background-position: -2452px -2px;
+    margin-top: 120px;
+}
+.hero-card-9 {
+    z-index: 101!important;
+    display: block;
+    background-position: -2452px -552px;
+    margin-top: 120px;
 }

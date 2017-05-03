@@ -2,6 +2,51 @@ var theme = 'default'
 var mode = 'text/html'
 var idGenerate = 100
 $(document).ready(function(){
+  var animeBanner = function(){
+    $('.hero-cards').clearQueue().stop().animate({ marginTop: "0" }, 1000, function() {
+      $('.hero-card-2').clearQueue().stop().animate({ left: "-=250" }, 1000, function() {
+        $('.hero-card-4').clearQueue().stop().animate({ left: "-=400" }, 1000, function() {
+          $('.hero-card-6').clearQueue().stop().animate({ left: "-=500" }, 1000, function() {
+
+          });
+        });
+      });
+      $('.hero-card-3').clearQueue().stop().animate({ left: "+=250" }, 1000, function() {
+        $('.hero-card-5').clearQueue().stop().animate({ left: "+=400" }, 1000, function() {
+          $('.hero-card-7').clearQueue().stop().animate({ left: "+=500" }, 1000, function() {
+
+          });
+        });
+      });
+    });
+  }
+
+  var tmpImg = new Image();
+  tmpImg.src = '/img/sprite.jpg';
+  tmpImg.onload = function() {
+    $('.hero-cards').css('visibility','visible');
+    animeBanner();
+  };
+
+  $(window).resize(function() {
+    $('.hero-card-2').clearQueue().stop();
+    $('.hero-card-3').clearQueue().stop();
+    $('.hero-card-4').clearQueue().stop();
+    $('.hero-card-5').clearQueue().stop();
+    $('.hero-card-6').clearQueue().stop();
+    $('.hero-card-7').clearQueue().stop();
+    $('.hero-card-8').clearQueue().stop();
+
+    $('.hero-card-2').removeAttr('style');
+    $('.hero-card-3').removeAttr('style');
+    $('.hero-card-4').removeAttr('style');
+    $('.hero-card-5').removeAttr('style');
+    $('.hero-card-6').removeAttr('style');
+    $('.hero-card-7').removeAttr('style');
+    $('.hero-card-8').removeAttr('style');
+    animeBanner();
+  });
+
   $('textarea.bind-code-example').each(function(i, block) {
     if($(block).attr('mode')) {
       mode = $(block).attr('mode')
@@ -24,6 +69,7 @@ $(document).ready(function(){
     var multiplatform = $(block).attr('multiplatform')
     var heightPreview = $(block).attr('height-preview')
     var idResult = $(block).attr('id-result')
+    var customClass = $(block).attr('custom-class')
     if(replace) {
       replace = replace.split('|');
       for(var i in replace){
@@ -45,12 +91,15 @@ $(document).ready(function(){
       resultStyle += 'height:'+heightPreview
       resultClass += ' height-change'
     }
+    if(customClass) {
+      resultClass += ' ' + customClass;
+    }
     var divHeader = '<div class="header-bind-code">';
     if(multiplatform) {
-      divHeader += '<button class="small border-blue" onclick="previewPlatform(this, '+id+', 1)">Preview Android</button>';
+      divHeader += '<button class="small border-green" onclick="previewPlatform(this, '+id+', 1)">Preview Android</button>';
       divHeader += '<button class="small" onclick="previewPlatform(this, '+id+', 2)">Preview iOS</button>';
     } else {
-      divHeader += '<button class="small border-blue" onclick="showPreview(this, '+id+')">Preview</button>';
+      divHeader += '<button class="small border-green" onclick="showPreview(this, '+id+')">Preview</button>';
     }
     divHeader += '<button class="small" onclick="showCode(this, '+id+')">Code</button>';
     divHeader += '</div>'
@@ -68,7 +117,7 @@ $(document).ready(function(){
   }
 
   var checkScroll = function(){
-    if ($document.scrollTop() >= 80) {
+    if ($document.scrollTop() >= 580) {
       $element.addClass(className);
     } else {
       $element.removeClass(className);
@@ -106,7 +155,7 @@ $(document).ready(function(){
             $(trs[i]).addClass('hidden')
         }
       }
-      var bt = $('<a class="show-doc">Show all '+(elm.find('tr').length-1)+' features.</a>');
+      var bt = $('<button class="show-doc">Show all '+(elm.find('tr').length-1)+' features.</button>');
       bt.click(function(){
         if($(this).text().indexOf('Hide') < 0) {
           $(this).prev().find('tr').removeClass('hidden')
@@ -150,8 +199,8 @@ window.openMenuLand = function(m){
 }
 
 window.showPreview = function(e, id){
-  $(e).parent().find('.border-blue').removeClass('border-blue');
-  $(e).addClass('border-blue');
+  $(e).parent().find('.border-green').removeClass('border-green');
+  $(e).addClass('border-green');
   $('#'+id).removeClass('hidden');
   if($('textarea[id="'+id+'_code"]').next().is('.CodeMirror')){
     $('textarea[id="'+id+'_code"]').next().addClass('hidden');
@@ -159,8 +208,8 @@ window.showPreview = function(e, id){
 }
 
 window.showCode = function(e, id){
-  $(e).parent().find('.border-blue').removeClass('border-blue');
-  $(e).addClass('border-blue');
+  $(e).parent().find('.border-green').removeClass('border-green');
+  $(e).addClass('border-green');
   $('#'+id).addClass('hidden');
   if(!$('textarea[id="'+id+'_code"]').is('.binded')){
     $('textarea[id="'+id+'_code"]').addClass('binded');
@@ -179,8 +228,8 @@ window.showCode = function(e, id){
 }
 
 window.previewPlatform = function(e, id, p){
-  $(e).parent().find('.border-blue').removeClass('border-blue');
-  $(e).addClass('border-blue');
+  $(e).parent().find('.border-green').removeClass('border-green');
+  $(e).addClass('border-green');
   $('#'+id).removeClass('hidden');
   if($('textarea[id="'+id+'_code"]').next().is('.CodeMirror')){
     $('textarea[id="'+id+'_code"]').next().addClass('hidden');

@@ -4,7 +4,9 @@
     font-weight: 400;
     font-style: normal
 }
-
+i.icon {
+  background: none;
+}
 .ion,
 .ion-alert-circled:before,
 .ion-alert:before,
