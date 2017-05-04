@@ -6,8 +6,7 @@ button {
   transition: color 200ms ease;
   font-size: 14px;
   border: none;
-  background-color: none;
-  background-color: #f8f8f8;
+  background-color: rgba(0,0,0,0);
   color: #444;
   position: relative;
   display: inline-block;

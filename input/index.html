@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway:400,700|Roboto:300,400,900," rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chewy|Dosis|Raleway:400,700|Roboto:300,400,900," rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
     <link rel="stylesheet" href="../base/reset.css">
     <link rel="stylesheet" href="../base/mobileui.css">
@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../header/style.css">
     <link rel="stylesheet" href="../button/style.css">
     <link rel="stylesheet" href="../list/style.css">
+    <link rel="stylesheet" href="../cover/style.css">
+    <link rel="stylesheet" href="../grid/style.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../assets/css/master.css">
     <style>
@@ -93,14 +95,79 @@
     <button class="pink radius full">Login user</button>
   </div>
 </div></textarea>
-    <p>You can put <code>align-right</code> for align your text in right item.</p>
-    <textarea class="bind-code" mode="text/html">
-    <div class="list">
-      <div class="item label-fixed">
-        <label>Value</label>
-        <input type="number" class="align-right">
+<p>You can put <code>align-right</code> for align your text in right item.</p>
+<textarea class="bind-code" mode="text/html">
+<div class="list">
+  <div class="item label-fixed">
+    <label>Value</label>
+    <input type="number" class="align-right">
+  </div>
+</div></textarea>
+    <p>
+      You can use <a href="#icons">icons</a> in your input. Simply add a class <code>icon</code> and your <code>ion-*</code>.
+      By default the icon will take the left. However, you can put them on the right by adding the class <code>icon-right</code>.
+    </p>
+<textarea class="bind-code" mode="text/html">
+<div class="list">
+  <div class="item icon ion-search">
+    <input type="text" placeholder="Search">
+  </div>
+  <div class="item icon ion-heart text-red">
+    <input type="text" placeholder="Search">
+  </div>
+  <div class="item icon ion-music-note icon-right">
+    <input type="text" placeholder="Search">
+  </div>
+  <div class="item icon ion-person pink text-pink-300">
+    <input class="placeholder-white text-white" type="text" placeholder="Enter your name">
+  </div>
+</div>
+<p>Radius input</p>
+<div class="list without-border">
+  <div class="item radius icon ion-person grey-200">
+    <input type="text" placeholder="Enter your name">
+  </div>
+</div></textarea>
+    <p>You can be creative and also use the other components such as <a href="#cover">cover</a> and <a href="#grid">grid</a> components.
+      For this we recommend you use the module NPM <a href="https://www.npmjs.com/package/getfont" target="_blank">getfont</a>.</p>
+<textarea class="bind-code" mode="text/html" replace="body,div" height-preview="500px" header-absolute="true">
+<style>
+  #titleDiscoveryNow {
+    font-family: 'Chewy', cursive;
+    font-size: 45px;
+    line-height: 24px;
+    z-index: 33;
+    position: relative;
+  }
+</style>
+<body class="cover vertical-align-center blue-grey-900 align-center blend-soft-light" style="background-image:url('../assets/img/music1.jpg')">
+  <div class="space"></div>
+  <div class="space"></div>
+  <div class="space"></div>
+  <p class="text-white">WELCOME TO</p>
+  <h1 id="titleDiscoveryNow" class="text-blue">DiscoveryNow</h1>
+  <p class="text-grey-300">Find good music all the day for you</p>
+  <div class="space"></div>
+  <div class="space"></div>
+  <div class="row">
+    <div class="col-90 col-center">
+      <div class="list without-border opacity-60">
+        <div class="item icon ion-android-mail border-grey border-bottom">
+          <input class="placeholder-white text-white" type="email" placeholder="Enter your email">
+        </div>
+        <div class="item icon ion-android-lock border-grey border-bottom">
+          <input class="placeholder-white text-white" type="password" placeholder="Enter your password">
+        </div>
       </div>
-    </div></textarea>
+      <div class="space"></div>
+      <div class="space"></div>
+      <button class="border-blue text-blue full">SIGN IN</button>
+    </div>
+  </div>
+  <div class="header bottom gradient">
+    <button class="text-grey">SIGN UP</button>
+  </div>
+</body></textarea>
     <!-- DONE -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>

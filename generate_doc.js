@@ -32,6 +32,7 @@ for(var i in docs.docs) {
             var description = docCss[i].split('{')[0].split('*/')[0]
             var classes = docCss[i].split('{')[0].split('*/')[1].split('.');
             var className = classes[classes.length-1];
+            className = className.split(':')[0];
             if(description && className) {
               listCssDoc.push({className: className, description: description})
             }

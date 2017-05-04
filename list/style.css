@@ -34,6 +34,12 @@
 .list.without-border {
   border: 0;
 }
+/*Define that a list or an item has a bottom border.*/
+.list.without-border .item.border-bottom,
+.list .item.without-border.border-bottom {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
 .list.without-border .item,
 .list .item.without-border {
   border: none;

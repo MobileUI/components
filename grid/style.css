@@ -11,3 +11,70 @@
     -ms-flex: 1;
     flex: 1;
 }
+/*Create a column with 10% of the row.*/
+.col-10 {
+  -moz-flex: 0 0 10%;
+  -ms-flex: 0 0 10%;
+  flex: 0 0 10%;
+  max-width: 10%;
+}
+/*Create a column with 20% of the row.*/
+.col-20 {
+  -moz-flex: 0 0 20%;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+/*Create a column with 25% of the row.*/
+.col-25 {
+  -moz-flex: 0 0 25%;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+/*Create a column with 33% of the row.*/
+.col-33, .col-34 {
+  -moz-flex: 0 0 33.3333%;
+  -ms-flex: 0 0 33.3333%;
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+}
+/*Create a column with 50% of the row.*/
+.col-50 {
+  -moz-flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+/*Create a column with 66% of the row.*/
+.col-66, .col-67 {
+  -moz-flex: 0 0 66.6666%;
+  -ms-flex: 0 0 66.6666%;
+  flex: 0 0 66.6666%;
+  max-width: 66.6666%;
+}
+/*Create a column with 75% of the row.*/
+.col-75 {
+  -moz-flex: 0 0 75%;
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+/*Create a column with 80% of the row.*/
+.col-80 {
+  -moz-flex: 0 0 80%;
+  -ms-flex: 0 0 80%;
+  flex: 0 0 80%;
+  max-width: 80%;
+}
+/*Create a column with 90% of the row.*/
+.col-90 {
+  -moz-flex: 0 0 90%;
+  -ms-flex: 0 0 90%;
+  flex: 0 0 90%;
+  max-width: 90%;
+}
+/*Center a column on the row.*/
+.col-center {
+  margin: auto;
+}

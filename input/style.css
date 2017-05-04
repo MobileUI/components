@@ -1,11 +1,14 @@
 input, textarea {
   border: none;
   background: none;
-  font-size: 16px;
+  font-size: 14px;
   width: 100%;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+}
+label {
+  font-size: 14px;
 }
 /*Define a fixed label beside the input element.*/
 .label-fixed,
@@ -45,4 +48,34 @@ input, textarea {
 .label-float label.focus {
   -webkit-transform: translate3d(0, 0, 0) scale(0.8);
   transform: translate3d(0, 0, 0) scale(0.8);
+}
+.item.icon {
+  display: flex;
+}
+.item.icon.radius {
+  border-radius: 6px;
+}
+.item.icon:not([class*="text-"]) {
+  color: #9f9f9f;
+}
+.item input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.8);
+}
+/*Defines a light color for the placeholder.*/
+.item input.placeholder-white::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.item.icon:before {
+  position: absolute;
+}
+/*Align an icon from a field to the right.*/
+.item.icon.icon-right:before {
+  right: 20px;
+}
+.item.icon input {
+  padding-left: 30px;
+}
+.item.icon.icon-right input {
+  padding-left: 0;
+  padding-right: 30px;
 }

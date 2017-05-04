@@ -1128,6 +1128,9 @@
 .blue-grey-400 {
     background-color: #78909c
 }
+.transparent {
+  background-color: rgba(0, 0, 0, 0);
+}
 
 .blue-grey-500 {
     background-color: #607d8b

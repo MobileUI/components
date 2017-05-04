@@ -68,6 +68,11 @@
           "key":"menu",
           "label":"Menu",
           "path":"./menu/index.html"
+        },
+        {
+          "key":"grid",
+          "label":"Grid",
+          "path":"./grid/index.html"
         }
       ]
     }
