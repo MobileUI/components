@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../header/style.css">
     <link rel="stylesheet" href="../button/style.css">
     <link rel="stylesheet" href="../list/style.css">
+    <link rel="stylesheet" href="../cover/style.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../assets/css/master.css">
     <style>
@@ -38,6 +39,7 @@
         For use this components you need install with command:
       </p>
       <pre>mobileui install grid</pre>
+      <!-- _DOC_GENERATE_CSS_DOC -->
 <textarea class="bind-code" mode="text/html">
 <div class="row">
   <div class="col red">
@@ -47,17 +49,103 @@
     col2
   </div>
 </div>
+<br>
 <div class="row">
-  <div class="col border-grey grey-300">
+  <div class="col red">
     col1
   </div>
-  <div class="col border-grey grey-300">
+  <div class="col blue">
     col2
   </div>
-  <div class="col border-grey grey-300">
+  <div class="col green">
+    col3
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-50 red">
+    col1 - 50%
+  </div>
+  <div class="col blue">
+    col2
+  </div>
+  <div class="col green">
     col3
   </div>
 </div></textarea>
+    <p>
+      See this good example using <a href="#header">header</a>, <a href="#cover">cover</a> and <a href="#list">list</a> components.
+    </p>
+<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div" height-preview="550px">
+<body class="has-header grey-200">
+<div class="header blue-grey-900">
+  <div class="left">
+    <button class="icon ion-navicon"></button>
+  </div>
+  <div class="title">
+     Angelina Jolie
+  </div>
+  <div class="right">
+    <button class="icon ion-android-search"></button>
+    <button class="icon ion-android-more-vertical"></button>
+  </div>
+</div>
+<div class="cover without-padding" style="background-image:url(../assets/img/tombraider1.jpg)">
+  <div class="space-big"></div>
+  <div class="space-huge"></div>
+  <div class="list gradient without-border">
+    <div class="item space-small row text-white align-center">
+      <div class="col">
+        <span class="text-big text-bold">75</span>
+        <p class="text-small text-light text-grey-400">MOVIES</p>
+      </div>
+      <div class="col">
+        <span class="text-big text-bold">37K</span>
+        <p class="text-small text-light text-grey-400">FOLLOWERS</p>
+      </div>
+      <div class="col">
+        <span class="text-big text-bold">265</span>
+        <p class="text-small text-light text-grey-400">FOLLOWING</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-55 cover radius margin without-padding" style="background-image:url(../assets/img/scene1.jpg)">
+    <div class="right text-small padding text-red">
+      <i class="icon ion-heart"></i> 233
+    </div>
+    <div class="space-huge"></div>
+    <div class="space-big"></div>
+    <div class="bottom gradient padding radius">
+      <h1 class="text-white text-small">Cruel scene in Maleficent</h1>
+    </div>
+  </div>
+  <div class="col cover radius margin without-padding" style="background-image:url(../assets/img/scene3.jpg)">
+    <div class="right text-small padding text-red">
+      <i class="icon ion-heart"></i> 55
+    </div>
+    <div class="space-huge"></div>
+    <div class="space-big"></div>
+    <div class="bottom gradient padding radius">
+      <h1 class="text-white text-small">Good scene</h1>
+    </div>
+  </div>
+</div>
+<div class="row padding without-padding-top">
+  <div class="col cover radius without-padding" style="background-image:url(../assets/img/scene4.png)">
+    <div class="right text-small padding text-red">
+      <i class="icon ion-heart"></i> 876
+    </div>
+    <div class="space-huge"></div>
+    <div class="space-big"></div>
+    <div class="bottom gradient padding radius">
+      <h1 class="text-white text-small">Meet the Badass Women</h1>
+    </div>
+  </div>
+</div>
+</body></textarea>
+
     <!-- DONE -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>

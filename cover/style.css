@@ -7,11 +7,18 @@
   width: 100%;
   position: relative;
 }
+/*Remove space inner the cover.*/
+.cover.without-padding {
+  padding: 0;
+}
 /*Limit the size of an image and add large border.*/
 .cover .avatar {
   height: 100px;
   border-width: 4px;
   margin-bottom: 5px;
+}
+.cover .item .avatar {
+  height: 50px;
 }
 /*Float an element in the footer on the left.*/
 .cover .float-bottom-right,
