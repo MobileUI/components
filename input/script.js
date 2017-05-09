@@ -11,7 +11,7 @@
         parent.addEventListener('click', function(){
           if(this.getElementsByTagName('input').length) {
             this.getElementsByTagName('input')[0].focus();
-            if(this.getElementsByTagName('input')[0].type === 'radio') {
+            if(this.getElementsByTagName('input')[0].type === 'radio' && !this.getElementsByTagName('input')[0].disabled) {
               this.getElementsByTagName('input')[0].checked=true;
             }
           }
