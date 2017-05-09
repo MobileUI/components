@@ -2,11 +2,18 @@
   setTimeout(function(){
     var inputs = document.getElementsByTagName('input');
     for(i in inputs){
-      if(inputs[i].parentNode && inputs[i].parentNode.className.indexOf('item') >=0 && inputs[i].parentNode.className.indexOf('bind-input-event-click') < 0 ){
-        inputs[i].parentNode.className += ' bind-input-event-click';
-        inputs[i].parentNode.addEventListener('click', function(){
+      var parent = inputs[i].parentNode;
+      if(parent && (parent.className.indexOf('left') >=0 || parent.className.indexOf('right') >=0) && parent.parentNode.className.indexOf('item') >= 0){
+        parent = parent.parentNode;
+      }
+      if(parent && parent.className.indexOf('item') >=0 && parent.className.indexOf('bind-input-event-click') < 0 ){
+        parent.className += ' bind-input-event-click';
+        parent.addEventListener('click', function(){
           if(this.getElementsByTagName('input').length) {
             this.getElementsByTagName('input')[0].focus();
+            if(this.getElementsByTagName('input')[0].type === 'radio' || this.getElementsByTagName('input')[0].type === 'checkbox') {
+              this.getElementsByTagName('input')[0].checked=!this.getElementsByTagName('input')[0].checked;
+            }
           }
         }, false);
       }
