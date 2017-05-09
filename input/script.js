@@ -11,8 +11,8 @@
         parent.addEventListener('click', function(){
           if(this.getElementsByTagName('input').length) {
             this.getElementsByTagName('input')[0].focus();
-            if(this.getElementsByTagName('input')[0].type === 'radio' || this.getElementsByTagName('input')[0].type === 'checkbox') {
-              this.getElementsByTagName('input')[0].checked=!this.getElementsByTagName('input')[0].checked;
+            if(this.getElementsByTagName('input')[0].type === 'radio') {
+              this.getElementsByTagName('input')[0].checked=true;
             }
           }
         }, false);
