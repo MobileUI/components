@@ -30,6 +30,11 @@
           "path":"./base/icons.html"
         },
         {
+          "key":"fonts",
+          "label":"Fonts",
+          "path":"./base/fonts.html"
+        },
+        {
           "key":"header",
           "label":"Header",
           "path":"./header/index.html"
