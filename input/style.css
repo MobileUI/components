@@ -107,7 +107,7 @@ input[type="checkbox"]:not(:checked) {
 input[type="checkbox"]:disabled {
   opacity: 0.4;
 }
-input[type="checkbox"]::after {
+input[type="checkbox"]::before {
   content: '';
   position: absolute;
   margin-top: 1px;
@@ -122,7 +122,7 @@ input[type="checkbox"]::after {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.platform-ios input[type="checkbox"]::after {
+.platform-ios input[type="checkbox"]::before {
   margin-top: 5px;
   margin-left: 9px;
   width: 4px;
@@ -155,7 +155,7 @@ input[type="checkbox"].switch:not(:checked) {
 .platform-ios input[type="checkbox"].switch:not(:checked) {
   box-shadow: inset 0 0 0 2px rgba(0,0,0,0.1);
 }
-input[type="checkbox"].switch::after {
+input[type="checkbox"].switch::before {
   background-clip: padding-box;
   position: absolute;
   content: '';
@@ -173,21 +173,21 @@ input[type="checkbox"].switch::after {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .4);
   border: 0;
 }
-.platform-ios input[type="checkbox"].switch::after {
+.platform-ios input[type="checkbox"].switch::before {
   height: 28px;
   width: 28px;
   box-shadow: 0 0 0 1px #e4e4e4, 0 3px 2px rgba(0, 0, 0, .25);
   margin-top: 2px;
-  margin-left: -1px;
+  margin-left: 2px;
   background-color: #fff !important;
 }
-input[type="checkbox"].switch:checked::after {
+input[type="checkbox"].switch:checked::before {
     margin-left: 16px;
 }
-input[type="checkbox"].switch:not(:checked)::after {
+input[type="checkbox"].switch:not(:checked)::before {
   background-color: #fff !important;
 }
-.platform-ios input[type="checkbox"].switch:checked::after {
+.platform-ios input[type="checkbox"].switch:checked::before {
   margin-left: 21px;
   box-shadow: 0 3px 2px rgba(0, 0, 0, .25);
   background-color: #fff;
@@ -254,208 +254,208 @@ input[type="radio"]:disabled {
   transform: rotate(45deg);
   border-radius: 0;
 }
-input[type="radio"].red-50::after, input[type="checkbox"].red-50.switch::after { background-color: #ffebee; }
-input[type="radio"].red-100::after, input[type="checkbox"].red-100.switch::after { background-color: #ffcdd2; }
-input[type="radio"].red-200::after, input[type="checkbox"].red-200.switch::after { background-color: #ef9a9a; }
-input[type="radio"].red-300::after, input[type="checkbox"].red-300.switch::after { background-color: #e57373; }
-input[type="radio"].red-400::after, input[type="checkbox"].red-400.switch::after { background-color: #ef5350; }
-input[type="radio"].red-500::after, input[type="checkbox"].red-500.switch::after { background-color: #f44336; }
-input[type="radio"].red-600::after, input[type="checkbox"].red-600.switch::after { background-color: #e53935; }
-input[type="radio"].red-700::after, input[type="checkbox"].red-700.switch::after { background-color: #d32f2f; }
-input[type="radio"].red-800::after, input[type="checkbox"].red-800.switch::after { background-color: #c62828; }
-input[type="radio"].red-900::after, input[type="checkbox"].red-900.switch::after { background-color: #b71c1c; }
-input[type="radio"].pink::after, input[type="checkbox"].pink.switch::after { background-color: #E91E63; }
-input[type="radio"].pink-50::after, input[type="checkbox"].pink-50.switch::after { background-color: #fce4ec; }
-input[type="radio"].pink-100::after, input[type="checkbox"].pink-100.switch::after { background-color: #f8bbd0; }
-input[type="radio"].pink-200::after, input[type="checkbox"].pink-200.switch::after { background-color: #f48fb1; }
-input[type="radio"].Pink-300::after, input[type="checkbox"].Pink-300.switch::after { background-color: #f06292; }
-input[type="radio"].pink-400::after, input[type="checkbox"].pink-400.switch::after { background-color: #ec407a; }
-input[type="radio"].pink-500::after, input[type="checkbox"].pink-500.switch::after { background-color: #e91e63; }
-input[type="radio"].pink-600::after, input[type="checkbox"].pink-600.switch::after { background-color: #d81b60; }
-input[type="radio"].pink-700::after, input[type="checkbox"].pink-700.switch::after { background-color: #c2185b; }
-input[type="radio"].pink-800::after, input[type="checkbox"].pink-800.switch::after { background-color: #ad1457; }
-input[type="radio"].pink-900::after, input[type="checkbox"].pink-900.switch::after { background-color: #880e4f; }
-input[type="radio"].purple::after, input[type="checkbox"].purple.switch::after { background-color: #9c27b0; }
-input[type="radio"].purple-50::after, input[type="checkbox"].purple-50.switch::after { background-color: #f3e5f5; }
-input[type="radio"].purple-100::after, input[type="checkbox"].purple-100.switch::after { background-color: #e1bee7; }
-input[type="radio"].purple-200::after, input[type="checkbox"].purple-200.switch::after { background-color: #ce93d8; }
-input[type="radio"].Purple-300::after, input[type="checkbox"].Purple-300.switch::after { background-color: #ba68c8; }
-input[type="radio"].Purple-400::after, input[type="checkbox"].Purple-400.switch::after { background-color: #ab47bc; }
-input[type="radio"].purple-500::after, input[type="checkbox"].purple-500.switch::after { background-color: #9c27b0; }
-input[type="radio"].purple-600::after, input[type="checkbox"].purple-600.switch::after { background-color: #8e24aa; }
-input[type="radio"].purple-700::after, input[type="checkbox"].purple-700.switch::after { background-color: #7b1fa2; }
-input[type="radio"].purple-800::after, input[type="checkbox"].purple-800.switch::after { background-color: #6a1b9a; }
-input[type="radio"].purple-900::after, input[type="checkbox"].purple-900.switch::after { background-color: #4a148c; }
-input[type="radio"].deep-purple::after, input[type="checkbox"].deep-purple.switch::after { background-color: #673ab7; }
-input[type="radio"].deep-purple-300::after, input[type="checkbox"].deep-purple-300.switch::after { background-color: #9575cd; }
-input[type="radio"].deep-purple-400::after, input[type="checkbox"].deep-purple-400.switch::after { background-color: #7e57c2; }
-input[type="radio"].deep-purple-500::after, input[type="checkbox"].deep-purple-500.switch::after { background-color: #673ab7; }
-input[type="radio"].deep-purple-600::after, input[type="checkbox"].deep-purple-600.switch::after { background-color: #5e35b1; }
-input[type="radio"].deep-purple-700::after, input[type="checkbox"].deep-purple-700.switch::after { background-color: #512da8; }
-input[type="radio"].deep-purple-800::after, input[type="checkbox"].deep-purple-800.switch::after { background-color: #4527a0; }
-input[type="radio"].deep-purple-900::after, input[type="checkbox"].deep-purple-900.switch::after { background-color: #311b92; }
-input[type="radio"].indigo::after, input[type="checkbox"].indigo.switch::after { background-color: #3f51b5; }
-input[type="radio"].indigo-50::after, input[type="checkbox"].indigo-50.switch::after { background-color: #e8eaf6; }
-input[type="radio"].indigo-100::after, input[type="checkbox"].indigo-100.switch::after { background-color: #c5cae9; }
-input[type="radio"].indigo-200::after, input[type="checkbox"].indigo-200.switch::after { background-color: #9fa8da; }
-input[type="radio"].indigo-300::after, input[type="checkbox"].indigo-300.switch::after { background-color: #7986cb; }
-input[type="radio"].indigo-400::after, input[type="checkbox"].indigo-400.switch::after { background-color: #5c6bc0; }
-input[type="radio"].indigo-500::after, input[type="checkbox"].indigo-500.switch::after { background-color: #3f51b5; }
-input[type="radio"].indigo-600::after, input[type="checkbox"].indigo-600.switch::after { background-color: #3949ab; }
-input[type="radio"].indigo-700::after, input[type="checkbox"].indigo-700.switch::after { background-color: #303f9f; }
-input[type="radio"].indigo-800::after, input[type="checkbox"].indigo-800.switch::after { background-color: #283593; }
-input[type="radio"].indigo-900::after, input[type="checkbox"].indigo-900.switch::after { background-color: #1a237e; }
-input[type="radio"].blue::after, input[type="checkbox"].blue.switch::after { background-color: #2196F3; }
-input[type="radio"].blue-50::after, input[type="checkbox"].blue-50.switch::after { background-color: #e3f2fd; }
-input[type="radio"].blue-100::after, input[type="checkbox"].blue-100.switch::after { background-color: #bbdefb; }
-input[type="radio"].blue-200::after, input[type="checkbox"].blue-200.switch::after { background-color: #90caf9; }
-input[type="radio"].blue-300::after, input[type="checkbox"].blue-300.switch::after { background-color: #64b5f6; }
-input[type="radio"].blue-400::after, input[type="checkbox"].blue-400.switch::after { background-color: #42a5f5; }
-input[type="radio"].blue-500::after, input[type="checkbox"].blue-500.switch::after { background-color: #2196f3; }
-input[type="radio"].blue-600::after, input[type="checkbox"].blue-600.switch::after { background-color: #1e88e5; }
-input[type="radio"].blue-700::after, input[type="checkbox"].blue-700.switch::after { background-color: #1976d2; }
-input[type="radio"].blue-800::after, input[type="checkbox"].blue-800.switch::after { background-color: #1565c0; }
-input[type="radio"].blue-900::after, input[type="checkbox"].blue-900.switch::after { background-color: #0d47a1; }
-input[type="radio"].light-blue::after, input[type="checkbox"].light-blue.switch::after { background-color: #03a9f4; }
-input[type="radio"].light-blue-50::after, input[type="checkbox"].light-blue-50.switch::after { background-color: #e1f5fe; }
-input[type="radio"].light-blue-100::after, input[type="checkbox"].light-blue-100.switch::after { background-color: #b3e5fc; }
-input[type="radio"].light-blue-200::after, input[type="checkbox"].light-blue-200.switch::after { background-color: #81d4fa; }
-input[type="radio"].light-blue-300::after, input[type="checkbox"].light-blue-300.switch::after { background-color: #4fc3f7; }
-input[type="radio"].light-blue-400::after, input[type="checkbox"].light-blue-400.switch::after { background-color: #29b6f6; }
-input[type="radio"].light-blue-500::after, input[type="checkbox"].light-blue-500.switch::after { background-color: #03a9f4; }
-input[type="radio"].light-blue-600::after, input[type="checkbox"].light-blue-600.switch::after { background-color: #039be5; }
-input[type="radio"].light-blue-700::after, input[type="checkbox"].light-blue-700.switch::after { background-color: #0288d1; }
-input[type="radio"].light-blue-800::after, input[type="checkbox"].light-blue-800.switch::after { background-color: #0277bd; }
-input[type="radio"].light-blue-900::after, input[type="checkbox"].light-blue-900.switch::after { background-color: #01579b; }
-input[type="radio"].cyan::after, input[type="checkbox"].cyan.switch::after { background-color: #00bcd4; }
-input[type="radio"].cyan-50::after, input[type="checkbox"].cyan-50.switch::after { background-color: #e0f7fa; }
-input[type="radio"].cyan-100::after, input[type="checkbox"].cyan-100.switch::after { background-color: #b2ebf2; }
-input[type="radio"].cyan-200::after, input[type="checkbox"].cyan-200.switch::after { background-color: #80deea; }
-input[type="radio"].cyan-300::after, input[type="checkbox"].cyan-300.switch::after { background-color: #4dd0e1; }
-input[type="radio"].cyan-400::after, input[type="checkbox"].cyan-400.switch::after { background-color: #26c6da; }
-input[type="radio"].cyan-500::after, input[type="checkbox"].cyan-500.switch::after { background-color: #00bcd4; }
-input[type="radio"].cyan-600::after, input[type="checkbox"].cyan-600.switch::after { background-color: #00acc1; }
-input[type="radio"].cyan-700::after, input[type="checkbox"].cyan-700.switch::after { background-color: #0097a7; }
-input[type="radio"].cyan-800::after, input[type="checkbox"].cyan-800.switch::after { background-color: #00838f; }
-input[type="radio"].cyan-900::after, input[type="checkbox"].cyan-900.switch::after { background-color: #006064; }
-input[type="radio"].teal::after, input[type="checkbox"].teal.switch::after { background-color: #009688; }
-input[type="radio"].teal-50::after, input[type="checkbox"].teal-50.switch::after { background-color: #e0f2f1; }
-input[type="radio"].teal-100::after, input[type="checkbox"].teal-100.switch::after { background-color: #b2dfdb; }
-input[type="radio"].teal-200::after, input[type="checkbox"].teal-200.switch::after { background-color: #80cbc4; }
-input[type="radio"].teal-300::after, input[type="checkbox"].teal-300.switch::after { background-color: #4db6ac; }
-input[type="radio"].teal-400::after, input[type="checkbox"].teal-400.switch::after { background-color: #26a69a; }
-input[type="radio"].teal-500::after, input[type="checkbox"].teal-500.switch::after { background-color: #009688; }
-input[type="radio"].teal-600::after, input[type="checkbox"].teal-600.switch::after { background-color: #00897b; }
-input[type="radio"].teal-700::after, input[type="checkbox"].teal-700.switch::after { background-color: #00796b; }
-input[type="radio"].teal-800::after, input[type="checkbox"].teal-800.switch::after { background-color: #00695c; }
-input[type="radio"].teal-900::after, input[type="checkbox"].teal-900.switch::after { background-color: #004d40; }
-input[type="radio"].green::after, input[type="checkbox"].green.switch::after { background-color: #4caf50; }
-input[type="radio"].green-50::after, input[type="checkbox"].green-50.switch::after { background-color: #e8f5e9; }
-input[type="radio"].green-100::after, input[type="checkbox"].green-100.switch::after { background-color: #c8e6c9; }
-input[type="radio"].green-200::after, input[type="checkbox"].green-200.switch::after { background-color: #a5d6a7; }
-input[type="radio"].green-300::after, input[type="checkbox"].green-300.switch::after { background-color: #81c784; }
-input[type="radio"].green-400::after, input[type="checkbox"].green-400.switch::after { background-color: #66bb6a; }
-input[type="radio"].green-500::after, input[type="checkbox"].green-500.switch::after { background-color: #4caf50; }
-input[type="radio"].green-600::after, input[type="checkbox"].green-600.switch::after { background-color: #43a047; }
-input[type="radio"].green-700::after, input[type="checkbox"].green-700.switch::after { background-color: #388e3c; }
-input[type="radio"].green-800::after, input[type="checkbox"].green-800.switch::after { background-color: #2e7d32; }
-input[type="radio"].green-900::after, input[type="checkbox"].green-900.switch::after { background-color: #1b5e20; }
-input[type="radio"].light-green::after, input[type="checkbox"].light-green.switch::after { background-color: #8bc34a; }
-input[type="radio"].light-green-50::after, input[type="checkbox"].light-green-50.switch::after { background-color: #f1f8e9; }
-input[type="radio"].light-green-100::after, input[type="checkbox"].light-green-100.switch::after { background-color: #dcedc8; }
-input[type="radio"].light-green-200::after, input[type="checkbox"].light-green-200.switch::after { background-color: #c5e1a5; }
-input[type="radio"].light-green-300::after, input[type="checkbox"].light-green-300.switch::after { background-color: #aed581; }
-input[type="radio"].light-green-400::after, input[type="checkbox"].light-green-400.switch::after { background-color: #9ccc65; }
-input[type="radio"].light-green-500::after, input[type="checkbox"].light-green-500.switch::after { background-color: #8bc34a; }
-input[type="radio"].light-green-600::after, input[type="checkbox"].light-green-600.switch::after { background-color: #7cb342; }
-input[type="radio"].light-green-700::after, input[type="checkbox"].light-green-700.switch::after { background-color: #689f38; }
-input[type="radio"].light-green-800::after, input[type="checkbox"].light-green-800.switch::after { background-color: #558b2f; }
-input[type="radio"].light-green-900::after, input[type="checkbox"].light-green-900.switch::after { background-color: #33691e; }
-input[type="radio"].lime::after, input[type="checkbox"].lime.switch::after { background-color: #cddc39; }
-input[type="radio"].lime-50::after, input[type="checkbox"].lime-50.switch::after { background-color: #f9fbe7; }
-input[type="radio"].lime-100::after, input[type="checkbox"].lime-100.switch::after { background-color: #f0f4c3; }
-input[type="radio"].lime-200::after, input[type="checkbox"].lime-200.switch::after { background-color: #e6ee9c; }
-input[type="radio"].lime-300::after, input[type="checkbox"].lime-300.switch::after { background-color: #dce775; }
-input[type="radio"].lime-400::after, input[type="checkbox"].lime-400.switch::after { background-color: #d4e157; }
-input[type="radio"].lime-500::after, input[type="checkbox"].lime-500.switch::after { background-color: #cddc39; }
-input[type="radio"].lime-600::after, input[type="checkbox"].lime-600.switch::after { background-color: #c0ca33; }
-input[type="radio"].lime-700::after, input[type="checkbox"].lime-700.switch::after { background-color: #afb42b; }
-input[type="radio"].lime-800::after, input[type="checkbox"].lime-800.switch::after { background-color: #9e9d24; }
-input[type="radio"].lime-900::after, input[type="checkbox"].lime-900.switch::after { background-color: #827717; }
-input[type="radio"].yellow::after, input[type="checkbox"].yellow.switch::after { background-color: #ffeb3b; }
-input[type="radio"].yellow-50::after, input[type="checkbox"].yellow-50.switch::after { background-color: #fffde7; }
-input[type="radio"].yellow-100::after, input[type="checkbox"].yellow-100.switch::after { background-color: #fff9c4; }
-input[type="radio"].yellow-200::after, input[type="checkbox"].yellow-200.switch::after { background-color: #fff59d; }
-input[type="radio"].yellow-300::after, input[type="checkbox"].yellow-300.switch::after { background-color: #fff176; }
-input[type="radio"].yellow-500::after, input[type="checkbox"].yellow-500.switch::after { background-color: #ffeb3b; }
-input[type="radio"].yellow-600::after, input[type="checkbox"].yellow-600.switch::after { background-color: #fdd835; }
-input[type="radio"].yellow-700::after, input[type="checkbox"].yellow-700.switch::after { background-color: #fbc02d; }
-input[type="radio"].yellow-800::after, input[type="checkbox"].yellow-800.switch::after { background-color: #f9a825; }
-input[type="radio"].yellow-900::after, input[type="checkbox"].yellow-900.switch::after { background-color: #f57f17; }
-input[type="radio"].amber-50::after, input[type="checkbox"].amber-50.switch::after { background-color: #fff8e1; }
-input[type="radio"].amber-100::after, input[type="checkbox"].amber-100.switch::after { background-color: #ffecb3; }
-input[type="radio"].amber-200::after, input[type="checkbox"].amber-200.switch::after { background-color: #ffe082; }
-input[type="radio"].amber-300::after, input[type="checkbox"].amber-300.switch::after { background-color: #ffd54f; }
-input[type="radio"].amber-500::after, input[type="checkbox"].amber-500.switch::after { background-color: #ffc107; }
-input[type="radio"].amber-600::after, input[type="checkbox"].amber-600.switch::after { background-color: #ffb300; }
-input[type="radio"].amber-700::after, input[type="checkbox"].amber-700.switch::after { background-color: #ffa000; }
-input[type="radio"].amber-800::after, input[type="checkbox"].amber-800.switch::after { background-color: #ff8f00; }
-input[type="radio"].amber-900::after, input[type="checkbox"].amber-900.switch::after { background-color: #ff6f00; }
-input[type="radio"].orange-50::after, input[type="checkbox"].orange-50.switch::after { background-color: #fff3e0; }
-input[type="radio"].orange-100::after, input[type="checkbox"].orange-100.switch::after { background-color: #ffe0b2; }
-input[type="radio"].orange-200::after, input[type="checkbox"].orange-200.switch::after { background-color: #ffcc80; }
-input[type="radio"].orange-300::after, input[type="checkbox"].orange-300.switch::after { background-color: #ffb74d; }
-input[type="radio"].orange-400::after, input[type="checkbox"].orange-400.switch::after { background-color: #ffa726; }
-input[type="radio"].orange-500::after, input[type="checkbox"].orange-500.switch::after { background-color: #ff9800; }
-input[type="radio"].orange-600::after, input[type="checkbox"].orange-600.switch::after { background-color: #fb8c00; }
-input[type="radio"].orange-700::after, input[type="checkbox"].orange-700.switch::after { background-color: #f57c00; }
-input[type="radio"].orange-800::after, input[type="checkbox"].orange-800.switch::after { background-color: #ef6c00; }
-input[type="radio"].orange-900::after, input[type="checkbox"].orange-900.switch::after { background-color: #e65100; }
-input[type="radio"].deep-orange::after, input[type="checkbox"].deep-orange.switch::after { background-color: #ff5722; }
-input[type="radio"].deep-orange-50::after, input[type="checkbox"].deep-orange-50.switch::after { background-color: #fbe9e7; }
-input[type="radio"].deep-orange-100::after, input[type="checkbox"].deep-orange-100.switch::after { background-color: #ffccbc; }
-input[type="radio"].deep-orange-200::after, input[type="checkbox"].deep-orange-200.switch::after { background-color: #ffab91; }
-input[type="radio"].deep-orange-300::after, input[type="checkbox"].deep-orange-300.switch::after { background-color: #ff8a65; }
-input[type="radio"].deep-orange-400::after, input[type="checkbox"].deep-orange-400.switch::after { background-color: #ff7043; }
-input[type="radio"].deep-orange-500::after, input[type="checkbox"].deep-orange-500.switch::after { background-color: #ff5722; }
-input[type="radio"].deep-orange-600::after, input[type="checkbox"].deep-orange-600.switch::after { background-color: #f4511e; }
-input[type="radio"].deep-orange-700::after, input[type="checkbox"].deep-orange-700.switch::after { background-color: #e64a19; }
-input[type="radio"].deep-orange-800::after, input[type="checkbox"].deep-orange-800.switch::after { background-color: #d84315; }
-input[type="radio"].deep-orange-900::after, input[type="checkbox"].deep-orange-900.switch::after { background-color: #bf360c; }
-input[type="radio"].brown::after, input[type="checkbox"].brown.switch::after { background-color: #795548; }
-input[type="radio"].brown-50::after, input[type="checkbox"].brown-50.switch::after { background-color: #efebe9; }
-input[type="radio"].brown-100::after, input[type="checkbox"].brown-100.switch::after { background-color: #d7ccc8; }
-input[type="radio"].brown-200::after, input[type="checkbox"].brown-200.switch::after { background-color: #bcaaa4; }
-input[type="radio"].brown-300::after, input[type="checkbox"].brown-300.switch::after { background-color: #a1887f; }
-input[type="radio"].brown-400::after, input[type="checkbox"].brown-400.switch::after { background-color: #8d6e63; }
-input[type="radio"].brown-500::after, input[type="checkbox"].brown-500.switch::after { background-color: #795548; }
-input[type="radio"].brown-600::after, input[type="checkbox"].brown-600.switch::after { background-color: #6d4c41; }
-input[type="radio"].brown-700::after, input[type="checkbox"].brown-700.switch::after { background-color: #5d4037; }
-input[type="radio"].brown-800::after, input[type="checkbox"].brown-800.switch::after { background-color: #4e342e; }
-input[type="radio"].brown-900::after, input[type="checkbox"].brown-900.switch::after { background-color: #3e2723; }
-input[type="radio"].grey::after, input[type="checkbox"].grey.switch::after { background-color: #9e9e9e; }
-input[type="radio"].grey-50::after, input[type="checkbox"].grey-50.switch::after { background-color: #fafafa; }
-input[type="radio"].grey-100::after, input[type="checkbox"].grey-100.switch::after { background-color: #f5f5f5; }
-input[type="radio"].grey-200::after, input[type="checkbox"].grey-200.switch::after { background-color: #eee; }
-input[type="radio"].grey-300::after, input[type="checkbox"].grey-300.switch::after { background-color: #e0e0e0; }
-input[type="radio"].grey-400::after, input[type="checkbox"].grey-400.switch::after { background-color: #bdbdbd; }
-input[type="radio"].grey-500::after, input[type="checkbox"].grey-500.switch::after { background-color: #9e9e9e; }
-input[type="radio"].grey-600::after, input[type="checkbox"].grey-600.switch::after { background-color: #757575; }
-input[type="radio"].grey-700::after, input[type="checkbox"].grey-700.switch::after { background-color: #616161; }
-input[type="radio"].grey-800::after, input[type="checkbox"].grey-800.switch::after { background-color: #424242; }
-input[type="radio"].grey-900::after, input[type="checkbox"].grey-900.switch::after { background-color: #212121; }
-input[type="radio"].blue-grey::after, input[type="checkbox"].blue-grey.switch::after { background-color: #607d8b; }
-input[type="radio"].blue-grey-50::after, input[type="checkbox"].blue-grey-50.switch::after { background-color: #eceff1; }
-input[type="radio"].blue-grey-100::after, input[type="checkbox"].blue-grey-100.switch::after { background-color: #cfd8dc; }
-input[type="radio"].blue-grey-200::after, input[type="checkbox"].blue-grey-200.switch::after { background-color: #b0bec5; }
-input[type="radio"].blue-grey-300::after, input[type="checkbox"].blue-grey-300.switch::after { background-color: #90a4ae; }
-input[type="radio"].blue-grey-400::after, input[type="checkbox"].blue-grey-400.switch::after { background-color: #78909c; }
-input[type="radio"].blue-grey-500::after, input[type="checkbox"].blue-grey-500.switch::after { background-color: #607d8b; }
-input[type="radio"].blue-grey-600::after, input[type="checkbox"].blue-grey-600.switch::after { background-color: #546e7a; }
-input[type="radio"].blue-grey-700::after, input[type="checkbox"].blue-grey-700.switch::after { background-color: #455a64; }
-input[type="radio"].blue-grey-800::after, input[type="checkbox"].blue-grey-800.switch::after { background-color: #37474f; }
-input[type="radio"].blue-grey-900::after, input[type="checkbox"].blue-grey-900.switch::after { background-color: #263238; }
-input[type="radio"].black::after, input[type="checkbox"].black.switch::after { background-color: #000; }
+input[type="radio"].red-50::after, input[type="checkbox"].red-50.switch::before { background-color: #ffebee; }
+input[type="radio"].red-100::after, input[type="checkbox"].red-100.switch::before { background-color: #ffcdd2; }
+input[type="radio"].red-200::after, input[type="checkbox"].red-200.switch::before { background-color: #ef9a9a; }
+input[type="radio"].red-300::after, input[type="checkbox"].red-300.switch::before { background-color: #e57373; }
+input[type="radio"].red-400::after, input[type="checkbox"].red-400.switch::before { background-color: #ef5350; }
+input[type="radio"].red-500::after, input[type="checkbox"].red-500.switch::before { background-color: #f44336; }
+input[type="radio"].red-600::after, input[type="checkbox"].red-600.switch::before { background-color: #e53935; }
+input[type="radio"].red-700::after, input[type="checkbox"].red-700.switch::before { background-color: #d32f2f; }
+input[type="radio"].red-800::after, input[type="checkbox"].red-800.switch::before { background-color: #c62828; }
+input[type="radio"].red-900::after, input[type="checkbox"].red-900.switch::before { background-color: #b71c1c; }
+input[type="radio"].pink::after, input[type="checkbox"].pink.switch::before { background-color: #E91E63; }
+input[type="radio"].pink-50::after, input[type="checkbox"].pink-50.switch::before { background-color: #fce4ec; }
+input[type="radio"].pink-100::after, input[type="checkbox"].pink-100.switch::before { background-color: #f8bbd0; }
+input[type="radio"].pink-200::after, input[type="checkbox"].pink-200.switch::before { background-color: #f48fb1; }
+input[type="radio"].Pink-300::after, input[type="checkbox"].Pink-300.switch::before { background-color: #f06292; }
+input[type="radio"].pink-400::after, input[type="checkbox"].pink-400.switch::before { background-color: #ec407a; }
+input[type="radio"].pink-500::after, input[type="checkbox"].pink-500.switch::before { background-color: #e91e63; }
+input[type="radio"].pink-600::after, input[type="checkbox"].pink-600.switch::before { background-color: #d81b60; }
+input[type="radio"].pink-700::after, input[type="checkbox"].pink-700.switch::before { background-color: #c2185b; }
+input[type="radio"].pink-800::after, input[type="checkbox"].pink-800.switch::before { background-color: #ad1457; }
+input[type="radio"].pink-900::after, input[type="checkbox"].pink-900.switch::before { background-color: #880e4f; }
+input[type="radio"].purple::after, input[type="checkbox"].purple.switch::before { background-color: #9c27b0; }
+input[type="radio"].purple-50::after, input[type="checkbox"].purple-50.switch::before { background-color: #f3e5f5; }
+input[type="radio"].purple-100::after, input[type="checkbox"].purple-100.switch::before { background-color: #e1bee7; }
+input[type="radio"].purple-200::after, input[type="checkbox"].purple-200.switch::before { background-color: #ce93d8; }
+input[type="radio"].Purple-300::after, input[type="checkbox"].Purple-300.switch::before { background-color: #ba68c8; }
+input[type="radio"].Purple-400::after, input[type="checkbox"].Purple-400.switch::before { background-color: #ab47bc; }
+input[type="radio"].purple-500::after, input[type="checkbox"].purple-500.switch::before { background-color: #9c27b0; }
+input[type="radio"].purple-600::after, input[type="checkbox"].purple-600.switch::before { background-color: #8e24aa; }
+input[type="radio"].purple-700::after, input[type="checkbox"].purple-700.switch::before { background-color: #7b1fa2; }
+input[type="radio"].purple-800::after, input[type="checkbox"].purple-800.switch::before { background-color: #6a1b9a; }
+input[type="radio"].purple-900::after, input[type="checkbox"].purple-900.switch::before { background-color: #4a148c; }
+input[type="radio"].deep-purple::after, input[type="checkbox"].deep-purple.switch::before { background-color: #673ab7; }
+input[type="radio"].deep-purple-300::after, input[type="checkbox"].deep-purple-300.switch::before { background-color: #9575cd; }
+input[type="radio"].deep-purple-400::after, input[type="checkbox"].deep-purple-400.switch::before { background-color: #7e57c2; }
+input[type="radio"].deep-purple-500::after, input[type="checkbox"].deep-purple-500.switch::before { background-color: #673ab7; }
+input[type="radio"].deep-purple-600::after, input[type="checkbox"].deep-purple-600.switch::before { background-color: #5e35b1; }
+input[type="radio"].deep-purple-700::after, input[type="checkbox"].deep-purple-700.switch::before { background-color: #512da8; }
+input[type="radio"].deep-purple-800::after, input[type="checkbox"].deep-purple-800.switch::before { background-color: #4527a0; }
+input[type="radio"].deep-purple-900::after, input[type="checkbox"].deep-purple-900.switch::before { background-color: #311b92; }
+input[type="radio"].indigo::after, input[type="checkbox"].indigo.switch::before { background-color: #3f51b5; }
+input[type="radio"].indigo-50::after, input[type="checkbox"].indigo-50.switch::before { background-color: #e8eaf6; }
+input[type="radio"].indigo-100::after, input[type="checkbox"].indigo-100.switch::before { background-color: #c5cae9; }
+input[type="radio"].indigo-200::after, input[type="checkbox"].indigo-200.switch::before { background-color: #9fa8da; }
+input[type="radio"].indigo-300::after, input[type="checkbox"].indigo-300.switch::before { background-color: #7986cb; }
+input[type="radio"].indigo-400::after, input[type="checkbox"].indigo-400.switch::before { background-color: #5c6bc0; }
+input[type="radio"].indigo-500::after, input[type="checkbox"].indigo-500.switch::before { background-color: #3f51b5; }
+input[type="radio"].indigo-600::after, input[type="checkbox"].indigo-600.switch::before { background-color: #3949ab; }
+input[type="radio"].indigo-700::after, input[type="checkbox"].indigo-700.switch::before { background-color: #303f9f; }
+input[type="radio"].indigo-800::after, input[type="checkbox"].indigo-800.switch::before { background-color: #283593; }
+input[type="radio"].indigo-900::after, input[type="checkbox"].indigo-900.switch::before { background-color: #1a237e; }
+input[type="radio"].blue::after, input[type="checkbox"].blue.switch::before { background-color: #2196F3; }
+input[type="radio"].blue-50::after, input[type="checkbox"].blue-50.switch::before { background-color: #e3f2fd; }
+input[type="radio"].blue-100::after, input[type="checkbox"].blue-100.switch::before { background-color: #bbdefb; }
+input[type="radio"].blue-200::after, input[type="checkbox"].blue-200.switch::before { background-color: #90caf9; }
+input[type="radio"].blue-300::after, input[type="checkbox"].blue-300.switch::before { background-color: #64b5f6; }
+input[type="radio"].blue-400::after, input[type="checkbox"].blue-400.switch::before { background-color: #42a5f5; }
+input[type="radio"].blue-500::after, input[type="checkbox"].blue-500.switch::before { background-color: #2196f3; }
+input[type="radio"].blue-600::after, input[type="checkbox"].blue-600.switch::before { background-color: #1e88e5; }
+input[type="radio"].blue-700::after, input[type="checkbox"].blue-700.switch::before { background-color: #1976d2; }
+input[type="radio"].blue-800::after, input[type="checkbox"].blue-800.switch::before { background-color: #1565c0; }
+input[type="radio"].blue-900::after, input[type="checkbox"].blue-900.switch::before { background-color: #0d47a1; }
+input[type="radio"].light-blue::after, input[type="checkbox"].light-blue.switch::before { background-color: #03a9f4; }
+input[type="radio"].light-blue-50::after, input[type="checkbox"].light-blue-50.switch::before { background-color: #e1f5fe; }
+input[type="radio"].light-blue-100::after, input[type="checkbox"].light-blue-100.switch::before { background-color: #b3e5fc; }
+input[type="radio"].light-blue-200::after, input[type="checkbox"].light-blue-200.switch::before { background-color: #81d4fa; }
+input[type="radio"].light-blue-300::after, input[type="checkbox"].light-blue-300.switch::before { background-color: #4fc3f7; }
+input[type="radio"].light-blue-400::after, input[type="checkbox"].light-blue-400.switch::before { background-color: #29b6f6; }
+input[type="radio"].light-blue-500::after, input[type="checkbox"].light-blue-500.switch::before { background-color: #03a9f4; }
+input[type="radio"].light-blue-600::after, input[type="checkbox"].light-blue-600.switch::before { background-color: #039be5; }
+input[type="radio"].light-blue-700::after, input[type="checkbox"].light-blue-700.switch::before { background-color: #0288d1; }
+input[type="radio"].light-blue-800::after, input[type="checkbox"].light-blue-800.switch::before { background-color: #0277bd; }
+input[type="radio"].light-blue-900::after, input[type="checkbox"].light-blue-900.switch::before { background-color: #01579b; }
+input[type="radio"].cyan::after, input[type="checkbox"].cyan.switch::before { background-color: #00bcd4; }
+input[type="radio"].cyan-50::after, input[type="checkbox"].cyan-50.switch::before { background-color: #e0f7fa; }
+input[type="radio"].cyan-100::after, input[type="checkbox"].cyan-100.switch::before { background-color: #b2ebf2; }
+input[type="radio"].cyan-200::after, input[type="checkbox"].cyan-200.switch::before { background-color: #80deea; }
+input[type="radio"].cyan-300::after, input[type="checkbox"].cyan-300.switch::before { background-color: #4dd0e1; }
+input[type="radio"].cyan-400::after, input[type="checkbox"].cyan-400.switch::before { background-color: #26c6da; }
+input[type="radio"].cyan-500::after, input[type="checkbox"].cyan-500.switch::before { background-color: #00bcd4; }
+input[type="radio"].cyan-600::after, input[type="checkbox"].cyan-600.switch::before { background-color: #00acc1; }
+input[type="radio"].cyan-700::after, input[type="checkbox"].cyan-700.switch::before { background-color: #0097a7; }
+input[type="radio"].cyan-800::after, input[type="checkbox"].cyan-800.switch::before { background-color: #00838f; }
+input[type="radio"].cyan-900::after, input[type="checkbox"].cyan-900.switch::before { background-color: #006064; }
+input[type="radio"].teal::after, input[type="checkbox"].teal.switch::before { background-color: #009688; }
+input[type="radio"].teal-50::after, input[type="checkbox"].teal-50.switch::before { background-color: #e0f2f1; }
+input[type="radio"].teal-100::after, input[type="checkbox"].teal-100.switch::before { background-color: #b2dfdb; }
+input[type="radio"].teal-200::after, input[type="checkbox"].teal-200.switch::before { background-color: #80cbc4; }
+input[type="radio"].teal-300::after, input[type="checkbox"].teal-300.switch::before { background-color: #4db6ac; }
+input[type="radio"].teal-400::after, input[type="checkbox"].teal-400.switch::before { background-color: #26a69a; }
+input[type="radio"].teal-500::after, input[type="checkbox"].teal-500.switch::before { background-color: #009688; }
+input[type="radio"].teal-600::after, input[type="checkbox"].teal-600.switch::before { background-color: #00897b; }
+input[type="radio"].teal-700::after, input[type="checkbox"].teal-700.switch::before { background-color: #00796b; }
+input[type="radio"].teal-800::after, input[type="checkbox"].teal-800.switch::before { background-color: #00695c; }
+input[type="radio"].teal-900::after, input[type="checkbox"].teal-900.switch::before { background-color: #004d40; }
+input[type="radio"].green::after, input[type="checkbox"].green.switch::before { background-color: #4caf50; }
+input[type="radio"].green-50::after, input[type="checkbox"].green-50.switch::before { background-color: #e8f5e9; }
+input[type="radio"].green-100::after, input[type="checkbox"].green-100.switch::before { background-color: #c8e6c9; }
+input[type="radio"].green-200::after, input[type="checkbox"].green-200.switch::before { background-color: #a5d6a7; }
+input[type="radio"].green-300::after, input[type="checkbox"].green-300.switch::before { background-color: #81c784; }
+input[type="radio"].green-400::after, input[type="checkbox"].green-400.switch::before { background-color: #66bb6a; }
+input[type="radio"].green-500::after, input[type="checkbox"].green-500.switch::before { background-color: #4caf50; }
+input[type="radio"].green-600::after, input[type="checkbox"].green-600.switch::before { background-color: #43a047; }
+input[type="radio"].green-700::after, input[type="checkbox"].green-700.switch::before { background-color: #388e3c; }
+input[type="radio"].green-800::after, input[type="checkbox"].green-800.switch::before { background-color: #2e7d32; }
+input[type="radio"].green-900::after, input[type="checkbox"].green-900.switch::before { background-color: #1b5e20; }
+input[type="radio"].light-green::after, input[type="checkbox"].light-green.switch::before { background-color: #8bc34a; }
+input[type="radio"].light-green-50::after, input[type="checkbox"].light-green-50.switch::before { background-color: #f1f8e9; }
+input[type="radio"].light-green-100::after, input[type="checkbox"].light-green-100.switch::before { background-color: #dcedc8; }
+input[type="radio"].light-green-200::after, input[type="checkbox"].light-green-200.switch::before { background-color: #c5e1a5; }
+input[type="radio"].light-green-300::after, input[type="checkbox"].light-green-300.switch::before { background-color: #aed581; }
+input[type="radio"].light-green-400::after, input[type="checkbox"].light-green-400.switch::before { background-color: #9ccc65; }
+input[type="radio"].light-green-500::after, input[type="checkbox"].light-green-500.switch::before { background-color: #8bc34a; }
+input[type="radio"].light-green-600::after, input[type="checkbox"].light-green-600.switch::before { background-color: #7cb342; }
+input[type="radio"].light-green-700::after, input[type="checkbox"].light-green-700.switch::before { background-color: #689f38; }
+input[type="radio"].light-green-800::after, input[type="checkbox"].light-green-800.switch::before { background-color: #558b2f; }
+input[type="radio"].light-green-900::after, input[type="checkbox"].light-green-900.switch::before { background-color: #33691e; }
+input[type="radio"].lime::after, input[type="checkbox"].lime.switch::before { background-color: #cddc39; }
+input[type="radio"].lime-50::after, input[type="checkbox"].lime-50.switch::before { background-color: #f9fbe7; }
+input[type="radio"].lime-100::after, input[type="checkbox"].lime-100.switch::before { background-color: #f0f4c3; }
+input[type="radio"].lime-200::after, input[type="checkbox"].lime-200.switch::before { background-color: #e6ee9c; }
+input[type="radio"].lime-300::after, input[type="checkbox"].lime-300.switch::before { background-color: #dce775; }
+input[type="radio"].lime-400::after, input[type="checkbox"].lime-400.switch::before { background-color: #d4e157; }
+input[type="radio"].lime-500::after, input[type="checkbox"].lime-500.switch::before { background-color: #cddc39; }
+input[type="radio"].lime-600::after, input[type="checkbox"].lime-600.switch::before { background-color: #c0ca33; }
+input[type="radio"].lime-700::after, input[type="checkbox"].lime-700.switch::before { background-color: #afb42b; }
+input[type="radio"].lime-800::after, input[type="checkbox"].lime-800.switch::before { background-color: #9e9d24; }
+input[type="radio"].lime-900::after, input[type="checkbox"].lime-900.switch::before { background-color: #827717; }
+input[type="radio"].yellow::after, input[type="checkbox"].yellow.switch::before { background-color: #ffeb3b; }
+input[type="radio"].yellow-50::after, input[type="checkbox"].yellow-50.switch::before { background-color: #fffde7; }
+input[type="radio"].yellow-100::after, input[type="checkbox"].yellow-100.switch::before { background-color: #fff9c4; }
+input[type="radio"].yellow-200::after, input[type="checkbox"].yellow-200.switch::before { background-color: #fff59d; }
+input[type="radio"].yellow-300::after, input[type="checkbox"].yellow-300.switch::before { background-color: #fff176; }
+input[type="radio"].yellow-500::after, input[type="checkbox"].yellow-500.switch::before { background-color: #ffeb3b; }
+input[type="radio"].yellow-600::after, input[type="checkbox"].yellow-600.switch::before { background-color: #fdd835; }
+input[type="radio"].yellow-700::after, input[type="checkbox"].yellow-700.switch::before { background-color: #fbc02d; }
+input[type="radio"].yellow-800::after, input[type="checkbox"].yellow-800.switch::before { background-color: #f9a825; }
+input[type="radio"].yellow-900::after, input[type="checkbox"].yellow-900.switch::before { background-color: #f57f17; }
+input[type="radio"].amber-50::after, input[type="checkbox"].amber-50.switch::before { background-color: #fff8e1; }
+input[type="radio"].amber-100::after, input[type="checkbox"].amber-100.switch::before { background-color: #ffecb3; }
+input[type="radio"].amber-200::after, input[type="checkbox"].amber-200.switch::before { background-color: #ffe082; }
+input[type="radio"].amber-300::after, input[type="checkbox"].amber-300.switch::before { background-color: #ffd54f; }
+input[type="radio"].amber-500::after, input[type="checkbox"].amber-500.switch::before { background-color: #ffc107; }
+input[type="radio"].amber-600::after, input[type="checkbox"].amber-600.switch::before { background-color: #ffb300; }
+input[type="radio"].amber-700::after, input[type="checkbox"].amber-700.switch::before { background-color: #ffa000; }
+input[type="radio"].amber-800::after, input[type="checkbox"].amber-800.switch::before { background-color: #ff8f00; }
+input[type="radio"].amber-900::after, input[type="checkbox"].amber-900.switch::before { background-color: #ff6f00; }
+input[type="radio"].orange-50::after, input[type="checkbox"].orange-50.switch::before { background-color: #fff3e0; }
+input[type="radio"].orange-100::after, input[type="checkbox"].orange-100.switch::before { background-color: #ffe0b2; }
+input[type="radio"].orange-200::after, input[type="checkbox"].orange-200.switch::before { background-color: #ffcc80; }
+input[type="radio"].orange-300::after, input[type="checkbox"].orange-300.switch::before { background-color: #ffb74d; }
+input[type="radio"].orange-400::after, input[type="checkbox"].orange-400.switch::before { background-color: #ffa726; }
+input[type="radio"].orange-500::after, input[type="checkbox"].orange-500.switch::before { background-color: #ff9800; }
+input[type="radio"].orange-600::after, input[type="checkbox"].orange-600.switch::before { background-color: #fb8c00; }
+input[type="radio"].orange-700::after, input[type="checkbox"].orange-700.switch::before { background-color: #f57c00; }
+input[type="radio"].orange-800::after, input[type="checkbox"].orange-800.switch::before { background-color: #ef6c00; }
+input[type="radio"].orange-900::after, input[type="checkbox"].orange-900.switch::before { background-color: #e65100; }
+input[type="radio"].deep-orange::after, input[type="checkbox"].deep-orange.switch::before { background-color: #ff5722; }
+input[type="radio"].deep-orange-50::after, input[type="checkbox"].deep-orange-50.switch::before { background-color: #fbe9e7; }
+input[type="radio"].deep-orange-100::after, input[type="checkbox"].deep-orange-100.switch::before { background-color: #ffccbc; }
+input[type="radio"].deep-orange-200::after, input[type="checkbox"].deep-orange-200.switch::before { background-color: #ffab91; }
+input[type="radio"].deep-orange-300::after, input[type="checkbox"].deep-orange-300.switch::before { background-color: #ff8a65; }
+input[type="radio"].deep-orange-400::after, input[type="checkbox"].deep-orange-400.switch::before { background-color: #ff7043; }
+input[type="radio"].deep-orange-500::after, input[type="checkbox"].deep-orange-500.switch::before { background-color: #ff5722; }
+input[type="radio"].deep-orange-600::after, input[type="checkbox"].deep-orange-600.switch::before { background-color: #f4511e; }
+input[type="radio"].deep-orange-700::after, input[type="checkbox"].deep-orange-700.switch::before { background-color: #e64a19; }
+input[type="radio"].deep-orange-800::after, input[type="checkbox"].deep-orange-800.switch::before { background-color: #d84315; }
+input[type="radio"].deep-orange-900::after, input[type="checkbox"].deep-orange-900.switch::before { background-color: #bf360c; }
+input[type="radio"].brown::after, input[type="checkbox"].brown.switch::before { background-color: #795548; }
+input[type="radio"].brown-50::after, input[type="checkbox"].brown-50.switch::before { background-color: #efebe9; }
+input[type="radio"].brown-100::after, input[type="checkbox"].brown-100.switch::before { background-color: #d7ccc8; }
+input[type="radio"].brown-200::after, input[type="checkbox"].brown-200.switch::before { background-color: #bcaaa4; }
+input[type="radio"].brown-300::after, input[type="checkbox"].brown-300.switch::before { background-color: #a1887f; }
+input[type="radio"].brown-400::after, input[type="checkbox"].brown-400.switch::before { background-color: #8d6e63; }
+input[type="radio"].brown-500::after, input[type="checkbox"].brown-500.switch::before { background-color: #795548; }
+input[type="radio"].brown-600::after, input[type="checkbox"].brown-600.switch::before { background-color: #6d4c41; }
+input[type="radio"].brown-700::after, input[type="checkbox"].brown-700.switch::before { background-color: #5d4037; }
+input[type="radio"].brown-800::after, input[type="checkbox"].brown-800.switch::before { background-color: #4e342e; }
+input[type="radio"].brown-900::after, input[type="checkbox"].brown-900.switch::before { background-color: #3e2723; }
+input[type="radio"].grey::after, input[type="checkbox"].grey.switch::before { background-color: #9e9e9e; }
+input[type="radio"].grey-50::after, input[type="checkbox"].grey-50.switch::before { background-color: #fafafa; }
+input[type="radio"].grey-100::after, input[type="checkbox"].grey-100.switch::before { background-color: #f5f5f5; }
+input[type="radio"].grey-200::after, input[type="checkbox"].grey-200.switch::before { background-color: #eee; }
+input[type="radio"].grey-300::after, input[type="checkbox"].grey-300.switch::before { background-color: #e0e0e0; }
+input[type="radio"].grey-400::after, input[type="checkbox"].grey-400.switch::before { background-color: #bdbdbd; }
+input[type="radio"].grey-500::after, input[type="checkbox"].grey-500.switch::before { background-color: #9e9e9e; }
+input[type="radio"].grey-600::after, input[type="checkbox"].grey-600.switch::before { background-color: #757575; }
+input[type="radio"].grey-700::after, input[type="checkbox"].grey-700.switch::before { background-color: #616161; }
+input[type="radio"].grey-800::after, input[type="checkbox"].grey-800.switch::before { background-color: #424242; }
+input[type="radio"].grey-900::after, input[type="checkbox"].grey-900.switch::before { background-color: #212121; }
+input[type="radio"].blue-grey::after, input[type="checkbox"].blue-grey.switch::before { background-color: #607d8b; }
+input[type="radio"].blue-grey-50::after, input[type="checkbox"].blue-grey-50.switch::before { background-color: #eceff1; }
+input[type="radio"].blue-grey-100::after, input[type="checkbox"].blue-grey-100.switch::before { background-color: #cfd8dc; }
+input[type="radio"].blue-grey-200::after, input[type="checkbox"].blue-grey-200.switch::before { background-color: #b0bec5; }
+input[type="radio"].blue-grey-300::after, input[type="checkbox"].blue-grey-300.switch::before { background-color: #90a4ae; }
+input[type="radio"].blue-grey-400::after, input[type="checkbox"].blue-grey-400.switch::before { background-color: #78909c; }
+input[type="radio"].blue-grey-500::after, input[type="checkbox"].blue-grey-500.switch::before { background-color: #607d8b; }
+input[type="radio"].blue-grey-600::after, input[type="checkbox"].blue-grey-600.switch::before { background-color: #546e7a; }
+input[type="radio"].blue-grey-700::after, input[type="checkbox"].blue-grey-700.switch::before { background-color: #455a64; }
+input[type="radio"].blue-grey-800::after, input[type="checkbox"].blue-grey-800.switch::before { background-color: #37474f; }
+input[type="radio"].blue-grey-900::after, input[type="checkbox"].blue-grey-900.switch::before { background-color: #263238; }
+input[type="radio"].black::after, input[type="checkbox"].black.switch::before { background-color: #000; }
 .platform-ios input[type="radio"].red-50::before { border-color: #ffebee; }
 .platform-ios input[type="radio"].red-100::before { border-color: #ffcdd2; }
 .platform-ios input[type="radio"].red-200::before { border-color: #ef9a9a; }
