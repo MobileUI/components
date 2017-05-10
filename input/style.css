@@ -204,6 +204,9 @@ input[type="radio"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background: none;
+}
+.platform-ios input[type="radio"] {
   background: none !important;
 }
 input[type="radio"]::after {
@@ -453,7 +456,6 @@ input[type="radio"].blue-grey-700::after, input[type="checkbox"].blue-grey-700.s
 input[type="radio"].blue-grey-800::after, input[type="checkbox"].blue-grey-800.switch::after { background-color: #37474f; }
 input[type="radio"].blue-grey-900::after, input[type="checkbox"].blue-grey-900.switch::after { background-color: #263238; }
 input[type="radio"].black::after, input[type="checkbox"].black.switch::after { background-color: #000; }
-
 .platform-ios input[type="radio"].red-50::before { border-color: #ffebee; }
 .platform-ios input[type="radio"].red-100::before { border-color: #ffcdd2; }
 .platform-ios input[type="radio"].red-200::before { border-color: #ef9a9a; }
