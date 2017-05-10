@@ -5,7 +5,7 @@
     font-style: normal
 }
 i.icon {
-  background: none;
+  background: none !important;
 }
 .ion,
 .ion-alert-circled:before,

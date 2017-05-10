@@ -1,6 +1,6 @@
 .red {
     color: rgba(255, 255, 255, .9);
-    background-color: #f44336
+    background-color: #f44336 !important
 }
 
 .red-100,
@@ -11,19 +11,19 @@
 }
 
 .red-50, input[type="checkbox"].red-50.switch::after {
-    background-color: #ffebee
+    background-color: #ffebee !important
 }
 
 .red-100, input[type="checkbox"].red-100.switch::after {
-    background-color: #ffcdd2
+    background-color: #ffcdd2 !important
 }
 
 .red-200, input[type="checkbox"].red-200.switch::after {
-    background-color: #ef9a9a
+    background-color: #ef9a9a !important
 }
 
 .red-300, input[type="checkbox"].red-300.switch::after {
-    background-color: #e57373
+    background-color: #e57373 !important
 }
 
 .pink,
@@ -37,31 +37,31 @@
 }
 
 .red-400, input[type="checkbox"].red-400.switch::after {
-    background-color: #ef5350
+    background-color: #ef5350 !important
 }
 
 .red-500, input[type="checkbox"].red-500.switch::after {
-    background-color: #f44336
+    background-color: #f44336 !important
 }
 
 .red-600, input[type="checkbox"].red-600.switch::after {
-    background-color: #e53935
+    background-color: #e53935 !important
 }
 
 .red-700, input[type="checkbox"].red-700.switch::after {
-    background-color: #d32f2f
+    background-color: #d32f2f !important
 }
 
 .red-800, input[type="checkbox"].red-800.switch::after {
-    background-color: #c62828
+    background-color: #c62828 !important
 }
 
 .red-900, input[type="checkbox"].red-900.switch::after {
-    background-color: #b71c1c
+    background-color: #b71c1c !important
 }
 
 .pink, input[type="checkbox"].pink.switch::after {
-    background-color: #E91E63
+    background-color: #E91E63 !important
 }
 
 .pink-100,
@@ -71,15 +71,15 @@
 }
 
 .pink-50, input[type="checkbox"].pink-50.switch::after {
-    background-color: #fce4ec
+    background-color: #fce4ec !important
 }
 
 .pink-100, input[type="checkbox"].pink-100.switch::after {
-    background-color: #f8bbd0
+    background-color: #f8bbd0 !important
 }
 
 .pink-200, input[type="checkbox"].pink-200.switch::after {
-    background-color: #f48fb1
+    background-color: #f48fb1 !important
 }
 
 .Pink-300,
@@ -94,35 +94,35 @@
 }
 
 .Pink-300, input[type="checkbox"].Pink-300.switch::after {
-    background-color: #f06292
+    background-color: #f06292 !important
 }
 
 .pink-400, input[type="checkbox"].pink-400.switch::after {
-    background-color: #ec407a
+    background-color: #ec407a !important
 }
 
 .pink-500, input[type="checkbox"].pink-500.switch::after {
-    background-color: #e91e63
+    background-color: #e91e63 !important
 }
 
 .pink-600, input[type="checkbox"].pink-600.switch::after {
-    background-color: #d81b60
+    background-color: #d81b60 !important
 }
 
 .pink-700, input[type="checkbox"].pink-700.switch::after {
-    background-color: #c2185b
+    background-color: #c2185b !important
 }
 
 .pink-800, input[type="checkbox"].pink-800.switch::after {
-    background-color: #ad1457
+    background-color: #ad1457 !important
 }
 
 .pink-900, input[type="checkbox"].pink-900.switch::after {
-    background-color: #880e4f
+    background-color: #880e4f !important
 }
 
 .purple, input[type="checkbox"].purple.switch::after {
-    background-color: #9c27b0
+    background-color: #9c27b0 !important
 }
 
 .purple-100,
@@ -132,15 +132,15 @@
 }
 
 .purple-50, input[type="checkbox"].purple-50.switch::after {
-    background-color: #f3e5f5
+    background-color: #f3e5f5 !important
 }
 
 .purple-100, input[type="checkbox"].purple-100.switch::after {
-    background-color: #e1bee7
+    background-color: #e1bee7 !important
 }
 
 .purple-200, input[type="checkbox"].purple-200.switch::after {
-    background-color: #ce93d8
+    background-color: #ce93d8 !important
 }
 
 .Purple-300,
@@ -155,50 +155,50 @@
 }
 
 .Purple-300, input[type="checkbox"].Purple-300.switch::after {
-    background-color: #ba68c8
+    background-color: #ba68c8 !important
 }
 
 .Purple-400, input[type="checkbox"].Purple-400.switch::after {
-    background-color: #ab47bc
+    background-color: #ab47bc !important
 }
 
 .purple-500, input[type="checkbox"].purple-500.switch::after {
-    background-color: #9c27b0
+    background-color: #9c27b0 !important
 }
 
 .purple-600, input[type="checkbox"].purple-600.switch::after {
-    background-color: #8e24aa
+    background-color: #8e24aa !important
 }
 
 .purple-700, input[type="checkbox"].purple-700.switch::after {
-    background-color: #7b1fa2
+    background-color: #7b1fa2 !important
 }
 
 .purple-800, input[type="checkbox"].purple-800.switch::after {
-    background-color: #6a1b9a
+    background-color: #6a1b9a !important
 }
 
 .purple-900, input[type="checkbox"].purple-900.switch::after {
-    background-color: #4a148c
+    background-color: #4a148c !important
 }
 
 .deep-purple, input[type="checkbox"].deep-purple.switch::after {
-    background-color: #673ab7
+    background-color: #673ab7 !important
 }
 
 .deep-purple-50 {
     color: rgba(0, 0, 0, .8);
-    background-color: #ede7f6
+    background-color: #ede7f6 !important
 }
 
 .deep-purple-100 {
     color: rgba(0, 0, 0, .8);
-    background-color: #d1c4e9
+    background-color: #d1c4e9 !important
 }
 
 .deep-purple-200 {
     color: rgba(0, 0, 0, .8);
-    background-color: #b39ddb
+    background-color: #b39ddb !important
 }
 
 .deep-purple-300,
@@ -213,35 +213,35 @@
 }
 
 .deep-purple-300, input[type="checkbox"].deep-purple-300.switch::after {
-    background-color: #9575cd
+    background-color: #9575cd !important
 }
 
 .deep-purple-400, input[type="checkbox"].deep-purple-400.switch::after {
-    background-color: #7e57c2
+    background-color: #7e57c2 !important
 }
 
 .deep-purple-500, input[type="checkbox"].deep-purple-500.switch::after {
-    background-color: #673ab7
+    background-color: #673ab7 !important
 }
 
 .deep-purple-600, input[type="checkbox"].deep-purple-600.switch::after {
-    background-color: #5e35b1
+    background-color: #5e35b1 !important
 }
 
 .deep-purple-700, input[type="checkbox"].deep-purple-700.switch::after {
-    background-color: #512da8
+    background-color: #512da8 !important
 }
 
 .deep-purple-800, input[type="checkbox"].deep-purple-800.switch::after {
-    background-color: #4527a0
+    background-color: #4527a0 !important
 }
 
 .deep-purple-900, input[type="checkbox"].deep-purple-900.switch::after {
-    background-color: #311b92
+    background-color: #311b92 !important
 }
 
 .indigo, input[type="checkbox"].indigo.switch::after {
-    background-color: #3f51b5
+    background-color: #3f51b5 !important
 }
 
 .indigo-100,
@@ -251,15 +251,15 @@
 }
 
 .indigo-50, input[type="checkbox"].indigo-50.switch::after {
-    background-color: #e8eaf6
+    background-color: #e8eaf6 !important
 }
 
 .indigo-100, input[type="checkbox"].indigo-100.switch::after {
-    background-color: #c5cae9
+    background-color: #c5cae9 !important
 }
 
 .indigo-200, input[type="checkbox"].indigo-200.switch::after {
-    background-color: #9fa8da
+    background-color: #9fa8da !important
 }
 
 .blue,
@@ -274,35 +274,35 @@
 }
 
 .indigo-300, input[type="checkbox"].indigo-300.switch::after {
-    background-color: #7986cb
+    background-color: #7986cb !important
 }
 
 .indigo-400, input[type="checkbox"].indigo-400.switch::after {
-    background-color: #5c6bc0
+    background-color: #5c6bc0 !important
 }
 
 .indigo-500, input[type="checkbox"].indigo-500.switch::after {
-    background-color: #3f51b5
+    background-color: #3f51b5 !important
 }
 
 .indigo-600, input[type="checkbox"].indigo-600.switch::after {
-    background-color: #3949ab
+    background-color: #3949ab !important
 }
 
 .indigo-700, input[type="checkbox"].indigo-700.switch::after {
-    background-color: #303f9f
+    background-color: #303f9f !important
 }
 
 .indigo-800, input[type="checkbox"].indigo-800.switch::after {
-    background-color: #283593
+    background-color: #283593 !important
 }
 
 .indigo-900, input[type="checkbox"].indigo-900.switch::after {
-    background-color: #1a237e
+    background-color: #1a237e !important
 }
 
 .blue, input[type="checkbox"].blue.switch::after {
-    background-color: #2196F3
+    background-color: #2196F3 !important
 }
 
 .blue-100,
@@ -314,23 +314,23 @@
 }
 
 .blue-50, input[type="checkbox"].blue-50.switch::after {
-    background-color: #e3f2fd
+    background-color: #e3f2fd !important
 }
 
 .blue-100, input[type="checkbox"].blue-100.switch::after {
-    background-color: #bbdefb
+    background-color: #bbdefb !important
 }
 
 .blue-200, input[type="checkbox"].blue-200.switch::after {
-    background-color: #90caf9
+    background-color: #90caf9 !important
 }
 
 .blue-300, input[type="checkbox"].blue-300.switch::after {
-    background-color: #64b5f6
+    background-color: #64b5f6 !important
 }
 
 .blue-400, input[type="checkbox"].blue-400.switch::after {
-    background-color: #42a5f5
+    background-color: #42a5f5 !important
 }
 
 .blue-500,
@@ -343,27 +343,27 @@
 }
 
 .blue-500, input[type="checkbox"].blue-500.switch::after {
-    background-color: #2196f3
+    background-color: #2196f3 !important
 }
 
 .blue-600, input[type="checkbox"].blue-600.switch::after {
-    background-color: #1e88e5
+    background-color: #1e88e5 !important
 }
 
 .blue-700, input[type="checkbox"].blue-700.switch::after {
-    background-color: #1976d2
+    background-color: #1976d2 !important
 }
 
 .blue-800, input[type="checkbox"].blue-800.switch::after {
-    background-color: #1565c0
+    background-color: #1565c0 !important
 }
 
 .blue-900, input[type="checkbox"].blue-900.switch::after {
-    background-color: #0d47a1
+    background-color: #0d47a1 !important
 }
 
 .light-blue, input[type="checkbox"].light-blue.switch::after {
-    background-color: #03a9f4
+    background-color: #03a9f4 !important
 }
 
 .light-blue-100,
@@ -376,27 +376,27 @@
 }
 
 .light-blue-50, input[type="checkbox"].light-blue-50.switch::after {
-    background-color: #e1f5fe
+    background-color: #e1f5fe !important
 }
 
 .light-blue-100, input[type="checkbox"].light-blue-100.switch::after {
-    background-color: #b3e5fc
+    background-color: #b3e5fc !important
 }
 
 .light-blue-200, input[type="checkbox"].light-blue-200.switch::after {
-    background-color: #81d4fa
+    background-color: #81d4fa !important
 }
 
 .light-blue-300, input[type="checkbox"].light-blue-300.switch::after {
-    background-color: #4fc3f7
+    background-color: #4fc3f7 !important
 }
 
 .light-blue-400, input[type="checkbox"].light-blue-400.switch::after {
-    background-color: #29b6f6
+    background-color: #29b6f6 !important
 }
 
 .light-blue-500, input[type="checkbox"].light-blue-500.switch::after {
-    background-color: #03a9f4
+    background-color: #03a9f4 !important
 }
 
 .cyan,
@@ -408,23 +408,23 @@
 }
 
 .light-blue-600, input[type="checkbox"].light-blue-600.switch::after {
-    background-color: #039be5
+    background-color: #039be5 !important
 }
 
 .light-blue-700, input[type="checkbox"].light-blue-700.switch::after {
-    background-color: #0288d1
+    background-color: #0288d1 !important
 }
 
 .light-blue-800, input[type="checkbox"].light-blue-800.switch::after {
-    background-color: #0277bd
+    background-color: #0277bd !important
 }
 
 .light-blue-900, input[type="checkbox"].light-blue-900.switch::after {
-    background-color: #01579b
+    background-color: #01579b !important
 }
 
 .cyan, input[type="checkbox"].cyan.switch::after {
-    background-color: #00bcd4
+    background-color: #00bcd4 !important
 }
 
 .cyan-100,
@@ -438,31 +438,31 @@
 }
 
 .cyan-50, input[type="checkbox"].cyan-50.switch::after {
-    background-color: #e0f7fa
+    background-color: #e0f7fa !important
 }
 
 .cyan-100, input[type="checkbox"].cyan-100.switch::after {
-    background-color: #b2ebf2
+    background-color: #b2ebf2 !important
 }
 
 .cyan-200, input[type="checkbox"].cyan-200.switch::after {
-    background-color: #80deea
+    background-color: #80deea !important
 }
 
 .cyan-300, input[type="checkbox"].cyan-300.switch::after {
-    background-color: #4dd0e1
+    background-color: #4dd0e1 !important
 }
 
 .cyan-400, input[type="checkbox"].cyan-400.switch::after {
-    background-color: #26c6da
+    background-color: #26c6da !important
 }
 
 .cyan-500, input[type="checkbox"].cyan-500.switch::after {
-    background-color: #00bcd4
+    background-color: #00bcd4 !important
 }
 
 .cyan-600, input[type="checkbox"].cyan-600.switch::after {
-    background-color: #00acc1
+    background-color: #00acc1 !important
 }
 
 .cyan-700,
@@ -473,19 +473,19 @@
 }
 
 .cyan-700, input[type="checkbox"].cyan-700.switch::after {
-    background-color: #0097a7
+    background-color: #0097a7 !important
 }
 
 .cyan-800, input[type="checkbox"].cyan-800.switch::after {
-    background-color: #00838f
+    background-color: #00838f !important
 }
 
 .cyan-900, input[type="checkbox"].cyan-900.switch::after {
-    background-color: #006064
+    background-color: #006064 !important
 }
 
 .teal, input[type="checkbox"].teal.switch::after {
-    background-color: #009688
+    background-color: #009688 !important
 }
 
 .teal-100,
@@ -497,23 +497,23 @@
 }
 
 .teal-50, input[type="checkbox"].teal-50.switch::after {
-    background-color: #e0f2f1
+    background-color: #e0f2f1 !important
 }
 
 .teal-100, input[type="checkbox"].teal-100.switch::after {
-    background-color: #b2dfdb
+    background-color: #b2dfdb !important
 }
 
 .teal-200, input[type="checkbox"].teal-200.switch::after {
-    background-color: #80cbc4
+    background-color: #80cbc4 !important
 }
 
 .teal-300, input[type="checkbox"].teal-300.switch::after {
-    background-color: #4db6ac
+    background-color: #4db6ac !important
 }
 
 .teal-400, input[type="checkbox"].teal-400.switch::after {
-    background-color: #26a69a
+    background-color: #26a69a !important
 }
 
 .green,
@@ -526,27 +526,27 @@
 }
 
 .teal-500, input[type="checkbox"].teal-500.switch::after {
-    background-color: #009688
+    background-color: #009688 !important
 }
 
 .teal-600, input[type="checkbox"].teal-600.switch::after {
-    background-color: #00897b
+    background-color: #00897b !important
 }
 
 .teal-700, input[type="checkbox"].teal-700.switch::after {
-    background-color: #00796b
+    background-color: #00796b !important
 }
 
 .teal-800, input[type="checkbox"].teal-800.switch::after {
-    background-color: #00695c
+    background-color: #00695c !important
 }
 
 .teal-900, input[type="checkbox"].teal-900.switch::after {
-    background-color: #004d40
+    background-color: #004d40 !important
 }
 
 .green, input[type="checkbox"].green.switch::after {
-    background-color: #4caf50
+    background-color: #4caf50 !important
 }
 
 .green-100,
@@ -559,27 +559,27 @@
 }
 
 .green-50, input[type="checkbox"].green-50.switch::after {
-    background-color: #e8f5e9
+    background-color: #e8f5e9 !important
 }
 
 .green-100, input[type="checkbox"].green-100.switch::after {
-    background-color: #c8e6c9
+    background-color: #c8e6c9 !important
 }
 
 .green-200, input[type="checkbox"].green-200.switch::after {
-    background-color: #a5d6a7
+    background-color: #a5d6a7 !important
 }
 
 .green-300, input[type="checkbox"].green-300.switch::after {
-    background-color: #81c784
+    background-color: #81c784 !important
 }
 
 .green-400, input[type="checkbox"].green-400.switch::after {
-    background-color: #66bb6a
+    background-color: #66bb6a !important
 }
 
 .green-500, input[type="checkbox"].green-500.switch::after {
-    background-color: #4caf50
+    background-color: #4caf50 !important
 }
 
 .green-600,
@@ -591,23 +591,23 @@
 }
 
 .green-600, input[type="checkbox"].green-600.switch::after {
-    background-color: #43a047
+    background-color: #43a047 !important
 }
 
 .green-700, input[type="checkbox"].green-700.switch::after {
-    background-color: #388e3c
+    background-color: #388e3c !important
 }
 
 .green-800, input[type="checkbox"].green-800.switch::after {
-    background-color: #2e7d32
+    background-color: #2e7d32 !important
 }
 
 .green-900, input[type="checkbox"].green-900.switch::after {
-    background-color: #1b5e20
+    background-color: #1b5e20 !important
 }
 
 .light-green, input[type="checkbox"].light-green.switch::after {
-    background-color: #8bc34a
+    background-color: #8bc34a !important
 }
 
 .light-green-100,
@@ -621,31 +621,31 @@
 }
 
 .light-green-50, input[type="checkbox"].light-green-50.switch::after {
-    background-color: #f1f8e9
+    background-color: #f1f8e9 !important
 }
 
 .light-green-100, input[type="checkbox"].light-green-100.switch::after {
-    background-color: #dcedc8
+    background-color: #dcedc8 !important
 }
 
 .light-green-200, input[type="checkbox"].light-green-200.switch::after {
-    background-color: #c5e1a5
+    background-color: #c5e1a5 !important
 }
 
 .light-green-300, input[type="checkbox"].light-green-300.switch::after {
-    background-color: #aed581
+    background-color: #aed581 !important
 }
 
 .light-green-400, input[type="checkbox"].light-green-400.switch::after {
-    background-color: #9ccc65
+    background-color: #9ccc65 !important
 }
 
 .light-green-500, input[type="checkbox"].light-green-500.switch::after {
-    background-color: #8bc34a
+    background-color: #8bc34a !important
 }
 
 .light-green-600, input[type="checkbox"].light-green-600.switch::after {
-    background-color: #7cb342
+    background-color: #7cb342 !important
 }
 
 .light-green-700,
@@ -656,19 +656,19 @@
 }
 
 .light-green-700, input[type="checkbox"].light-green-700.switch::after {
-    background-color: #689f38
+    background-color: #689f38 !important
 }
 
 .light-green-800, input[type="checkbox"].light-green-800.switch::after {
-    background-color: #558b2f
+    background-color: #558b2f !important
 }
 
 .light-green-900, input[type="checkbox"].light-green-900.switch::after {
-    background-color: #33691e
+    background-color: #33691e !important
 }
 
 .lime, input[type="checkbox"].lime.switch::after {
-    background-color: #cddc39
+    background-color: #cddc39 !important
 }
 
 .lime-100,
@@ -684,39 +684,39 @@
 }
 
 .lime-50, input[type="checkbox"].lime-50.switch::after {
-    background-color: #f9fbe7
+    background-color: #f9fbe7 !important
 }
 
 .lime-100, input[type="checkbox"].lime-100.switch::after {
-    background-color: #f0f4c3
+    background-color: #f0f4c3 !important
 }
 
 .lime-200, input[type="checkbox"].lime-200.switch::after {
-    background-color: #e6ee9c
+    background-color: #e6ee9c !important
 }
 
 .lime-300, input[type="checkbox"].lime-300.switch::after {
-    background-color: #dce775
+    background-color: #dce775 !important
 }
 
 .lime-400, input[type="checkbox"].lime-400.switch::after {
-    background-color: #d4e157
+    background-color: #d4e157 !important
 }
 
 .lime-500, input[type="checkbox"].lime-500.switch::after {
-    background-color: #cddc39
+    background-color: #cddc39 !important
 }
 
 .lime-600, input[type="checkbox"].lime-600.switch::after {
-    background-color: #c0ca33
+    background-color: #c0ca33 !important
 }
 
 .lime-700, input[type="checkbox"].lime-700.switch::after {
-    background-color: #afb42b
+    background-color: #afb42b !important
 }
 
 .lime-800, input[type="checkbox"].lime-800.switch::after {
-    background-color: #9e9d24
+    background-color: #9e9d24 !important
 }
 
 .lime-900,
@@ -725,11 +725,11 @@
 }
 
 .lime-900, input[type="checkbox"].lime-900.switch::after {
-    background-color: #827717
+    background-color: #827717 !important
 }
 
 .yellow, input[type="checkbox"].yellow.switch::after {
-    background-color: #ffeb3b
+    background-color: #ffeb3b !important
 }
 
 .yellow-100,
@@ -745,49 +745,49 @@
 }
 
 .yellow-50, input[type="checkbox"].yellow-50.switch::after {
-    background-color: #fffde7
+    background-color: #fffde7 !important
 }
 
 .yellow-100, input[type="checkbox"].yellow-100.switch::after {
-    background-color: #fff9c4
+    background-color: #fff9c4 !important
 }
 
 .yellow-200, input[type="checkbox"].yellow-200.switch::after {
-    background-color: #fff59d
+    background-color: #fff59d !important
 }
 
 .yellow-300, input[type="checkbox"].yellow-300.switch::after {
-    background-color: #fff176
+    background-color: #fff176 !important
 }
 
 .yellow-400 {
     color: rgba(0, 0, 0, .8);
-    background-color: #ffee58
+    background-color: #ffee58 !important
 }
 
 .yellow-500, input[type="checkbox"].yellow-500.switch::after {
-    background-color: #ffeb3b
+    background-color: #ffeb3b !important
 }
 
 .yellow-600, input[type="checkbox"].yellow-600.switch::after {
-    background-color: #fdd835
+    background-color: #fdd835 !important
 }
 
 .yellow-700, input[type="checkbox"].yellow-700.switch::after {
-    background-color: #fbc02d
+    background-color: #fbc02d !important
 }
 
 .yellow-800, input[type="checkbox"].yellow-800.switch::after {
-    background-color: #f9a825
+    background-color: #f9a825 !important
 }
 
 .yellow-900, input[type="checkbox"].yellow-900.switch::after {
-    background-color: #f57f17
+    background-color: #f57f17 !important
 }
 
 .amber {
     color: rgba(255, 255, 255, .9);
-    background-color: #ffc107
+    background-color: #ffc107 !important
 }
 
 .amber-100,
@@ -803,49 +803,49 @@
 }
 
 .amber-50, input[type="checkbox"].amber-50.switch::after {
-    background-color: #fff8e1
+    background-color: #fff8e1 !important
 }
 
 .amber-100, input[type="checkbox"].amber-100.switch::after {
-    background-color: #ffecb3
+    background-color: #ffecb3 !important
 }
 
 .amber-200, input[type="checkbox"].amber-200.switch::after {
-    background-color: #ffe082
+    background-color: #ffe082 !important
 }
 
 .amber-300, input[type="checkbox"].amber-300.switch::after {
-    background-color: #ffd54f
+    background-color: #ffd54f !important
 }
 
 .amber-400 {
     color: rgba(0, 0, 0, .8);
-    background-color: #ffca28
+    background-color: #ffca28 !important
 }
 
 .amber-500, input[type="checkbox"].amber-500.switch::after {
-    background-color: #ffc107
+    background-color: #ffc107 !important
 }
 
 .amber-600, input[type="checkbox"].amber-600.switch::after {
-    background-color: #ffb300
+    background-color: #ffb300 !important
 }
 
 .amber-700, input[type="checkbox"].amber-700.switch::after {
-    background-color: #ffa000
+    background-color: #ffa000 !important
 }
 
 .amber-800, input[type="checkbox"].amber-800.switch::after {
-    background-color: #ff8f00
+    background-color: #ff8f00 !important
 }
 
 .amber-900, input[type="checkbox"].amber-900.switch::after {
-    background-color: #ff6f00
+    background-color: #ff6f00 !important
 }
 
 .orange {
     color: rgba(255, 255, 255, .9);
-    background-color: #ff9800
+    background-color: #ff9800 !important
 }
 
 .orange-100,
@@ -860,35 +860,35 @@
 }
 
 .orange-50, input[type="checkbox"].orange-50.switch::after {
-    background-color: #fff3e0
+    background-color: #fff3e0 !important
 }
 
 .orange-100, input[type="checkbox"].orange-100.switch::after {
-    background-color: #ffe0b2
+    background-color: #ffe0b2 !important
 }
 
 .orange-200, input[type="checkbox"].orange-200.switch::after {
-    background-color: #ffcc80
+    background-color: #ffcc80 !important
 }
 
 .orange-300, input[type="checkbox"].orange-300.switch::after {
-    background-color: #ffb74d
+    background-color: #ffb74d !important
 }
 
 .orange-400, input[type="checkbox"].orange-400.switch::after {
-    background-color: #ffa726
+    background-color: #ffa726 !important
 }
 
 .orange-500, input[type="checkbox"].orange-500.switch::after {
-    background-color: #ff9800
+    background-color: #ff9800 !important
 }
 
 .orange-600, input[type="checkbox"].orange-600.switch::after {
-    background-color: #fb8c00
+    background-color: #fb8c00 !important
 }
 
 .orange-700, input[type="checkbox"].orange-700.switch::after {
-    background-color: #f57c00
+    background-color: #f57c00 !important
 }
 
 .deep-orange,
@@ -898,15 +898,15 @@
 }
 
 .orange-800, input[type="checkbox"].orange-800.switch::after {
-    background-color: #ef6c00
+    background-color: #ef6c00 !important
 }
 
 .orange-900, input[type="checkbox"].orange-900.switch::after {
-    background-color: #e65100
+    background-color: #e65100 !important
 }
 
 .deep-orange, input[type="checkbox"].deep-orange.switch::after {
-    background-color: #ff5722
+    background-color: #ff5722 !important
 }
 
 .deep-orange-100,
@@ -918,23 +918,23 @@
 }
 
 .deep-orange-50, input[type="checkbox"].deep-orange-50.switch::after {
-    background-color: #fbe9e7
+    background-color: #fbe9e7 !important
 }
 
 .deep-orange-100, input[type="checkbox"].deep-orange-100.switch::after {
-    background-color: #ffccbc
+    background-color: #ffccbc !important
 }
 
 .deep-orange-200, input[type="checkbox"].deep-orange-200.switch::after {
-    background-color: #ffab91
+    background-color: #ffab91 !important
 }
 
 .deep-orange-300, input[type="checkbox"].deep-orange-300.switch::after {
-    background-color: #ff8a65
+    background-color: #ff8a65 !important
 }
 
 .deep-orange-400, input[type="checkbox"].deep-orange-400.switch::after {
-    background-color: #ff7043
+    background-color: #ff7043 !important
 }
 
 .brown,
@@ -947,27 +947,27 @@
 }
 
 .deep-orange-500, input[type="checkbox"].deep-orange-500.switch::after {
-    background-color: #ff5722
+    background-color: #ff5722 !important
 }
 
 .deep-orange-600, input[type="checkbox"].deep-orange-600.switch::after {
-    background-color: #f4511e
+    background-color: #f4511e !important
 }
 
 .deep-orange-700, input[type="checkbox"].deep-orange-700.switch::after {
-    background-color: #e64a19
+    background-color: #e64a19 !important
 }
 
 .deep-orange-800, input[type="checkbox"].deep-orange-800.switch::after {
-    background-color: #d84315
+    background-color: #d84315 !important
 }
 
 .deep-orange-900, input[type="checkbox"].deep-orange-900.switch::after {
-    background-color: #bf360c
+    background-color: #bf360c !important
 }
 
 .brown, input[type="checkbox"].brown.switch::after {
-    background-color: #795548
+    background-color: #795548 !important
 }
 
 .brown-100,
@@ -977,15 +977,15 @@
 }
 
 .brown-50, input[type="checkbox"].brown-50.switch::after {
-    background-color: #efebe9
+    background-color: #efebe9 !important
 }
 
 .brown-100, input[type="checkbox"].brown-100.switch::after {
-    background-color: #d7ccc8
+    background-color: #d7ccc8 !important
 }
 
 .brown-200, input[type="checkbox"].brown-200.switch::after {
-    background-color: #bcaaa4
+    background-color: #bcaaa4 !important
 }
 
 .brown-300,
@@ -1000,35 +1000,35 @@
 }
 
 .brown-300, input[type="checkbox"].brown-300.switch::after {
-    background-color: #a1887f
+    background-color: #a1887f !important
 }
 
 .brown-400, input[type="checkbox"].brown-400.switch::after {
-    background-color: #8d6e63
+    background-color: #8d6e63 !important
 }
 
 .brown-500, input[type="checkbox"].brown-500.switch::after {
-    background-color: #795548
+    background-color: #795548 !important
 }
 
 .brown-600, input[type="checkbox"].brown-600.switch::after {
-    background-color: #6d4c41
+    background-color: #6d4c41 !important
 }
 
 .brown-700, input[type="checkbox"].brown-700.switch::after {
-    background-color: #5d4037
+    background-color: #5d4037 !important
 }
 
 .brown-800, input[type="checkbox"].brown-800.switch::after {
-    background-color: #4e342e
+    background-color: #4e342e !important
 }
 
 .brown-900, input[type="checkbox"].brown-900.switch::after {
-    background-color: #3e2723
+    background-color: #3e2723 !important
 }
 
 .grey, input[type="checkbox"].grey.switch::after {
-    background-color: #9e9e9e
+    background-color: #9e9e9e !important
 }
 
 .grey-100,
@@ -1041,27 +1041,27 @@
 }
 
 .grey-50, input[type="checkbox"].grey-50.switch::after {
-    background-color: #fafafa
+    background-color: #fafafa !important
 }
 
 .grey-100, input[type="checkbox"].grey-100.switch::after {
-    background-color: #f5f5f5
+    background-color: #f5f5f5 !important
 }
 
 .grey-200, input[type="checkbox"].grey-200.switch::after {
-    background-color: #eee
+    background-color: #eee !important
 }
 
 .grey-300, input[type="checkbox"].grey-300.switch::after {
-    background-color: #e0e0e0
+    background-color: #e0e0e0 !important
 }
 
 .grey-400, input[type="checkbox"].grey-400.switch::after {
-    background-color: #bdbdbd
+    background-color: #bdbdbd !important
 }
 
 .grey-500, input[type="checkbox"].grey-500.switch::after {
-    background-color: #9e9e9e
+    background-color: #9e9e9e !important
 }
 
 .blue-grey,
@@ -1073,23 +1073,23 @@
 }
 
 .grey-600, input[type="checkbox"].grey-600.switch::after {
-    background-color: #757575
+    background-color: #757575 !important
 }
 
 .grey-700, input[type="checkbox"].grey-700.switch::after {
-    background-color: #616161
+    background-color: #616161 !important
 }
 
 .grey-800, input[type="checkbox"].grey-800.switch::after {
-    background-color: #424242
+    background-color: #424242 !important
 }
 
 .grey-900, input[type="checkbox"].grey-900.switch::after {
-    background-color: #212121
+    background-color: #212121 !important
 }
 
 .blue-grey, input[type="checkbox"].blue-grey.switch::after {
-    background-color: #607d8b
+    background-color: #607d8b !important
 }
 
 .blue-grey-100,
@@ -1100,19 +1100,19 @@
 }
 
 .blue-grey-50, input[type="checkbox"].blue-grey-50.switch::after {
-    background-color: #eceff1
+    background-color: #eceff1 !important
 }
 
 .blue-grey-100, input[type="checkbox"].blue-grey-100.switch::after {
-    background-color: #cfd8dc
+    background-color: #cfd8dc !important
 }
 
 .blue-grey-200, input[type="checkbox"].blue-grey-200.switch::after {
-    background-color: #b0bec5
+    background-color: #b0bec5 !important
 }
 
 .blue-grey-300, input[type="checkbox"].blue-grey-300.switch::after {
-    background-color: #90a4ae
+    background-color: #90a4ae !important
 }
 
 .black,
@@ -1126,39 +1126,39 @@
 }
 
 .blue-grey-400, input[type="checkbox"].blue-grey-400.switch::after {
-    background-color: #78909c
+    background-color: #78909c !important
 }
 .transparent {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba( !important0, 0, 0, 0);
 }
 
 .blue-grey-500, input[type="checkbox"].blue-grey-500.switch::after {
-    background-color: #607d8b
+    background-color: #607d8b !important
 }
 
 .blue-grey-600, input[type="checkbox"].blue-grey-600.switch::after {
-    background-color: #546e7a
+    background-color: #546e7a !important
 }
 
 .blue-grey-700, input[type="checkbox"].blue-grey-700.switch::after {
-    background-color: #455a64
+    background-color: #455a64 !important
 }
 
 .blue-grey-800, input[type="checkbox"].blue-grey-800.switch::after {
-    background-color: #37474f
+    background-color: #37474f !important
 }
 
 .blue-grey-900, input[type="checkbox"].blue-grey-900.switch::after {
-    background-color: #263238
+    background-color: #263238 !important
 }
 
 .black, input[type="checkbox"].black.switch::after {
-    background-color: #000
+    background-color: #000 !important
 }
 
 .white {
     color: rgba(0, 0, 0, .8);
-    background-color: #fff
+    background-color: #fff !important
 }
 
 .text-red , i.red {

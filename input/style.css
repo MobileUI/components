@@ -98,7 +98,7 @@ input[type="checkbox"] {
   border-radius: 50%;
 }
 input[type="checkbox"]:not(:checked) {
-  background-color: #fff;
+  background-color: #fff !important;
   box-shadow: inset 0 0 0 2px rgba(0,0,0,0.5);
 }
 .platform-ios input[type="checkbox"]:not(:checked){
@@ -149,7 +149,7 @@ input[type="checkbox"].switch {
   box-shadow: inset 0 0 0 2px rgba(0,0,0,0.05);
 }
 input[type="checkbox"].switch:not(:checked) {
-  background-color: #fff;
+  background-color: #fff !important;
   box-shadow: inset 0 0 0 30px rgba(0,0,0,0.35);
 }
 .platform-ios input[type="checkbox"].switch:not(:checked) {
@@ -204,7 +204,7 @@ input[type="radio"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: none;
+  background: none !important;
 }
 input[type="radio"]::after {
   content: '';
