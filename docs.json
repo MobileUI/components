@@ -75,6 +75,16 @@
           "path":"./grid/index.html"
         }
       ]
+    },
+    {
+      "category": "Frameworks",
+      "itens": [
+        {
+          "key":"jquery",
+          "label":"jQuery",
+          "path":"./jquery/index.html"
+        }
+      ]
     }
   ]
 }

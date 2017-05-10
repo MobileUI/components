@@ -22,7 +22,10 @@ for(var i in docs.docs) {
       if(subitem.key === 'base') {
         docCss = fs.readFileSync('./base/mobileui.css').toString()
       } else if(subitem.path.indexOf('./base') < 0){
-        docCss = fs.readFileSync(subitem.path.replace('index.html','style.css')).toString()
+        var uriFile = subitem.path.replace('index.html','style.css')
+        if(fs.existsSync(uriFile)) {
+          docCss = fs.readFileSync(uriFile).toString()
+        }
       }
       if(docCss) {
         docCss = docCss.split('/*')
