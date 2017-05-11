@@ -1,7 +1,5 @@
-MobileUI
-======
-
 ![MobileUI](logo_m.png)
+======
 
 [MobileUI](https://mobileui.github.io) is a simple and easy NPM package to install UI Components for web mobile apps using HTML, CSS and JavaScript.
 
