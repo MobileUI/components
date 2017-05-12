@@ -30,6 +30,9 @@ ol, ul {
 .content-doc-reader a[target="_blank"]:hover i {
   color: #fff;
 }
+a {
+  border-bottom: 1px dotted #000;
+}
 a.show-doc {
   font-size: 14px;
 }

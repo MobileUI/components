@@ -38,7 +38,7 @@
 .has-footer.has-sub-footer {
   padding-bottom: 104px !important
 }
-.header .left, .header .right, .header .title {
+.header .left, .header .right, .header .title, .header h1 {
   margin-top: 15px;
   margin-bottom: 5px;
 }
@@ -48,8 +48,8 @@
 .header .right {
   padding-right: 5px
 }
-/*Create a title in the header.*/
-.header .title {
+/*Create a title in the header, you can just use h1 element.*/
+.header h1, .header .title {
   margin-bottom: 15px;
   padding-left: 10px;
   padding-right: 15px;

@@ -58,7 +58,17 @@ $(document).ready(function(){
       readOnly: true
     });
   });
-
+  $('textarea.bind-just-code').each(function(i, block) {
+    var code = $(block).val()
+    var mode = $(block).attr('mode')
+    console.log(mode)
+    CodeMirror.fromTextArea(block, {
+      lineNumbers: false,
+      mode: mode,
+      theme: theme,
+      readOnly: true
+    });
+  });
   $('textarea.bind-code').each(function(i, block) {
     var code = $(block).val()
     var mode = $(block).attr('mode')
