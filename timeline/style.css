@@ -1,22 +1,69 @@
-.timeline hr {
-  border:none;
-  width: 100%;
-  height: 1px;
-  background: #ddd;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
 .timeline-line:after {
 content: "";
 position: absolute;
+width: 2px;
+height: 100%;
+background: #eaeaea;
 z-index: -1;
-top: 10px;
-bottom: 0;
-left: 20px;
-border-left: 1px solid #ccc;
-transform: translate(-50%);
+left: 16px;
 }
 .marker {
   margin: 0 auto;
   margin-top: 10px;
+}
+.calendar-date {
+  min-height: 120px;
+}
+.calendar-date span {
+  font-size: 4em
+}
+.group-user-photo {
+  transform: translateX(10px);
+}
+.user-photo {
+  background: #eaeaea;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #d7d2d2
+}
+.group-with {
+  padding-top: 5px;
+}
+.user-photo small {
+  margin-top: 100px;
+}
+
+.circle-more {
+  background: #eaeaea;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bdbbbb;
+  border: 1px solid #d7d2d2;
+  font-size: 12px;
+}
+.user-photo-1 {
+  transform: translateX(-10px);
+}
+.user-photo-2 {
+  transform: translateX(-20px);
+}
+.user-photo-3 {
+  transform: translateX(-30px);
+}
+.user-photo-4 {
+  transform: translateX(-40px);
+}
+.user-photo-5 {
+  transform: translateX(-50px);
+}
+.user-photo-6 {
+  transform: translateX(-60px);
 }
