@@ -35,7 +35,6 @@ a.show-doc {
 }
 .result a {
   cursor: pointer;
-  color: #000;
   text-decoration: none;
 }
 .result.result-icon .icon {
