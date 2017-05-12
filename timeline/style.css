@@ -10,13 +10,12 @@
   flex-basis: 30px
 }
 .hr-relative {
-  width: 100%;
   height: 100%;
   position: relative;
 }
 .hr-relative hr {
-  height: calc(100% + 20px);
   border: none;
+  height: 100%;
   width: 2px;
   background: #D3DEE2;
   position: absolute;
