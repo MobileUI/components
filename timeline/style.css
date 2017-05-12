@@ -1,156 +1,69 @@
-/*Create a line.*/
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.timeline-group {
+  padding: 10px;
+  background: #f0f0f0;
+}
+.timeline {
   display: flex;
+  font-size: 14px;
 }
-/*Create a line that the columns are distributed in an equal space.*/
-.row-between {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.timeline-hr {
+  flex-basis: 30px
 }
-/*Create a line that the columns are distributed in an equal space around.*/
-.row-around {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-/*Create a stretch row, you need define height value.*/
-.row-stretch {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
-/*Create a column.*/
-.column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
- /*Default all items will be on one line, whit this class add to row all items will wrap onto multiple lines, from top to bottom.*/
-.wrap {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-/*Align col to the top(Axis Y).*/
-.vertical-align-top {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-/*Align col to the center(Axis Y).*/
-.vertical-align-center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-/*Align col to the bottom(Axis Y).*/
-.vertical-align-bottom {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-/*Align col to the left(Axis X).*/
-.horizontal-align-left {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-/*Align col to the center(Axis X).*/
-.horizontal-align-center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-/*Align col to the right(Axis X).*/
-.horizontal-align-right {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-/*Center a column on the row.*/
-.row-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-/*Create a column with remaining space of the row.*/
-.col {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-/*Create a column with 10% of the row.*/
-.col-10 {
-  -ms-flex-preferred-size: 10%;
-      flex-basis: 10%;
-}
-/*Create a column with 20% of the row.*/
-.col-20 {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
-}
-/*Create a column with 25% of the row.*/
-.col-25 {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
-}
-/*Create a column with 33.3333% of the row.*/
-.col-33,
-.col-34 {
-  -ms-flex-preferred-size: 33.3333%;
-      flex-basis: 33.3333%;
-}
-/*Create a column with 50% of the row.*/
-.col-50 {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-}
-/*Create a column with 66.6666% of the row.*/
-.col-66,
-.col-67 {
-  -ms-flex-preferred-size:66.6666%;
-      flex-basis:66.6666%;
-}
-/*Create a column with 75% of the row.*/
-.col-75 {
-  -ms-flex-preferred-size: 75%;
-      flex-basis: 75%;
-}
-/*Create a column with 80% of the row.*/
-.col-80 {
-  -ms-flex-preferred-size: 80%;
-      flex-basis: 80%;
-}
-/*Create a column with 90% of the row.*/
-.col-90 {
-  -ms-flex-preferred-size: 90%;
-      flex-basis: 90%;
-}
-.full-width {
+.hr-relative {
   width: 100%;
-  margin: 0 auto
-}
-.full-height {
   height: 100%;
-  margin: 0 auto
+  position: relative;
+}
+.hr-relative hr {
+  height: calc(100% + 20px);
+  border: none;
+  width: 2px;
+  background: #D3DEE2;
+  position: absolute;
+  margin: 0 auto;
+  left: 50%;
+  top:
+}
+.hr-point {
+  width: 20px;
+  height: 20px;
+  background: #a2bae6;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+.point {
+  width: 10px;
+  height: 10px;
+  background: #6E96E0;
+  border-radius: 50%;
+  position: absolute;
+  margin: 0 auto;
+  top: 5px;
+  left: 10px;
+}
+.timeline-content {
+  background: #fff;
+  border-radius: 5px;
+  flex-basis: 100px;
+  flex-grow: 1;
+  padding: 10px;
+  margin: 0 0 0 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .2);
+  margin-bottom: 20px;
+}
+.txt {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  padding-top: 10px;
+}
+.timeline-content-date {
+  color: rgba(0, 0, 0, 0.7);
+}
+.timeline-content-date time {
+  font-weight: bold
+}
+.timeline-content-info a {
+  color: #6E96E0;
+  font-size: 12px;
 }

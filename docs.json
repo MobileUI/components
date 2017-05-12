@@ -79,6 +79,12 @@
           "label":"Grid",
           "path":"./grid/index.html"
         }
+        },
+        {
+          "key":"timeline",
+          "label":"Timeline",
+          "path":"./timeline/index.html"
+        }
       ]
     },
     {
