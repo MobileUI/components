@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
   <link rel="stylesheet" href="../button/style.css">
   <link rel="stylesheet" href="../list/style.css">
   <link rel="stylesheet" href="../cover/style.css">
+  <link rel="stylesheet" href="../grid/style.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="../assets/css/master.css">
   <style>
@@ -23,6 +25,7 @@
     }
   </style>
 </head>
+
 <body class="content">
   <!-- BEGIN -->
   <h2 class="title-doc" id="_DOC_GENERATE_SPACE_">Timeline</h2>
@@ -35,87 +38,60 @@
   <pre>mobileui install timeline</pre>
   <!-- _DOC_GENERATE_CSS_DOC -->
   <textarea class="bind-code" mode="text/html">
-    <div class="timeline-group">
-      <div class="timeline">
-        <div class="timeline-hr">
-          <div class="hr-relative">
-            <div class="hr-point">
-              <div class="point">
-              </div>
-            </div>
-            <hr>
+    <div class="timeline-group column">
+
+      <div class="timeline row">
+        <div class="timeline-line col-10 align-center">
+          <div class="marker col icon-circle text-white blue">
+            <i class="icon ion-home"></i>
           </div>
         </div>
-        <div class="timeline-content white">
-          <div class="timeline-content-date">
-            <time>8:00</time> - <span>File preparation</span>
+        <div class="col list shadow radius margin">
+          <div class="margin">
+            <h2 class=""><span class="text-bold">12:00</span> Lorem ipsum</h2>
+            <hr>
+            <p class="text-grey">Lorem ipsum dolor sit amet.</p><br />
+            <span class="green radius padding">new</span>
+          </div>
+        </div>
+      </div>
+      <div class="timeline row">
+        <div class="col-10 align-center">
+          <div class="marker col icon-circle text-white red">
+            <i class="icon ion-home"></i>
+          </div>
+        </div>
+        <div class="col list shadow radius margin">
+          <div class="margin">
+            <h2 class=""><span class="text-bold">13:00</span> Lorem ipsum</h2>
+            <hr>
+            <p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br />
+            <span class="green radius padding">new</span>
+            <span class="purple radius padding">family</span>
+            <span class="pink radius padding">university</span>
           </div>
         </div>
       </div>
 
-      <div class="timeline">
-        <div class="timeline-hr">
-          <div class="hr-relative">
-            <div class="hr-point">
-              <div class="point">
-              </div>
-            </div>
-            <hr>
+      <div class="timeline row">
+        <div class="col-10 align-center">
+          <div class="marker col icon-circle text-white blue">
+            <i class="icon ion-location"></i>
           </div>
         </div>
-        <div class="timeline-content white">
-          <div class="timeline-content-date">
-            <time>11:30</time> - <span>Webshop mockups discussions</span>
-          </div>
-          <div class="timeline-content-info">
-            <a href="#"><i class="icon ion-location" style="font-size: 12px;"></i>Skype for business</a>
-          </div>
-          <div class="txt">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+        <div class="col list shadow radius margin">
+          <div class="margin">
+            <h2 class=""><span class="text-bold">14:00</span> Lorem ipsum</h2>
+            <hr>
+            <p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
         </div>
       </div>
 
-      <div class="timeline">
-        <div class="timeline-hr">
-          <div class="hr-relative">
-            <div class="hr-point">
-              <div class="point">
-              </div>
-            </div>
-            <hr>
-          </div>
-        </div>
-        <div class="timeline-content white">
-          <div class="timeline-content-date">
-            <time>12:00</time> - <span>File preparation</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline">
-        <div class="timeline-hr">
-          <div class="hr-relative">
-            <div class="hr-point">
-              <div class="point">
-              </div>
-            </div>
-            <hr>
-          </div>
-        </div>
-        <div class="timeline-content white">
-          <div class="timeline-content-date">
-            <time>14:30</time> - <span>Webshop mockups discussions</span>
-          </div>
-          <div class="timeline-content-info">
-            <a href="#"><i class="icon ion-location" style="font-size: 12px;"></i>Skype for business</a>
-          </div>
-          <div class="txt">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
-          </div>
-        </div>
-      </div>
     </div>
+
+
+
   </textarea>
   <br />
 
@@ -125,4 +101,5 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
   <script type="text/javascript" src="../assets/js/main.js"></script>
 </body>
+
 </html>
