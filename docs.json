@@ -83,7 +83,6 @@
           "key":"page",
           "label":"Page",
           "path":"./page/index.html"
-        }
         },
         {
           "key":"timeline",
