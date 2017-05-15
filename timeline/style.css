@@ -1,11 +1,14 @@
 .timeline-line:after {
-content: "";
-position: absolute;
-width: 2px;
-height: 100%;
-background: #eaeaea;
-z-index: -1;
-left: 16px;
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #dddddd;
+  z-index: 1;
+  left: 16px;
+}
+.space-marker {
+  z-index: 9
 }
 .marker {
   margin: 0 auto;
@@ -18,7 +21,8 @@ left: 16px;
   font-size: 4em
 }
 .group-user-photo {
-  transform: translateX(10px);
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 .user-photo {
   background: #eaeaea;
@@ -34,7 +38,6 @@ left: 16px;
 .user-photo small {
   margin-top: 100px;
 }
-
 .circle-more {
   background: #eaeaea;
   width: 30px;
@@ -42,28 +45,40 @@ left: 16px;
   overflow: hidden;
   text-align: center;
   border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #bdbbbb;
   border: 1px solid #d7d2d2;
   font-size: 12px;
 }
 .user-photo-1 {
-  transform: translateX(-10px);
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
 }
 .user-photo-2 {
-  transform: translateX(-20px);
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
 }
 .user-photo-3 {
-  transform: translateX(-30px);
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
 }
 .user-photo-4 {
-  transform: translateX(-40px);
+  -webkit-transform: translateX(-40px);
+          transform: translateX(-40px);
 }
 .user-photo-5 {
-  transform: translateX(-50px);
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
 }
 .user-photo-6 {
-  transform: translateX(-60px);
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
 }
