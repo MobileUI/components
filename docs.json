@@ -78,6 +78,11 @@
           "key":"grid",
           "label":"Grid",
           "path":"./grid/index.html"
+        },
+        {
+          "key":"page",
+          "label":"Page",
+          "path":"./page/index.html"
         }
         },
         {
