@@ -1,19 +1,37 @@
-
-.marker {
+/*Define a timeline component.*/
+.timeline {
+  font-size: 14px;
+  padding: 2px;
+}
+.timeline .marker {
+  position: relative;
+}
+.timeline .marker::before {
   background: rgba(0,0,0,0.3);
   content: "";
   height: 100%;
   width: 2px;
   margin: 0 auto;
+  position: absolute;
+  margin-top: 10px;
+  z-index: 0;
+  left: 18px;
 }
-.timeline:last-child .marker {
-  display: none
+.timeline .row:last-child .marker::before {
+  display: none;
 }
 .timeline .icon-circle,
 .timeline .icon-circle-small,
 .timeline .icon-circle-big {
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 10px;
+  position: absolute;
+  margin-left: 7px;
+}
+.timeline .icon-circle i::before,
+.timeline .icon-circle-small i::before,
+.timeline .icon-circle-big i::before {
+  margin-top: 4px;
 }
 .timeline .avatar-group {
   -webkit-transform: translateX(10px);
@@ -49,28 +67,4 @@
   color: #bdbbbb;
   border: 1px solid #d7d2d2;
   font-size: 12px;
-}
-.timeline .avatar-photo-1 {
-  -webkit-transform: translateX(-10px);
-          transform: translateX(-10px);
-}
-.timeline .avatar-photo-2 {
-  -webkit-transform: translateX(-20px);
-          transform: translateX(-20px);
-}
-.timeline .avatar-photo-3 {
-  -webkit-transform: translateX(-30px);
-          transform: translateX(-30px);
-}
-.timeline .avatar-photo-4 {
-  -webkit-transform: translateX(-40px);
-          transform: translateX(-40px);
-}
-.timeline .avatar-photo-5 {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
-}
-.timeline .avatar-photo-6 {
-  -webkit-transform: translateX(-60px);
-          transform: translateX(-60px);
 }

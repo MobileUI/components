@@ -38,6 +38,7 @@ a.show-doc {
 }
 .result a {
   cursor: pointer;
+  color: #000;
   text-decoration: none;
 }
 .result.result-icon .icon {
@@ -182,6 +183,9 @@ a.show-doc {
   font-size: 16px;
 }
 .content p.text-small {
+  font-size: 14px;
+}
+.content .result p {
   font-size: 14px;
 }
 pre, .CodeMirror {
