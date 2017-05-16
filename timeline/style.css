@@ -1,29 +1,20 @@
-.timeline a {
-  border-bottom: none
-}
+
 .marker {
-    background: rgba(0,0,0,0.3);
-    content: "";
-    height: 100%;
-    width: 2px;
-    margin: 0 auto;
+  background: rgba(0,0,0,0.3);
+  content: "";
+  height: 100%;
+  width: 2px;
+  margin: 0 auto;
 }
 .timeline:last-child .marker {
   display: none
 }
-
-
-
-
-
 .timeline .icon-circle,
 .timeline .icon-circle-small,
 .timeline .icon-circle-big {
   margin: 0 auto;
   margin-top: 20px;
 }
-
-
 .timeline .avatar-group {
   -webkit-transform: translateX(10px);
           transform: translateX(10px);
