@@ -206,6 +206,24 @@ span.padding {
     border-radius: 50%;
     text-align: center;
 }
+.icon-circle-small {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+}
+.icon-circle-small i {
+    font-size: 15px;
+}
+.icon-circle-big {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+}
+.icon-circle-big i {
+    font-size: 70px;
+}
 .backdrop {
   position: absolute;
   top: 0;
