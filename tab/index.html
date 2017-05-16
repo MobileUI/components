@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway:400,700|Roboto:300,400,900," rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+  <link rel="stylesheet" href="../base/reset.css">
+  <link rel="stylesheet" href="../base/mobileui.css">
+  <link rel="stylesheet" href="../base/colors.css">
+  <link rel="stylesheet" href="../base/icons.css">
+  <link rel="stylesheet" href="../header/style.css">
+  <link rel="stylesheet" href="../button/style.css">
+  <link rel="stylesheet" href="../list/style.css">
+  <link rel="stylesheet" href="../cover/style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../assets/css/master.css">
+  <style>
+    .content {
+      margin-left: 50px
+    }
+  </style>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body class="content">
+  <!-- BEGIN -->
+  <h2 class="title-doc" id="_DOC_GENERATE_SPACE_">Tab</h2>
+  <p>
+    Tabs are a horizontal region of buttons or links that allow for a consistent navigation experience between screens.
+    It can contain any combination of text and icons, and is a popular method for enabling mobile navigation.
+  </p>
+  <div class="dependency tooltip">
+    <strong>Dependency:</strong> <code>base</code> and <code>button</code>.
+    <span class="tooltiptext">The dependencies will be installed together with this module</span>
+  </div>
+  <p>
+    For use this components you need install with command:
+  </p>
+  <pre>mobileui install tab</pre>
+  <!-- _DOC_GENERATE_CSS_DOC -->
+  <p>
+    Your tab need have <code>id</code> and for you open tab, just call function openTab('ID_YOUR_TAB'). For init you tab opne you need add class `active` in your button by tab and in your content of tab.
+    See this small example:
+  </p>
+<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div|grey-200,grey-200 body" height-preview="200px" border="true" multiplatform="true">
+<body class="padding pink-50 has-header has-sub-header">
+  <div class="header pink">
+    <div class="left">
+      <button class="icon ion-navicon"></button>
+    </div>
+    <h1>Profile</h1>
+  </div>
+  <div class="header pink sub shadow tab">
+    <button class="icon ion-android-person active" onclick="openTab('tabAbout')">About</button>
+    <button class="icon ion-android-list" onclick="openTab('tabEvents')">Events</button>
+    <button class="icon ion-android-chat" onclick="openTab('tabMessages')">Messages</button>
+    <button class="icon ion-android-people" onclick="openTab('tabGroups')">Groups</button>
+  </div>
+  <div class="tab-content active" id="tabAbout">
+    <h2 class="text-strong padding text-pink">Tab About</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+  <div class="tab-content" id="tabEvents">
+    <h2 class="text-strong padding text-pink">Tab Events</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+  <div class="tab-content" id="tabMessages">
+    <h2 class="text-strong padding text-pink">Tab Messages</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+  <div class="tab-content" id="tabGroups">
+    <h2 class="text-strong padding text-pink">Tab Groups</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+</body></textarea>
+  <p>You can put your tab in bottom position and using just icon</p>
+<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div|grey-200,grey-200 body" height-preview="200px" border="true" multiplatform="true">
+<body class="padding pink-50 has-header has-footer">
+  <div class="header pink">
+    <div class="left">
+      <button class="icon ion-navicon"></button>
+    </div>
+    <h1>Profile</h1>
+  </div>
+  <div class="header bottom pink shadow tab">
+    <button class="icon ion-android-person active" onclick="openTab('myTabAbout')">About</button>
+    <button class="icon ion-android-list" onclick="openTab('myTabEvents')">Events</button>
+    <button class="icon ion-android-chat" onclick="openTab('myTabMessages')">Messages</button>
+    <button class="icon ion-android-people" onclick="openTab('myTabGroups')">Groups</button>
+  </div>
+  <div class="tab-content active" id="myTabAbout">
+    <h2 class="text-strong padding text-pink">Tab About</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+  <div class="tab-content" id="myTabEvents">
+    <h2 class="text-strong padding text-pink">Tab Events</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+  <div class="tab-content" id="myTabMessages">
+    <h2 class="text-strong padding text-pink">Tab Messages</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+  <div class="tab-content" id="myTabGroups">
+    <h2 class="text-strong padding text-pink">Tab Groups</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+</body></textarea>
+  <p>
+    See this good example using another components MobileUI :)
+  </p>
+<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div|grey-200,grey-200 body" height-preview="400px" border="true" multiplatform="true">
+<body class="grey-50 has-header has-sub-header">
+  <div class="header green-900">
+    <h1>WhatsApp</h1>
+    <div class="right">
+      <button class="icon ion-android-search"></button>
+      <button class="icon ion-android-more-vertical"></button>
+    </div>
+
+  </div>
+  <div class="header green-900 sub shadow tab">
+    <button class="text-white active" onclick="openTab('tabChats')">
+      Chats <span class="badge white text-green-900">1</span>
+    </button>
+    <button class="text-white" onclick="openTab('tabStatus')">Status</button>
+    <button class="text-white" onclick="openTab('tabCalls')">Calls</button>
+  </div>
+  <div class="tab-content active" id="tabChats">
+    <div class="list">
+      <div class="item">
+        <div class="left">
+          <img class="avatar circle" src="../assets/img/80.jpg" >
+        </div>
+        <div class="right align-top text-small text-green">
+          13:15
+        </div>
+        <h2 class="text-strong">Jeanette Fletcher</h2>
+        <p class="text-grey-700 ellipsis">Lorem ipsum  😋😋😋 dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+      </div>
+      <div class="item">
+        <div class="left">
+          <img class="avatar circle" src="../assets/img/33.jpg" >
+        </div>
+        <div class="right align-top text-small">
+          13:07
+        </div>
+        <h2 class="text-strong">Carter Hudson</h2>
+        <p class="text-grey-700 ellipsis"><i class="icon ion-camera grey"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+      </div>
+      <div class="item">
+        <div class="left">
+          <img class="avatar circle" src="../assets/img/96.jpg" >
+        </div>
+        <div class="right align-top text-small">
+          12:26
+        </div>
+        <h2 class="text-strong">Juster Mark Slow</h2>
+        <p class="text-grey-700 ellipsis">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+      </div>
+    </div>
+  </div>
+  <div class="tab-content" id="tabStatus">
+    <div class="list">
+      <div class="item">
+        <div class="left">
+          <div class="icon-circle green">
+            <i class="icon ion-android-add"></i>
+          </div>
+        </div>
+        <h2 class="text-strong">My Status</h2>
+        <p class="text-grey-700 ellipsis">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+      </div>
+      <div class="item grey-200">
+        <p class="text-green text-small">Last status your friends</p>
+      </div>
+      <div class="item">
+        <div class="left">
+          <img class="avatar circle border-green border-big" src="../assets/img/96.jpg" >
+        </div>
+        <h2 class="text-strong">Juster Mark Slow</h2>
+        <p class="text-grey-700 ellipsis">Today, 12:10</p>
+      </div>
+      <div class="item">
+        <div class="left">
+          <img class="avatar circle border-grey border-big" src="../assets/img/33.jpg" >
+        </div>
+        <h2 class="text-strong">Carter Hudson</h2>
+        <p class="text-grey-700 ellipsis">Today, 11:22</p>
+      </div>
+    </div>
+  </div>
+  <div class="tab-content" id="tabCalls">
+    <div class="list">
+      <div class="item">
+        <div class="left">
+          <img class="avatar circle" src="../assets/img/80.jpg" >
+        </div>
+        <div class="right">
+          <i class="icon text-huge ion-android-call text-green-900"></i>
+        </div>
+        <h2 class="text-strong">Jeanette Fletcher</h2>
+        <p class="text-grey-700 ellipsis">
+          <i class="icon ion-arrow-left-b green"></i> May, 5, 13:25
+        </p>
+      </div>
+      <div class="item">
+        <div class="left">
+          <img class="avatar circle" src="../assets/img/33.jpg" >
+        </div>
+        <div class="right">
+          <i class="icon text-huge ion-android-call text-green-900"></i>
+        </div>
+        <h2 class="text-strong">Carter Hudson</h2>
+        <p class="text-grey-700 ellipsis">
+          <i class="icon ion-arrow-left-b red"></i> May, 5, 11:15
+        </p>
+      </div>
+      <div class="item">
+        <div class="left">
+          <img class="avatar circle" src="../assets/img/96.jpg" >
+        </div>
+        <div class="right">
+          <i class="icon text-huge ion-android-call text-green-900"></i>
+        </div>
+        <h2 class="text-strong">Juster Mark Slow</h2>
+        <p class="text-grey-700 ellipsis">
+          <i class="icon ion-arrow-right-b green"></i> May, 5, 13:25
+        </p>
+      </div>
+    </div>
+  </div>
+</body></textarea>
+  <!-- DONE -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+  <script type="text/javascript" src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -55,6 +55,11 @@
           "path":"./list/index.html"
         },
         {
+          "key":"tab",
+          "label":"Tab",
+          "path":"./tab/index.html"
+        },
+        {
           "key":"card",
           "label":"Card",
           "path":"./base/card.html"

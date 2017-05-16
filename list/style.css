@@ -120,7 +120,18 @@
 .list .item .icon {
   font-size: 18px;
 }
+.list .item .icon.text-big {
+  font-size: 22px;
+}
+.list .item .icon.text-huge {
+  font-size: 32px;
+}
 .list .left .icon {
   font-size: 25px;
   vertical-align: -webkit-baseline-middle;
+}
+/*Add big border in item or element.*/
+.list .border-big {
+  border-width: 3px;
+  border-style: solid;
 }
