@@ -1,22 +1,29 @@
-.timeline {
-  position: relative;
+.timeline a {
+  border-bottom: none
 }
-.timeline .marker {
+.marker {
+    background: rgba(0,0,0,0.3);
+    content: "";
+    height: 100%;
+    width: 2px;
+    margin: 0 auto;
+}
+.timeline:last-child .marker {
+  display: none
+}
+
+
+
+
+
+.timeline .icon-circle,
+.timeline .icon-circle-small,
+.timeline .icon-circle-big {
   margin: 0 auto;
   margin-top: 20px;
 }
-.timeline .marker::before {
-  background: #d7d2d2;
-  content: "";
-  height: 100%;
-  width: 2px;
-  position: absolute;
-  top: 45px;
-  left: 16px;
-}
-.timeline:last-child .marker::before {
-  display: none
-}
+
+
 .timeline .avatar-group {
   -webkit-transform: translateX(10px);
           transform: translateX(10px);
