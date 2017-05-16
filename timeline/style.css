@@ -1,18 +1,18 @@
-.timeline-line:after {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 100%;
-  background: #dddddd;
-  z-index: 1;
-  left: 16px;
+.column .row {
+  position: relative;
 }
-.space-marker {
-  z-index: 9
+.row:last-child .timeline {
+  display: none
+}
+.row .timeline {
+  width: 2px;
+  height: 90%;
+  background: #ccc;
+  margin: 0 auto
 }
 .marker {
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .calendar-date {
   min-height: 120px;
