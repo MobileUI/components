@@ -1,0 +1,76 @@
+
+.marker {
+  background: rgba(0,0,0,0.3);
+  content: "";
+  height: 100%;
+  width: 2px;
+  margin: 0 auto;
+}
+.timeline:last-child .marker {
+  display: none
+}
+.timeline .icon-circle,
+.timeline .icon-circle-small,
+.timeline .icon-circle-big {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.timeline .avatar-group {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+.timeline .avatar-photo {
+  background: #eaeaea;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #d7d2d2
+}
+.timeline .avatar-photo small {
+  margin-top: 100px;
+}
+.timeline .circle-more {
+  background: #eaeaea;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #bdbbbb;
+  border: 1px solid #d7d2d2;
+  font-size: 12px;
+}
+.timeline .avatar-photo-1 {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+.timeline .avatar-photo-2 {
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+}
+.timeline .avatar-photo-3 {
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
+}
+.timeline .avatar-photo-4 {
+  -webkit-transform: translateX(-40px);
+          transform: translateX(-40px);
+}
+.timeline .avatar-photo-5 {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+.timeline .avatar-photo-6 {
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+}

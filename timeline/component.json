@@ -1,0 +1,5 @@
+{
+  "name":"timeline",
+  "author": "gustavoquinalha",
+  "dependencies": ["base", "grid"]
+}

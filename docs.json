@@ -88,6 +88,11 @@
           "key":"page",
           "label":"Page",
           "path":"./page/index.html"
+        },
+        {
+          "key":"timeline",
+          "label":"Timeline",
+          "path":"./timeline/index.html"
         }
       ]
     },
