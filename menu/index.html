@@ -200,6 +200,17 @@
     </div>
   </div>
 </body></textarea>
+    <p>For advanced mode you can listener the event <code>openMenu</code> and <code>closeMenu</code>.</p>
+<textarea class="bind-just-code" mode="text/javascript">
+document.addEventListener('openMenu', function(e){
+  //It does something when the menu is opened
+  //You can access name of menu in: e.detail.menu
+})
+
+document.addEventListener('closeMenu', function(e){
+  //It does something when the menu is closed.
+  //You can access name of menu in: e.detail.menu
+})</textarea>
     <!-- DONE -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>

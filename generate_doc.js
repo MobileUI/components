@@ -55,7 +55,7 @@ for(var i in docs.docs) {
   }
   menu += `</ul>`
 }
-var index = template.replace(`<!-- SPACE-GENERATE-DOCS -->`, `<div class="menuland font-raleway">${menu}</div><div class="content font-raleway">${content}</div>`)
+var index = template.replace(`<!-- SPACE-GENERATE-DOCS -->`, `<div class="menuland font-raleway">${menu}</div><div class="content-land font-raleway">${content}</div>`)
 index = index.replace(new RegExp(`../assets/`, 'g'), `/`)
 fs.writeFile(path.join(docs.site_dir,'index.html'), index)
 

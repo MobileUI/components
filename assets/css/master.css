@@ -2,6 +2,7 @@ body {
   -webkit-touch-callout: text;
   -webkit-text-size-adjust: text;
   -webkit-user-select: text;
+  overflow: auto !important;
 }
 .font-dosis {
   font-family: 'Dosis', sans-serif;
@@ -14,6 +15,10 @@ body {
 }
 ol, ul {
     list-style: none;
+}
+.content-doc-reader {
+  display: inline-block;
+  width: 100%;
 }
 .content-doc-reader a[target="_blank"] {
   opacity: 0.8;
@@ -128,12 +133,13 @@ a.show-doc {
   width: 280px;
   overflow: auto;
   padding: 50px;
+  padding-top: 30px;
 }
 .menuland li {
   font-size: 16px;
 }
 .menuland h1,
-.content h2.title-doc {
+.content-land h2.title-doc {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 10px;
@@ -141,10 +147,10 @@ a.show-doc {
   color: #24292e;
   text-transform: uppercase;
 }
-.content .content-doc-reader h2.title-doc {
+.content-land .content-doc-reader h2.title-doc {
   margin-top: 0;
 }
-.content h2.title-doc {
+.content-land h2.title-doc {
   padding-top: 50px;
 }
 .menuland h1:first-child {
@@ -171,21 +177,21 @@ a.show-doc {
   bottom: 0;
   height: 100%;
 }
-.content {
+.content-land {
   max-width: 100%;
   margin-left: 320px;
   font-size: 18px;
   padding-right: 50px
 }
-.content p {
+.content-land p {
   line-height: 30px;
   padding-bottom: 15px;
   font-size: 16px;
 }
-.content p.text-small {
+.content-land p.text-small {
   font-size: 14px;
 }
-.content .result p {
+.content-land .result p {
   font-size: 14px;
 }
 pre, .CodeMirror {
@@ -300,7 +306,7 @@ textarea.bind-code {
     .menuland {
       display: none;
     }
-    .content {
+    .content-land {
       margin:0;
       padding: 0;
     }
@@ -540,5 +546,8 @@ code {
   position: absolute !important;
 }
 .backdrop {
+  position: absolute !important;
+}
+.float-bottom-right, .float-bottom-left {
   position: absolute !important;
 }

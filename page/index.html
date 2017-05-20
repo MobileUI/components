@@ -99,6 +99,17 @@
 function functionOpenContact(params){
   document.getElementById('name').value = params.name;
 }</textarea>
+    <p>For advanced mode you can listener the event <code>openPage</code> and <code>closePage</code>.</p>
+<textarea class="bind-just-code" mode="text/javascript">
+document.addEventListener('openPage', function(e){
+//It does something when the page is opened
+//You can access name of page in: e.detail.page
+})
+
+document.addEventListener('backPage', function(e){
+//It does something when the page is closed.
+//You can access name of page in: e.detail.page
+})</textarea>
     <!-- DONE -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>

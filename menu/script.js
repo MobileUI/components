@@ -32,10 +32,21 @@ window.openMenu = function(m){
       }
     }
     m.className += ' open';
+    var customEvent = new CustomEvent("openMenu",{ "detail": {menu:name}});
+    document.dispatchEvent(customEvent);
+    document.addEventListener('firedCloseMenu', function (e) {
+      window.closeMenu(name);
+    }, false);
   }
 }
 window.closeMenu = function(m){
+  var name = m;
   m = document.getElementById(m);
+  if(m.className.indexOf('open') < 0){
+    return false;
+  }
+  var customEvent = new CustomEvent("closeMenu",{ "detail": {menu:name}});
+  document.dispatchEvent(customEvent);
   m.className = m.className.replace('open','');
   var headers = document.getElementsByClassName('header');
   if(headers.length){
@@ -50,7 +61,9 @@ window.closeMenu = function(m){
     e = e[0];
     e.className = e.className.replace('show','');
     setTimeout(function(){
-      e.parentNode.removeChild(e);
+      if(e && e.parentNode){
+        e.parentNode.removeChild(e);
+      }
     }, 500)
   }
   if(SO.code !== 1) {

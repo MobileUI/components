@@ -28,7 +28,7 @@
   margin-left: -312px;
 }
 .platform-ios .backdrop-menu {
-  opacity: 0;
+  opacity: 0.01;
 }
 .platform-ios .menu {
     width: 264px;

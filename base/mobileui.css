@@ -5,6 +5,8 @@
 body {
     font-family: Roboto,"Helvetica Neue",sans-serif;
     -webkit-overflow-scrolling: touch;
+    overflow: hidden;
+    position: absolute;
 }
 body.platform-ios {
     font-family: -apple-system,"Helvetica Neue",Roboto,sans-serif;
@@ -13,6 +15,13 @@ a {
   cursor: pointer;
   color: #000;
   text-decoration: none;
+}
+/*Create the scrollable viewport of your app.*/
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
 }
 /*Floats any element to the left.*/
 .left {
@@ -193,13 +202,13 @@ span.padding {
 }
 /*Floats an element in the footer to the right.*/
 .float-bottom-right {
-    position: absolute;
+    position: fixed;
     right: 15px;
     bottom: 15px
 }
 /*Floats an element in the footer to the left.*/
 .float-bottom-left {
-    position: absolute;
+    position: fixed;
     left: 15px;
     bottom: 15px
 }

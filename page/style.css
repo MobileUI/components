@@ -9,6 +9,7 @@
   opacity: 0;
   contain: strict;
   background-color: #fff;
+  overflow: auto;
 }
 .page.show {
   opacity: 1;

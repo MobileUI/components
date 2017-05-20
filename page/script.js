@@ -1,4 +1,15 @@
 window.PAGE={handePage:100};
+document.addEventListener("deviceready", function(){
+  document.addEventListener("backbutton", function(e){
+    var pages = document.getElementsByClassName('box-block');
+    if(pages.length){
+      e.preventDefault();
+      window.backPage(pages[pages.length-1].id);
+    } else {
+      navigator.app.exitApp();
+    }
+  }, false);
+}, false);
 window.dispatch = function(fn, args) {
     fn = (typeof fn == "function") ? fn : window[fn];
     return fn.apply(this, args || []);
@@ -46,10 +57,13 @@ window.openPage = function(p, params, callback){
           style = style.replace(secondStyle,'')
           document.getElementById(p).getElementsByClassName('page')[0].setAttribute('style',style)
         },280)
-      },10)
+      },100)
     }
   };
   xhttp.open("GET", p + '?cache='+new Date().getTime(), true);
+  document.dispatchEvent(new Event('firedCloseMenu'));
+  var customEvent = new CustomEvent("openPage",{ "detail": {page:p}});
+  document.dispatchEvent(customEvent);
   xhttp.send();
 }
 window.backPage = function(p){
@@ -64,7 +78,9 @@ window.backPage = function(p){
   document.getElementById(p).getElementsByClassName('page')[0].setAttribute("style", newStyle);
   var newClass = document.getElementById(p).getElementsByClassName('page')[0].getAttribute('class')
   newClass += newClass.replace('show','')
-  document.getElementById(p).getElementsByClassName('page')[0].setAttribute('class',newClass)
+  document.getElementById(p).getElementsByClassName('page')[0].setAttribute('class',newClass);
+  var customEvent = new CustomEvent("backPage",{ "detail": {page:p}});
+  document.dispatchEvent(customEvent);
   setTimeout(function(){
     var elm = document.getElementById(p);
     elm.parentElement.removeChild(elm);
