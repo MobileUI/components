@@ -1,6 +1,9 @@
 var theme = 'default'
 var mode = 'text/html'
 var idGenerate = 100
+
+SO.code=1;
+
 $(document).ready(function(){
   var animeBanner = function(){
     $('.hero-cards').clearQueue().stop().animate({ marginTop: "0" }, 1000, function() {
@@ -186,27 +189,6 @@ $(document).ready(function(){
   });
 
 })
-
-
-window.openMenuLand = function(m){
-  var m = document.getElementById(m);
-  if(m.className.indexOf('menu') >= 0 && m.className.indexOf('open') < 0) {
-    var e = document.createElement('div');
-    e.className = 'backdrop backdrop-menu';
-    $(m).parent().append(e)
-    m.className += ' open';
-    setTimeout(function(){
-      e.className += ' show';
-    });
-    e.addEventListener('click', function(evt){
-      m.className = m.className.replace('open','');
-      e.className = e.className.replace('show','');
-      setTimeout(function(){
-        e.parentNode.removeChild(e);
-      }, 500)
-    }, false);
-  }
-}
 
 window.showPreview = function(e, id){
   $(e).parent().find('.border-green').removeClass('border-green');

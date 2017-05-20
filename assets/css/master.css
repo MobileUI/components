@@ -536,3 +536,9 @@ code {
     background-position: -2452px -552px;
     margin-top: 120px;
 }
+.menu {
+  position: absolute !important;
+}
+.backdrop {
+  position: absolute !important;
+}

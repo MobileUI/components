@@ -3,7 +3,11 @@
     outline: none
 }
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    -webkit-overflow-scrolling: touch;
+}
+body.platform-ios {
+    font-family: -apple-system,"Helvetica Neue",Roboto,sans-serif;
 }
 a {
   cursor: pointer;
@@ -225,7 +229,7 @@ span.padding {
     font-size: 70px;
 }
 .backdrop {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
