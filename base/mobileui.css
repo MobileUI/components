@@ -209,12 +209,18 @@ span.padding {
     height: 40px;
     border-radius: 50%;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .icon-circle-small {
     width: 25px;
     height: 25px;
     border-radius: 50%;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .icon-circle-small i {
     font-size: 15px;
@@ -224,6 +230,9 @@ span.padding {
     height: 80px;
     border-radius: 50%;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .icon-circle-big i {
     font-size: 70px;

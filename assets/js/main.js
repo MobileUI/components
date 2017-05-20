@@ -2,7 +2,9 @@ var theme = 'default'
 var mode = 'text/html'
 var idGenerate = 100
 
-SO.code=1;
+if(window.SO) {
+  window.SO.code = 1;
+}
 
 $(document).ready(function(){
   var animeBanner = function(){
