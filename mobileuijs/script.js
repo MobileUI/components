@@ -111,6 +111,9 @@
 
   //Functions Help
   window.MobileUI = {
+    bind: function(){
+      dataBind();
+    },
     objectByForm: function(id){
       var form = document.getElementById(id);
       var obj = {};

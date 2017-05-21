@@ -78,6 +78,7 @@ $(document).ready(function(){
     var mode = $(block).attr('mode')
     var border = $(block).attr('border')
     var absolute = $(block).attr('header-absolute')
+    var execMobileuiBind = $(block).attr('exec-mobileui-bind')
     var replace = $(block).attr('replace')
     var hidden = $(block).attr('hidden')
     var multiplatform = $(block).attr('multiplatform')
@@ -121,6 +122,13 @@ $(document).ready(function(){
       code = code.replace('openPage(','openPageDemo('+id+',');
     }
     $(block).after(divHeader+'<div '+attrs+' class="'+resultClass+'" style="'+resultStyle+'">'+code+'<div class="cls"></div></div><div class="line"></div>')
+    if(execMobileuiBind){
+      setTimeout(function(){
+        if(MobileUI && MobileUI.bind){
+          MobileUI.bind();
+        }
+      },500);
+    }
   });
 
   var $document = $(document);

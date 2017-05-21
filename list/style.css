@@ -13,6 +13,9 @@
   position: relative;
   font-size: 18px;
 }
+.list .item.hidden {
+  display: none;
+}
 /*Define a small space between the top and bottom elements.*/
 .list .item.space-small {
   padding-top: 5px;

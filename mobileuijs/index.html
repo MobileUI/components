@@ -10,23 +10,189 @@
     <link rel="stylesheet" href="../base/mobileui.css">
     <link rel="stylesheet" href="../base/colors.css">
     <link rel="stylesheet" href="../base/icons.css">
+    <link rel="stylesheet" href="../header/style.css">
+    <link rel="stylesheet" href="../button/style.css">
+    <link rel="stylesheet" href="../mobileuijs/style.css">
+    <link rel="stylesheet" href="../input/style.css">
+    <link rel="stylesheet" href="../list/style.css">
     <link rel="stylesheet" href="../assets/css/master.css">
     <style>
-      .content { margin-left:50px}
+      .content-land { margin-left:50px}
     </style>
     <script type="text/javascript" src="../base/base.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="../input/script.js"></script>
   </head>
-  <body class="content">
+  <body class="content-land">
     <!-- BEGIN -->
-    <h2 class="title-doc" id="_DOC_GENERATE_SPACE_">MobileUI JavaScript Framework</h2>
+    <h2 class="title-doc" id="_DOC_GENERATE_SPACE_">MobileUI.JS</h2>
     <p>
-      DOC
+      This component is a simple library for manipulating data and states of elements in JavaScript.
     </p>
+    <p>
+      For use this components you need install with command:
+    </p>
+    <pre>mobileui install mobileuijs</pre>
+    <p>
+      The most important functionality is the observation in objects and arrays.
+      For use you need add attribute <code>data</code> in your HTML element with the name of a <code>object</code> or <code>array</code>.
+      This causes an element to be changed if the object or array is modified and you can display using a escape expression <code>${}</code>
+    </p>
+    <p>
+      In this example a have a <code>object</code> with attributes of user:
+    </p>
+<textarea class="bind-just-code" mode="text/javascript">
+var user = {
+    name: 'Fábio Rogério',
+    email: 'fabio@rogerio.com'
+}</textarea>
+    <p>
+      And in my HTML I have an element that uses this created object as data:
+    </p>
+<textarea class="bind-just-code" mode="text/html">
+<p data="user">
+  Your name is ${name} and your email is ${email}
+</p></textarea>
+    <p>
+      In this example a have a <code>array</code> with objects of user:
+    </p>
+<textarea class="bind-just-code" mode="text/javascript">
+var users = [
+  {
+    name: 'Fábio Rogério',
+    email: 'fabio@rogerio.com'
+  },
+  {
+    name: 'Steve Jobs',
+    email: 'steve@jobs.com'
+  }
+]</textarea>
+    <p>
+      And in my HTML I have an element that uses this created array as data:
+    </p>
+<textarea class="bind-just-code" mode="text/html">
+<ul>
+  <li data="users">
+    Name: ${name}, Email: ${email}
+  </li>
+</ul></textarea>
+    <p>
+      If you add another object in array, the HTML elements will update. Check this feature in action:
+    </p>
+<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div|grey-200,grey-200 body" height-preview="600px" border="true" exec-mobileui-bind="true">
+<body class="has-header grey-200">
+  <div class="header red">
+    <h1>Example MobileUI.js</h1>
+  </div>
+  <div class="list white" id="formCadaster">
+    <div class="item">
+      <input type="text" id="name" placeholder="Name">
+    </div>
+    <div class="item">
+      <input type="email" id="email" placeholder="Email">
+    </div>
+    <div class="item">
+      <button class="blue full" onclick="addUser()">SAVE USER</button>
+    </div>
+    <div class="item text-red hidden" id="messageValidation">
+      <p>
+        <i class="icon ion-alert-circled"></i> Enter the name and email of user.
+      </p>
+    </div>
+  </div>
+  <div class="list">
+    <div class="item" data="users">
+      <h2>${name}</h2>
+      <p>${email}</p>
+      <div class="right">
+        <button class="icon ion-trash-b red" onclick="deleteUser($$$index)"></button>
+        <button class="icon ion-edit blue" onclick="editUser($$$index)"></button>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var users = [
+      {
+        name: 'Fábio Rogério',
+        email: 'fabio@rogerio.com'
+      },
+      {
+        name: 'Steve Jobs',
+        email: 'steve@jobs.com'
+      }
+    ];
+
+    var indexEdit=-1; //Just example in memory
+
+    function addUser(){
+      var obj = MobileUI.objectByForm('formCadaster');
+      MobileUI.hide('messageValidation');
+      if(!obj.name || !obj.email) {
+        MobileUI.show('messageValidation');
+        return false;
+      }
+      if(indexEdit>=0){
+        users[indexEdit] = obj;
+        indexEdit=-1;
+      } else {
+        users.push(obj);
+      }
+      MobileUI.clearForm('formCadaster');
+    }
+
+    function editUser(index){
+      indexEdit = index;
+      MobileUI.formByObject('formCadaster', users[index]);
+    }
+
+    function deleteUser(index){
+      delete users[index];
+    }
+  </script>
+</body></textarea>
+    <p>The features of this component are:</p>
+    <div class="content-table">
+      <table class="tableDoc">
+        <tbody>
+          <tr>
+            <th>Class</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td><code>MobileUI.objectByForm('idElement')</code></td>
+            <td>Returns an object with the values of the inputs found within the given element.</td>
+          </tr>
+          <tr>
+            <td><code>MobileUI.formByObject('idElement', object)</code></td>
+            <td>Set the input values from an informed object.</td>
+          </tr>
+          <tr>
+            <td><code>MobileUI.clearForm('idElement')</code></td>
+            <td>Clear and reset inputs within the entered element.</td>
+          </tr>
+          <tr>
+            <td><code>MobileUI.show('idElement')</code></td>
+            <td>Display an element that is hidden.</td>
+          </tr>
+          <tr>
+            <td><code>MobileUI.hide('idElement')</code></td>
+            <td>Hidden an element.</td>
+          </tr>
+          <tr>
+            <td><code>MobileUI.showHide('idElement')</code></td>
+            <td>Display an element that is hidden or hides an element if it is visible.</td>
+          </tr>
+          <tr>
+            <td><code>MobileUI.focus('idElement')</code></td>
+            <td>Focus on an element, if input to keyboard is displayed.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <!-- DONE -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
     <script type="text/javascript" src="../assets/js/main.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
