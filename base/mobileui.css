@@ -16,6 +16,9 @@ a {
   color: #000;
   text-decoration: none;
 }
+*[data] {
+  display: none !important;
+}
 /*Create the scrollable viewport of your app.*/
 .content {
   position: absolute;
@@ -48,6 +51,10 @@ a {
 /*Align text, icons, and elements to the right.*/
 .align-right {
     text-align: right;
+}
+/*Hide a element.*/
+.hidden {
+  display: none;
 }
 /*Define 90% of opacity.*/
 .opacity-90 {

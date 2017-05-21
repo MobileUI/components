@@ -32,6 +32,7 @@ button.circle {
   padding: 0;
   line-height: 0;
   font-size: 22px;
+  z-index: 10;
 }
 /*Determines that the button will have an icon.*/
 button.icon-text {
