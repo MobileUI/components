@@ -18,13 +18,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../assets/css/master.css">
     <style>
-      .content { margin-left:50px}
+      .content-land { margin-left:50px}
     </style>
     <script type="text/javascript" src="../base/base.js"></script>
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="contact.js"></script>
   </head>
-  <body class="content">
+  <body class="content-land">
     <!-- BEGIN -->
     <h2 class="title-doc" id="_DOC_GENERATE_SPACE_">Page</h2>
     <p>
@@ -49,48 +49,48 @@
 </body></textarea>
     <p>For the example above we have the <code>contacts</code> page:</p>
 <textarea class="bind-just-code" mode="text/html">
-<div class="page has-header">
+<div class="page">
   <div class="header blue">
     <div class="left">
       <button class="icon ion-ios-arrow-back" onclick="backPage()"></button>
     </div>
     <h1 class="title align-center">Contacts</h1>
-    <div class="right">
-      <button class="icon ion-plus-circled"></button>
+  </div>
+  <div class="content has-header">
+    <div class="list">
+      <div class="item" onclick="openPage('contact', {name:'Jeanette Fletcher'}, functionOpenContact)">
+        <img class="avatar left" src="../assets/img/33.jpg">
+        <h2>Jeanette Fletcher</h2>
+        <p>jeanette.fletcher15@example.com</p>
+      </div>
+      <div class="item" onclick="openPage('contact', {name:'Jack Oliver'}, functionOpenContact)">
+        <img class="avatar left" src="../assets/img/53.jpg">
+        <h2>Jack Oliver</h2>
+        <p>jack.oliver@example.com</p>
+      </div>
+      <div class="item" onclick="openPage('contact', {name:'Carter hudson'}, functionOpenContact)">
+        <img class="avatar left" src="../assets/img/96.jpg">
+        <h2>Carter hudson</h2>
+        <p>carter.hudson17@example.com</p>
+      </div>
     </div>
   </div>
-  <div class="list">
-    <div class="item" onclick="openPage('contact', {name:'Jeanette Fletcher'}, functionOpenContact)">
-      <img class="avatar left" src="../assets/img/33.jpg">
-      <h2>Jeanette Fletcher</h2>
-      <p>jeanette.fletcher15@example.com</p>
-    </div>
-    <div class="item" onclick="openPage('contact', {name:'Jack Oliver'}, functionOpenContact)">
-      <img class="avatar left" src="../assets/img/53.jpg">
-      <h2>Jack Oliver</h2>
-      <p>jack.oliver@example.com</p>
-    </div>
-    <div class="item" onclick="openPage('contact', {name:'Carter hudson'}, functionOpenContact)">
-      <img class="avatar left" src="../assets/img/96.jpg">
-      <h2>Carter hudson</h2>
-      <p>carter.hudson17@example.com</p>
-    </div>
-  </div>
-</div>
-</textarea>
+</div></textarea>
     <p>When you click on an item in the list the <code>contact</code> page appears:</p>
 <textarea class="bind-just-code" mode="text/html">
-<div class="page has-header">
+<div class="page">
   <div class="header blue">
     <div class="left">
       <button class="icon ion-ios-arrow-back" onclick="backPage()"></button>
     </div>
     <h1 class="title align-center">Contact</h1>
   </div>
-  <div class="list">
-    <div class="item">
-      <label>NAME</label>
-      <input id="name" type="text" value="Jeanette Fletcher" readonly>
+  <div class="content has-header">
+    <div class="list">
+      <div class="item">
+        <label>NAME</label>
+        <input id="name" type="text" value="Jeanette Fletcher" readonly>
+      </div>
     </div>
   </div>
 </div></textarea>

@@ -21,6 +21,9 @@ button {
   cursor: pointer;
   overflow: hidden;
 }
+button[disabled] {
+  opacity: 0.8;
+}
 button .icon {
   position: absolute;
   left: 10px;

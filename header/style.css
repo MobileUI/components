@@ -1,5 +1,5 @@
 /*Create a fixed bar at the top of the page.*/
-.header {
+.footer, .header {
   font-size: 18px;
   display: inline-block;
   width: 100%;
@@ -10,15 +10,15 @@
   z-index: 9;
 }
 /*Create a fixed bar at the bottom of the page.*/
-.header.bottom {
+.footer {
   top: initial;
   bottom: 0;
 }
-/*If used with <code>header</code> create a fixed sub-bar at the top of the page, if using with <code>bottom</code> creates a fixed sub-bar at the bottom.*/
+/*If used with <code>header</code> create a fixed sub-bar at the top of the page, if using with <code>footer</code> creates a fixed sub-bar at the bottom.*/
 .header.sub {
   top:52px;
 }
-.header.sub.bottom {
+.footer.sub {
   top: initial;
   bottom: 52px;
 }
@@ -30,7 +30,7 @@
 .has-header.has-sub-header {
   padding-top: 104px !important;
 }
-/*Used in the parent element of the <code>header</code> and <code>bottom</code>, or body element, to define that the page uses <code>header</code> in bottom.*/
+/*Used in the parent element of the <code>header</code> and <code>footer</code>, or body element, to define that the page uses <code>header</code> in bottom.*/
 .has-footer {
   padding-bottom: 52px !important
 }
@@ -38,27 +38,27 @@
 .has-footer.has-sub-footer {
   padding-bottom: 104px !important
 }
-.header .left, .header .right, .header .title, .header h1 {
+.header .left, .header .right, .header .title, .header h1, .footer .left, .footer .right, .footer .title, .footer h1 {
   margin-top: 15px;
   margin-bottom: 5px;
 }
-.header .left {
+.header .left, .footer .left {
   padding-left: 5px
 }
-.header .right {
+.header .right, .footer .right {
   padding-right: 5px
 }
 /*Create a title in the header, you can just use h1 element.*/
-.header h1, .header .title {
+.header h1, .header .title, .footer h1, .footer .title {
   margin-bottom: 15px;
   padding-left: 10px;
   padding-right: 15px;
   display: inline-block;
 }
-.header button {
+.header button, .footer button {
   margin-top: -10px;
 }
-.header button.icon {
+.header button.icon, .footer button.icon {
   color: #fff;
   font-size: 30px;
   margin-top: -10px;
@@ -67,7 +67,7 @@
   border: none;
   padding: 0 6px;
 }
-.header .title.align-center {
+.header .title.align-center, .footer .title.align-center {
   width: 100%;
   position: inherit;
   padding-right: 15px;
@@ -75,19 +75,19 @@
   z-index: 9;
 }
 /*Create a floating badge next to an icon.*/
-.header .icon-badge {
+.header .icon-badge, .footer .icon-badge {
   position: absolute;
   margin-left: -6px;
   margin-top: -8px;
   border-radius: 8px;
   z-index: 999;
 }
-.header .buttons-group {
+.header .buttons-group, .footer .buttons-group {
   margin-top: 15px;
   margin-left: 5px;
   margin-right: 5px;
 }
-.header .buttons-group.small {
+.header .buttons-group.small, .footer .buttons-group.small {
   margin-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
