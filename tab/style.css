@@ -20,7 +20,7 @@
   opacity: 0.6;
   margin: 0;
 }
-.header.bottom.tab button.icon {
+.footer.tab button.icon {
   margin-top: 0;
 }
 .header.tab.shadow {
@@ -63,10 +63,10 @@
   line-height: 18px;
   padding-top: 1px;
 }
-.tab.bottom button.active::after {
+.tab.footer button.active::after {
   top: 0;
 }
-.header.tab.bottom.shadow {
+.header.tab.footer.shadow {
     box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.2);
 }
 .platform-ios .tab button.active::after {
