@@ -129,7 +129,7 @@
 .list .item .icon.text-huge {
   font-size: 32px;
 }
-.list .left .icon {
+.list .left .icon, .list .right .icon {
   font-size: 25px;
   vertical-align: -webkit-baseline-middle;
 }
@@ -137,4 +137,9 @@
 .list .border-big {
   border-width: 3px;
   border-style: solid;
+}
+.list .item[onclick]:active,
+.list a.item:active {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }

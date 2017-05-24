@@ -16,6 +16,12 @@ body {
 ol, ul {
     list-style: none;
 }
+.content {
+  position: inherit;
+  width: 100%;
+  max-height: 600px;
+  overflow: auto;
+}
 .content-doc-reader {
   display: inline-block;
   width: 100%;
@@ -258,6 +264,9 @@ pre, .CodeMirror {
 }
 .header {
   position: inherit;
+}
+.footer {
+  position: absolute;
 }
 .header.header-absolute {
   position: absolute;

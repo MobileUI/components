@@ -26,7 +26,7 @@
     <!-- BEGIN -->
     <h2 class="title-doc" id="_DOC_GENERATE_SPACE_">MobileUI.JS</h2>
     <p>
-      This component is a simple library for manipulating data and states of elements in JavaScript.
+      This component is a simple library for manipulating data, states of elements and Ajax request in JavaScript.
     </p>
     <p>
       For use this components you need install with command:
@@ -36,6 +36,10 @@
       The most important functionality is the observation in objects and arrays.
       For use you need add attribute <code>data</code> in your HTML element with the name of a <code>object</code> or <code>array</code>.
       This causes an element to be changed if the object or array is modified and you can display using a escape expression <code>${}</code>
+    </p>
+    <p>
+      MobileUI.js embed the lib <a href="http://visionmedia.github.io/superagent/" target="_blank">SuperAgent</a> for call ajax request, because it is light-weight progressive
+      ajax API crafted for flexibility, readability, and a low learning curve.
     </p>
     <p>
       In this example a have a <code>object</code> with attributes of user:
@@ -154,7 +158,7 @@ var users = [
       <table class="tableDoc">
         <tbody>
           <tr>
-            <th>Class</th>
+            <th>Function</th>
             <th>Description</th>
           </tr>
           <tr>
@@ -168,6 +172,10 @@ var users = [
           <tr>
             <td><code>MobileUI.clearForm('idElement')</code></td>
             <td>Clear and reset inputs within the entered element.</td>
+          </tr>
+          <tr>
+            <td><code>MobileUI.ajax</code></td>
+            <td>Ajax request flexibility, readability, and a low learning curve using <a href="http://visionmedia.github.io/superagent/" target="_blank">SuperAgent</a>.</td>
           </tr>
           <tr>
             <td><code>MobileUI.show('idElement')</code></td>
@@ -185,9 +193,110 @@ var users = [
             <td><code>MobileUI.focus('idElement')</code></td>
             <td>Focus on an element, if input to keyboard is displayed.</td>
           </tr>
+          <tr>
+            <td><code>MobileUI.disable('idElement')</code></td>
+            <td>Disable an element and your children's.</td>
+          </tr>
+          <tr>
+            <td><code>MobileUI.enable('idElement')</code></td>
+            <td>Enable an element and your children's.</td>
+          </tr>
+          <tr>
+            <td><code>document.addEventListener('dataUpdated')</code></td>
+            <td>
+              Fire event when data is updated, you can check whats is data in the event.detail, ex:<br>
+              <code>
+                document.addEventListener('dataUpdated', function(event){
+                  //event.detail.dataKey
+                  //event.detail.dataValue
+                })
+              </code>
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
+    <p>
+      See this example using ajax request.
+    </p>
+<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div|grey-200,grey-200 body" height-preview="600px" border="true" exec-mobileui-bind="true">
+<body class="padding grey-200">
+  <div class="list white" id="formUserGitHub">
+    <div class="item icon ion-at">
+      <input type="text" id="github_username" placeholder="Enter GitHub username">
+    </div>
+    <div class="item">
+      <button class="blue full" onclick="getProfile()">GET PROFILE</button>
+    </div>
+  </div>
+  <p class="text-red" data="infos">${message}</p>
+  <div class="hidden" id="listProfileGitHub">
+    <div class="list" data="userGitHub">
+      <div class="item">
+        <div class="left">
+          <img class="avatar circle" src="${avatar_url}">
+        </div>
+        <h2>${name}</h2>
+        <p>@${login}</p>
+      </div>
+      <div class="item">
+        <p>${bio}</p>
+      </div>
+    </div>
+  </div>
+  <div class="hidden" id="listRepositoriesGitHub">
+    <div class="list">
+      <div class="item grey-900">
+        REPOSITORIES
+        <span class="black radius padding right" data="infos">
+          ${totalRepositories}
+        </span>
+      </div>
+      <a href="${html_url}" target="_blank" class="item" data="repositoriesGitHub">
+        <h2 class="text-strong">${name}</h2>
+        <p>${html_url}</p>
+      </a>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var userGitHub = {};
+    var repositoriesGitHub = [];
+    var infos = {};
+
+    function getProfile(){
+      var obj = MobileUI.objectByForm('formUserGitHub');
+      MobileUI.disable('formUserGitHub');
+      MobileUI.ajax.get('https://api.github.com/users/' + obj.github_username).end(resultAjaxProfile)
+    }
+
+    function getRepositories(repoUrl){
+      MobileUI.ajax.get(repoUrl).end(resultAjaxRepositories)
+    }
+
+    function resultAjaxProfile(err, res){
+      MobileUI.enable('formUserGitHub');
+      if(err) {
+        infos.message = "Sorry, get profile not work now :(";
+      } else {
+        userGitHub = JSON.parse(res.text);
+        MobileUI.show('listProfileGitHub');
+        if(userGitHub.repos_url){
+          getRepositories(userGitHub.repos_url);
+        }
+      }
+    }
+
+    function resultAjaxRepositories(err, res){
+      if(!err) {
+        repositoriesGitHub = JSON.parse(res.text);
+        MobileUI.show('listRepositoriesGitHub');
+        infos.totalRepositories = repositoriesGitHub.length;
+      }
+    }
+
+
+  </script>
+</body></textarea>
     <!-- DONE -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
