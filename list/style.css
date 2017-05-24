@@ -138,3 +138,8 @@
   border-width: 3px;
   border-style: solid;
 }
+.list .item[onclick]:active,
+.list a.item:active {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
