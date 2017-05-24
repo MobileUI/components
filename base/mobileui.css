@@ -108,9 +108,9 @@ p {
     margin: 10px
 }
 span.padding {
-    padding: 5px;
-    padding-top: 0;
-    padding-bottom: 0
+  padding: 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 /*Add a small rounded border.*/
 .radius {
