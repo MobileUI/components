@@ -72,10 +72,10 @@ label {
 .item.icon.icon-right:before {
   right: 20px;
 }
-.item.icon input {
+.item.icon input, .item.icon select {
   padding-left: 30px;
 }
-.item.icon.icon-right input {
+.item.icon.icon-right input, .item.icon.icon-right select {
   padding-left: 0;
   padding-right: 30px;
 }
