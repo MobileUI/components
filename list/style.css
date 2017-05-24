@@ -129,7 +129,7 @@
 .list .item .icon.text-huge {
   font-size: 32px;
 }
-.list .left .icon {
+.list .left .icon, .list .right .icon {
   font-size: 25px;
   vertical-align: -webkit-baseline-middle;
 }

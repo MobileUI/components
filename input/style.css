@@ -257,6 +257,51 @@ input[type="radio"]:disabled {
   transform: rotate(45deg);
   border-radius: 0;
 }
+/*Defines a item of list is range input.*/
+.item.range {
+  position: relative;
+  -ms-flex-item-align: center;
+  -webkit-align-self: center;
+  align-self: center;
+}
+.item.range input{
+  position: absolute;;
+   height: 28px;
+   width: calc(100% - 110px);
+   margin: 4px 0 5px 0;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   -ms-appearance: none;
+   appearance: none;
+   background: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0,#ccc),color-stop(100%,#ccc));
+   background: linear-gradient(to right,#ccc 0,#ccc 100%);
+   background-position: center;
+   background-size: 100% 2px;
+   background-repeat: no-repeat;
+   outline: 0;
+   border: none;
+   box-sizing: content-box;
+   -ms-background-position-y: 500px;
+}
+input[type="range"]::-webkit-slider-thumb {
+     -webkit-appearance: none;
+    background-color: #666;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+input[type="range"]:active::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+}
+.platform-ios input[type="range"]::-webkit-slider-thumb {
+  background-color: #fff;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  width: 25px;
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+}
 input[type="radio"].red-50::after, input[type="checkbox"].red-50.switch::before { background-color: #ffebee; }
 input[type="radio"].red-100::after, input[type="checkbox"].red-100.switch::before { background-color: #ffcdd2; }
 input[type="radio"].red-200::after, input[type="checkbox"].red-200.switch::before { background-color: #ef9a9a; }
