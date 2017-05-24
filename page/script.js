@@ -34,7 +34,7 @@ window.openPage = function(p, params, callback){
       div.setAttribute('class','box-block')
       div.setAttribute('id',p)
       div.innerHTML = page
-      body.appendChild(div)
+      body.appendChild(div);
       window.PAGE.handePage++
       var firstStyle = 'z-index:'+window.PAGE.handePage
       var secondStyle = ';transform: translateY(0px);will-change: transform, -webkit-transform, opacity;transition-duration: 280ms;transition-timing-function: cubic-bezier(0.36,0.66,0.04,1);'
@@ -50,6 +50,8 @@ window.openPage = function(p, params, callback){
       }
       var newClass = document.getElementById(p).getElementsByClassName('page')[0].getAttribute('class')
       newClass += ' show'
+      var customEvent = new CustomEvent("openPage",{ "detail": {page:p}});
+      document.dispatchEvent(customEvent);
       setTimeout(function(){
         document.getElementById(p).getElementsByClassName('page')[0].setAttribute('class',newClass)
         setTimeout(function(){
@@ -62,8 +64,6 @@ window.openPage = function(p, params, callback){
   };
   xhttp.open("GET", p + '?cache='+new Date().getTime(), true);
   document.dispatchEvent(new Event('firedCloseMenu'));
-  var customEvent = new CustomEvent("openPage",{ "detail": {page:p}});
-  document.dispatchEvent(customEvent);
   xhttp.send();
 }
 window.backPage = function(p){
