@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway:400,700|Roboto:300,400,900," rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+  <link rel="stylesheet" href="../base/reset.css">
+  <link rel="stylesheet" href="../base/mobileui.css">
+  <link rel="stylesheet" href="../base/colors.css">
+  <link rel="stylesheet" href="../base/icons.css">
+  <link rel="stylesheet" href="../header/style.css">
+  <link rel="stylesheet" href="../button/style.css">
+  <link rel="stylesheet" href="../list/style.css">
+  <link rel="stylesheet" href="../cover/style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../assets/css/master.css">
+  <style>
+    .content {
+      margin-left: 50px
+    }
+  </style>
+  <script type="text/javascript" src="../base/base.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body class="content">
+  <!-- BEGIN -->
+  <h2 class="title-doc" id="_DOC_GENERATE_SPACE_">Popover</h2>
+  <p>
+    The Popover is a view that floats above an app’s content. Popovers provide an easy way to present or gather information from
+    the user and are commonly used in the following situations: Show more info about the current view ,select a commonly used
+    tool or configuration and present a list of actions to perform inside one of your views.
+  </p>
+  <div class="dependency tooltip">
+    <strong>Dependency:</strong> <code>base</code> and <code>list</code>.
+    <span class="tooltiptext">The dependencies will be installed together with this module</span>
+  </div>
+  <p>
+    For use this components you need install with command:
+  </p>
+  <pre>mobileui install popover</pre>
+  <!-- _DOC_GENERATE_CSS_DOC -->
+  <p>
+    Your popover need have <code>id</code> and for you open popover, just call function <code>openPopover('ID_YOUR_POPOVER')</code>.
+  </p>
+  <p>See example:</p>
+<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div|grey-200,grey-200 body|openPopover,openPopoverLand" height-preview="400px" border="true" multiplatform="true">
+<body class="padding grey-200 has-header">
+
+  <div class="popover" id="popover1">
+    <div class="list">
+      <div class="item"><h1>Action popover #1</h1></div>
+      <div class="item"><h1>Action popover #2</h1></div>
+      <div class="item"><h1>Action popover #3</h1></div>
+      <div class="item"><h1 class="text-grey">Action popover #4</h1></div>
+    </div>
+  </div>
+
+  <div class="header purple">
+    <h1>App Popover</h1>
+    <div class="right">
+      <button class="icon ion-android-more-vertical" onclick="openPopover('popover1')"></button>
+    </div>
+  </div>
+</body></textarea>
+
+  <!-- DONE -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+  <script type="text/javascript" src="../assets/js/main.js"></script>
+</body>
+</html>

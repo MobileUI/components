@@ -15,13 +15,48 @@ window.dispatch = function(fn, args) {
     return fn.apply(this, args || []);
 }
 window.openPage = function(p, params, callback){
+  var showPageEffect = function(){
+    window.PAGE.handePage++
+    var firstStyle = 'z-index:'+window.PAGE.handePage
+    var secondStyle = ';transform: translateY(0px);will-change: transform, -webkit-transform, opacity;transition-duration: 280ms;transition-timing-function: cubic-bezier(0.36,0.66,0.04,1);'
+    var newStyle = document.getElementById(p).getElementsByClassName('page')[0].getAttribute('style')
+    if(newStyle) {
+      newStyle += ' '+firstStyle + secondStyle
+    } else {
+      newStyle = firstStyle + secondStyle
+    }
+    document.getElementById(p).getElementsByClassName('page')[0].setAttribute("style", newStyle);
+    if(callback) {
+      window.dispatch(callback, [params]);
+    }
+    var newClass = document.getElementById(p).getElementsByClassName('page')[0].getAttribute('class')
+    newClass += ' show'
+    var customEvent = new CustomEvent("openPage",{ "detail": {page:p}});
+    document.dispatchEvent(customEvent);
+    setTimeout(function(){
+      document.getElementById(p).getElementsByClassName('page')[0].setAttribute('class',newClass)
+      setTimeout(function(){
+        var style = document.getElementById(p).getElementsByClassName('page')[0].getAttribute('style')
+        style = style.replace(secondStyle,'')
+        document.getElementById(p).getElementsByClassName('page')[0].setAttribute('style',style)
+      },280)
+    },100)
+  }
   if(arguments.length===2) {
     callback = params
   }
-  var xhttp = new XMLHttpRequest();
   if(p.indexOf('.html') < 0){
     p =p+'.html';
   }
+  //check if page is openned.
+  if(document.getElementById(p)){
+    var pages = document.getElementsByClassName('box-block');
+    if(pages[pages.length-1].id === document.getElementById(p).id){
+      return false;
+    }
+    document.getElementById(p).parentNode.removeChild(document.getElementById(p));
+  }
+  var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       var page = this.responseText;
@@ -35,31 +70,7 @@ window.openPage = function(p, params, callback){
       div.setAttribute('id',p)
       div.innerHTML = page
       body.appendChild(div);
-      window.PAGE.handePage++
-      var firstStyle = 'z-index:'+window.PAGE.handePage
-      var secondStyle = ';transform: translateY(0px);will-change: transform, -webkit-transform, opacity;transition-duration: 280ms;transition-timing-function: cubic-bezier(0.36,0.66,0.04,1);'
-      var newStyle = document.getElementById(p).getElementsByClassName('page')[0].getAttribute('style')
-      if(newStyle) {
-        newStyle += ' '+firstStyle + secondStyle
-      } else {
-        newStyle = firstStyle + secondStyle
-      }
-      document.getElementById(p).getElementsByClassName('page')[0].setAttribute("style", newStyle);
-      if(callback) {
-        window.dispatch(callback, [params]);
-      }
-      var newClass = document.getElementById(p).getElementsByClassName('page')[0].getAttribute('class')
-      newClass += ' show'
-      var customEvent = new CustomEvent("openPage",{ "detail": {page:p}});
-      document.dispatchEvent(customEvent);
-      setTimeout(function(){
-        document.getElementById(p).getElementsByClassName('page')[0].setAttribute('class',newClass)
-        setTimeout(function(){
-          var style = document.getElementById(p).getElementsByClassName('page')[0].getAttribute('style')
-          style = style.replace(secondStyle,'')
-          document.getElementById(p).getElementsByClassName('page')[0].setAttribute('style',style)
-        },280)
-      },100)
+      showPageEffect();
     }
   };
   xhttp.open("GET", p + '?cache='+new Date().getTime(), true);

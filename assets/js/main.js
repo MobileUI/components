@@ -299,3 +299,42 @@ window.openPageDemo = function(id, p, params, callback){
   xhttp.open("GET", p + '?cache='+new Date().getTime(), true);
   xhttp.send();
 }
+
+window.openPopoverLand = function(p){
+  var button = event.target;
+  var rect = button.getBoundingClientRect();
+  var name = p;
+  var p = document.getElementById(p);
+  var e = document.createElement('div');
+  e.className = 'backdrop backdrop-popover';
+  p.parentNode.appendChild(e);
+  e.addEventListener('click', function(evt){
+    window.closePopover(name);
+  });
+  p.addEventListener('click', function(evt){
+    window.closePopover(name);
+  });
+  p.style += ';top: 110%;right: 10px;transform-origin: right top 0px;transform: scale(1);';
+  p.classList.add('show');
+  if(SO.code === 2) {
+    p.style.top = '45px';
+    p.style.right = '5px';
+    var divArrow = document.createElement('div');
+    divArrow.classList.add('popover-arrow');
+    p.parentNode.appendChild(divArrow);
+    divArrow.setAttribute('style','top:40px;right:15px');
+  } else {
+    var pHeight = p.clientHeight;
+    var pWidth = p.clientWidth;
+    p.style.height = 0;
+    p.style.width = 0;
+    p.style.top = '5px';
+    setTimeout(function(){
+      var style = p.getAttribute('style');
+      style += ' ;-webkit-transition: all 200ms ease;transition: all 200ms ease;';
+      p.setAttribute('style', style);
+      p.style.height = pHeight+'px';
+      p.style.width = pWidth+'px';
+    })
+  }
+}

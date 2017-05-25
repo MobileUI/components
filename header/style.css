@@ -92,3 +92,17 @@
   margin-left: 10px;
   margin-right: 10px;
 }
+.header input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.8);
+}
+/*Defines a light color for the placeholder.*/
+.header input.placeholder-white::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.header input {
+  padding: 15px;
+  position: absolute;
+}
+.header .left+input {
+  padding-right: 50px;
+}

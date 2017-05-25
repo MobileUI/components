@@ -5,7 +5,7 @@
   var observerWatchers = [];
   var tokenObserver = 0;
   var dataBind = function(){
-    var elms = document.querySelectorAll('[data]')
+    var elms = document.querySelectorAll('[data]');
     for (var i = 0; i < elms.length; i++) {
       if(elms[i].getAttribute('data') && !elms[i].getAttribute('data-binded')){
         var data = elms[i].getAttribute('data');
@@ -15,12 +15,15 @@
           elms[i].setAttribute('data-binded','mobileui');
           dataObserver(elms[i].getAttribute('data'), tokenObserver++);
         } else {
-          setTimeout(function(){
-            dataBind();
-          },100);
         }
       }
     }
+    eventLoopBind();
+  }
+  eventLoopBind = function(){
+    setTimeout(function(){
+      dataBind();
+    },100);
   }
   reDataBind = function(observerWatcher){
     //TODO: Improve logic for performance

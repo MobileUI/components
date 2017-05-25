@@ -90,6 +90,11 @@
           "path":"./page/index.html"
         },
         {
+          "key":"popover",
+          "label":"Popover",
+          "path":"./popover/index.html"
+        },
+        {
           "key":"timeline",
           "label":"Timeline",
           "path":"./timeline/index.html"
