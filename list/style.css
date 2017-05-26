@@ -27,6 +27,7 @@
 }
 .list .item.mark.margin-button {
   border-bottom: 0;
+  margin-bottom: 10px;
 }
 .list .item.row {
   display: -moz-flex;
@@ -34,17 +35,17 @@
   display: flex;
 }
 /*Define that a list or an item has no borders.*/
-.list.without-border {
+.list.no-border {
   border: 0;
 }
 /*Define that a list or an item has a bottom border.*/
-.list.without-border .item.border-bottom,
-.list .item.without-border.border-bottom {
+.list.no-border .item.border-bottom,
+.list .item.no-border.border-bottom {
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
-.list.without-border .item,
-.list .item.without-border {
+.list.no-border .item,
+.list .item.no-border {
   border: none;
 }
 .list .item.cover {
