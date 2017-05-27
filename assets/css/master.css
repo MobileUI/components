@@ -560,3 +560,8 @@ code {
 .float-bottom-right, .float-bottom-left {
   position: absolute !important;
 }
+.header p, .footer p {
+  padding-left: 10px;
+  margin: 0;
+  margin-top: -4px;
+}

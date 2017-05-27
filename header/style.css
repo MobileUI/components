@@ -42,6 +42,15 @@
   margin-top: 15px;
   margin-bottom: 5px;
 }
+.header h2, .footer h2 {
+  padding-top: 8px;
+  padding-left: 10px;
+}
+.header p, .footer p {
+  padding-left: 10px;
+  margin: 0;
+  margin-top: -4px;
+}
 .header .left, .footer .left {
   padding-left: 5px
 }
@@ -67,7 +76,9 @@
   border: none;
   padding: 0 6px;
 }
-.header .title.align-center, .footer .title.align-center {
+.header .title.align-center, .footer .title.align-center,
+.header h1.align-center, .footer h1.align-center,
+.header p.align-center, .footer p.align-center {
   width: 100%;
   position: inherit;
   padding-right: 15px;
