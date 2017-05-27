@@ -1155,12 +1155,41 @@
 .black, input[type="checkbox"].black.switch::after {
     background-color: #000 !important
 }
+.black-opacity-90 {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.black-opacity-70 {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.black-opacity-50 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.black-opacity-30 {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.black-opacity-10 {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 
 .white {
     color: rgba(0, 0, 0, .8);
     background-color: #fff !important
 }
-
+.white-opacity-90 {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.white-opacity-70 {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.white-opacity-50 {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.white-opacity-30 {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.white-opacity-10 {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 .text-red , i.red {
     color: #f44336;
 }
