@@ -120,6 +120,16 @@
           "path":"./jquery/index.html"
         }
       ]
+    },
+    {
+      "category": "Templates",
+      "itens": [
+        {
+          "key":"template-cordova-blank",
+          "label":"Cordova Blank",
+          "path":"./template-cordova-blank/doc.html"
+        }
+      ]
     }
   ]
 }
