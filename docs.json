@@ -95,6 +95,11 @@
           "path":"./popover/index.html"
         },
         {
+          "key":"chart-bar",
+          "label":"Chart Bar",
+          "path":"./chart-bar/index.html"
+        },
+        {
           "key":"timeline",
           "label":"Timeline",
           "path":"./timeline/index.html"
