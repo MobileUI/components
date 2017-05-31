@@ -1,0 +1,7 @@
+{
+  "name":"progress-circle",
+  "author": "fabiorogeriosj",
+  "dependencies": [
+    "base"
+  ]
+}

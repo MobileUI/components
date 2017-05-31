@@ -32,7 +32,7 @@
   margin: 0;
 }
 .popover .item {
-  display: table;
+  display: table !important;
   overflow: hidden;
   white-space: nowrap;
   padding: 10px;
