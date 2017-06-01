@@ -8,6 +8,7 @@
 .tab-content {
   display: none;
 }
+/*Define that tab and ab-content is open.*/
 .tab-content.active {
   display: block;
 }
