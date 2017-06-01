@@ -1,8 +1,8 @@
 /*Define a new tab.*/
 .tab {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 /*Define a area content by tab*/
 .tab-content {
@@ -16,7 +16,7 @@
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  font-size: 13px;
+  font-size: 13px !important;
   text-transform: uppercase;
   opacity: 0.6;
   margin: 0;
