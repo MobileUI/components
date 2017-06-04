@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway:400,700|Roboto:300,400,500,600,900," rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+  <link rel="stylesheet" href="../base/reset.css">
+  <link rel="stylesheet" href="../base/mobileui.css">
+  <link rel="stylesheet" href="../base/colors.css">
+  <link rel="stylesheet" href="../base/icons.css">
+  <link rel="stylesheet" href="../header/style.css">
+  <link rel="stylesheet" href="../button/style.css">
+  <link rel="stylesheet" href="../list/style.css">
+  <link rel="stylesheet" href="../cover/style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../assets/css/master.css">
+  <style>
+    .content {
+      margin-left: 50px
+    }
+  </style>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body class="content">
+  <!-- BEGIN -->
+  <h2 class="title-doc" id="_DOC_GENERATE_SPACE_">Alert</h2>
+  <p>
+    Alerts are a great way to offer the user the ability to choose a specific action or list of actions. They also can provide the user with important information, or require them to make a decision (or multiple decisions).
+  </p>
+  <p>
+    From a UI perspective, Alerts can be thought of as a type of “floating” modal that covers only a portion of the screen. This means Alerts should only be used for quick actions like password verification, small app notifications, or quick options.
+  </p>
+  <div class="dependency tooltip">
+    <strong>Dependency:</strong> <code>base</code>.
+    <span class="tooltiptext">The dependencies will be installed together with this module</span>
+  </div>
+  <p>
+    For use this components you need install with command:
+  </p>
+  <pre>mobileui install alert</pre>
+  <!-- _DOC_GENERATE_CSS_DOC -->
+  <p>
+    For use you need call the function <code>alert('YOUR MESSAGE')</code> or <code>alert(objectCustomized)</code>, and you can send more paramters for create alert with title or multiple options.
+  </p>
+  <p>
+    See this small example:
+  </p>
+<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div|padding,padding body" height-preview="400px" border="true" multiplatform="true">
+<body class="padding">
+  <button class="blue full radius margin-bottom" onclick="alert('Simple message here!')">Show message</button>
+  <button class="blue full radius margin-bottom" onclick="alert('Simple message here!', 'Title message')">Show message with title</button>
+  <button class="blue full radius margin-bottom" onclick="showMyCustomizedAlert()">Show customized alert</button>
+
+  <script>
+    function showMyCustomizedAlert(){
+      alert({
+        title:'My alert',
+        message:'This is my customized alert!',
+        buttons:[
+          {
+            label: 'OK',
+            onclick: function(){
+              //You code when user click in OK button.
+              closeAlert();
+            }
+          },
+          {
+            label:'Cancel',
+            onclick: function(){
+              closeAlert();
+            }
+          }
+        ]
+      });
+    }
+  </script>
+</body></textarea>
+  <p>You can add <code>class</code> with more advanced customized alert:</p>
+  <textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div|padding,padding body" height-preview="400px" border="true" multiplatform="true">
+  <body class="padding">
+    <button class="blue full radius margin-bottom" onclick="deleteItem()">Delete item</button>
+
+    <script>
+      function deleteItem(){
+        alert({
+          title:'Alert',
+          message:'Are you sure you want to delete this item?',
+          class:'red',
+          buttons:[
+            {
+              label: 'YES',
+              class:'red-900'
+            },
+            {
+              label:'NO',
+              class:'text-white'
+            }
+          ]
+        });
+      }
+    </script>
+  </body></textarea>
+  <!-- DONE -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+  <script type="text/javascript" src="../assets/js/main.js"></script>
+</body>
+</html>

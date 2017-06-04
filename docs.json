@@ -95,6 +95,11 @@
           "path":"./popover/index.html"
         },
         {
+          "key":"alert",
+          "label":"Alerty",
+          "path":"./alert/index.html"
+        },
+        {
           "key":"chart-bar",
           "label":"Chart Bar",
           "path":"./chart-bar/index.html"
