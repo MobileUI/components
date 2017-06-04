@@ -96,53 +96,63 @@
 /*Create a column with remaining space of the row.*/
 .col {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative;
 }
 /*Create a column with 10% of the row.*/
 .col-10 {
+  position: relative;
   -ms-flex-preferred-size: 10%;
       flex-basis: 10%;
 }
 /*Create a column with 20% of the row.*/
 .col-20 {
+  position: relative;
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
 }
 /*Create a column with 25% of the row.*/
 .col-25 {
+  position: relative;
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
 }
 /*Create a column with 33.3333% of the row.*/
 .col-33,
 .col-34 {
+  position: relative;
   -ms-flex-preferred-size: 33.3333%;
       flex-basis: 33.3333%;
 }
 /*Create a column with 50% of the row.*/
 .col-50 {
+  position: relative;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
 }
 /*Create a column with 66.6666% of the row.*/
 .col-66,
 .col-67 {
+  position: relative;
   -ms-flex-preferred-size:66.6666%;
       flex-basis:66.6666%;
 }
 /*Create a column with 75% of the row.*/
 .col-75 {
+  position: relative;
   -ms-flex-preferred-size: 75%;
       flex-basis: 75%;
 }
 /*Create a column with 80% of the row.*/
 .col-80 {
+  position: relative;
   -ms-flex-preferred-size: 80%;
       flex-basis: 80%;
 }
 /*Create a column with 90% of the row.*/
 .col-90 {
+  position: relative;
   -ms-flex-preferred-size: 90%;
       flex-basis: 90%;
 }

@@ -31,7 +31,13 @@ a {
 .right {
     float: right
 }
-/*Floats any element to the right bottom.*/
+/*Floats any element to the top.*/
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*Floats any element to the bottom.*/
 .bottom {
     position: absolute;
     bottom: 0;
