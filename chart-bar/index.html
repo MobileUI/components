@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway:400,700|Roboto:300,400,900," rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+  <link rel="stylesheet" href="../base/reset.css">
+  <link rel="stylesheet" href="../base/mobileui.css">
+  <link rel="stylesheet" href="../base/colors.css">
+  <link rel="stylesheet" href="../base/icons.css">
+  <link rel="stylesheet" href="../header/style.css">
+  <link rel="stylesheet" href="../button/style.css">
+  <link rel="stylesheet" href="../list/style.css">
+  <link rel="stylesheet" href="../cover/style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../assets/css/master.css">
+  <style>
+    .content-land {
+      margin-left: 50px
+    }
+  </style>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body class="content-land">
+  <!-- BEGIN -->
+  <h2 class="title-doc" id="_DOC_GENERATE_SPACE_">Chart Bar</h2>
+  <p>
+    This component provides an efficient and customizable bar chart using the capabilities of the <code>base</code>.
+  </p>
+  <p>
+    For use this components you need install with command:
+  </p>
+  <div class="dependency tooltip">
+    <strong>Dependency:</strong> <code>base</code>.
+    <span class="tooltiptext">The dependencies will be installed together with this module</span>
+  </div>
+  <pre>mobileui install chart-bar</pre>
+  <!-- _DOC_GENERATE_CSS_DOC -->
+<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div|grey-100,grey-100 body" height-preview="650px" border="true">
+<body class="has-header grey-100">
+  <div class="header blue-grey">
+    <div class="left">
+      <button class="icon ion-navicon"></button>
+    </div>
+    <h1>DASHBOARD</h1>
+    <div class="right">
+      <button class="icon ion-calendar"></button>
+    </div>
+  </div>
+
+  <div class="blue-grey padding">
+    <ul class="chart-bar line-white text-light text-small">
+      <li>
+        <span class="white opacity-60 shadow radius-top" style="height:55%" title="4.5k"></span>
+        <div class="text-bold">MON</div>
+      </li>
+      <li>
+        <span class="white opacity-60 shadow radius-top" style="height:20%" title="15.8k"></span>
+        <div class="text-bold">TUE</div>
+      </li>
+      <li>
+        <span class="white opacity-60 shadow radius-top" style="height:35%" title="12k"></span>
+        <div class="text-bold">WED</div>
+      </li>
+      <li>
+        <span class="white shadow radius-top" style="height:80%" title="6.5k"></span>
+        <div class="text-bold">THU</div>
+      </li>
+      <li>
+        <span class="white opacity-60 shadow radius-top" style="height:50%" title="6.5k"></span>
+        <div class="text-bold">FRI</div>
+      </li>
+      <li>
+        <span class="white opacity-60 shadow radius-top" style="height:70%" title="6.5k"></span>
+        <div class="text-bold">SAT</div>
+      </li>
+      <li>
+        <span class="white opacity-60 shadow radius-top" style="height:40%" title="6.5k"></span>
+        <div class="text-bold">SUN</div>
+      </li>
+    </ul>
+    <div class="right blue-grey-900 radius padding text-huge text-light margin-top">
+      80%
+    </div>
+    <p class="text-light">THUESDAY</p>
+    <h1 class="text-huge text-strong">$ 6,586.85</h1>
+  </div>
+
+  <div class="padding">
+    <ul class="chart-bar no-line right size-2">
+      <li>
+        <span class="grey opacity-60" style="height:55%"></span>
+      </li>
+      <li>
+        <span class="grey opacity-60" style="height:20%"></span>
+      </li>
+      <li>
+        <span class="grey opacity-60" style="height:35%"></span>
+      </li>
+      <li>
+        <span class="blue-grey" style="height:80%"></span>
+      </li>
+      <li>
+        <span class="grey opacity-60" style="height:50%"></span>
+      </li>
+      <li>
+        <span class="grey opacity-60" style="height:70%"></span>
+      </li>
+      <li>
+        <span class="grey opacity-60" style="height:40%"></span>
+      </li>
+    </ul>
+    <p class="text-light">ORDERS</p>
+    <h1 class="text-huge text-bold">8,578</h1>
+  </div>
+  <div class="line grey-300"></div>
+  <div class="padding">
+    <ul class="chart-bar no-line right size-2">
+      <li>
+        <span class="grey opacity-60" style="height:72%"></span>
+      </li>
+      <li>
+        <span class="grey opacity-60" style="height:65%"></span>
+      </li>
+      <li>
+        <span class="grey opacity-60" style="height:77%"></span>
+      </li>
+      <li>
+        <span class="red" style="height:59%"></span>
+      </li>
+      <li>
+        <span class="grey opacity-60" style="height:69%"></span>
+      </li>
+      <li>
+        <span class="grey opacity-60" style="height:62%"></span>
+      </li>
+      <li>
+        <span class="grey opacity-60" style="height:76%"></span>
+      </li>
+    </ul>
+    <p class="text-light">ORDERS REMOVED</p>
+    <h1 class="text-huge text-bold">356</h1>
+  </div>
+  <div class="line grey-300"></div>
+  <div class="padding">
+    <ul class="chart-bar no-line right size-2">
+      <li>
+        <span class="grey opacity-60" style="height:55%"></span>
+      </li>
+      <li>
+        <span class="grey opacity-60" style="height:65%"></span>
+      </li>
+      <li>
+        <span class="grey opacity-60" style="height:57%"></span>
+      </li>
+      <li>
+        <span class="green" style="height:59%"></span>
+      </li>
+      <li>
+        <span class="grey opacity-60" style="height:69%"></span>
+      </li>
+      <li>
+        <span class="grey opacity-60" style="height:32%"></span>
+      </li>
+      <li>
+        <span class="grey opacity-60" style="height:46%"></span>
+      </li>
+    </ul>
+    <p class="text-light">NEW CLIENTS</p>
+    <h1 class="text-huge text-bold">398</h1>
+  </div>
+</body></textarea>
+
+  <!-- DONE -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+  <script type="text/javascript" src="../assets/js/main.js"></script>
+</body>
+</html>
