@@ -96,8 +96,13 @@
         },
         {
           "key":"alert",
-          "label":"Alerty",
+          "label":"alert",
           "path":"./alert/index.html"
+        },
+        {
+          "key":"loading",
+          "label":"Loading",
+          "path":"./loading/index.html"
         },
         {
           "key":"chart-bar",

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway:400,700|Roboto:300,400,500,600,900," rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+  <link rel="stylesheet" href="../base/reset.css">
+  <link rel="stylesheet" href="../base/mobileui.css">
+  <link rel="stylesheet" href="../base/colors.css">
+  <link rel="stylesheet" href="../base/icons.css">
+  <link rel="stylesheet" href="../header/style.css">
+  <link rel="stylesheet" href="../button/style.css">
+  <link rel="stylesheet" href="../list/style.css">
+  <link rel="stylesheet" href="../cover/style.css">
+  <link rel="stylesheet" href="../alert/style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../assets/css/master.css">
+  <style>
+    .content {
+      margin-left: 50px
+    }
+  </style>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body class="content">
+  <!-- BEGIN -->
+  <h2 class="title-doc" id="_DOC_GENERATE_SPACE_">Loading</h2>
+  <p>
+    The Loading component is an overlay that prevents user interaction while indicating activity. By default, it shows a spinner based on the mode. Dynamic content can be passed and displayed with the spinner. The spinner can be hidden or customized to use several predefined options. The loading indicator is presented on top of other content even during navigation.
+  </p>
+  <div class="dependency tooltip">
+    <strong>Dependency:</strong> <code>alert</code>.
+    <span class="tooltiptext">The dependencies will be installed together with this module</span>
+  </div>
+  <p>
+    For use this components you need install with command:
+  </p>
+  <pre>mobileui install loading</pre>
+  <!-- _DOC_GENERATE_CSS_DOC -->
+  <p>
+    For use you need call the function <code>loading('MESSAGE TO LOADING')</code> or <code>loading()</code> for just spinner show, and when you can close the loading component you call <code>closeLoading()</code> function.
+  </p>
+  <p>
+    See this small example:
+  </p>
+<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div|padding,padding body" height-preview="200px" border="true" multiplatform="true">
+<body class="padding">
+  <button class="teal full radius margin-bottom" onclick="loading('Please wait...')">Show loading</button>
+</body></textarea>
+  <!-- DONE -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+  <script type="text/javascript" src="../assets/js/main.js"></script>
+</body>
+</html>

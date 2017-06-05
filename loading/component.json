@@ -1,0 +1,7 @@
+{
+  "name":"loading",
+  "author": "fabiorogeriosj",
+  "dependencies": [
+    "alert"
+  ]
+}
