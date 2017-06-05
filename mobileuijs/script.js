@@ -182,7 +182,7 @@
           if(inputRadio){
             inputRadio.checked=true;
           }
-        } else if(elms[i].id) {
+        } else if(elms[i].id && data[elms[i].id]) {
           elms[i].value = data[elms[i].id];
         }
       }
