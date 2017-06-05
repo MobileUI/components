@@ -96,7 +96,7 @@
         },
         {
           "key":"alert",
-          "label":"alert",
+          "label":"Alert",
           "path":"./alert/index.html"
         },
         {
