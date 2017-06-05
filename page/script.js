@@ -19,6 +19,9 @@ window.openPage = function(p, params, callback){
     window.PAGE.handePage++
     var firstStyle = 'z-index:'+window.PAGE.handePage
     var secondStyle = ';transform: translateY(0px);will-change: transform, -webkit-transform, opacity;transition-duration: 280ms;transition-timing-function: cubic-bezier(0.36,0.66,0.04,1);'
+    if(SO.code === 2){
+      secondStyle = ';transform: translateX(0px);transition-duration: 280ms;'
+    }
     var newStyle = document.getElementById(p).getElementsByClassName('page')[0].getAttribute('style')
     if(newStyle) {
       newStyle += ' '+firstStyle + secondStyle
@@ -31,16 +34,28 @@ window.openPage = function(p, params, callback){
     }
     var newClass = document.getElementById(p).getElementsByClassName('page')[0].getAttribute('class')
     newClass += ' show'
+    var validOpenPage = function(){
+      setTimeout(function(){
+        if(document.getElementById(p) && document.getElementById(p).querySelectorAll('.page').length){
+          showPageBind();
+        } else {
+          validOpenPage();
+        }
+      },10);
+    }
+    validOpenPage();
     var customEvent = new CustomEvent("openPage",{ "detail": {page:p}});
     document.dispatchEvent(customEvent);
-    setTimeout(function(){
-      document.getElementById(p).getElementsByClassName('page')[0].setAttribute('class',newClass)
+    var showPageBind = function(){
       setTimeout(function(){
-        var style = document.getElementById(p).getElementsByClassName('page')[0].getAttribute('style')
-        style = style.replace(secondStyle,'')
-        document.getElementById(p).getElementsByClassName('page')[0].setAttribute('style',style)
-      },280)
-    },100)
+        document.getElementById(p).getElementsByClassName('page')[0].setAttribute('class',newClass)
+        setTimeout(function(){
+          var style = document.getElementById(p).getElementsByClassName('page')[0].getAttribute('style')
+          style = style.replace(secondStyle,'')
+          document.getElementById(p).getElementsByClassName('page')[0].setAttribute('style',style)
+        },280)
+      }, 100);
+    };
   }
   if(arguments.length===2) {
     callback = params
@@ -79,7 +94,7 @@ window.openPage = function(p, params, callback){
 }
 window.backPage = function(p){
   var page = document.getElementById(p).getElementsByClassName('page')[0];
-  var style = ';transform: translateY(0px);will-change: transform, -webkit-transform, opacity;transition-duration: 280ms;transition-timing-function: cubic-bezier(0.36,0.66,0.04,1);'
+  var style = ';transform: translateY(0px);will-change: transform, -webkit-transform, opacity;transition-duration: 280ms;'
   var newStyle = document.getElementById(p).getElementsByClassName('page')[0].getAttribute('style')
   if(newStyle) {
     newStyle += ' '+style
