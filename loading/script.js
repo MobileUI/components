@@ -9,7 +9,7 @@ window.loading = function(message){
     configLoading.id = 'LOADING'+new Date().getTime();
   }
   var body = document.getElementsByTagName('body')[0];
-  if(event.target.parentNode.className.indexOf('body') >= 0) {
+  if(event && event.target && event.target.parentNode && event.target.parentNode.className.indexOf('body') >= 0) {
     body = event.target.parentNode;
   }
 
