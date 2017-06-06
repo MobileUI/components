@@ -29,6 +29,14 @@
   border-bottom: 0;
   margin-bottom: 10px;
 }
+/*Remove space in top item.*/
+.list .item.no-space-top {
+  padding-top: 0 !important;
+}
+/*Remove space in bottom item.*/
+.list .item.no-space-bottom {
+  padding-bottom: 0 !important;
+}
 .list .item.row {
   display: -moz-flex;
   display: -ms-flexbox;
