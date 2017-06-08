@@ -27,7 +27,7 @@ window.alert = function(message, title){
   var e = document.createElement('div');
   e.className = 'backdrop show backdrop-alert';
   e.id = configAlert.id + '_BACKDROP';
-  body.parentNode.appendChild(e);
+  body.appendChild(e);
 
   var alertMobileUI = document.createElement('div');
   alertMobileUI.className = 'alert-mobileui';

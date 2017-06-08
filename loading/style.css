@@ -2,47 +2,76 @@
   padding: 24px;
   text-align: center;
 }
-.alert-loading .loading-circle {
+.loading-circle {
   fill: transparent;
 	stroke: #009688;
 	stroke-width: 5;
 	animation: dash 2s ease infinite,rotate 2s linear infinite;
   margin:auto;
 }
-.platform-ios .alert-loading .loading-circle {
+.loading-circle.loading-element {
+  zoom:0.55;
+  margin-top: -20px;
+  margin-left: -20px;
+  position: absolute;
+}
+.loading-circle.with-message.loading-element {
+  margin-left: -50px;
+  margin-top: 17px;
+}
+.loading-circle.loading-element.left {
+  float: left;
+  position: inherit;
+  margin-left:0;
+}
+.loading-circle.loading-element.right {
+  float: right;
+  position: inherit;
+  margin-left:0;
+}
+.loading-circle.white-loading{
+  stroke: rgba(255,255,255,0.8);
+}
+.loading-circle.with-message {
+  margin-right: 10px;
+}
+.platform-ios .loading-circle {
   fill: #868686;
   animation: none;
   stroke:none;
   stroke-width:0;
 }
-.platform-ios .alert-loading .loading-circle path:nth-of-type(1) {
+.platform-ios .loading-circle.loading-element.white-loading {
+  fill: rgba(255,255,255,0.8);
+}
+.platform-ios .loading-circle path:nth-of-type(1) {
   animation: pulse 1s infinite linear;
 }
-.platform-ios .alert-loading .loading-circle path:nth-of-type(2) {
+.platform-ios .loading-circle path:nth-of-type(2) {
   animation: pulse 1s -.083s infinite linear;
 }
-.platform-ios .alert-loading .loading-circle path:nth-of-type(3) {
+.platform-ios .loading-circle path:nth-of-type(3) {
   animation: pulse 1s -.166s infinite linear;
 }
-.platform-ios .alert-loading .loading-circle path:nth-of-type(4) {
+.platform-ios .loading-circle path:nth-of-type(4) {
   animation: pulse 1s -.249s infinite linear;
 }
-.platform-ios .alert-loading .loading-circle path:nth-of-type(5) {
+.platform-ios .loading-circle path:nth-of-type(5) {
   animation: pulse 1s -.332s infinite linear;
 }
-.platform-ios .alert-loading .loading-circle path:nth-of-type(6) {
+.platform-ios .loading-circle path:nth-of-type(6) {
   animation: pulse 1s -.415s infinite linear;
 }
-.platform-ios .alert-loading .loading-circle path:nth-of-type(7) {
+.platform-ios .loading-circle path:nth-of-type(7) {
   animation: pulse 1s -.498s infinite linear;
 }
-.platform-ios .alert-loading .loading-circle path:nth-of-type(8) {
+.platform-ios .loading-circle path:nth-of-type(8) {
   animation: pulse 1s -.581s infinite linear;
 }
-.platform-ios .alert-loading .loading-circle path:nth-of-type(9) {
+.platform-ios .loading-circle path:nth-of-type(9) {
   animation: pulse 1s -.664s infinite linear;
 }
-.platform-ios .alert-loading .loading-circle path:nth-of-type(10) {
+.platform-ios .loading-circle path:nth-of-type(10) {
   animation: pulse 1s -.747s infinite linear;
 }
 .platform-ios .alert-loading .loading-circle path:nth-of-type(11) {
@@ -52,9 +81,50 @@
   animation: pulse 1s -.913s infinite linear;
 }
 
+.platform-ios .loading-circle.white-loading path:nth-of-type(1) {
+  animation: pulse-white 1s infinite linear;
+}
+.platform-ios .loading-circle.white-loading path:nth-of-type(2) {
+  animation: pulse-white 1s -.083s infinite linear;
+}
+.platform-ios .loading-circle.white-loading path:nth-of-type(3) {
+  animation: pulse-white 1s -.166s infinite linear;
+}
+.platform-ios .loading-circle.white-loading path:nth-of-type(4) {
+  animation: pulse-white 1s -.249s infinite linear;
+}
+.platform-ios .loading-circle.white-loading path:nth-of-type(5) {
+  animation: pulse-white 1s -.332s infinite linear;
+}
+.platform-ios .loading-circle.white-loading path:nth-of-type(6) {
+  animation: pulse-white 1s -.415s infinite linear;
+}
+.platform-ios .loading-circle.white-loading path:nth-of-type(7) {
+  animation: pulse-white 1s -.498s infinite linear;
+}
+.platform-ios .loading-circle.white-loading path:nth-of-type(8) {
+  animation: pulse-white 1s -.581s infinite linear;
+}
+.platform-ios .loading-circle.white-loading path:nth-of-type(9) {
+  animation: pulse-white 1s -.664s infinite linear;
+}
+.platform-ios .loading-circle.white-loading path:nth-of-type(10) {
+  animation: pulse-white 1s -.747s infinite linear;
+}
+.platform-ios .alert-loading.white-loading .loading-circle path:nth-of-type(11) {
+  animation: pulse-white 1s -.83s infinite linear;
+}
+.platform-ios .alert-loading.white-loading .loading-circle path:nth-of-type(12) {
+  animation: pulse-white 1s -.913s infinite linear;
+}
+
 @keyframes pulse {
   50% { fill: #868686; }
   to { fill: rgba(134,134,134,.4); }
+}
+@keyframes pulse-white {
+  50% { fill: rgba(255,255,255,0.8); }
+  to { fill: rgba(255,255,255,0.2); }
 }
 
 @keyframes iosIntro {

@@ -43,11 +43,22 @@
     For use you need call the function <code>loading('MESSAGE TO LOADING')</code> or <code>loading()</code> for just spinner show, and when you can close the loading component you call <code>closeLoading()</code> function.
   </p>
   <p>
+    You can show loading in button element, just call <code>loadingElement('ID_YOUR_ELEMENT')</code> and close call <code>closeLoading('ID_YOUR_ELEMENT')</code>. It is posible add another params: <code>loadingElement('ID_ELEMENT','MESSAGE (optional)', 'LEFT/RIGHT','COLOR')</code>
+  </p>
+  <p>
     See this small example:
   </p>
 <textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div|padding,padding body|loading,loadingLand" height-preview="200px" border="true" multiplatform="true">
 <body class="padding">
-  <button class="teal full radius margin-bottom" onclick="loading('Please wait...')">Show load component</button>
+  <button class="teal full radius margin-bottom" onclick="loading('Please wait...')">
+    Show load component
+  </button>
+  <button class="teal full radius margin-bottom" id="myButton" onclick="loadingElement('myButton')">
+    Show load component in element
+  </button>
+  <button class="teal full radius margin-bottom" id="myButton2" onclick="loadingElement('myButton2', 'Please wait...')">
+    Show load component in element
+  </button>
 </body></textarea>
   <!-- DONE -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
