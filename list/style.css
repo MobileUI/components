@@ -16,6 +16,9 @@
 .list .item.hidden {
   display: none;
 }
+.list ol, .list ul {
+    list-style: none;
+}
 /*Define a small space between the top and bottom elements.*/
 .list .item.space-small {
   padding-top: 5px;
