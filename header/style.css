@@ -68,13 +68,16 @@
   margin-top: -10px;
 }
 .header button.icon, .footer button.icon {
-  color: #fff;
   font-size: 30px;
   margin-top: -10px;
   z-index: 99;
   background: none;
   border: none;
   padding: 0 6px;
+}
+.header button.icon:not([class*=red]):not([class*=pink]):not([class*=white]):not([class*=purple]):not([class*=indigo]):not([class*=blue]):not([class*=cyan]):not([class*=teal]):not([class*=green]):not([class*=lime]):not([class*=yellow]):not([class*=amber]):not([class*=orange]):not([class*=brown]):not([class*=grey]):not([class*=black]):not([class*=white]),
+.footer button.icon:not([class*=red]):not([class*=pink]):not([class*=white]):not([class*=purple]):not([class*=indigo]):not([class*=blue]):not([class*=cyan]):not([class*=teal]):not([class*=green]):not([class*=lime]):not([class*=yellow]):not([class*=amber]):not([class*=orange]):not([class*=brown]):not([class*=grey]):not([class*=black]):not([class*=white]) {
+  color: #fff;
 }
 .header button.icon.left, .footer button.icon.left,
 .header button.icon.right, .footer button.icon.right {
