@@ -121,15 +121,7 @@
     setTimeout(function(){ dataObserver(data, token) }, 100);
   }
   copyObj = function(obj){
-    if(obj.constructor === Array){
-      return obj.slice()
-    } else {
-      var copy = obj.constructor();
-      for (var attr in obj) {
-          if (obj.hasOwnProperty(attr)) copy[attr] = obj[attr];
-      }
-      return copy;
-    }
+    return JSON.parse(JSON.stringify(obj));
   }
 
   dataBind();

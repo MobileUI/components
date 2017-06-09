@@ -76,6 +76,17 @@
   border: none;
   padding: 0 6px;
 }
+.header button.icon.left, .footer button.icon.left,
+.header button.icon.right, .footer button.icon.right {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.header button.icon.left, .footer button.icon.left {
+  margin-left: 5px;
+}
+.header button.icon.right, .footer button.icon.right {
+  margin-right: 5px;
+}
 .header .title.align-center, .footer .title.align-center,
 .header h1.align-center, .footer h1.align-center,
 .header p.align-center, .footer p.align-center {
