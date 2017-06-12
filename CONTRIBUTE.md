@@ -6,7 +6,7 @@ Thanks for your contributions!
 
 ## Process create a new component
 
-1) Create a folder with the name of the component, example `list` or `chartBar`
+1) Create a folder with the name of the component, example `list` or `chart-bar`
 2) Create a file named `component.json` inside the folder containing:
   ```JSON
   {
