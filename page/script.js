@@ -72,7 +72,7 @@ window.openPage = function(p, params, callback){
     document.getElementById(p).parentNode.removeChild(document.getElementById(p));
   }
   var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
+  xhttp.onload = function() {
     if (this.readyState == 4 && this.status == 200) {
       var page = this.responseText;
       page = page.replace('backPage()','backPage(\''+p+'\')');
