@@ -428,3 +428,7 @@ window.loadingLandElement = function(e, message, position, color){
     closeLoading(e.id)
   },4000);
 }
+
+setTimeout(function(){
+  window.bindIncludeEvent();
+}, 500);

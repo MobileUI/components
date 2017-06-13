@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway:400,700|Roboto:300,400,500,600,900," rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+  <link rel="stylesheet" href="../base/reset.css">
+  <link rel="stylesheet" href="../base/mobileui.css">
+  <link rel="stylesheet" href="../base/colors.css">
+  <link rel="stylesheet" href="../base/icons.css">
+  <link rel="stylesheet" href="../header/style.css">
+  <link rel="stylesheet" href="../button/style.css">
+  <link rel="stylesheet" href="../list/style.css">
+  <link rel="stylesheet" href="../cover/style.css">
+  <link rel="stylesheet" href="../alert/style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../assets/css/master.css">
+  <style>
+    .content {
+      margin-left: 50px
+    }
+  </style>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body class="content">
+  <!-- BEGIN -->
+  <h2 class="title-doc" id="_DOC_GENERATE_SPACE_">Include</h2>
+  <p>
+    This component include a external file HTML in your page.
+  </p>
+  <p>
+    For use this components you need install with command:
+  </p>
+  <pre>mobileui install include</pre>
+  <!-- _DOC_GENERATE_CSS_DOC -->
+<textarea class="bind-code" mode="text/html" replace="body,div|padding,padding body" height-preview="200px" border="true">
+<body class="padding">
+  <div include="myfile1"></div>
+  <button class="teal full radius margin-top margin-bottom" onclick="include('myFrame','myfile2')">
+    Include another file
+  </button>
+  <div id="myFrame"></div>
+</body></textarea>
+    <strong>myfile1.html</strong>
+<textarea class="bind-just-code" mode="text/html">
+<strong>This is my file</strong>
+<p>Included when load file.</p>
+<hr></textarea>
+    <strong>myfile2.html</strong>
+<textarea class="bind-just-code" mode="text/html">
+<strong>This is another file</strong>
+<p>Included by click button.</p>
+<hr></textarea>
+  <!-- DONE -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+  <script type="text/javascript" src="../assets/js/main.js"></script>
+</body>
+</html>
