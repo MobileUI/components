@@ -55,6 +55,11 @@ a {
 .align-right {
     text-align: right;
 }
+/*Add a small border in element.*/
+.border {
+  border-width: 1px;
+  border-style: solid;
+}
 /*Hide a element.*/
 .hidden {
   display: none;

@@ -42,6 +42,17 @@
   margin-top: 15px;
   margin-bottom: 5px;
 }
+/*Set a fixed size for an image.*/
+.header .avatar {
+  height: 40px;
+  margin-top: -8px;
+  margin-left: 4px;
+}
+/*Add big border in element.*/
+.header .border-big {
+  border-width: 2px;
+  border-style: solid;
+}
 .header h2, .footer h2 {
   padding-top: 8px;
   padding-left: 10px;
