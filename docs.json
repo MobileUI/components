@@ -90,6 +90,11 @@
           "path":"./page/index.html"
         },
         {
+          "key":"include",
+          "label":"Include",
+          "path":"./include/index.html"
+        },
+        {
           "key":"popover",
           "label":"Popover",
           "path":"./popover/index.html"

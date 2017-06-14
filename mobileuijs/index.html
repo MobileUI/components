@@ -162,16 +162,6 @@ var users = [
             <th>Description</th>
           </tr>
           <tr>
-            <td><code>MobileUI.formatMoney(number)</code></td>
-            <td>
-              Returns a string formatted in money, you can pass the number of decimal places, the decimal separator, and the thousands separator.
-              <br>
-              Example: <br><br>
-              <code>MobileUI.formatMoney(256)</code> <br>
-              <code>MobileUI.formatMoney(1256, 2, ',','.')</code>
-            </td>
-          </tr>
-          <tr>
             <td><code>MobileUI.objectByForm('idElement')</code></td>
             <td>Returns an object with the values of the inputs found within the given element.</td>
           </tr>
@@ -221,6 +211,22 @@ var users = [
                   //event.detail.dataValue
                 })
               </code>
+            </td>
+          </tr>
+          <tr>
+            <td><code>MobileUI.formatMoney(number)</code></td>
+            <td>
+              Returns a string formatted in money, you can pass the number of decimal places, the decimal separator, and the thousands separator.
+              <br>
+              Example: <br><br>
+              <code>MobileUI.formatMoney(256)</code> <br>
+              <code>MobileUI.formatMoney(1256, 2, ',','.')</code>
+            </td>
+          </tr>
+          <tr>
+            <td><code>MobileUI.myFunction = function(params){}</code></td>
+            <td>
+              You can create a custom function for use in data list HTML validation, example <code>$$$myFunction{par1}</code>
             </td>
           </tr>
         </tbody>
