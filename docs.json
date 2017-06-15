@@ -85,6 +85,11 @@
           "path":"./grid/index.html"
         },
         {
+          "key":"swiper",
+          "label":"Swiper",
+          "path":"./swiper/index.html"
+        },
+        {
           "key":"page",
           "label":"Page",
           "path":"./page/index.html"

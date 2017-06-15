@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway:400,700|Roboto:300,400,900," rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+  <link rel="stylesheet" href="../base/reset.css">
+  <link rel="stylesheet" href="../base/mobileui.css">
+  <link rel="stylesheet" href="../base/colors.css">
+  <link rel="stylesheet" href="../base/icons.css">
+  <link rel="stylesheet" href="../header/style.css">
+  <link rel="stylesheet" href="../button/style.css">
+  <link rel="stylesheet" href="../list/style.css">
+  <link rel="stylesheet" href="../cover/style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../assets/css/master.css">
+  <style>
+    .content {
+      margin-left: 50px
+    }
+  </style>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body class="content">
+  <!-- BEGIN -->
+  <h2 class="title-doc" id="_DOC_GENERATE_SPACE_">Swiper</h2>
+  <p>
+    The Swiper component is a powerful multi-page container where each page can be swiped or dragged between of slides.
+    This component is based on the <a href="http://idangero.us/swiper/" target="_blank">Swiper</a> widget from <a href="http://www.idangero.us/" target="_blank">idangerous</a>.
+  </p>
+  <p>
+    The lib Swiper is the free and most modern mobile touch slider with hardware accelerated transitions and amazing native behavior. It is intended to be used in mobile websites, mobile web apps, and mobile native/hybrid apps. Designed mostly for iOS, but also works great on latest Android, Windows Phone 8 and modern Desktop browsers
+  </p>
+  <p>
+    There is a lot of combination and configuration for use with great elements in your sliders, for this see the <a href="http://idangero.us/swiper/api/" target="_blank">documentation</a> and <a href="http://idangero.us/swiper/demos" target="_blank">examples</a> to use Swiper.
+  </p>
+  <p>
+    For use this components you need install with command:
+  </p>
+  <pre>mobileui install swiper</pre>
+  <!-- _DOC_GENERATE_CSS_DOC -->
+  <p>
+    For use you need invoke a Swiper lib for create a slide, see a simple example below:
+  </p>
+<textarea class="bind-code" mode="text/html" replace="body,div|grey-200,grey-200 body" height-preview="500px">
+<body>
+  <div class="swiper-container swiper-container-fullscreen">
+      <div class="swiper-wrapper">
+          <!-- Add slide 1 -->
+          <div class="swiper-slide vertical-align-center pink-400">
+            <i class="icon ion-beer"></i>
+            <h1>Hello Beer</h1>
+            <p>The easiest way to order beer from your favourite bar!</p>
+          </div>
+          <!-- Add slide 2 -->
+          <div class="swiper-slide vertical-align-center green-600">
+            <i class="icon ion-videocamera"></i>
+            <h1>Movie Tickets</h1>
+            <p>Book movie tickets for your family and friends!</p>
+          </div>
+          <!-- Add slide 3 -->
+          <div class="swiper-slide vertical-align-center blue">
+            <i class="icon ion-pricetag"></i>
+            <h1>Great Discounts</h1>
+            <p>Best discounts on every single service we offer!</p>
+            <button class="border-white text-white radius margin-top">
+              Login in app now
+            </button>
+          </div>
+
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination swiper-pagination-white"></div>
+  </div>
+  <script type="text/javascript">
+    new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+  </script>
+</body></textarea>
+<p>See another example using a <a href="#cover">Cover</a> component.</p>
+<textarea class="bind-code" mode="text/html" replace="body,div|grey-200,grey-200 body" height-preview="500px" border="true">
+<body class="grey-100">
+  <div class="swiper-container swipper-gallery">
+      <div class="swiper-wrapper">
+          <!-- Add slide 1 -->
+          <div class="swiper-slide text-white align-center cover black-opacity-30 blend-soft-light" style="background-image:url(../assets/img/cheeseburger1.jpg)">
+            <h2>Dog Haus</h2>
+            <div class="bottom margin-bottom text-shadow padding">
+              Is offering free upgrades from a single burger to a double available all day long!
+            </div>
+          </div>
+          <!-- Add slide 2 -->
+          <div class="swiper-slide text-white align-center cover black-opacity-30 blend-soft-light" style="background-image:url(../assets/img/cheeseburger2.jpg)">
+            <h2>Johnny Rockets</h2>
+            <div class="bottom margin-bottom text-shadow padding">
+              We forgive you for offering a free hamburger (instead of cheeseburger) in this limited-time special.
+            </div>
+          </div>
+          <!-- Add slide 3 -->
+          <div class="swiper-slide text-white align-center cover black-opacity-30 blend-soft-light" style="background-image:url(../assets/img/cheeseburger3.jpg)">
+            <h2>Applebee’s</h2>
+            <div class="bottom margin-bottom text-shadow padding">
+              eClub members can get a free special entrée on your birthday from any burger on the menu.
+            </div>
+          </div>
+          <!-- Add slide 4 -->
+          <div class="swiper-slide text-white align-center cover black-opacity-30 blend-soft-light" style="background-image:url(../assets/img/cheeseburger4.jpg)">
+            <h2>Burger King</h2>
+            <div class="bottom margin-bottom text-shadow padding">
+              Is offering two extra-long jalapeño cheeseburgers for just $5 until October 15.
+            </div>
+          </div>
+          <!-- Add slide 5 -->
+          <div class="swiper-slide text-white align-center cover black-opacity-30 blend-soft-light" style="background-image:url(../assets/img/cheeseburger5.jpg)">
+            <h2>Select McDonald’s</h2>
+            <div class="bottom margin-bottom text-shadow padding">
+              Including many in Connecticut, western Massachusetts, upstate New York and Vermont.
+            </div>
+          </div>
+
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination swiper-pagination-white"></div>
+  </div>
+  <div class="padding">
+    <h1 class="text-strong text-big">CHEESEBURGER</h1>
+    <h2 class="text-grey">Pasadena, California</h2>
+    <p>
+      A cheeseburger is a hamburger topped with cheese. Traditionally, the slice
+      of cheese is placed on top of the meat patty, but the burger can include many
+      variations in structure, ingredients, and composition. The cheese is normally
+      added to the cooking hamburger patty shortly before the patty is entirely
+      cooked, which allows the cheese to melt. As with other hamburgers, a
+      cheeseburger may include toppings, such as lettuce, tomato, onion, pickles,
+      mustard, mayonnaise, ketchup, or bacon.
+    </p>
+  </div>
+  <script type="text/javascript">
+    new Swiper('.swipper-gallery', {
+        pagination: '.swiper-pagination'
+    });
+  </script>
+</body></textarea>
+  <!-- DONE -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+  <script type="text/javascript" src="../assets/js/main.js"></script>
+</body>
+</html>
