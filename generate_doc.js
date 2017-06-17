@@ -12,7 +12,7 @@ for(var i in docs.docs) {
   menu += `<h1>${item.category}</h1>`
   menu += `<ul>`
   for(var subitem of item.itens) {
-      menu += `<a href="#${subitem.key}"><li>${subitem.label}</li></a>`
+      menu += `<a href="#${subitem.key}" onclick="goDoc('${subitem.key}')"><li>${subitem.label}</li></a>`
       var docHtml = fs.readFileSync(subitem.path).toString()
       var urlDoc = "https://github.com/MobileUI/components/tree/master/" + subitem.path.replace('./','');
       docHtml = docHtml.replace('<!-- DONE -->','<a href="'+urlDoc+'" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>\n<!-- DONE -->')
@@ -55,7 +55,7 @@ for(var i in docs.docs) {
   }
   menu += `</ul>`
 }
-var index = template.replace(`<!-- SPACE-GENERATE-DOCS -->`, `<div class="menuland font-raleway">${menu}</div><div class="content-land font-raleway">${content}</div>`)
+var index = template.replace(`<!-- SPACE-GENERATE-DOCS -->`, `<div class="menuland font-raleway"><div class="list radius grey-50"><div class="item space-small icon ion-search" id="searchComponent"><input type="text" placeholder="Search..." autofocus="autofocus"></div></div>${menu}</div><div class="content-land font-raleway">${content}</div>`)
 index = index.replace(new RegExp(`../assets/`, 'g'), `/`)
 fs.writeFile(path.join(docs.site_dir,'index.html'), index)
 
