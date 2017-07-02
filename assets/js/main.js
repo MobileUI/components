@@ -190,6 +190,7 @@ $(document).ready(function(){
         if(MobileUI && MobileUI.bind){
           MobileUI.bind();
         }
+        bindProgressCircle();
       },500);
     }
   });
@@ -506,3 +507,8 @@ window.loadingLandElement = function(e, message, position, color){
 setTimeout(function(){
   window.bindIncludeEvent();
 }, 500);
+
+function binderFire(){
+  if(bindProgressCircle) bindProgressCircle()
+}
+setInterval(binderFire, 500);

@@ -14,41 +14,97 @@
   <link rel="stylesheet" href="../button/style.css">
   <link rel="stylesheet" href="../list/style.css">
   <link rel="stylesheet" href="../cover/style.css">
+  <link rel="stylesheet" href="../grid/style.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="../assets/css/master.css">
   <style>
-    .content {
+    .content-lab {
       margin-left: 50px
     }
   </style>
   <script type="text/javascript" src="script.js"></script>
 </head>
-<body class="content">
+<body class="content-lab">
   <!-- BEGIN -->
-  <h2 class="title-doc" id="_DOC_GENERATE_SPACE_">Progress Circular</h2>
+  <h2 class="title-doc" id="_DOC_GENERATE_SPACE_">Progress Circle</h2>
   <p>
-    about
+    Progress circle is a component of chart, it just create a progress the value.
   </p>
   <div class="dependency tooltip">
-    <strong>Dependency:</strong> <code>base</code>.
+    <strong>Dependency:</strong> <code>progressbarjs</code>.
     <span class="tooltiptext">The dependencies will be installed together with this module</span>
   </div>
   <p>
     For use this components you need install with command:
   </p>
-  <pre>mobileui install progress-circular</pre>
+  <pre>mobileui install progress-circle</pre>
   <!-- _DOC_GENERATE_CSS_DOC -->
 <textarea class="bind-code" mode="text/html">
-<div class="padding blue-900">
-  <div class="progress-circle progress-25 algin-center red">
-    <span class="blue">25%</span>
+<div class="padding black-opacity-90 align-center">
+  <div class="progress-circle"
+     title="PROFILE"
+     color="blue"
+     textColor="white"
+     padding="20px"
+     width="200px"
+     height="200px"
+     trailColor="white-opacity-10"
+     textSize="40px"
+     titleSize="16px"
+     textWeight="300"
+     value="65"
+     text="%"
+     strokeWidth="4"
+     trailWidth="2">
   </div>
+  <div class="row">
+    <div class="col">
+      <div class="progress-circle"
+           color="red"
+           textColor="red-100"
+           value="44"
+           text="%"
+           height="100px"
+           padding="10px"
+           strokeWidth="4"
+           trailWidth="4"
+           trailColor="white-opacity-10">
+      </div>
+    </div>
+    <div class="col">
+      <div class="progress-circle"
+           color="purple"
+           textColor="purple-100"
+           value="23"
+           text="km"
+           height="100px"
+           padding="10px"
+           strokeWidth="4"
+           trailWidth="4"
+           trailColor="white-opacity-10">
+      </div>
+    </div>
+    <div class="col">
+      <div class="progress-circle"
+           color="green"
+           textColor="green-100"
+           value="79"
+           text="/100"
+           height="100px"
+           padding="10px"
+           strokeWidth="4"
+           trailWidth="4"
+           trailColor="white-opacity-10">
+      </div>
+    </div>
+  </div>
+  <button class="margin opacity-40 border-white text-white radius" onclick="rebindProgressCircle()">REBIND VALUES</button>
 </div></textarea>
-
   <!-- DONE -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
   <script type="text/javascript" src="../assets/js/main.js"></script>
+  <script type="text/javascript" src="../progressbarjs/script.js"></script>
 </body>
 </html>
