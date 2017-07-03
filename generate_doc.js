@@ -13,45 +13,47 @@ for(var i in docs.docs) {
   menu += `<ul>`
   for(var subitem of item.itens) {
       menu += `<a href="#${subitem.key}" onclick="goDoc('${subitem.key}')"><li>${subitem.label}</li></a>`
-      var docHtml = fs.readFileSync(subitem.path).toString()
-      var urlDoc = "https://github.com/MobileUI/components/tree/master/" + subitem.path.replace('./','');
-      docHtml = docHtml.replace('<!-- DONE -->','<a href="'+urlDoc+'" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>\n<!-- DONE -->')
-      docHtml = docHtml.split('<!-- BEGIN -->')[1].split('<!-- DONE -->')[0]
-      docHtml = docHtml.replace(`id="_DOC_GENERATE_SPACE_"`, `id="${subitem.key}"`)
-      var docCss = ''
-      if(subitem.key === 'base') {
-        docCss = fs.readFileSync('./base/mobileui.css').toString()
-      } else if(subitem.path.indexOf('./base') < 0){
-        var uriFile = subitem.path.replace('index.html','style.css')
-        if(fs.existsSync(uriFile)) {
-          docCss = fs.readFileSync(uriFile).toString()
+      if (fs.existsSync(subitem.path)) {
+        var docHtml = fs.readFileSync(subitem.path).toString()
+        var urlDoc = "https://github.com/MobileUI/components/tree/master/" + subitem.path.replace('./','');
+        docHtml = docHtml.replace('<!-- DONE -->','<a href="'+urlDoc+'" target="_blank" class="button-contribute right border-grey-300 text-grey-600"><i class="text-black icon ion-social-github"></i>Contribute on Github! Edit this section.</a>\n<!-- DONE -->')
+        docHtml = docHtml.split('<!-- BEGIN -->')[1].split('<!-- DONE -->')[0]
+        docHtml = docHtml.replace(`id="_DOC_GENERATE_SPACE_"`, `id="${subitem.key}"`)
+        var docCss = ''
+        if(subitem.key === 'base') {
+          docCss = fs.readFileSync('./base/mobileui.css').toString()
+        } else if(subitem.path.indexOf('./base') < 0){
+          var uriFile = subitem.path.replace('index.html','style.css')
+          if(fs.existsSync(uriFile)) {
+            docCss = fs.readFileSync(uriFile).toString()
+          }
         }
-      }
-      if(docCss) {
-        docCss = docCss.split('/*')
-        var listCssDoc = []
-        for(i in docCss) {
-          if(docCss[i].split('{')[0].indexOf('*/') >= 0){
-            var description = docCss[i].split('{')[0].split('*/')[0]
-            var classes = docCss[i].split('{')[0].split('*/')[1].split('.');
-            var className = classes[classes.length-1];
-            className = className.split(':')[0];
-            if(description && className) {
-              listCssDoc.push({className: className, description: description})
+        if(docCss) {
+          docCss = docCss.split('/*')
+          var listCssDoc = []
+          for(i in docCss) {
+            if(docCss[i].split('{')[0].indexOf('*/') >= 0){
+              var description = docCss[i].split('{')[0].split('*/')[0]
+              var classes = docCss[i].split('{')[0].split('*/')[1].split('.');
+              var className = classes[classes.length-1];
+              className = className.split(':')[0];
+              if(description && className) {
+                listCssDoc.push({className: className, description: description})
+              }
             }
           }
-        }
-        if(listCssDoc.length) {
-          var htmlCssDoc = '<p>The features of this component are:</p>'
-          htmlCssDoc += '<div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr>'
-          for(var doc of listCssDoc) {
-            htmlCssDoc += `<tr><td><code>${doc.className}</code></td><td>${doc.description}</td></tr>`
+          if(listCssDoc.length) {
+            var htmlCssDoc = '<p>The features of this component are:</p>'
+            htmlCssDoc += '<div class="content-table"><table class="tableDoc"><tr><th>Class</th><th>Description</th></tr>'
+            for(var doc of listCssDoc) {
+              htmlCssDoc += `<tr><td><code>${doc.className}</code></td><td>${doc.description}</td></tr>`
+            }
+            htmlCssDoc += '</table></div>'
+            docHtml = docHtml.replace('<!-- _DOC_GENERATE_CSS_DOC -->', htmlCssDoc)
           }
-          htmlCssDoc += '</table></div>'
-          docHtml = docHtml.replace('<!-- _DOC_GENERATE_CSS_DOC -->', htmlCssDoc)
         }
+        content += '<div class="content-doc-reader">' + docHtml + '</div>';
       }
-      content += '<div class="content-doc-reader">' + docHtml + '</div>';
   }
   menu += `</ul>`
 }

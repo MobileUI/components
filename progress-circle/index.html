@@ -28,7 +28,8 @@
   <!-- BEGIN -->
   <h2 class="title-doc" id="_DOC_GENERATE_SPACE_">Progress Circle</h2>
   <p>
-    Progress circle is a component of chart, it just create a progress the value.
+    Progress circle is a simple component widely used to inform metrics about a given.
+    You can create it either by the HTML element or programmed via javascript.
   </p>
   <div class="dependency tooltip">
     <strong>Dependency:</strong> <code>progressbarjs</code>.
@@ -38,10 +39,33 @@
     For use this components you need install with command:
   </p>
   <pre>mobileui install progress-circle</pre>
-  <!-- _DOC_GENERATE_CSS_DOC -->
+  <table class="tableDoc">
+    <tbody>
+      <tr>
+        <th>Atribute/property</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><code>value</code></td>
+        <td>Initial value for component.</td>
+      </tr>
+      <tr>
+        <td><code>title</code></td>
+        <td>Title for component.</td>
+      </tr>
+      <tr>
+        <td><code>subTitle</code></td>
+        <td>Subtitle for component.</td>
+      </tr>
+      <tr>
+        <td><code>...</code></td>
+        <td>...</td>
+      </tr>
+    </tbody>
+  </table>
 <textarea class="bind-code" mode="text/html">
 <div class="padding black-opacity-90 align-center">
-  <div class="progress-circle"
+  <div id="progressProfile" class="progress-circle"
      title="PROFILE"
      color="blue"
      textColor="white"
@@ -59,9 +83,10 @@
   </div>
   <div class="row">
     <div class="col">
-      <div class="progress-circle"
+      <div id="progressSteps" class="progress-circle"
            color="red"
            textColor="red-100"
+           subTitle="steps"
            value="44"
            text="%"
            height="100px"
@@ -72,9 +97,10 @@
       </div>
     </div>
     <div class="col">
-      <div class="progress-circle"
+      <div id="progressRunning" class="progress-circle"
            color="purple"
            textColor="purple-100"
+           subTitle="running"
            value="23"
            text="km"
            height="100px"
@@ -85,9 +111,10 @@
       </div>
     </div>
     <div class="col">
-      <div class="progress-circle"
+      <div id="progressTasks" class="progress-circle"
            color="green"
            textColor="green-100"
+           subTitle="tasks"
            value="79"
            text="/100"
            height="100px"
@@ -98,13 +125,51 @@
       </div>
     </div>
   </div>
-  <button class="margin opacity-40 border-white text-white radius" onclick="rebindProgressCircle()">REBIND VALUES</button>
-</div></textarea>
+  <button class="margin opacity-40 border-white text-white radius" onclick="updateValuesProgressCircle()">UPDATE VALUES</button>
+  <button class="margin opacity-40 border-white text-white radius" onclick="ProgressCircle.rebind()">REBIND VALUES</button>
+</div>
+
+<script type="text/javascript">
+  function updateValuesProgressCircle(){
+    //random values
+    document.getElementById('progressProfile').progressCircle.update(Math.floor(Math.random() * 100) + 1);
+    document.getElementById('progressSteps').progressCircle.update(Math.floor(Math.random() * 100) + 1);
+    document.getElementById('progressRunning').progressCircle.update(Math.floor(Math.random() * 100) + 1);
+    document.getElementById('progressTasks').progressCircle.update(Math.floor(Math.random() * 100) + 1);
+  }
+</script></textarea>
+<p>
+  You can create a progress circle by JavaScript:
+</p>
+<textarea class="bind-code" mode="text/html" height-preview="400px">
+<div class="padding blue-800 align-center">
+  <button class="margin opacity-40 border-white text-white radius" onclick="showProgressUser()">CREATE PROGRESS CIRCLE</button>
+  <div id="progressUserKM"></div>
+</div>
+<script type="text/javascript">
+  function showProgressUser(){
+    var config = {
+      value: 55,
+      subTitle: 'km/h',
+      durationAnimate: 3000,
+      padding: '3px',
+      color: 'white',
+      trailColor: 'black-opacity-10',
+      textSize: '50px',
+      textColor: 'white',
+      width:'200px',
+      strokeWidth: '2',
+      trailWidth:'8'
+    }
+    ProgressCircle.create(document.getElementById('progressUserKM'), config);
+  }
+</script></textarea>
   <!-- DONE -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
   <script type="text/javascript" src="../assets/js/main.js"></script>
+  <script type="text/javascript" src="../mobileui-colors/script.js"></script>
   <script type="text/javascript" src="../progressbarjs/script.js"></script>
 </body>
 </html>

@@ -115,6 +115,11 @@
           "path":"./loading/index.html"
         },
         {
+          "key":"progress-circle",
+          "label":"Progress Circle",
+          "path":"./progress-circle/index.html"
+        },
+        {
           "key":"chart-bar",
           "label":"Chart Bar",
           "path":"./chart-bar/index.html"
@@ -132,7 +137,7 @@
       ]
     },
     {
-      "category": "JavaScript",
+      "category": "Libs",
       "itens": [
         {
           "key":"mobileuijs",
@@ -143,6 +148,11 @@
           "key":"jquery",
           "label":"jQuery",
           "path":"./jquery/index.html"
+        },
+        {
+          "key":"progressbarjs",
+          "label":"ProgressBar.js",
+          "path":"./progressbarjs/index.html"
         }
       ]
     }

@@ -509,6 +509,6 @@ setTimeout(function(){
 }, 500);
 
 function binderFire(){
-  if(bindProgressCircle) bindProgressCircle()
+  if(ProgressCircle) ProgressCircle.bind();
 }
 setInterval(binderFire, 500);
