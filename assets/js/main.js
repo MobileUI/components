@@ -509,6 +509,7 @@ setTimeout(function(){
 }, 500);
 
 function binderFire(){
-  if(ProgressCircle) ProgressCircle.bind();
+  if(window.ProgressCircle) ProgressCircle.bind();
+  if(window.ProgressSemicircle) ProgressSemicircle.bind();
 }
 setInterval(binderFire, 500);

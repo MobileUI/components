@@ -1,0 +1,8 @@
+{
+  "name":"progress-circle",
+  "author": "fabiorogeriosj",
+  "dependencies": [
+    "mobileui-colors",
+    "progressbarjs"
+  ]
+}

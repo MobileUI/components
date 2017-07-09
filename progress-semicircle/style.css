@@ -1,0 +1,9 @@
+.progress-semicircle, .progress-semicircle-js {
+  margin: auto;
+}
+.progress-semicircle-title {
+  opacity: 0.8;
+}
+.progress-semicircle-subtitle {
+  opacity: 0.6;
+}

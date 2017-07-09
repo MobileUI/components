@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway:400,700|Roboto:300,400,900," rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+  <link rel="stylesheet" href="../base/reset.css">
+  <link rel="stylesheet" href="../base/mobileui.css">
+  <link rel="stylesheet" href="../base/colors.css">
+  <link rel="stylesheet" href="../base/icons.css">
+  <link rel="stylesheet" href="../header/style.css">
+  <link rel="stylesheet" href="../button/style.css">
+  <link rel="stylesheet" href="../list/style.css">
+  <link rel="stylesheet" href="../cover/style.css">
+  <link rel="stylesheet" href="../grid/style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../assets/css/master.css">
+  <style>
+    .content-lab {
+      margin-left: 50px
+    }
+  </style>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body class="content-lab">
+  <!-- BEGIN -->
+  <h2 class="title-doc" id="_DOC_GENERATE_SPACE_">Progress Semicircle</h2>
+  <p>
+    Progress semi circle is a simple component widely used to inform metrics about a given.
+    You can create it either by the HTML element or programmed via javascript.
+  </p>
+  <div class="dependency tooltip">
+    <strong>Dependency:</strong> <code>progressbarjs</code>.
+    <span class="tooltiptext">The dependencies will be installed together with this module</span>
+  </div>
+  <p>
+    For use this components you need install with command:
+  </p>
+  <pre>mobileui install progress-semicircle</pre>
+  <table class="tableDoc">
+    <tbody>
+      <tr>
+        <th>Atribute/property</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><code>value</code></td>
+        <td>Initial value for component</td>
+      </tr>
+      <tr>
+        <td><code>title</code></td>
+        <td>Title for component</td>
+      </tr>
+      <tr>
+        <td><code>subTitle</code></td>
+        <td>Subtitle for component</td>
+      </tr>
+      <tr>
+        <td><code>text</code></td>
+        <td>Info of the value, example: 65%, the simbol (%) is the text</td>
+      </tr>
+      <tr>
+        <td><code>color</code></td>
+        <td>Color of external line</td>
+      </tr>
+      <tr>
+        <td><code>textColor</code></td>
+        <td>Color of text. Use name <a href="#colors">theme colors</a></td>
+      </tr>
+      <tr>
+        <td><code>textWeight</code></td>
+        <td>Weight of text (bold, 300, normal, 800, etc)</td>
+      </tr>
+      <tr>
+        <td><code>titleWeight</code></td>
+        <td>Weight of title (bold, 300, normal, 800, etc)</td>
+      </tr>
+      <tr>
+        <td><code>subTitleWeight</code></td>
+        <td>Weight of subtitle (bold, 300, normal, 800, etc)</td>
+      </tr>
+      <tr>
+        <td><code>titleColor</code></td>
+        <td>Color of title. Use name <a href="#colors">theme colors</a></td>
+      </tr>
+      <tr>
+        <td><code>subTitleColor</code></td>
+        <td>Color of subtitle. Use name <a href="#colors">theme colors</a></td>
+      </tr>
+      <tr>
+        <td><code>width</code></td>
+        <td>Size canvas size area</td>
+      </tr>
+      <tr>
+        <td><code>height</code></td>
+        <td>Size canvas size area</td>
+      </tr>
+      <tr>
+        <td><code>trailColor</code></td>
+        <td>Color of trail line. Use name <a href="#colors">theme colors</a></td>
+      </tr>
+      <tr>
+        <td><code>strokeWidth</code></td>
+        <td>Size stroke line.</td>
+      </tr>
+      <tr>
+        <td><code>trailWidth</code></td>
+        <td>Size stroke line.</td>
+      </tr>
+      <tr>
+        <td><code>textSize</code></td>
+        <td>Size font text. Example textSize="25px"</td>
+      </tr>
+      <tr>
+        <td><code>textMargin</code></td>
+        <td>Size margin text. Example textMargin="100px"</td>
+      </tr>
+      <tr>
+        <td><code>titleSize</code></td>
+        <td>Size font text. Example textSize="25px"</td>
+      </tr>
+       <tr>
+        <td><code>subTitleSize</code></td>
+        <td>Size font text. Example textSize="25px"</td>
+      </tr>
+       <tr>
+        <td><code>fill</code></td>
+        <td>...</td>
+      </tr>
+       <tr>
+        <td><code>padding</code></td>
+        <td>...</td>
+      </tr>
+      <tr>
+        <td><code>durationAnimate</code></td>
+        <td>...</td>
+      </tr>
+    </tbody>
+  </table>
+<textarea class="bind-code" mode="text/html">
+<div class="padding deep-purple align-center">
+  <div id="progressMetricUser" class="progress-semicircle"
+     title="Your metric"
+     subTitle="Compared by others"
+     color="white"
+     textColor="white"
+     textMargin="100px 0"
+     width="250px"
+     height="250px"
+     trailColor="white-opacity-10"
+     textSize="40px"
+     titleSize="16px"
+     textWeight="300"
+     value="91"
+     text="%"
+     strokeWidth="8"
+     trailWidth="2">
+  </div>
+  <button class="margin opacity-40 border-white text-white radius" onclick="updateValuesProgressSemicircle()">UPDATE VALUES</button>
+  <button class="margin opacity-40 border-white text-white radius" onclick="ProgressSemicircle.rebind()">REBIND VALUES</button>
+</div>
+
+<script type="text/javascript">
+  function updateValuesProgressSemicircle(){
+    //random values
+    document.getElementById('progressMetricUser').progressSemicircle.update(Math.floor(Math.random() * 100) + 1);
+  }
+</script></textarea>
+  <!-- DONE -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+  <script type="text/javascript" src="../assets/js/main.js"></script>
+  <script type="text/javascript" src="../mobileui-colors/script.js"></script>
+  <script type="text/javascript" src="../progressbarjs/script.js"></script>
+</body>
+</html>

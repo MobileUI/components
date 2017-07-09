@@ -120,6 +120,11 @@
           "path":"./progress-circle/index.html"
         },
         {
+          "key":"progress-semicircle",
+          "label":"Progress Semicircle",
+          "path":"./progress-semicircle/index.html"
+        },
+        {
           "key":"chart-bar",
           "label":"Chart Bar",
           "path":"./chart-bar/index.html"
