@@ -1,5 +1,5 @@
 {
-  "name":"progress-circle",
+  "name":"progress-semicircle",
   "author": "fabiorogeriosj",
   "dependencies": [
     "mobileui-colors",
