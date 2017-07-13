@@ -22,17 +22,22 @@
 }
 /*Float an element in the footer on the left.*/
 .cover .float-bottom-right,
+.cover .float-bottom-center,
 .cover .float-bottom-left {
   margin-bottom: -30px;
   z-index: 99;
+  position: absolute;
 }
 /*Float an element in the footer on the right.*/
 .cover .big.float-bottom-left,
-  .cover .big.float-bottom-right {
+.cover .big.float-bottom-center,
+.cover .big.float-bottom-right {
   margin-bottom: -35px;
 }
+/*Float an element in the footer on the center.*/
 .cover .small.float-bottom-right,
-.cover .small.float-bottom-left {
+.cover .small.float-bottom-left, 
+.cover .small.float-bottom-center {
   margin-bottom: -25px;
 }
 /*Set a gradient effect from black to transparent in the background of an element.*/
