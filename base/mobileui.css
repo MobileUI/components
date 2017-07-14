@@ -237,13 +237,20 @@ span.padding {
 .float-bottom-right {
     position: fixed;
     right: 15px;
-    bottom: 15px
+    bottom: 15px;
 }
 /*Floats an element in the footer to the left.*/
 .float-bottom-left {
     position: fixed;
     left: 15px;
-    bottom: 15px
+    bottom: 15px;
+}
+/*Floats an element in the footer to the left.*/
+.float-bottom-center {
+    position: fixed;
+    margin: auto;
+    left: 0;
+    bottom: 15px;
 }
 /*Create a completely round icon.*/
 .icon-circle {
