@@ -110,7 +110,7 @@ a {
 .icon {
     font-size: 28px;
 }
-img {
+img, video {
     max-width: 100%
 }
 p {
