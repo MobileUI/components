@@ -21,8 +21,7 @@ button .loading-circle.loading-element {
   top: 50%;
   margin-top: -20px;
 }
-.loading-circle.with-message.loading-element,
-button .loading-circle.with-message.loading-element {
+.loading-circle.with-message.loading-element {
   margin-left: -50px;
   margin-top: 17px;
   top: auto;
