@@ -15,6 +15,12 @@
   margin-left: -20px;
   position: absolute;
 }
+button .loading-circle.loading-element {
+  left: 50%;
+  margin-left: -20px;
+  top: 50%;
+  margin-top: -20px;
+}
 .loading-circle.with-message.loading-element {
   margin-left: -50px;
   margin-top: 17px;
