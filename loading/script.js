@@ -38,7 +38,9 @@ window.loading = function(message){
 }
 
 window.loadingElement = function(e, message, position, color){
-  e = document.getElementById(e);
+  if(typeof(e) != "object"){
+    e = document.getElementById(e);
+  }
   var withMessage = message ? 'with-message' : '';
   if(!color){
     color = 'white-loading';
@@ -65,7 +67,9 @@ window.loadingElement = function(e, message, position, color){
 
 window.closeLoading = function(e){
   if(e){
-    e = document.getElementById(e);
+    if(typeof(e) != "object"){
+      e = document.getElementById(e);
+    }
     e.innerHTML = e.oldValue;
     e.disabled=false;
   } else {
