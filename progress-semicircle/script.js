@@ -14,6 +14,7 @@ window.ProgressSemicircle = {
     for (var i = 0; i < progress.length; i++) {
       var config = {};
       config.value = Number(progress[i].getAttribute('value'));
+      config.maxValue = Number(progress[i].getAttribute('maxValue')) || 100;
       config.title = progress[i].getAttribute('title') || '';
       config.subTitle = progress[i].getAttribute('subTitle') || '';
       config.text = progress[i].getAttribute('text') || '';
@@ -21,6 +22,7 @@ window.ProgressSemicircle = {
       config.textColor = progress[i].getAttribute('textColor') || 'grey-800';
       config.textWeight = progress[i].getAttribute('textWeight') || 'normal';
       config.titleWeight = progress[i].getAttribute('titleWeight') || 'normal';
+      config.titleLineHeight = progress[i].getAttribute('titleLineHeight') || 'normal';
       config.subTitleWeight = progress[i].getAttribute('subTitleWeight') || 'normal';
       config.titleColor = progress[i].getAttribute('titleColor') || 'grey-500';
       config.subTitleColor = progress[i].getAttribute('subTitleColor') || 'grey-300';
@@ -109,6 +111,7 @@ window.ProgressSemicircle = {
             var style = 'style="';
             if(config.titleSize) style += ';font-size:'+config.titleSize;
             if(config.titleWeight) style += ';font-weight:'+config.titleWeight;
+            if(config.titleLineHeight) style += ';line-height:'+config.titleLineHeight;
             if(config.titleColor) style += ';color:'+colorsMobileUI[config.titleColor];
             style += '"';
             valueText += '<div '+style+' class="progress-semicircle-title">'+config.title+'</div>'
@@ -133,7 +136,7 @@ window.ProgressSemicircle = {
         }
         this.bar.animate(valueBar);
       }
-      elm.progressSemicircle.update(config.value);
+      elm.progressSemicircle.update((config.value/config.maxValue)*100);
     }
   }
 }

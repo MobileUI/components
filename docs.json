@@ -8,11 +8,16 @@
           "key":"getting-started",
           "label":"Install",
           "path":"./base/install.html"
+        },
+        {
+          "key":"templates",
+          "label":"Templates",
+          "path":"./base/templates.html"
         }
       ]
     },
     {
-      "category": "Components",
+      "category": "Components base",
       "itens": [
         {
           "key":"base",
@@ -115,6 +120,16 @@
           "path":"./loading/index.html"
         },
         {
+          "key":"timeline",
+          "label":"Timeline",
+          "path":"./timeline/index.html"
+        }
+      ]
+    },
+    {
+      "category": "Components charts",
+      "itens": [
+        {
           "key":"progress-circle",
           "label":"Progress Circle",
           "path":"./progress-circle/index.html"
@@ -128,16 +143,6 @@
           "key":"chart-bar",
           "label":"Chart Bar",
           "path":"./chart-bar/index.html"
-        },
-        {
-          "key":"timeline",
-          "label":"Timeline",
-          "path":"./timeline/index.html"
-        },
-        {
-          "key":"templates",
-          "label":"Templates",
-          "path":"./base/templates.html"
         }
       ]
     },
@@ -158,6 +163,11 @@
           "key":"progressbarjs",
           "label":"ProgressBar.js",
           "path":"./progressbarjs/index.html"
+        },
+        {
+          "key":"chartjs",
+          "label":"Chart.js",
+          "path":"./chartjs/index.html"
         }
       ]
     }

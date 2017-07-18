@@ -14,6 +14,8 @@ window.ProgressCircle = {
     for (var i = 0; i < progress.length; i++) {
       var config = {};
       config.value = Number(progress[i].getAttribute('value'));
+      config.maxValue = Number(progress[i].getAttribute('maxValue')) || 100;
+      config.showValue = Number(progress[i].getAttribute('showValue')) || false;
       config.title = progress[i].getAttribute('title') || '';
       config.subTitle = progress[i].getAttribute('subTitle') || '';
       config.text = progress[i].getAttribute('text') || '';
@@ -107,6 +109,9 @@ window.ProgressCircle = {
           circle.path.setAttribute('stroke-width', state.width);
 
           var valueInner = Math.round(circle.value() * 100);
+          if(config.showValue){
+            valueInner = config.value
+          }
           var valueText = '';
           if(config.title){
             var style = 'style="';
@@ -136,7 +141,7 @@ window.ProgressCircle = {
         }
         this.bar.animate(valueBar);
       }
-      elm.progressCircle.update(config.value);
+      elm.progressCircle.update((config.value/config.maxValue)*100);
     }
   }
 }
