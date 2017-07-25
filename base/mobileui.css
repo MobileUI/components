@@ -194,7 +194,7 @@ span.padding {
 .text-shadow {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
-/*Leave the text and icons small.*/
+/*Leave the text small.*/
 .text-small {
     font-size: 14px;
 }
@@ -202,10 +202,23 @@ span.padding {
 .text-small.icon {
   font-size: 14px !important;
 }
+/*Leave the icon small.*/
 .icon-small {
   font-size: 14px !important;
 }
-/*Leave the text and icons large.*/
+/*Leave the icon big.*/
+.icon-big {
+  font-size: 50px !important; 
+}
+/*Leave the icon huge.*/
+.icon-huge {
+  font-size: 65px !important; 
+}
+/*Leave the icon extra-huge.*/
+.icon-extra-huge {
+  font-size: 120px !important; 
+}
+/*Leave the text large.*/
 .text-big {
     font-size: 22px
 }
@@ -213,7 +226,15 @@ span.padding {
 .text-big.icon {
     font-size: 22px !important;
 }
-/*Leave the text and icons huge.*/
+/*Leave the text extra-huge.*/
+.text-extra-huge {
+    font-size: 65px
+}
+.text-extra-huge .icon,
+.text-extra-huge.icon {
+    font-size: 65px !important;
+}
+/*Leave the text huge.*/
 .text-huge {
     font-size: 32px
 }
