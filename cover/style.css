@@ -7,6 +7,22 @@
   width: 100%;
   position: relative;
 }
+/*Fixed height size.*/
+.cover.cover-200 {
+  height: 300px;
+}
+/*Fixed height size.*/
+.cover.cover-200 {
+  height: 300px;
+}
+/*Fixed height size.*/
+.cover.cover-400 {
+  height: 400px;
+}
+/*Fixed height size.*/
+.cover.cover-500 {
+  height: 500px;
+}
 /*Remove space inner the cover.*/
 .cover.no-padding {
   padding: 0;
@@ -36,7 +52,7 @@
 }
 /*Float an element in the footer on the center.*/
 .cover .small.float-bottom-right,
-.cover .small.float-bottom-left, 
+.cover .small.float-bottom-left,
 .cover .small.float-bottom-center {
   margin-bottom: -25px;
 }

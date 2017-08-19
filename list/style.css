@@ -28,6 +28,11 @@
   border-right: 0;
   border-top: 0;
 }
+/*Block line space with left avatar.*/
+.item .block {
+	display: -webkit-box;
+	display: flex;
+}
 .list .item.mark.margin-button {
   border-bottom: 0;
   margin-bottom: 10px;
