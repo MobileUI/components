@@ -33,16 +33,33 @@
       appearance of the app based on the platform.
     </p>
     <p>
-      The Installation is very simple, but first you need to install <a href="https://nodejs.org" target="_blank">Node.js</a>
+      The Installation is very simple, but first you need to install <a href="https://nodejs.org" target="_blank">Node.js</a>.
+      Then, install Cordova via terminal <strong>npm install -g cordova</strong>(add sudo if you are in Linux).      
     </p>
     <p>
-      After, just execute command in your terminal:
+      After that, just execute the following command in your terminal:
     </p>
     <pre>npm install -g mobileui</pre>
-    <p>See this usage example for the header and list components.</p>
-    <pre>mobileui install header list</pre>
-    <p>MoboleUI has a feature to view your application directly in the browser and with livereload feature. To do this, type the command below.</p>
-    <pre>mobileui preview</pre>
+    <p>To check if mobileui is installed or not, open the terminal and type <strong>mobileui</strong></p>
+    
+
+    <h4>Simple Example</h4>
+    
+    <p>Let's create a Simple Example using mobileui</p>
+    
+    <p>Open Terminal from desired location and following command is executed</p>
+    <p> Create a cordova Project using command - <strong>cordova create apptest</strong> </p>
+    <p> Change the directory to your project - <strong>cd apptest</strong> </p>
+    <p> For sample we can take <strong>header component</strong> as example, so install header component - <strong>mobileui install header</strong> </p>
+    <p> After that add the below code in index.html    
+      <pre>         
+              &lt;div class="header purple"&gt;
+              &lt;button class="left icon ion-navicon" name="button"&gt;&lt;/button&gt;
+              &lt;h1&gt;Application title&lt;/h1&gt;
+              &lt;/div&gt;          
+      </pre>        
+    </p>
+    <p> To preview this run: <strong>mobileui preview</strong> </p>
     <p>By default an HTTP server will run on port 8080, but you can change it by passing the <code>--port</code> parameter with the desired port, eg <code>--port 8000</code></p>
     <!-- DONE -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
