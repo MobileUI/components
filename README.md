@@ -15,6 +15,9 @@ The Installation is very simple, but first you need to install Node.js
 With Node.js installed, run in your terminal:
 
 `npm install mobileui -g`
+ 
+ To check the version of mobileui installed, Open the terminal and type  `mobileui`
+ 
 
 Links
 ---------------
