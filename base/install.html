@@ -21,7 +21,7 @@
       are really going to use for UI.
     </p>
     <p>
-      Certainly you will love using it in  <a href="https://developers.google.com/web/progressive-web-apps/" target="_blank">Progressive Web Apps</a>
+      Certainly, you will love using it in  <a href="https://developers.google.com/web/progressive-web-apps/" target="_blank">Progressive Web Apps</a>
       and <a href="https://cordova.apache.org/" target="_blank">Apache Cordova Apps</a>.
       You can use only the components you want in your projects created with <a href="http://phonegap.com/" target="_blank">PhoneGap</a>,
       <a href="http://ionicframework.com/" target="_blank">Ionic Framework</a>, <a href="https://onsen.io/" target="_blank">Onsen UI</a>,
@@ -33,34 +33,58 @@
       appearance of the app based on the platform.
     </p>
     <p>
-      The Installation is very simple, but first you need to install <a href="https://nodejs.org" target="_blank">Node.js</a>.
+      The Installation is straightforward, but first, you need to install <a href="https://nodejs.org" target="_blank">Node.js</a>.
       Then, install Cordova via terminal <strong>npm install -g cordova</strong>(add sudo if you are in Linux).      
     </p>
     <p>
-      After that, just execute the following command in your terminal:
+      After that, just execute the command in your terminal:
     </p>
     <pre>npm install -g mobileui</pre>
-    <p>To check if mobileui is installed or not, open the terminal and type <strong>mobileui</strong></p>
+    <p>To check if MobileUI is installed or not, open the terminal and type <strong>mobileui</strong></p>
     
-
-    <h4>Simple Example</h4>
+    <h4><strong>Simple Example</strong></h4>
     
-    <p>Let's create a Simple Example using mobileui</p>
+    <p>Let's create a Simple Example using MobileUI and Cordova</p>
     
     <p>Open Terminal from desired location and following command is executed</p>
     <p> Create a cordova Project using command - <strong>cordova create apptest</strong> </p>
     <p> Change the directory to your project - <strong>cd apptest</strong> </p>
     <p> For sample we can take <strong>header component</strong> as example, so install header component - <strong>mobileui install header</strong> </p>
-    <p> After that add the below code in index.html    
-      <pre>         
-              &lt;div class="header purple"&gt;
-              &lt;button class="left icon ion-navicon" name="button"&gt;&lt;/button&gt;
-              &lt;h1&gt;Application title&lt;/h1&gt;
-              &lt;/div&gt;          
-      </pre>        
-    </p>
-    <p> To preview this run: <strong>mobileui preview</strong> </p>
-    <p>By default an HTTP server will run on port 8080, but you can change it by passing the <code>--port</code> parameter with the desired port, eg <code>--port 8000</code></p>
+    <p>Commands:</p>
+    <pre>
+      cordova create apptest
+      cd apptest
+      mobileui install template cordova-blank
+      mobileui install header
+      mobileui preview
+    </pre>
+    <p>Let's check the commands:</p>
+    <ul>
+      <li>
+        <strong>cordova create apptest</strong> - Create a cordova Project
+      </li>
+      <li>
+        <strong>cd apptest</strong> - Change the directory to your project
+      </li>
+      <li>
+        <strong>mobileui install template cordova-blank</strong> - Clears the sample files created by the Cordova
+      </li>
+      <li>
+        <strong>mobileui install header</strong> - For sample we can take header component
+      </li>
+      <li>
+        <strong>mobileui preview</strong> - Emulates the app to run in the browser
+      </li>
+    </ul>
+
+    <p> After that add the below code in index.html  </p>
+<textarea class="bind-just-code" mode="text/html">
+<div class="header purple">
+  <button class="left icon ion-navicon" name="button"></button>
+  <h1>Application title</h1>
+</div></textarea>
+
+    <p>By default, an HTTP server will run on port 8080, but you can change it by passing the <code>--port</code> parameter with the desired port, eg <code>--port 8000</code></p>
     <!-- DONE -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
