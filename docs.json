@@ -168,6 +168,11 @@
           "key":"chartjs",
           "label":"Chart.js",
           "path":"./chartjs/index.html"
+        },
+        {
+          "key":"momentjs",
+          "label":"Moment.js",
+          "path":"./momentjs/index.html"
         }
       ]
     }
