@@ -93,6 +93,21 @@ window.openPage = function(p, params, callback){
   xhttp.send();
 }
 window.backPage = function(p){
+  var page = ""
+  if(!p) {
+    var pages = document.querySelectorAll('.page.show')
+    var elementFind = { zIndex:-1 }
+    for (var i = 0; i < pages.length; i++) {
+      var zIndexNow = Number(pages[i].style['zIndex'])
+      if(elementFind.zIndex<zIndexNow) {
+        elementFind.zIndex=zIndexNow
+        elementFind.element = pages[i]
+      }
+    }
+    if(elementFind.zIndex) {
+      p = elementFind.element.parentElement.id
+    }
+  } 
   var page = document.getElementById(p).getElementsByClassName('page')[0];
   var style = ';transform: translateY(0px);will-change: transform, -webkit-transform, opacity;transition-duration: 280ms;'
   var newStyle = document.getElementById(p).getElementsByClassName('page')[0].getAttribute('style')
