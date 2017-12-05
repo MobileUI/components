@@ -130,6 +130,11 @@
       "category": "Components charts",
       "itens": [
         {
+          "key":"chartist",
+          "label":"Chartist",
+          "path":"./chartist/index.html"
+        },
+        {
           "key":"progress-circle",
           "label":"Progress Circle",
           "path":"./progress-circle/index.html"
