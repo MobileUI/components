@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway:400,700|Roboto:300,400,900," rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+    <link rel="stylesheet" href="../base/reset.css">
+    <link rel="stylesheet" href="../base/mobileui.css">
+    <link rel="stylesheet" href="../base/colors.css">
+    <link rel="stylesheet" href="../base/icons.css">
+    <link rel="stylesheet" href="../header/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/master.css">
+    <style>
+      .content { margin-left:50px}
+    </style>
+  </head>
+  <body class="content">
+    <!-- BEGIN -->
+    <h2 class="title-doc" id="_DOC_GENERATE_SPACE_">Chartist</h2>
+    <p>
+      You may think that this is just yet an other charting library. But <a href="https://gionkunz.github.io/chartist-js/" target="_blank">Chartist.js</a> is the product of a community that was disappointed about the abilities provided by other charting libraries. Of course there are hundreds of other great charting libraries but after using them there were always tweaks you would have wished for that were not included.
+    </p>
+    <p>
+      You can use <a href="#colors">colors theme</a> and <a href="#icons">icons</a> in Chartist.
+    <p>
+      To use this component you need install with the command:
+    </p>
+    <div class="dependency tooltip">
+      <strong>Dependency:</strong> <code>base</code>.
+      <span class="tooltiptext">The dependencies will be installed together with this module</span>
+    </div>
+    <pre>mobileui install chartist</pre>
+    <!-- _DOC_GENERATE_CSS_DOC -->
+    <p>You can use all features the <a href="#base">base</a> MobileUI in this component.</p>
+
+<textarea class="bind-code"  header-absolute="true" replace="content,tab-content" mode="text/html" border="true">
+<div class="header purple">
+  <button class="left icon ion-android-arrow-back"></button>
+  <h1>Chartist example</h1>
+  <button class="right icon ion-refresh"></button>
+</div>
+<div class="content has-header">
+  <div class="purple chartist-white" id="chartist-line"></div>
+  <div class="purple chartist-white" id="chartist-bar"></div>
+  <p class="padding text-big text-light align-center">
+    Good examples using Chartist!
+  </p>
+  <div id="chartist-pie"></div>
+</div>
+<script type="text/javascript">
+
+  new Chartist.Line('#chartist-line', {
+    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+    series: [
+      [1, 5, 2, 5, 4, 3]
+    ]
+  });
+
+  new Chartist.Bar('#chartist-bar', {
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+    series: [
+      [5, 4, 3, 7, 5, 10],
+      [3, 2, 9, 5, 4, 6]
+    ]
+  });
+
+  new Chartist.Pie('#chartist-pie', {
+    series: [5, 3, 4]
+  });
+
+</script></textarea>
+
+
+    <!-- DONE -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+    <script type="text/javascript" src="../assets/js/main.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
