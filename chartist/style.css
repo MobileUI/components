@@ -406,3 +406,111 @@
 .chartist-blue .ct-series-d .ct-slice-pie {
     fill: rgba(33, 150, 243, 0.2);
 }
+
+/*Sets a color scheme for the chart.*/
+.chartist-light-blue {}
+.chartist-light-blue .ct-label {
+    fill: rgba(3, 169, 244,.4);
+    color: rgba(3, 169, 244,.4);
+}
+.chartist-light-blue .ct-grid {
+    stroke: rgba(3, 169, 244,.2);
+}
+.chartist-light-blue .ct-series-a .ct-bar, 
+.chartist-light-blue .ct-series-a .ct-line, 
+.chartist-light-blue .ct-series-a .ct-point, 
+.chartist-light-blue .ct-series-a .ct-slice-donut {
+    stroke: rgba(3, 169, 244, 1);
+}
+.chartist-light-blue .ct-series-b .ct-bar, 
+.chartist-light-blue .ct-series-b .ct-line, 
+.chartist-light-blue .ct-series-b .ct-point, 
+.chartist-light-blue .ct-series-b .ct-slice-donut {
+    stroke: rgba(3, 169, 244, 0.7);
+}
+.chartist-light-blue .ct-series-c .ct-bar, 
+.chartist-light-blue .ct-series-c .ct-line, 
+.chartist-light-blue .ct-series-c .ct-point, 
+.chartist-light-blue .ct-series-c .ct-slice-donut {
+    stroke: rgba(3, 169, 244, 0.4);
+}
+.chartist-light-blue .ct-series-d .ct-bar, 
+.chartist-light-blue .ct-series-d .ct-line, 
+.chartist-light-blue .ct-series-d .ct-point, 
+.chartist-light-blue .ct-series-d .ct-slice-donut {
+    stroke: rgba(3, 169, 244, 0.2);
+}
+.chartist-light-blue .ct-series-a .ct-area, 
+.chartist-light-blue .ct-series-a .ct-slice-donut-solid, 
+.chartist-light-blue .ct-series-a .ct-slice-pie {
+    fill: rgba(3, 169, 244, 1);
+}
+.chartist-light-blue .ct-series-b .ct-area, 
+.chartist-light-blue .ct-series-b .ct-slice-donut-solid, 
+.chartist-light-blue .ct-series-b .ct-slice-pie {
+    fill: rgba(3, 169, 244, 0.7);
+}
+.chartist-light-blue .ct-series-c .ct-area, 
+.chartist-light-blue .ct-series-c .ct-slice-donut-solid, 
+.chartist-light-blue .ct-series-c .ct-slice-pie {
+    fill: rgba(3, 169, 244, 0.4);
+}
+.chartist-light-blue .ct-series-d .ct-area, 
+.chartist-light-blue .ct-series-d .ct-slice-donut-solid, 
+.chartist-light-blue .ct-series-d .ct-slice-pie {
+    fill: rgba(3, 169, 244, 0.2);
+}
+
+/*Sets a color scheme for the chart.*/
+.chartist-cyan {}
+.chartist-cyan .ct-label {
+    fill: rgba(0, 188, 212,.4);
+    color: rgba(0, 188, 212,.4);
+}
+.chartist-cyan .ct-grid {
+    stroke: rgba(0, 188, 212,.2);
+}
+.chartist-cyan .ct-series-a .ct-bar, 
+.chartist-cyan .ct-series-a .ct-line, 
+.chartist-cyan .ct-series-a .ct-point, 
+.chartist-cyan .ct-series-a .ct-slice-donut {
+    stroke: rgba(0, 188, 212, 1);
+}
+.chartist-cyan .ct-series-b .ct-bar, 
+.chartist-cyan .ct-series-b .ct-line, 
+.chartist-cyan .ct-series-b .ct-point, 
+.chartist-cyan .ct-series-b .ct-slice-donut {
+    stroke: rgba(0, 188, 212, 0.7);
+}
+.chartist-cyan .ct-series-c .ct-bar, 
+.chartist-cyan .ct-series-c .ct-line, 
+.chartist-cyan .ct-series-c .ct-point, 
+.chartist-cyan .ct-series-c .ct-slice-donut {
+    stroke: rgba(0, 188, 212, 0.4);
+}
+.chartist-cyan .ct-series-d .ct-bar, 
+.chartist-cyan .ct-series-d .ct-line, 
+.chartist-cyan .ct-series-d .ct-point, 
+.chartist-cyan .ct-series-d .ct-slice-donut {
+    stroke: rgba(0, 188, 212, 0.2);
+}
+.chartist-cyan .ct-series-a .ct-area, 
+.chartist-cyan .ct-series-a .ct-slice-donut-solid, 
+.chartist-cyan .ct-series-a .ct-slice-pie {
+    fill: rgba(0, 188, 212, 1);
+}
+.chartist-cyan .ct-series-b .ct-area, 
+.chartist-cyan .ct-series-b .ct-slice-donut-solid, 
+.chartist-cyan .ct-series-b .ct-slice-pie {
+    fill: rgba(0, 188, 212, 0.7);
+}
+.chartist-cyan .ct-series-c .ct-area, 
+.chartist-cyan .ct-series-c .ct-slice-donut-solid, 
+.chartist-cyan .ct-series-c .ct-slice-pie {
+    fill: rgba(0, 188, 212, 0.4);
+}
+.chartist-cyan .ct-series-d .ct-area, 
+.chartist-cyan .ct-series-d .ct-slice-donut-solid, 
+.chartist-cyan .ct-series-d .ct-slice-pie {
+    fill: rgba(0, 188, 212, 0.2);
+}
