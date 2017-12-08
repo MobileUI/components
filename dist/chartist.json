@@ -1,7 +1,5 @@
 {
   "name":"chartist",
   "author": "gionkunz",
-  "dependencies": [
-    "base"
-  ]
+  "dependencies": []
 }

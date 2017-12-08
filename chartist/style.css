@@ -1,27 +1,19 @@
 .ct-double-octave:after,.ct-major-eleventh:after,.ct-major-second:after,.ct-major-seventh:after,.ct-major-sixth:after,.ct-major-tenth:after,.ct-major-third:after,.ct-major-twelfth:after,.ct-minor-second:after,.ct-minor-seventh:after,.ct-minor-sixth:after,.ct-minor-third:after,.ct-octave:after,.ct-perfect-fifth:after,.ct-perfect-fourth:after,.ct-square:after{content:"";clear:both}.ct-label{fill:rgba(0,0,0,.4);color:rgba(0,0,0,.4);font-size:.75rem;line-height:1}.ct-grid-background,.ct-line{fill:none}.ct-chart-bar .ct-label,.ct-chart-line .ct-label{display:block;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex}.ct-chart-donut .ct-label,.ct-chart-pie .ct-label{dominant-baseline:central}.ct-label.ct-horizontal.ct-start{-webkit-box-align:flex-end;-webkit-align-items:flex-end;-ms-flex-align:flex-end;align-items:flex-end;-webkit-box-pack:flex-start;-webkit-justify-content:flex-start;-ms-flex-pack:flex-start;justify-content:flex-start;text-align:left;text-anchor:start}.ct-label.ct-horizontal.ct-end{-webkit-box-align:flex-start;-webkit-align-items:flex-start;-ms-flex-align:flex-start;align-items:flex-start;-webkit-box-pack:flex-start;-webkit-justify-content:flex-start;-ms-flex-pack:flex-start;justify-content:flex-start;text-align:left;text-anchor:start}.ct-label.ct-vertical.ct-start{-webkit-box-align:flex-end;-webkit-align-items:flex-end;-ms-flex-align:flex-end;align-items:flex-end;-webkit-box-pack:flex-end;-webkit-justify-content:flex-end;-ms-flex-pack:flex-end;justify-content:flex-end;text-align:right;text-anchor:end}.ct-label.ct-vertical.ct-end{-webkit-box-align:flex-end;-webkit-align-items:flex-end;-ms-flex-align:flex-end;align-items:flex-end;-webkit-box-pack:flex-start;-webkit-justify-content:flex-start;-ms-flex-pack:flex-start;justify-content:flex-start;text-align:left;text-anchor:start}.ct-chart-bar .ct-label.ct-horizontal.ct-start{-webkit-box-align:flex-end;-webkit-align-items:flex-end;-ms-flex-align:flex-end;align-items:flex-end;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;text-align:center;text-anchor:start}.ct-chart-bar .ct-label.ct-horizontal.ct-end{-webkit-box-align:flex-start;-webkit-align-items:flex-start;-ms-flex-align:flex-start;align-items:flex-start;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;text-align:center;text-anchor:start}.ct-chart-bar.ct-horizontal-bars .ct-label.ct-horizontal.ct-start{-webkit-box-align:flex-end;-webkit-align-items:flex-end;-ms-flex-align:flex-end;align-items:flex-end;-webkit-box-pack:flex-start;-webkit-justify-content:flex-start;-ms-flex-pack:flex-start;justify-content:flex-start;text-align:left;text-anchor:start}.ct-chart-bar.ct-horizontal-bars .ct-label.ct-horizontal.ct-end{-webkit-box-align:flex-start;-webkit-align-items:flex-start;-ms-flex-align:flex-start;align-items:flex-start;-webkit-box-pack:flex-start;-webkit-justify-content:flex-start;-ms-flex-pack:flex-start;justify-content:flex-start;text-align:left;text-anchor:start}.ct-chart-bar.ct-horizontal-bars .ct-label.ct-vertical.ct-start{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:flex-end;-webkit-justify-content:flex-end;-ms-flex-pack:flex-end;justify-content:flex-end;text-align:right;text-anchor:end}.ct-chart-bar.ct-horizontal-bars .ct-label.ct-vertical.ct-end{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:flex-start;-webkit-justify-content:flex-start;-ms-flex-pack:flex-start;justify-content:flex-start;text-align:left;text-anchor:end}.ct-grid{stroke:rgba(0,0,0,.2);stroke-width:1px;stroke-dasharray:2px}.ct-point{stroke-width:10px;stroke-linecap:round}.ct-line{stroke-width:4px}.ct-area{stroke:none;fill-opacity:.1}.ct-bar{fill:none;stroke-width:10px}.ct-slice-donut{fill:none;stroke-width:60px}.ct-series-a .ct-bar,.ct-series-a .ct-line,.ct-series-a .ct-point,.ct-series-a .ct-slice-donut{stroke:#d70206}.ct-series-a .ct-area,.ct-series-a .ct-slice-donut-solid,.ct-series-a .ct-slice-pie{fill:#d70206}.ct-series-b .ct-bar,.ct-series-b .ct-line,.ct-series-b .ct-point,.ct-series-b .ct-slice-donut{stroke:#f05b4f}.ct-series-b .ct-area,.ct-series-b .ct-slice-donut-solid,.ct-series-b .ct-slice-pie{fill:#f05b4f}.ct-series-c .ct-bar,.ct-series-c .ct-line,.ct-series-c .ct-point,.ct-series-c .ct-slice-donut{stroke:#f4c63d}.ct-series-c .ct-area,.ct-series-c .ct-slice-donut-solid,.ct-series-c .ct-slice-pie{fill:#f4c63d}.ct-series-d .ct-bar,.ct-series-d .ct-line,.ct-series-d .ct-point,.ct-series-d .ct-slice-donut{stroke:#d17905}.ct-series-d .ct-area,.ct-series-d .ct-slice-donut-solid,.ct-series-d .ct-slice-pie{fill:#d17905}.ct-series-e .ct-bar,.ct-series-e .ct-line,.ct-series-e .ct-point,.ct-series-e .ct-slice-donut{stroke:#453d3f}.ct-series-e .ct-area,.ct-series-e .ct-slice-donut-solid,.ct-series-e .ct-slice-pie{fill:#453d3f}.ct-series-f .ct-bar,.ct-series-f .ct-line,.ct-series-f .ct-point,.ct-series-f .ct-slice-donut{stroke:#59922b}.ct-series-f .ct-area,.ct-series-f .ct-slice-donut-solid,.ct-series-f .ct-slice-pie{fill:#59922b}.ct-series-g .ct-bar,.ct-series-g .ct-line,.ct-series-g .ct-point,.ct-series-g .ct-slice-donut{stroke:#0544d3}.ct-series-g .ct-area,.ct-series-g .ct-slice-donut-solid,.ct-series-g .ct-slice-pie{fill:#0544d3}.ct-series-h .ct-bar,.ct-series-h .ct-line,.ct-series-h .ct-point,.ct-series-h .ct-slice-donut{stroke:#6b0392}.ct-series-h .ct-area,.ct-series-h .ct-slice-donut-solid,.ct-series-h .ct-slice-pie{fill:#6b0392}.ct-series-i .ct-bar,.ct-series-i .ct-line,.ct-series-i .ct-point,.ct-series-i .ct-slice-donut{stroke:#f05b4f}.ct-series-i .ct-area,.ct-series-i .ct-slice-donut-solid,.ct-series-i .ct-slice-pie{fill:#f05b4f}.ct-series-j .ct-bar,.ct-series-j .ct-line,.ct-series-j .ct-point,.ct-series-j .ct-slice-donut{stroke:#dda458}.ct-series-j .ct-area,.ct-series-j .ct-slice-donut-solid,.ct-series-j .ct-slice-pie{fill:#dda458}.ct-series-k .ct-bar,.ct-series-k .ct-line,.ct-series-k .ct-point,.ct-series-k .ct-slice-donut{stroke:#eacf7d}.ct-series-k .ct-area,.ct-series-k .ct-slice-donut-solid,.ct-series-k .ct-slice-pie{fill:#eacf7d}.ct-series-l .ct-bar,.ct-series-l .ct-line,.ct-series-l .ct-point,.ct-series-l .ct-slice-donut{stroke:#86797d}.ct-series-l .ct-area,.ct-series-l .ct-slice-donut-solid,.ct-series-l .ct-slice-pie{fill:#86797d}.ct-series-m .ct-bar,.ct-series-m .ct-line,.ct-series-m .ct-point,.ct-series-m .ct-slice-donut{stroke:#b2c326}.ct-series-m .ct-area,.ct-series-m .ct-slice-donut-solid,.ct-series-m .ct-slice-pie{fill:#b2c326}.ct-series-n .ct-bar,.ct-series-n .ct-line,.ct-series-n .ct-point,.ct-series-n .ct-slice-donut{stroke:#6188e2}.ct-series-n .ct-area,.ct-series-n .ct-slice-donut-solid,.ct-series-n .ct-slice-pie{fill:#6188e2}.ct-series-o .ct-bar,.ct-series-o .ct-line,.ct-series-o .ct-point,.ct-series-o .ct-slice-donut{stroke:#a748ca}.ct-series-o .ct-area,.ct-series-o .ct-slice-donut-solid,.ct-series-o .ct-slice-pie{fill:#a748ca}.ct-square{display:block;position:relative;width:100%}.ct-square:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:100%}.ct-square:after{display:table}.ct-square>svg{display:block;position:absolute;top:0;left:0}.ct-minor-second{display:block;position:relative;width:100%}.ct-minor-second:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:93.75%}.ct-minor-second:after{display:table}.ct-minor-second>svg{display:block;position:absolute;top:0;left:0}.ct-major-second{display:block;position:relative;width:100%}.ct-major-second:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:88.8888888889%}.ct-major-second:after{display:table}.ct-major-second>svg{display:block;position:absolute;top:0;left:0}.ct-minor-third{display:block;position:relative;width:100%}.ct-minor-third:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:83.3333333333%}.ct-minor-third:after{display:table}.ct-minor-third>svg{display:block;position:absolute;top:0;left:0}.ct-major-third{display:block;position:relative;width:100%}.ct-major-third:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:80%}.ct-major-third:after{display:table}.ct-major-third>svg{display:block;position:absolute;top:0;left:0}.ct-perfect-fourth{display:block;position:relative;width:100%}.ct-perfect-fourth:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:75%}.ct-perfect-fourth:after{display:table}.ct-perfect-fourth>svg{display:block;position:absolute;top:0;left:0}.ct-perfect-fifth{display:block;position:relative;width:100%}.ct-perfect-fifth:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:66.6666666667%}.ct-perfect-fifth:after{display:table}.ct-perfect-fifth>svg{display:block;position:absolute;top:0;left:0}.ct-minor-sixth{display:block;position:relative;width:100%}.ct-minor-sixth:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:62.5%}.ct-minor-sixth:after{display:table}.ct-minor-sixth>svg{display:block;position:absolute;top:0;left:0}.ct-golden-section{display:block;position:relative;width:100%}.ct-golden-section:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:61.804697157%}.ct-golden-section:after{content:"";display:table;clear:both}.ct-golden-section>svg{display:block;position:absolute;top:0;left:0}.ct-major-sixth{display:block;position:relative;width:100%}.ct-major-sixth:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:60%}.ct-major-sixth:after{display:table}.ct-major-sixth>svg{display:block;position:absolute;top:0;left:0}.ct-minor-seventh{display:block;position:relative;width:100%}.ct-minor-seventh:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:56.25%}.ct-minor-seventh:after{display:table}.ct-minor-seventh>svg{display:block;position:absolute;top:0;left:0}.ct-major-seventh{display:block;position:relative;width:100%}.ct-major-seventh:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:53.3333333333%}.ct-major-seventh:after{display:table}.ct-major-seventh>svg{display:block;position:absolute;top:0;left:0}.ct-octave{display:block;position:relative;width:100%}.ct-octave:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:50%}.ct-octave:after{display:table}.ct-octave>svg{display:block;position:absolute;top:0;left:0}.ct-major-tenth{display:block;position:relative;width:100%}.ct-major-tenth:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:40%}.ct-major-tenth:after{display:table}.ct-major-tenth>svg{display:block;position:absolute;top:0;left:0}.ct-major-eleventh{display:block;position:relative;width:100%}.ct-major-eleventh:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:37.5%}.ct-major-eleventh:after{display:table}.ct-major-eleventh>svg{display:block;position:absolute;top:0;left:0}.ct-major-twelfth{display:block;position:relative;width:100%}.ct-major-twelfth:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:33.3333333333%}.ct-major-twelfth:after{display:table}.ct-major-twelfth>svg{display:block;position:absolute;top:0;left:0}.ct-double-octave{display:block;position:relative;width:100%}.ct-double-octave:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:25%}.ct-double-octave:after{display:table}.ct-double-octave>svg{display:block;position:absolute;top:0;left:0}
 
 /*Set a big size for rows and bars..*/
-.chartist-big {
-
-}
+.chartist-big {}
 .chartist-big .ct-series-a .ct-bar, 
 .chartist-big .ct-series-a .ct-line, 
 .chartist-big .ct-series-a .ct-point, 
-.chartist-big .ct-series-a .ct-slice-donut {
-    stroke-width: 20px;
-}
+.chartist-big .ct-series-a .ct-slice-donut,
 .chartist-big .ct-series-b .ct-bar, 
 .chartist-big .ct-series-b .ct-line, 
 .chartist-big .ct-series-b .ct-point, 
-.chartist-big .ct-series-b .ct-slice-donut {
-    stroke-width: 20px;
-}
+.chartist-big .ct-series-b .ct-slice-donut,
 .chartist-big .ct-series-c .ct-bar, 
 .chartist-big .ct-series-c .ct-line, 
 .chartist-big .ct-series-c .ct-point, 
-.chartist-big .ct-series-c .ct-slice-donut {
-    stroke-width: 20px;
-}
+.chartist-big .ct-series-c .ct-slice-donut,
 .chartist-big .ct-series-d .ct-bar, 
 .chartist-big .ct-series-d .ct-line, 
 .chartist-big .ct-series-d .ct-point, 
@@ -29,8 +21,37 @@
     stroke-width: 20px;
 }
 
+/*Set a big size for rows and bars..*/
+.chartist-huge {}
+.chartist-huge .ct-series-a .ct-bar, 
+.chartist-huge .ct-series-a .ct-line, 
+.chartist-huge .ct-series-a .ct-point, 
+.chartist-huge .ct-series-a .ct-slice-donut,
+.chartist-huge .ct-series-b .ct-bar, 
+.chartist-huge .ct-series-b .ct-line, 
+.chartist-huge .ct-series-b .ct-point, 
+.chartist-huge .ct-series-b .ct-slice-donut,
+.chartist-huge .ct-series-c .ct-bar, 
+.chartist-huge .ct-series-c .ct-line, 
+.chartist-huge .ct-series-c .ct-point, 
+.chartist-huge .ct-series-c .ct-slice-donut,
+.chartist-huge .ct-series-d .ct-bar, 
+.chartist-huge .ct-series-d .ct-line, 
+.chartist-huge .ct-series-d .ct-point, 
+.chartist-huge .ct-series-d .ct-slice-donut {
+    stroke-width: 30px;
+}
+
 /*Sets a color scheme for the chart.*/
 .chartist-white {}
+.chartist-white.text-black .ct-label {
+    fill: #000;
+    color: #000;
+}
+.chartist-white.text-white .ct-label {
+    fill:#fff;
+    color:#fff;
+}
 .chartist-white .ct-label {
     fill: rgba(255,255,255,.4);
     color: rgba(255,255,255,.4);
@@ -85,6 +106,14 @@
 
 /*Sets a color scheme for the chart.*/
 .chartist-red {}
+.chartist-red.text-black .ct-label {
+    fill: #000;
+    color: #000;
+}
+.chartist-red.text-white .ct-label {
+    fill:#fff;
+    color:#fff;
+}
 .chartist-red .ct-label {
     fill: rgba(244, 67, 54,.4);
     color: rgba(244, 67, 54,.4);
@@ -139,6 +168,14 @@
 
 /*Sets a color scheme for the chart.*/
 .chartist-pink {}
+.chartist-pink.text-black .ct-label {
+    fill: #000;
+    color: #000;
+}
+.chartist-pink.text-white .ct-label {
+    fill:#fff;
+    color:#fff;
+}
 .chartist-pink .ct-label {
     fill: rgba(233, 30, 99,.4);
     color: rgba(233, 30, 99,.4);
@@ -193,6 +230,14 @@
 
 /*Sets a color scheme for the chart.*/
 .chartist-purple {}
+.chartist-purple.text-black .ct-label {
+    fill: #000;
+    color: #000;
+}
+.chartist-purple.text-white .ct-label {
+    fill:#fff;
+    color:#fff;
+}
 .chartist-purple .ct-label {
     fill: rgba(156, 39, 176,.4);
     color: rgba(156, 39, 176,.4);
@@ -247,6 +292,10 @@
 
 /*Sets a color scheme for the chart.*/
 .chartist-deep-purple {}
+.chartist-deep.text-white-purple .ct-label {
+    fill:#fff;
+    color:#fff;
+}
 .chartist-deep-purple .ct-label {
     fill: rgba(103, 58, 183,.4);
     color: rgba(103, 58, 183,.4);
@@ -301,6 +350,14 @@
 
 /*Sets a color scheme for the chart.*/
 .chartist-indigo {}
+.chartist-indigo.text-black .ct-label {
+    fill: #000;
+    color: #000;
+}
+.chartist-indigo.text-white .ct-label {
+    fill:#fff;
+    color:#fff;
+}
 .chartist-indigo .ct-label {
     fill: rgba(63, 81, 181,.4);
     color: rgba(63, 81, 181,.4);
@@ -355,6 +412,14 @@
 
 /*Sets a color scheme for the chart.*/
 .chartist-blue {}
+.chartist-blue.text-black .ct-label {
+    fill: #000;
+    color: #000;
+}
+.chartist-blue.text-white .ct-label {
+    fill:#fff;
+    color:#fff;
+}
 .chartist-blue .ct-label {
     fill: rgba(33, 150, 243,.4);
     color: rgba(33, 150, 243,.4);
@@ -409,6 +474,10 @@
 
 /*Sets a color scheme for the chart.*/
 .chartist-light-blue {}
+.chartist-light.text-white-blue .ct-label {
+    fill:#fff;
+    color:#fff;
+}
 .chartist-light-blue .ct-label {
     fill: rgba(3, 169, 244,.4);
     color: rgba(3, 169, 244,.4);
@@ -463,6 +532,14 @@
 
 /*Sets a color scheme for the chart.*/
 .chartist-cyan {}
+.chartist-cyan.text-black .ct-label {
+    fill: #000;
+    color: #000;
+}
+.chartist-cyan.text-white .ct-label {
+    fill:#fff;
+    color:#fff;
+}
 .chartist-cyan .ct-label {
     fill: rgba(0, 188, 212,.4);
     color: rgba(0, 188, 212,.4);
@@ -513,4 +590,620 @@
 .chartist-cyan .ct-series-d .ct-slice-donut-solid, 
 .chartist-cyan .ct-series-d .ct-slice-pie {
     fill: rgba(0, 188, 212, 0.2);
+}
+
+/*Sets a color scheme for the chart.*/
+.chartist-teal {}
+.chartist-teal.text-black .ct-label {
+    fill: #000;
+    color: #000;
+}
+.chartist-teal.text-white .ct-label {
+    fill:#fff;
+    color:#fff;
+}
+.chartist-teal .ct-label {
+    fill: rgba(0, 150, 136,.4);
+    color: rgba(0, 150, 136,.4);
+}
+.chartist-teal .ct-grid {
+    stroke: rgba(0, 150, 136,.2);
+}
+.chartist-teal .ct-series-a .ct-bar, 
+.chartist-teal .ct-series-a .ct-line, 
+.chartist-teal .ct-series-a .ct-point, 
+.chartist-teal .ct-series-a .ct-slice-donut {
+    stroke: rgba(0, 150, 136, 1);
+}
+.chartist-teal .ct-series-b .ct-bar, 
+.chartist-teal .ct-series-b .ct-line, 
+.chartist-teal .ct-series-b .ct-point, 
+.chartist-teal .ct-series-b .ct-slice-donut {
+    stroke: rgba(0, 150, 136, 0.7);
+}
+.chartist-teal .ct-series-c .ct-bar, 
+.chartist-teal .ct-series-c .ct-line, 
+.chartist-teal .ct-series-c .ct-point, 
+.chartist-teal .ct-series-c .ct-slice-donut {
+    stroke: rgba(0, 150, 136, 0.4);
+}
+.chartist-teal .ct-series-d .ct-bar, 
+.chartist-teal .ct-series-d .ct-line, 
+.chartist-teal .ct-series-d .ct-point, 
+.chartist-teal .ct-series-d .ct-slice-donut {
+    stroke: rgba(0, 150, 136, 0.2);
+}
+.chartist-teal .ct-series-a .ct-area, 
+.chartist-teal .ct-series-a .ct-slice-donut-solid, 
+.chartist-teal .ct-series-a .ct-slice-pie {
+    fill: rgba(0, 150, 136, 1);
+}
+.chartist-teal .ct-series-b .ct-area, 
+.chartist-teal .ct-series-b .ct-slice-donut-solid, 
+.chartist-teal .ct-series-b .ct-slice-pie {
+    fill: rgba(0, 150, 136, 0.7);
+}
+.chartist-teal .ct-series-c .ct-area, 
+.chartist-teal .ct-series-c .ct-slice-donut-solid, 
+.chartist-teal .ct-series-c .ct-slice-pie {
+    fill: rgba(0, 150, 136, 0.4);
+}
+.chartist-teal .ct-series-d .ct-area, 
+.chartist-teal .ct-series-d .ct-slice-donut-solid, 
+.chartist-teal .ct-series-d .ct-slice-pie {
+    fill: rgba(0, 150, 136, 0.2);
+}
+
+/*Sets a color scheme for the chart.*/
+.chartist-green {}
+.chartist-green.text-black .ct-label {
+    fill: #000;
+    color: #000;
+}
+.chartist-green.text-white .ct-label {
+    fill:#fff;
+    color:#fff;
+}
+.chartist-green .ct-label {
+    fill: rgba(76, 175, 79,.4);
+    color: rgba(76, 175, 79,.4);
+}
+.chartist-green .ct-grid {
+    stroke: rgba(76, 175, 79,.2);
+}
+.chartist-green .ct-series-a .ct-bar, 
+.chartist-green .ct-series-a .ct-line, 
+.chartist-green .ct-series-a .ct-point, 
+.chartist-green .ct-series-a .ct-slice-donut {
+    stroke: rgba(76, 175, 79, 1);
+}
+.chartist-green .ct-series-b .ct-bar, 
+.chartist-green .ct-series-b .ct-line, 
+.chartist-green .ct-series-b .ct-point, 
+.chartist-green .ct-series-b .ct-slice-donut {
+    stroke: rgba(76, 175, 79, 0.7);
+}
+.chartist-green .ct-series-c .ct-bar, 
+.chartist-green .ct-series-c .ct-line, 
+.chartist-green .ct-series-c .ct-point, 
+.chartist-green .ct-series-c .ct-slice-donut {
+    stroke: rgba(76, 175, 79, 0.4);
+}
+.chartist-green .ct-series-d .ct-bar, 
+.chartist-green .ct-series-d .ct-line, 
+.chartist-green .ct-series-d .ct-point, 
+.chartist-green .ct-series-d .ct-slice-donut {
+    stroke: rgba(76, 175, 79, 0.2);
+}
+.chartist-green .ct-series-a .ct-area, 
+.chartist-green .ct-series-a .ct-slice-donut-solid, 
+.chartist-green .ct-series-a .ct-slice-pie {
+    fill: rgba(76, 175, 79, 1);
+}
+.chartist-green .ct-series-b .ct-area, 
+.chartist-green .ct-series-b .ct-slice-donut-solid, 
+.chartist-green .ct-series-b .ct-slice-pie {
+    fill: rgba(76, 175, 79, 0.7);
+}
+.chartist-green .ct-series-c .ct-area, 
+.chartist-green .ct-series-c .ct-slice-donut-solid, 
+.chartist-green .ct-series-c .ct-slice-pie {
+    fill: rgba(76, 175, 79, 0.4);
+}
+.chartist-green .ct-series-d .ct-area, 
+.chartist-green .ct-series-d .ct-slice-donut-solid, 
+.chartist-green .ct-series-d .ct-slice-pie {
+    fill: rgba(76, 175, 79, 0.2);
+}
+
+/*Sets a color scheme for the chart.*/
+.chartist-lime {}
+.chartist-lime.text-black .ct-label {
+    fill: #000;
+    color: #000;
+}
+.chartist-lime.text-white .ct-label {
+    fill:#fff;
+    color:#fff;
+}
+.chartist-lime .ct-label {
+    fill: rgba(205, 220, 57,.4);
+    color: rgba(205, 220, 57,.4);
+}
+.chartist-lime .ct-grid {
+    stroke: rgba(205, 220, 57,.2);
+}
+.chartist-lime .ct-series-a .ct-bar, 
+.chartist-lime .ct-series-a .ct-line, 
+.chartist-lime .ct-series-a .ct-point, 
+.chartist-lime .ct-series-a .ct-slice-donut {
+    stroke: rgba(205, 220, 57, 1);
+}
+.chartist-lime .ct-series-b .ct-bar, 
+.chartist-lime .ct-series-b .ct-line, 
+.chartist-lime .ct-series-b .ct-point, 
+.chartist-lime .ct-series-b .ct-slice-donut {
+    stroke: rgba(205, 220, 57, 0.7);
+}
+.chartist-lime .ct-series-c .ct-bar, 
+.chartist-lime .ct-series-c .ct-line, 
+.chartist-lime .ct-series-c .ct-point, 
+.chartist-lime .ct-series-c .ct-slice-donut {
+    stroke: rgba(205, 220, 57, 0.4);
+}
+.chartist-lime .ct-series-d .ct-bar, 
+.chartist-lime .ct-series-d .ct-line, 
+.chartist-lime .ct-series-d .ct-point, 
+.chartist-lime .ct-series-d .ct-slice-donut {
+    stroke: rgba(205, 220, 57, 0.2);
+}
+.chartist-lime .ct-series-a .ct-area, 
+.chartist-lime .ct-series-a .ct-slice-donut-solid, 
+.chartist-lime .ct-series-a .ct-slice-pie {
+    fill: rgba(205, 220, 57, 1);
+}
+.chartist-lime .ct-series-b .ct-area, 
+.chartist-lime .ct-series-b .ct-slice-donut-solid, 
+.chartist-lime .ct-series-b .ct-slice-pie {
+    fill: rgba(205, 220, 57, 0.7);
+}
+.chartist-lime .ct-series-c .ct-area, 
+.chartist-lime .ct-series-c .ct-slice-donut-solid, 
+.chartist-lime .ct-series-c .ct-slice-pie {
+    fill: rgba(205, 220, 57, 0.4);
+}
+.chartist-lime .ct-series-d .ct-area, 
+.chartist-lime .ct-series-d .ct-slice-donut-solid, 
+.chartist-lime .ct-series-d .ct-slice-pie {
+    fill: rgba(205, 220, 57, 0.2);
+}
+
+/*Sets a color scheme for the chart.*/
+.chartist-yellow {}
+.chartist-yellow.text-black .ct-label {
+    fill: #000;
+    color: #000;
+}
+.chartist-yellow.text-white .ct-label {
+    fill:#fff;
+    color:#fff;
+}
+.chartist-yellow .ct-label {
+    fill: rgba(255, 235, 59,.4);
+    color: rgba(255, 235, 59,.4);
+}
+.chartist-yellow .ct-grid {
+    stroke: rgba(255, 235, 59,.2);
+}
+.chartist-yellow .ct-series-a .ct-bar, 
+.chartist-yellow .ct-series-a .ct-line, 
+.chartist-yellow .ct-series-a .ct-point, 
+.chartist-yellow .ct-series-a .ct-slice-donut {
+    stroke: rgba(255, 235, 59, 1);
+}
+.chartist-yellow .ct-series-b .ct-bar, 
+.chartist-yellow .ct-series-b .ct-line, 
+.chartist-yellow .ct-series-b .ct-point, 
+.chartist-yellow .ct-series-b .ct-slice-donut {
+    stroke: rgba(255, 235, 59, 0.7);
+}
+.chartist-yellow .ct-series-c .ct-bar, 
+.chartist-yellow .ct-series-c .ct-line, 
+.chartist-yellow .ct-series-c .ct-point, 
+.chartist-yellow .ct-series-c .ct-slice-donut {
+    stroke: rgba(255, 235, 59, 0.4);
+}
+.chartist-yellow .ct-series-d .ct-bar, 
+.chartist-yellow .ct-series-d .ct-line, 
+.chartist-yellow .ct-series-d .ct-point, 
+.chartist-yellow .ct-series-d .ct-slice-donut {
+    stroke: rgba(255, 235, 59, 0.2);
+}
+.chartist-yellow .ct-series-a .ct-area, 
+.chartist-yellow .ct-series-a .ct-slice-donut-solid, 
+.chartist-yellow .ct-series-a .ct-slice-pie {
+    fill: rgba(255, 235, 59, 1);
+}
+.chartist-yellow .ct-series-b .ct-area, 
+.chartist-yellow .ct-series-b .ct-slice-donut-solid, 
+.chartist-yellow .ct-series-b .ct-slice-pie {
+    fill: rgba(255, 235, 59, 0.7);
+}
+.chartist-yellow .ct-series-c .ct-area, 
+.chartist-yellow .ct-series-c .ct-slice-donut-solid, 
+.chartist-yellow .ct-series-c .ct-slice-pie {
+    fill: rgba(255, 235, 59, 0.4);
+}
+.chartist-yellow .ct-series-d .ct-area, 
+.chartist-yellow .ct-series-d .ct-slice-donut-solid, 
+.chartist-yellow .ct-series-d .ct-slice-pie {
+    fill: rgba(255, 235, 59, 0.2);
+}
+
+/*Sets a color scheme for the chart.*/
+.chartist-amber {}
+.chartist-amber.text-black .ct-label {
+    fill: #000;
+    color: #000;
+}
+.chartist-amber.text-white .ct-label {
+    fill:#fff;
+    color:#fff;
+}
+.chartist-amber .ct-label {
+    fill: rgba(255, 193, 7,.4);
+    color: rgba(255, 193, 7,.4);
+}
+.chartist-amber .ct-grid {
+    stroke: rgba(255, 193, 7,.2);
+}
+.chartist-amber .ct-series-a .ct-bar, 
+.chartist-amber .ct-series-a .ct-line, 
+.chartist-amber .ct-series-a .ct-point, 
+.chartist-amber .ct-series-a .ct-slice-donut {
+    stroke: rgba(255, 193, 7, 1);
+}
+.chartist-amber .ct-series-b .ct-bar, 
+.chartist-amber .ct-series-b .ct-line, 
+.chartist-amber .ct-series-b .ct-point, 
+.chartist-amber .ct-series-b .ct-slice-donut {
+    stroke: rgba(255, 193, 7, 0.7);
+}
+.chartist-amber .ct-series-c .ct-bar, 
+.chartist-amber .ct-series-c .ct-line, 
+.chartist-amber .ct-series-c .ct-point, 
+.chartist-amber .ct-series-c .ct-slice-donut {
+    stroke: rgba(255, 193, 7, 0.4);
+}
+.chartist-amber .ct-series-d .ct-bar, 
+.chartist-amber .ct-series-d .ct-line, 
+.chartist-amber .ct-series-d .ct-point, 
+.chartist-amber .ct-series-d .ct-slice-donut {
+    stroke: rgba(255, 193, 7, 0.2);
+}
+.chartist-amber .ct-series-a .ct-area, 
+.chartist-amber .ct-series-a .ct-slice-donut-solid, 
+.chartist-amber .ct-series-a .ct-slice-pie {
+    fill: rgba(255, 193, 7, 1);
+}
+.chartist-amber .ct-series-b .ct-area, 
+.chartist-amber .ct-series-b .ct-slice-donut-solid, 
+.chartist-amber .ct-series-b .ct-slice-pie {
+    fill: rgba(255, 193, 7, 0.7);
+}
+.chartist-amber .ct-series-c .ct-area, 
+.chartist-amber .ct-series-c .ct-slice-donut-solid, 
+.chartist-amber .ct-series-c .ct-slice-pie {
+    fill: rgba(255, 193, 7, 0.4);
+}
+.chartist-amber .ct-series-d .ct-area, 
+.chartist-amber .ct-series-d .ct-slice-donut-solid, 
+.chartist-amber .ct-series-d .ct-slice-pie {
+    fill: rgba(255, 193, 7, 0.2);
+}
+
+/*Sets a color scheme for the chart.*/
+.chartist-orange {}
+.chartist-orange.text-black .ct-label {
+    fill: #000;
+    color: #000;
+}
+.chartist-orange.text-white .ct-label {
+    fill:#fff;
+    color:#fff;
+}
+.chartist-orange .ct-label {
+    fill: rgba(255, 152, 0,.4);
+    color: rgba(255, 152, 0,.4);
+}
+.chartist-orange .ct-grid {
+    stroke: rgba(255, 152, 0,.2);
+}
+.chartist-orange .ct-series-a .ct-bar, 
+.chartist-orange .ct-series-a .ct-line, 
+.chartist-orange .ct-series-a .ct-point, 
+.chartist-orange .ct-series-a .ct-slice-donut {
+    stroke: rgba(255, 152, 0, 1);
+}
+.chartist-orange .ct-series-b .ct-bar, 
+.chartist-orange .ct-series-b .ct-line, 
+.chartist-orange .ct-series-b .ct-point, 
+.chartist-orange .ct-series-b .ct-slice-donut {
+    stroke: rgba(255, 152, 0, 0.7);
+}
+.chartist-orange .ct-series-c .ct-bar, 
+.chartist-orange .ct-series-c .ct-line, 
+.chartist-orange .ct-series-c .ct-point, 
+.chartist-orange .ct-series-c .ct-slice-donut {
+    stroke: rgba(255, 152, 0, 0.4);
+}
+.chartist-orange .ct-series-d .ct-bar, 
+.chartist-orange .ct-series-d .ct-line, 
+.chartist-orange .ct-series-d .ct-point, 
+.chartist-orange .ct-series-d .ct-slice-donut {
+    stroke: rgba(255, 152, 0, 0.2);
+}
+.chartist-orange .ct-series-a .ct-area, 
+.chartist-orange .ct-series-a .ct-slice-donut-solid, 
+.chartist-orange .ct-series-a .ct-slice-pie {
+    fill: rgba(255, 152, 0, 1);
+}
+.chartist-orange .ct-series-b .ct-area, 
+.chartist-orange .ct-series-b .ct-slice-donut-solid, 
+.chartist-orange .ct-series-b .ct-slice-pie {
+    fill: rgba(255, 152, 0, 0.7);
+}
+.chartist-orange .ct-series-c .ct-area, 
+.chartist-orange .ct-series-c .ct-slice-donut-solid, 
+.chartist-orange .ct-series-c .ct-slice-pie {
+    fill: rgba(255, 152, 0, 0.4);
+}
+.chartist-orange .ct-series-d .ct-area, 
+.chartist-orange .ct-series-d .ct-slice-donut-solid, 
+.chartist-orange .ct-series-d .ct-slice-pie {
+    fill: rgba(255, 152, 0, 0.2);
+}
+
+/*Sets a color scheme for the chart.*/
+.chartist-brown {}
+.chartist-brown.text-black .ct-label {
+    fill: #000;
+    color: #000;
+}
+.chartist-brown.text-white .ct-label {
+    fill:#fff;
+    color:#fff;
+}
+.chartist-brown .ct-label {
+    fill: rgba(121, 85, 72,.4);
+    color: rgba(121, 85, 72,.4);
+}
+.chartist-brown .ct-grid {
+    stroke: rgba(121, 85, 72,.2);
+}
+.chartist-brown .ct-series-a .ct-bar, 
+.chartist-brown .ct-series-a .ct-line, 
+.chartist-brown .ct-series-a .ct-point, 
+.chartist-brown .ct-series-a .ct-slice-donut {
+    stroke: rgba(121, 85, 72, 1);
+}
+.chartist-brown .ct-series-b .ct-bar, 
+.chartist-brown .ct-series-b .ct-line, 
+.chartist-brown .ct-series-b .ct-point, 
+.chartist-brown .ct-series-b .ct-slice-donut {
+    stroke: rgba(121, 85, 72, 0.7);
+}
+.chartist-brown .ct-series-c .ct-bar, 
+.chartist-brown .ct-series-c .ct-line, 
+.chartist-brown .ct-series-c .ct-point, 
+.chartist-brown .ct-series-c .ct-slice-donut {
+    stroke: rgba(121, 85, 72, 0.4);
+}
+.chartist-brown .ct-series-d .ct-bar, 
+.chartist-brown .ct-series-d .ct-line, 
+.chartist-brown .ct-series-d .ct-point, 
+.chartist-brown .ct-series-d .ct-slice-donut {
+    stroke: rgba(121, 85, 72, 0.2);
+}
+.chartist-brown .ct-series-a .ct-area, 
+.chartist-brown .ct-series-a .ct-slice-donut-solid, 
+.chartist-brown .ct-series-a .ct-slice-pie {
+    fill: rgba(121, 85, 72, 1);
+}
+.chartist-brown .ct-series-b .ct-area, 
+.chartist-brown .ct-series-b .ct-slice-donut-solid, 
+.chartist-brown .ct-series-b .ct-slice-pie {
+    fill: rgba(121, 85, 72, 0.7);
+}
+.chartist-brown .ct-series-c .ct-area, 
+.chartist-brown .ct-series-c .ct-slice-donut-solid, 
+.chartist-brown .ct-series-c .ct-slice-pie {
+    fill: rgba(121, 85, 72, 0.4);
+}
+.chartist-brown .ct-series-d .ct-area, 
+.chartist-brown .ct-series-d .ct-slice-donut-solid, 
+.chartist-brown .ct-series-d .ct-slice-pie {
+    fill: rgba(121, 85, 72, 0.2);
+}
+
+/*Sets a color scheme for the chart.*/
+.chartist-grey {}
+.chartist-grey.text-black .ct-label {
+    fill: #000;
+    color: #000;
+}
+.chartist-grey.text-white .ct-label {
+    fill:#fff;
+    color:#fff;
+}
+.chartist-grey .ct-label {
+    fill: rgba(158, 158, 158,.4);
+    color: rgba(158, 158, 158,.4);
+}
+.chartist-grey .ct-grid {
+    stroke: rgba(158, 158, 158,.2);
+}
+.chartist-grey .ct-series-a .ct-bar, 
+.chartist-grey .ct-series-a .ct-line, 
+.chartist-grey .ct-series-a .ct-point, 
+.chartist-grey .ct-series-a .ct-slice-donut {
+    stroke: rgba(158, 158, 158, 1);
+}
+.chartist-grey .ct-series-b .ct-bar, 
+.chartist-grey .ct-series-b .ct-line, 
+.chartist-grey .ct-series-b .ct-point, 
+.chartist-grey .ct-series-b .ct-slice-donut {
+    stroke: rgba(158, 158, 158, 0.7);
+}
+.chartist-grey .ct-series-c .ct-bar, 
+.chartist-grey .ct-series-c .ct-line, 
+.chartist-grey .ct-series-c .ct-point, 
+.chartist-grey .ct-series-c .ct-slice-donut {
+    stroke: rgba(158, 158, 158, 0.4);
+}
+.chartist-grey .ct-series-d .ct-bar, 
+.chartist-grey .ct-series-d .ct-line, 
+.chartist-grey .ct-series-d .ct-point, 
+.chartist-grey .ct-series-d .ct-slice-donut {
+    stroke: rgba(158, 158, 158, 0.2);
+}
+.chartist-grey .ct-series-a .ct-area, 
+.chartist-grey .ct-series-a .ct-slice-donut-solid, 
+.chartist-grey .ct-series-a .ct-slice-pie {
+    fill: rgba(158, 158, 158, 1);
+}
+.chartist-grey .ct-series-b .ct-area, 
+.chartist-grey .ct-series-b .ct-slice-donut-solid, 
+.chartist-grey .ct-series-b .ct-slice-pie {
+    fill: rgba(158, 158, 158, 0.7);
+}
+.chartist-grey .ct-series-c .ct-area, 
+.chartist-grey .ct-series-c .ct-slice-donut-solid, 
+.chartist-grey .ct-series-c .ct-slice-pie {
+    fill: rgba(158, 158, 158, 0.4);
+}
+.chartist-grey .ct-series-d .ct-area, 
+.chartist-grey .ct-series-d .ct-slice-donut-solid, 
+.chartist-grey .ct-series-d .ct-slice-pie {
+    fill: rgba(158, 158, 158, 0.2);
+}
+
+/*Sets a color scheme for the chart.*/
+.chartist-blue-grey {}
+.chartist-blue.text-white-grey .ct-label {
+    fill:#fff;
+    color:#fff;
+}
+.chartist-blue-grey .ct-label {
+    fill: rgba(96, 125, 139,.4);
+    color: rgba(96, 125, 139,.4);
+}
+.chartist-blue-grey .ct-grid {
+    stroke: rgba(96, 125, 139,.2);
+}
+.chartist-blue-grey .ct-series-a .ct-bar, 
+.chartist-blue-grey .ct-series-a .ct-line, 
+.chartist-blue-grey .ct-series-a .ct-point, 
+.chartist-blue-grey .ct-series-a .ct-slice-donut {
+    stroke: rgba(96, 125, 139, 1);
+}
+.chartist-blue-grey .ct-series-b .ct-bar, 
+.chartist-blue-grey .ct-series-b .ct-line, 
+.chartist-blue-grey .ct-series-b .ct-point, 
+.chartist-blue-grey .ct-series-b .ct-slice-donut {
+    stroke: rgba(96, 125, 139, 0.7);
+}
+.chartist-blue-grey .ct-series-c .ct-bar, 
+.chartist-blue-grey .ct-series-c .ct-line, 
+.chartist-blue-grey .ct-series-c .ct-point, 
+.chartist-blue-grey .ct-series-c .ct-slice-donut {
+    stroke: rgba(96, 125, 139, 0.4);
+}
+.chartist-blue-grey .ct-series-d .ct-bar, 
+.chartist-blue-grey .ct-series-d .ct-line, 
+.chartist-blue-grey .ct-series-d .ct-point, 
+.chartist-blue-grey .ct-series-d .ct-slice-donut {
+    stroke: rgba(96, 125, 139, 0.2);
+}
+.chartist-blue-grey .ct-series-a .ct-area, 
+.chartist-blue-grey .ct-series-a .ct-slice-donut-solid, 
+.chartist-blue-grey .ct-series-a .ct-slice-pie {
+    fill: rgba(96, 125, 139, 1);
+}
+.chartist-blue-grey .ct-series-b .ct-area, 
+.chartist-blue-grey .ct-series-b .ct-slice-donut-solid, 
+.chartist-blue-grey .ct-series-b .ct-slice-pie {
+    fill: rgba(96, 125, 139, 0.7);
+}
+.chartist-blue-grey .ct-series-c .ct-area, 
+.chartist-blue-grey .ct-series-c .ct-slice-donut-solid, 
+.chartist-blue-grey .ct-series-c .ct-slice-pie {
+    fill: rgba(96, 125, 139, 0.4);
+}
+.chartist-blue-grey .ct-series-d .ct-area, 
+.chartist-blue-grey .ct-series-d .ct-slice-donut-solid, 
+.chartist-blue-grey .ct-series-d .ct-slice-pie {
+    fill: rgba(96, 125, 139, 0.2);
+}
+
+/*Sets a color scheme for the chart.*/
+.chartist-black {}
+.chartist-black.text-black .ct-label {
+    fill: #000;
+    color: #000;
+}
+.chartist-black.text-white .ct-label {
+    fill:#fff;
+    color:#fff;
+}
+.chartist-black .ct-label {
+    fill: rgba(0, 0, 0,.4);
+    color: rgba(0, 0, 0,.4);
+}
+.chartist-black .ct-grid {
+    stroke: rgba(0, 0, 0,.2);
+}
+.chartist-black .ct-series-a .ct-bar, 
+.chartist-black .ct-series-a .ct-line, 
+.chartist-black .ct-series-a .ct-point, 
+.chartist-black .ct-series-a .ct-slice-donut {
+    stroke: rgba(0, 0, 0, 1);
+}
+.chartist-black .ct-series-b .ct-bar, 
+.chartist-black .ct-series-b .ct-line, 
+.chartist-black .ct-series-b .ct-point, 
+.chartist-black .ct-series-b .ct-slice-donut {
+    stroke: rgba(0, 0, 0, 0.7);
+}
+.chartist-black .ct-series-c .ct-bar, 
+.chartist-black .ct-series-c .ct-line, 
+.chartist-black .ct-series-c .ct-point, 
+.chartist-black .ct-series-c .ct-slice-donut {
+    stroke: rgba(0, 0, 0, 0.4);
+}
+.chartist-black .ct-series-d .ct-bar, 
+.chartist-black .ct-series-d .ct-line, 
+.chartist-black .ct-series-d .ct-point, 
+.chartist-black .ct-series-d .ct-slice-donut {
+    stroke: rgba(0, 0, 0, 0.2);
+}
+.chartist-black .ct-series-a .ct-area, 
+.chartist-black .ct-series-a .ct-slice-donut-solid, 
+.chartist-black .ct-series-a .ct-slice-pie {
+    fill: rgba(0, 0, 0, 1);
+}
+.chartist-black .ct-series-b .ct-area, 
+.chartist-black .ct-series-b .ct-slice-donut-solid, 
+.chartist-black .ct-series-b .ct-slice-pie {
+    fill: rgba(0, 0, 0, 0.7);
+}
+.chartist-black .ct-series-c .ct-area, 
+.chartist-black .ct-series-c .ct-slice-donut-solid, 
+.chartist-black .ct-series-c .ct-slice-pie {
+    fill: rgba(0, 0, 0, 0.4);
+}
+.chartist-black .ct-series-d .ct-area, 
+.chartist-black .ct-series-d .ct-slice-donut-solid, 
+.chartist-black .ct-series-d .ct-slice-pie {
+    fill: rgba(0, 0, 0, 0.2);
 }
