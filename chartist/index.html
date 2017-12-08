@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="../header/style.css">
     <link rel="stylesheet" href="../grid/style.css">
     <link rel="stylesheet" href="../list/style.css">
+    <link rel="stylesheet" href="../chartist-plugin-tooltip/style.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../assets/css/master.css">
     <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="../chartist-plugin-tooltip/script.js"></script>
     <style>
       .content-land { margin-left:50px}
     </style>
@@ -31,10 +33,6 @@
     <p>
       To use this component you need install with the command:
     </p>
-    <div class="dependency tooltip">
-      <strong>Dependency:</strong> <code>base</code>.
-      <span class="tooltiptext">The dependencies will be installed together with this module</span>
-    </div>
     <pre>mobileui install chartist</pre>
     <!-- _DOC_GENERATE_CSS_DOC -->
     <p>You can use all features the <a href="#base">base</a> MobileUI in this component.</p>
@@ -105,7 +103,7 @@
       </div>
     </div>
 
-    <div class="chartist-blue chartist-big" id="chartist-strauss"></div>
+    <div class="chartist-blue chartist-big text-black" id="chartist-strauss"></div>
 
     <div class="list">
       <div class="item">
@@ -137,7 +135,73 @@
     });
   
   </script></textarea>
+  <p>
+    Below another example with combined charts using <code>grid</code> and component <code>chartist-plugin-tooltip</code>. 
+    In this case you need install plugin with command <code>mobileui install chartist-plugin-tooltip</code>
+  </p>
+<textarea class="bind-code"  header-absolute="true" mode="text/html" border="true">
+  <div class="header black">
+    <button class="left icon ion-android-arrow-back"></button>
+    <h1>Dashboard Sales and Finance</h1>
+  </div>
+  <div class="content has-header black">
+    <div class="row padding">
+      <div class="col-50">
+        <div id="chartist-sale" class="chartist-green text-white"></div>
+      </div>
+      <div class="col-50">
+        <div id="chartist-platform" class="chartist-red text-white"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="chartist-blue chartist-huge text-white" id="chartist-region"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row align-center">
+    <div class="col green padding">
+      <h1 class="text-huge text-strong">65</h1>
+      <small class="text-light">Tickets</small>
+    </div>
+    <div class="col red padding">
+      <h1 class="text-huge text-strong">33</h1>
+      <small class="text-light">Leads</small>
+    </div>
+  </div>
+  <script type="text/javascript">
+  
+    new Chartist.Pie('#chartist-sale', {
+      labels: ['Services', 'Licenses', 'Support'],
+      series: [560, 345, 56]
+    });
 
+    new Chartist.Pie('#chartist-platform', {
+      labels: ['Android', 'iOS', 'Windows'],
+      series: [183, 234, 45]
+    });
+
+    new Chartist.Bar('#chartist-region', {
+      labels: ['Brazil', 'Europe', 'The Americas', 'Asia', 'Russia'],
+      series: [
+        [
+          {meta: 'Total', value: 735.50 },
+          {meta: 'Total', value: 345},
+          {meta: 'Total', value: 565.66},
+          {meta: 'Total', value: 56},
+          {meta: 'Total', value: 23}
+        ]
+      ]
+    }, {
+      low: 0,
+      high: 8,
+      fullWidth: true,
+      plugins: [
+        Chartist.plugins.tooltip()
+      ]
+    });
+  
+  </script></textarea>
 
     <!-- DONE -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
