@@ -1,6 +1,9 @@
 window.PAGE={handePage:100};
 document.addEventListener("deviceready", function(){
   document.addEventListener("backbutton", function(e){
+    if(window.disabledBackButton) {
+      return e.preventDefault();
+    }
     var pages = document.getElementsByClassName('box-block');
     if(pages.length){
       e.preventDefault();
