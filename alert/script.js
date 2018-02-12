@@ -39,6 +39,9 @@ window.alert = function(message, title){
     configAlert.class = 'white';
   }
   alertContent.className = 'alert ' + configAlert.class;
+  if(configAlert.width) {
+    alertContent.style.maxWidth = configAlert.width;
+  }
   alertMobileUI.appendChild(alertContent);
 
   if(configAlert.title){
@@ -52,6 +55,9 @@ window.alert = function(message, title){
     var text = document.createTextNode(configAlert.message);
     p.appendChild(text);
     alertContent.appendChild(p);
+  }
+  if(configAlert.template) {
+    alertContent.insertAdjacentHTML('beforeend', document.getElementById(configAlert.template).innerHTML);
   }
 
   var buttons = document.createElement('div');
