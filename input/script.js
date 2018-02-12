@@ -20,14 +20,14 @@
     }
     var labelsFloat = document.getElementsByClassName('label-float');
     for(i in labelsFloat) {
-      if(labelsFloat[i].className && labelsFloat[i].className.indexOf('bind-input-event-focus') < 0 && labelsFloat[i].getElementsByTagName('input').length) {
+      if(labelsFloat[i].className && labelsFloat[i].className.indexOf('bind-input-event-focus') < 0 && labelsFloat[i].querySelectorAll('input,textarea').length) {
         labelsFloat[i].className += ' bind-input-event-focus';
-        labelsFloat[i].getElementsByTagName('input')[0].addEventListener('focus', function(){
+        labelsFloat[i].querySelectorAll('input,textarea')[0].addEventListener('focus', function(){
           if(this.parentNode.getElementsByTagName('label').length && this.parentNode.getElementsByTagName('label')[0].className.indexOf('focus') < 0) {
             this.parentNode.getElementsByTagName('label')[0].className += ' focus'
           }
         }, false);
-        labelsFloat[i].getElementsByTagName('input')[0].addEventListener('blur', function(){
+        labelsFloat[i].querySelectorAll('input,textarea')[0].addEventListener('blur', function(){
           if(this.parentNode.getElementsByTagName('label').length && this.parentNode.getElementsByTagName('label')[0].className && !this.value.length) {
             this.parentNode.getElementsByTagName('label')[0].className = this.parentNode.getElementsByTagName('label')[0].className.replace('focus','');
           }
