@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="../header/style.css">
   <link rel="stylesheet" href="../button/style.css">
   <link rel="stylesheet" href="../list/style.css">
+  <link rel="stylesheet" href="../input/style.css">
   <link rel="stylesheet" href="../cover/style.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="../assets/css/master.css">
@@ -102,6 +103,62 @@
       }
     </script>
   </body></textarea>
+  <p>Another option like modal component you can add <code>list</code> and <code>input</code> by <code>template</code>  with more advanced customized alert:</p>
+<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div|padding,padding body" height-preview="600px" border="true" multiplatform="true">
+<body class="padding">
+  <button class="purple full radius margin-bottom" onclick="alertForm()">Finish process</button>
+
+  <div class="hidden" id="template-alert-custom">
+    <div class="list">
+      <div class="item">
+        <input type="text" placeholder="Add an comment about process..." autofocus>
+      </div>
+      <div class="item">
+        <label>
+          <div class="left">
+              <input type="radio" name="user" class="purple">
+          </div>
+          <h2>The process was well executed</h2>
+        </label>
+      </div>
+      <div class="item">
+        <label>
+          <div class="left">
+            <input type="radio" name="user" class="purple">
+          </div>
+          <h2>The process was run in error</h2>
+        </label>
+      </div>
+      <div class="item">
+        <label>
+          <div class="left">
+            <input type="radio" name="user" class="purple">
+          </div>
+          <h2>The process was not executed</h2>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function alertForm(){
+      alert({
+        title:'Finish process',
+        message:'Fill in the options to finalize the process',
+        template: 'template-alert-custom',
+        width:'90%',
+        buttons:[
+          {
+            label: 'Finish'
+          },
+          {
+            label:'Cancel'
+          }
+        ]
+      });
+    }
+  </script>
+</body></textarea>
   <!-- DONE -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
