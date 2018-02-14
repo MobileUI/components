@@ -45,16 +45,12 @@ window.alert = function(message, title){
   alertMobileUI.appendChild(alertContent);
 
   if(configAlert.title){
-    var h1 = document.createElement('h1');
-    var text = document.createTextNode(configAlert.title);
-    h1.appendChild(text);
-    alertContent.appendChild(h1);
+    var h1 = '<h1>'+configAlert.title+'</h1>';
+    alertContent.insertAdjacentHTML('beforeend', h1);
   }
   if(configAlert.message){
-    var p = document.createElement('p');
-    var text = document.createTextNode(configAlert.message);
-    p.appendChild(text);
-    alertContent.appendChild(p);
+    var p = '<p>'+configAlert.message+'</p>';
+    alertContent.insertAdjacentHTML('beforeend', p);
   }
   if(configAlert.template) {
     alertContent.insertAdjacentHTML('beforeend', document.getElementById(configAlert.template).innerHTML);
