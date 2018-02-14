@@ -355,6 +355,9 @@ window.openPageDemo = function(id, p, params, callback){
       if(SO.code === 2){
         secondStyle = ';transform: translateX(0px);transition-duration: 280ms;'
       }
+      if(window.disabledOpenPageEffect) {
+        secondStyle = ';opacity: 1;top: 0;'
+      }
       var newStyle = document.getElementById(p).getElementsByClassName('page')[0].getAttribute('style')
       if(newStyle) {
         newStyle += ' '+firstStyle + secondStyle
