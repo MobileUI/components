@@ -32,6 +32,9 @@
             this.parentNode.getElementsByTagName('label')[0].className = this.parentNode.getElementsByTagName('label')[0].className.replace('focus','');
           }
         }, false);
+        if(labelsFloat[i].querySelectorAll('input,textarea')[0].value && labelsFloat[i].querySelectorAll('input,textarea')[0].value.length) {
+          labelsFloat[i].querySelectorAll('input,textarea')[0].parentNode.getElementsByTagName('label')[0].className += ' focus'
+        }
       }
     }
 
