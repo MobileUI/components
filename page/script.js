@@ -25,6 +25,9 @@ window.openPage = function(p, params, callback){
     if(SO.code === 2){
       secondStyle = ';transform: translateX(0px);transition-duration: 280ms;'
     }
+    if(window.disabledOpenPageEffect) {
+      secondStyle = ';opacity: 1;top: 0;'
+    }
     var newStyle = document.getElementById(p).getElementsByClassName('page')[0].getAttribute('style')
     if(newStyle) {
       newStyle += ' '+firstStyle + secondStyle
@@ -113,6 +116,9 @@ window.backPage = function(p){
   } 
   var page = document.getElementById(p).getElementsByClassName('page')[0];
   var style = ';transform: translateY(0px);will-change: transform, -webkit-transform, opacity;transition-duration: 280ms;'
+  if(window.disabledOpenPageEffect) {
+    style = ''
+  }
   var newStyle = document.getElementById(p).getElementsByClassName('page')[0].getAttribute('style')
   if(newStyle) {
     newStyle += ' '+style
@@ -128,5 +134,5 @@ window.backPage = function(p){
   setTimeout(function(){
     var elm = document.getElementById(p);
     elm.parentElement.removeChild(elm);
-  },280)
+  }, !window.disabledOpenPageEffect ? 280 : 0)
 }
