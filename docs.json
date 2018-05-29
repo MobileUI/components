@@ -13,6 +13,11 @@
           "key":"templates",
           "label":"Templates",
           "path":"./base/templates.html"
+        },
+        {
+          "key":"demos",
+          "label":"Demos",
+          "link": "/demos"
         }
       ]
     },
