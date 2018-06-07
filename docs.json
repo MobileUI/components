@@ -183,6 +183,11 @@
           "key":"momentjs",
           "label":"Moment.js",
           "path":"./momentjs/index.html"
+        },
+        {
+          "key":"pulltorefresh",
+          "label":"PullToRefresh",
+          "path":"./pulltorefresh/index.html"
         }
       ]
     }
