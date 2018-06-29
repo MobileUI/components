@@ -143,8 +143,8 @@
     background-color: #ce93d8 !important
 }
 
-.Purple-300,
-.Purple-400,
+.purple-300,
+.purple-400,
 .deep-purple,
 .purple-500,
 .purple-600,
@@ -154,11 +154,11 @@
     color: rgba(255, 255, 255, .9)
 }
 
-.Purple-300, input[type="checkbox"].Purple-300.switch::after {
+.purple-300, input[type="checkbox"].purple-300.switch::after {
     background-color: #ba68c8 !important
 }
 
-.Purple-400, input[type="checkbox"].Purple-400.switch::after {
+.purple-400, input[type="checkbox"].purple-400.switch::after {
     background-color: #ab47bc !important
 }
 
@@ -1294,11 +1294,11 @@
     color: #ce93d8;
 }
 
-.text-Purple-300 , i.Purple-300 {
+.text-purple-300 , i.purple-300 {
     color: #ba68c8;
 }
 
-.text-Purple-400 , i.Purple-400 {
+.text-purple-400 , i.purple-400 {
     color: #ab47bc;
 }
 
@@ -2094,7 +2094,7 @@
     border: 1px solid #f48fb1
 }
 
-.border-Pink-300 {
+.border-pink-300 {
     border: 1px solid #f06292
 }
 
@@ -2138,11 +2138,11 @@
     border: 1px solid #ce93d8
 }
 
-.border-Purple-300 {
+.border-purple-300 {
     border: 1px solid #ba68c8
 }
 
-.border-Purple-400 {
+.border-purple-400 {
     border: 1px solid #ab47bc
 }
 
