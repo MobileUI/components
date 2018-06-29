@@ -274,6 +274,27 @@
   </textarea>
   <br />
   <p>
+    When you use the <code>vertical-align-*</code> classes, you need to define height off element, for example: <code>style="height: 100px;"</code>.
+    <br /> Or you can use helper class <code>.full-height</code>
+  </p>
+  <textarea class="bind-code" mode="text/html">
+    <div class="row vertical-align-center grey" style="height: 50px;">
+      <div class="col-20 blue">
+        col-30
+      </div>
+    </div>
+    <br>
+    <div style="height: 50px">
+      <div class="row vertical-align-center grey full-height">
+        <div class="col-20 green">
+          col-30
+        </div>
+      </div>
+    </div>
+    <br>
+  </textarea>
+  <br />
+  <p>
     See this good example using <a href="#header">header</a>, <a href="#cover">cover</a> and <a href="#list">list</a> components.
   </p>
   <textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div" height-preview="550px">
