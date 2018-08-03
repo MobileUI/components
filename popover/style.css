@@ -52,3 +52,6 @@
 .platform-ios .backdrop-popover {
   opacity: 0.08;
 }
+.popover .item[data] {
+  display: none!important;
+}
