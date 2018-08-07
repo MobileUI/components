@@ -136,7 +136,7 @@ window.ProgressCircle = {
       });
       elm.progressCircle.update = function(v){
         var valueBar = 0;
-        if(v < config.maxValue && v >= 0) {
+        if(v <= config.maxValue && v >= 0) {
           valueBar = v/config.maxValue;
         } else if(v < 0) {
           console.error("Value for progress circle is too small. (Requested value is "+v+")");
