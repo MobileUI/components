@@ -105,7 +105,7 @@ window.ProgressSemicircle = {
           circle.path.setAttribute('stroke', state.color);
           circle.path.setAttribute('stroke-width', state.width);
 
-          var valueInner = Math.round(circle.value() * 100);
+          var valueInner = Math.round(circle.value() * config.maxValue);
           var valueText = '';
           if(config.title){
             var style = 'style="';
@@ -131,12 +131,17 @@ window.ProgressSemicircle = {
       });
       elm.progressSemicircle.update = function(v){
         var valueBar = 0;
-        if(v < 100){
-          valueBar = Number("0." + v.toString().replace('.',''));
+        if(v <= config.maxValue && v >= 0) {
+          valueBar = v/config.maxValue;
+        } else if(v < 0) {
+          console.error("Value for progress semicircle is too small. (Requested value is "+v+")");
+        } else {
+          console.error("Value for progress semicircle is too high. Maximum is "+config.maxValue+" and requested value is "+v+". (Value set to maximum for now.)")
+          valueBar=1;
         }
         this.bar.animate(valueBar);
       }
-      elm.progressSemicircle.update((config.value/config.maxValue)*100);
+      elm.progressSemicircle.update(config.value);
     }
   }
 }
