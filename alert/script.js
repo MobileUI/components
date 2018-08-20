@@ -74,6 +74,8 @@ window.alert = function (message, title) {
     button.addEventListener('click', configAlert.buttons[i].onclick)
     buttons.appendChild(button)
   }
+  var customEvent = new CustomEvent('alertOpened')
+  document.dispatchEvent(customEvent)
 }
 
 window.closeAlert = function (id) {
