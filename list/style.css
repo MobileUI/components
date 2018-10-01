@@ -162,3 +162,9 @@
   padding: 0;
   margin: 0;
 }
+.list .align-bottom {
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: baseline;
+  margin-top: 10px;
+}
