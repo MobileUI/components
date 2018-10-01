@@ -121,6 +121,10 @@ p {
 .padding {
     padding: 10px
 }
+/*Add a padding on the top.*/
+.padding-top {
+    padding-top: 10px;
+}
 /*Add an external space.*/
 .margin {
     margin: 10px
