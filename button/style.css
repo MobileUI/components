@@ -108,6 +108,28 @@ button.small.icon-text.icon-right {
 button.small.icon-text i {
   font-size: 18px;
 }
+/*hugebutton.*/
+.buttons-group.huge button,
+button.huge  {
+  font-size: 32px;
+  min-height: 70px;
+  line-height: 70px;
+}
+button.circle.huge {
+  width: 70px;
+  height: 70px;
+  font-size: 32px;
+}
+button.huge.icon-text {
+  padding-left: 40px;
+}
+button.huge.icon-text.icon-right {
+  padding-left: 12px;
+  padding-right: 40px;
+}
+button.huge.icon-text i {
+  font-size: 32px;
+}
 /*Create groups of buttons*/
 .buttons-group {
   display: inline-block;
