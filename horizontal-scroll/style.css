@@ -1,0 +1,229 @@
+/*Define an element as horizontal-scroll. This feature depends on the <code>item</code> to function properly.*/
+.horizontal-scroll {
+  width: 100%;
+  position: relative;
+  border: 1px solid #ddd;
+  display: flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hides the Scroll Bar. This is for webkit browsers only, however. */
+.horizontal-scroll.no-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
+/*Define an element as item. This feature depends on the <code>horizontal-scroll</code> to function properly.*/
+.horizontal-scroll .item {
+  padding: 15px;
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 100%;
+  border-right: 1px solid #ddd;
+  position: relative;
+  font-size: 18px;
+}
+
+.horizontal-scroll .item.hidden {
+  display: none;
+}
+
+.horizontal-scroll .item.mark {
+  border-right: 0;
+  border-bottom: 0;
+  border-top: 0;
+}
+/*Block line space with left avatar.*/
+.item .block {
+	display: -webkit-box;
+	display: flex;
+}
+.horizontal-scroll .item.mark.margin-right {
+  border-right: 0;
+  margin-right: 10px;
+}
+
+/*Define a small space between the left and right elements.*/
+.horizontal-scroll .item.space-small {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.horizontal-scroll.space-small .item {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/*Remove space in left item.*/
+.horizontal-scroll .item.no-space-left {
+  padding-left: 0 !important;
+}
+
+/*Remove space in right item.*/
+.horizontal-scroll .item.no-space-right {
+  padding-right: 0 !important;
+}
+
+.horizontal-scroll.no-space-left .item {
+  padding-left: 0 !important;
+}
+
+.horizontal-scroll.no-space-right .item {
+  padding-right: 0 !important;
+}
+
+.horizontal-scroll.no-space-top .item {
+  padding-top: 0 !important;
+}
+
+.horizontal-scroll.no-space-bottom .item {
+  padding-bottom: 0 !important;
+}
+
+.horizontal-scroll.no-space .item {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.horizontal-scroll .item.row {
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Display the element in full width of the container ( default ) */
+.horizontal-scroll .item.full {
+  width: 100%;
+}
+
+/* Display the element in 75% width of the container */
+.horizontal-scroll .item.three-fourth {
+  width: 75%;
+}
+
+/* Display the element in 50% width of the container */
+.horizontal-scroll .item.half {
+  width: 50%;
+}
+
+/* Display the element in 25% width of the container */
+.horizontal-scroll .item.one-fourth {
+  width: 25%;
+}
+
+.horizontal-scroll .item h1,
+.horizontal-scroll .item h2 {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.horizontal-scroll .item h1 {
+  margin-top: 7px;
+}
+
+.horizontal-scroll .item p {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+}
+
+.horizontal-scroll .left {
+  margin-right: 10px;
+  min-width: 25px;
+}
+
+.horizontal-scroll .right {
+  margin-right: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.horizontal-scroll .right i {
+  margin-left: 5px;
+}
+
+.horizontal-scroll .align-top {
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: baseline;
+  margin-top: 10px;
+}
+
+/*Set a fixed size for an image.*/
+.horizontal-scroll .avatar {
+  height: 50px;
+}
+
+/*Set a floating badge above the image.*/
+.avatar-badge {
+  position: absolute;
+  margin-left: -4px;
+  margin-top: -3px;
+  border-radius: 8px;
+}
+
+.horizontal-scroll .item small,
+.horizontal-scroll .item small .icon {
+  font-size: 14px;
+}
+
+.horizontal-scroll .item .icon {
+  font-size: 18px;
+}
+
+.horizontal-scroll .item .icon.text-huge {
+  font-size: 32px;
+}
+
+.horizontal-scroll .left .icon,
+.horizontal-scroll .right .icon {
+  vertical-align: -webkit-baseline-middle;
+}
+
+/*Add big border in item or element.*/
+.horizontal-scroll .border-big {
+  border-width: 3px;
+  border-style: solid;
+}
+
+/*Define that a .horizontal-scroll or an item has no borders.*/
+.horizontal-scroll.no-border {
+  border: 0;
+}
+/*Define that a .horizontal-scroll or an item has a right border.*/
+.horizontal-scroll.no-border .item.border-right,
+.horizontal-scroll .item.no-border.border-right {
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+.horizontal-scroll.no-border .item,
+.horizontal-scroll .item.no-border {
+  border: none;
+}
+
+.horizontal-scroll .item:last-child {
+  border-right:0;
+}
+
+.horizontal-scroll .item .right .icon,
+.horizontal-scroll .item .right.icon {
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+}
