@@ -1,11 +1,25 @@
-Contribute
-==========
+# Contributing to MobileUI Components
 
-We do our best to accept all PRs that can improve this project!
 
-Thanks for all your contributions!
+First off, thanks for taking the time to contribute! :+1: We do our best to accept all PRs that can improve this project! :tada:
 
-## Process create a new component
+The following is a set of guidelines for contributing to MobileUI Components and its packages, which are hosted in the [MobileUI](https://github.com/MobileUI) organization here at Github. These are mostly guidelines to help you guys get started and not rules. Use your best judgement, and feel free to propose changes to our project through a pull request. :smile:
+
+## What should I know before contributing?
+
+MobileUI is an open source project created thinking of making your hybrid applications faster and smaller. It helps a lot since you're not required to install the whole package, you only install what you need to get started in building your application. :tada:
+
+Certainly, you will love using it in [Progressive Web Apps](https://developers.google.com/web/progressive-web-apps/) and [Apache Cordova Apps](https://cordova.apache.org). You can use only the components you want in your projects created with [PhoneGap](https://phonegap.com/), [Ionic Framework](https://ionicframework.com/), [Onsen UI](https://onsen.io/), [Framework7](http://framework7.io/) and others focused on creating web apps. 
+
+A rich variety of UI components specially designed for mobile apps. MobileUI provides tabs, side menu, stack navigation and tons of other components such as lists and forms. Some of the existing components are displayed differently on Android and iOS, with automatic styling that will change the appearance of the app based on the platform.
+
+To know more --- check out the official [documentation](https://mobileui.github.io/#getting-started)
+
+## Getting Started
+
+---
+
+### Process of creating a new component
 
 1) In the project's root dir, create a folder named after the component you will create, for example `list` or `chart-bar`.
 
@@ -33,7 +47,7 @@ Thanks for all your contributions!
 
 6) Your code will be merged if accepted!
 
-## Re-generate MobileUI documentation
+### Re-generating MobileUI documentation
 
 1) Fork and clone (your fork) [components repo]() and [mobileui.github.io repo]() inside the same parent folder.
 
