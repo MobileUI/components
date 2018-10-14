@@ -47,6 +47,8 @@ window.ProgressSemicircle = {
       if(!elm.classList.contains('progress-semicircle')){
         elm.classList.add('progress-semicircle-js')
       }
+      config.value = config.value || 0;
+      config.maxValue = config.maxValue || 100;
       config.title = config.title || '';
       config.subTitle = config.subTitle || '';
       config.text = config.text || '';
@@ -134,9 +136,9 @@ window.ProgressSemicircle = {
         if(v <= config.maxValue && v >= 0) {
           valueBar = v/config.maxValue;
         } else if(v < 0) {
-          console.error("Value for progress semicircle is too small. (Requested value is "+v+")");
+          console.warn("Value for progress semicircle is too small. (Requested value is "+v+")");
         } else {
-          console.error("Value for progress semicircle is too high. Maximum is "+config.maxValue+" and requested value is "+v+". (Value set to maximum for now.)")
+          console.warn("Value for progress semicircle is too high. Maximum is "+config.maxValue+" and requested value is "+v+". (Value set to maximum for now.)")
           valueBar=1;
         }
         this.bar.animate(valueBar);

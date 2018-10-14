@@ -15,7 +15,7 @@ window.ProgressCircle = {
       var config = {};
       config.value = Number(progress[i].getAttribute('value'));
       config.maxValue = Number(progress[i].getAttribute('maxValue')) || 100;
-      config.showValue = Number(progress[i].getAttribute('showValue')) || false;
+      config.showValue = progress[i].getAttribute('showValue')==='1' || progress[i].getAttribute('showValue')==='true' || false;
       config.title = progress[i].getAttribute('title') || '';
       config.subTitle = progress[i].getAttribute('subTitle') || '';
       config.text = progress[i].getAttribute('text') || '';
@@ -46,6 +46,9 @@ window.ProgressCircle = {
       if(!elm.classList.contains('progress-circle')){
         elm.classList.add('progress-circle-js')
       }
+      config.value = config.value || 0;
+      config.maxValue = config.maxValue || 100;
+      config.showValue = config.showValue || false;
       config.title = config.title || '';
       config.subTitle = config.subTitle || '';
       config.text = config.text || '';
@@ -139,9 +142,9 @@ window.ProgressCircle = {
         if(v <= config.maxValue && v >= 0) {
           valueBar = v/config.maxValue;
         } else if(v < 0) {
-          console.error("Value for progress circle is too small. (Requested value is "+v+")");
+          console.warn("Value for progress circle is too small. (Requested value is "+v+")");
         } else {
-          console.error("Value for progress circle is too high. Maximum is "+config.maxValue+" and requested value is "+v+". (Value set to maximum for now.)")
+          console.warn("Value for progress circle is too high. Maximum is "+config.maxValue+" and requested value is "+v+". (Value set to maximum for now.)")
           valueBar=1;
         }
         this.bar.animate(valueBar);
