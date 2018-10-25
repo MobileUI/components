@@ -1,3 +1,12 @@
+window.bindProgressCircle = function(){
+	window.ProgressCircle.bind();
+}
+window.rebindProgressCircle = function(){
+	window.ProgressCircle.rebind();
+}
+window.createProgressCircle = function(elm, config){
+	window.ProgressCircle.create(elm, config);
+}
 window.ProgressCircle = {
   rebind : function(){
     var self = this;

@@ -1,3 +1,12 @@
+window.bindProgressSemicircle = function(){
+	window.ProgressSemicircle.bind();
+}
+window.rebindProgressSemicircle = function(){
+	window.ProgressSemicircle.rebind();
+}
+window.createProgressSemicircle = function(elm, config){
+	window.ProgressSemicircle.create(elm, config);
+}
 window.ProgressSemicircle = {
   rebind : function(){
     var self = this;

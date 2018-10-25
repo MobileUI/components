@@ -184,24 +184,18 @@
   </div>
   <p>Content here.</p>
 </body></textarea>
-    <p>It is possible to change header color at scroll time by calling <code>Header.bind()</code> and then setting up right header attributes. It is recomended to set topClasses value also to class attribute, so there isn't color change animation at launch and also, because page content might show before deviceready event is triggered. Also you need to bind headers, when you call <code>openPage</code> function.</p>
+    <p>It is possible to change header color at scroll time by calling <code>bindHeader()</code> and then setting up right header attributes. It is recomended to set topClasses value also to class attribute, so there isn't color change animation at launch. Also you need to bind headers, when you call <code>openPage</code> function.</p>
 <textarea class="bind-just-code" mode="text/javascript">
-document.addEventListener("deviceready", onDeviceReady, false);
-
-function onDeviceReady() {
-    Header.bind();
-}</textarea>
-<textarea class="bind-just-code" mode="text/javascript">
+<div class="header green-900" topClasses="green-900" bottomClasses="green-500">
+  <h1>Application title</h1>
+</div>
 <div class="content has-header">
-  <div class="header green-900" topClass="green-900" bottomClass="green-500">
-    <h1>Application title</h1>
-  </div>
-</body></textarea>
+</div></textarea>
 <p>
 Header attributes can be also easily modified by javascript:
 </p>
 <textarea class="bind-just-code" mode="text/javascript">
-document.getElementById("someHeader").update({topClass:'green-900', bottomClass:'green-500'});</textarea>
+document.getElementById("someHeader").update({topClasses:'green-900', bottomClasses:'green-500'});</textarea>
 <p>The features of this component are:</p><div class="content-table"><table class="tableDoc"><tr><th>Attribute</th><th>Description</th></tr><tr><td><code>scrollHeight </code></td><td>Define an amount of scroll in pixels which is required to trigger to toogle classes.</td></tr><tr><td><code>topClasses </code></td><td>Define classes, which are used when page is at top part.</td></tr><tr><td><code>bottomClasses </code></td><td>Define classes, which are used when page is at bottom part.</td></tr><tr><td><code>enableTransition </code></td><td>It gives you ability to choose if you want smooth transition, defaults to true.</td></tr></table></div>
     <!-- DONE -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
