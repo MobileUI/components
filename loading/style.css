@@ -4,9 +4,12 @@
 }
 .loading-circle {
   fill: transparent;
-	stroke: #009688;
-	stroke-width: 5;
-	animation: dash 2s ease infinite,rotate 2s linear infinite;
+  stroke: #009688;
+  stroke-width: 5;
+  -webkit-animation: dash 2s ease infinite,rotate 2s linear infinite;
+  -moz-animation: dash 2s ease infinite,rotate 2s linear infinite;
+  -o-animation: dash 2s ease infinite,rotate 2s linear infinite;
+  animation: dash 2s ease infinite,rotate 2s linear infinite;
   margin:auto;
 }
 .loading-circle.loading-element {
@@ -45,6 +48,9 @@ button .loading-circle.loading-element {
 }
 .platform-ios .loading-circle {
   fill: #868686;
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
   animation: none;
   stroke:none;
   stroke-width:0;
@@ -53,88 +59,214 @@ button .loading-circle.loading-element {
   fill: rgba(255,255,255,0.8);
 }
 .platform-ios .loading-circle path:nth-of-type(1) {
+  -webkit-animation: pulse 1s infinite linear;
+  -moz-animation: pulse 1s infinite linear;
+  -o-animation: pulse 1s infinite linear;
   animation: pulse 1s infinite linear;
 }
 .platform-ios .loading-circle path:nth-of-type(2) {
+  -webkit-animation: pulse 1s -.083s infinite linear;
+  -moz-animation: pulse 1s -.083s infinite linear;
+  -o-animation: pulse 1s -.083s infinite linear;
   animation: pulse 1s -.083s infinite linear;
 }
 .platform-ios .loading-circle path:nth-of-type(3) {
+  -webkit-animation: pulse 1s -.166s infinite linear;
+  -moz-animation: pulse 1s -.166s infinite linear;
+  -o-animation: pulse 1s -.166s infinite linear;
   animation: pulse 1s -.166s infinite linear;
 }
 .platform-ios .loading-circle path:nth-of-type(4) {
+  -webkit-animation: pulse 1s -.249s infinite linear;
+  -moz-animation: pulse 1s -.249s infinite linear;
+  -o-animation: pulse 1s -.249s infinite linear;
   animation: pulse 1s -.249s infinite linear;
 }
 .platform-ios .loading-circle path:nth-of-type(5) {
+  -webkit-animation: pulse 1s -.332s infinite linear;
+  -moz-animation: pulse 1s -.332s infinite linear;
+  -o-animation: pulse 1s -.332s infinite linear;
   animation: pulse 1s -.332s infinite linear;
 }
 .platform-ios .loading-circle path:nth-of-type(6) {
+  -webkit-animation: pulse 1s -.415s infinite linear;
+  -moz-animation: pulse 1s -.415s infinite linear;
+  -o-animation: pulse 1s -.415s infinite linear;
   animation: pulse 1s -.415s infinite linear;
 }
 .platform-ios .loading-circle path:nth-of-type(7) {
+  -webkit-animation: pulse 1s -.498s infinite linear;
+  -moz-animation: pulse 1s -.498s infinite linear;
+  -o-animation: pulse 1s -.498s infinite linear;
   animation: pulse 1s -.498s infinite linear;
 }
 .platform-ios .loading-circle path:nth-of-type(8) {
+  -webkit-animation: pulse 1s -.581s infinite linear;
+  -moz-animation: pulse 1s -.581s infinite linear;
+  -o-animation: pulse 1s -.581s infinite linear;
   animation: pulse 1s -.581s infinite linear;
 }
 .platform-ios .loading-circle path:nth-of-type(9) {
+  -webkit-animation: pulse 1s -.664s infinite linear;
+  -moz-animation: pulse 1s -.664s infinite linear;
+  -o-animation: pulse 1s -.664s infinite linear;
   animation: pulse 1s -.664s infinite linear;
 }
 .platform-ios .loading-circle path:nth-of-type(10) {
+  -webkit-animation: pulse 1s -.747s infinite linear;
+  -moz-animation: pulse 1s -.747s infinite linear;
+  -o-animation: pulse 1s -.747s infinite linear;
   animation: pulse 1s -.747s infinite linear;
 }
 .platform-ios .alert-loading .loading-circle path:nth-of-type(11) {
+  -webkit-animation: pulse 1s -.83s infinite linear;
+  -moz-animation: pulse 1s -.83s infinite linear;
+  -o-animation: pulse 1s -.83s infinite linear;
   animation: pulse 1s -.83s infinite linear;
 }
 .platform-ios .alert-loading .loading-circle path:nth-of-type(12) {
+  -webkit-animation: pulse 1s -.913s infinite linear;
+  -moz-animation: pulse 1s -.913s infinite linear;
+  -o-animation: pulse 1s -.913s infinite linear;
   animation: pulse 1s -.913s infinite linear;
 }
 
 .platform-ios .loading-circle.white-loading path:nth-of-type(1) {
+  -webkit-animation: pulse-white 1s infinite linear;
+  -moz-animation: pulse-white 1s infinite linear;
+  -o-animation: pulse-white 1s infinite linear;
   animation: pulse-white 1s infinite linear;
 }
 .platform-ios .loading-circle.white-loading path:nth-of-type(2) {
+  -webkit-animation: pulse-white 1s -.083s infinite linear;
+  -moz-animation: pulse-white 1s -.083s infinite linear;
+  -o-animation: pulse-white 1s -.083s infinite linear;
   animation: pulse-white 1s -.083s infinite linear;
 }
 .platform-ios .loading-circle.white-loading path:nth-of-type(3) {
+  -webkit-animation: pulse-white 1s -.166s infinite linear;
+  -moz-animation: pulse-white 1s -.166s infinite linear;
+  -o-animation: pulse-white 1s -.166s infinite linear;
   animation: pulse-white 1s -.166s infinite linear;
 }
 .platform-ios .loading-circle.white-loading path:nth-of-type(4) {
+  -webkit-animation: pulse-white 1s -.249s infinite linear;
+  -moz-animation: pulse-white 1s -.249s infinite linear;
+  -o-animation: pulse-white 1s -.249s infinite linear;
   animation: pulse-white 1s -.249s infinite linear;
 }
 .platform-ios .loading-circle.white-loading path:nth-of-type(5) {
+  -webkit-animation: pulse-white 1s -.332s infinite linear;
+  -moz-animation: pulse-white 1s -.332s infinite linear;
+  -o-animation: pulse-white 1s -.332s infinite linear;
   animation: pulse-white 1s -.332s infinite linear;
 }
 .platform-ios .loading-circle.white-loading path:nth-of-type(6) {
+  -webkit-animation: pulse-white 1s -.415s infinite linear;
+  -moz-animation: pulse-white 1s -.415s infinite linear;
+  -o-animation: pulse-white 1s -.415s infinite linear;
   animation: pulse-white 1s -.415s infinite linear;
 }
 .platform-ios .loading-circle.white-loading path:nth-of-type(7) {
+  -webkit-animation: pulse-white 1s -.498s infinite linear;
+  -moz-animation: pulse-white 1s -.498s infinite linear;
+  -o-animation: pulse-white 1s -.498s infinite linear;
   animation: pulse-white 1s -.498s infinite linear;
 }
 .platform-ios .loading-circle.white-loading path:nth-of-type(8) {
+  -webkit-animation: pulse-white 1s -.581s infinite linear;
+  -moz-animation: pulse-white 1s -.581s infinite linear;
+  -o-animation: pulse-white 1s -.581s infinite linear;
   animation: pulse-white 1s -.581s infinite linear;
 }
 .platform-ios .loading-circle.white-loading path:nth-of-type(9) {
+  -webkit-animation: pulse-white 1s -.664s infinite linear;
+  -moz-animation: pulse-white 1s -.664s infinite linear;
+  -o-animation: pulse-white 1s -.664s infinite linear;
   animation: pulse-white 1s -.664s infinite linear;
 }
 .platform-ios .loading-circle.white-loading path:nth-of-type(10) {
+  -webkit-animation: pulse-white 1s -.747s infinite linear;
+  -moz-animation: pulse-white 1s -.747s infinite linear;
+  -o-animation: pulse-white 1s -.747s infinite linear;
   animation: pulse-white 1s -.747s infinite linear;
 }
 .platform-ios .alert-loading.white-loading .loading-circle path:nth-of-type(11) {
+  -webkit-animation: pulse-white 1s -.83s infinite linear;
+  -moz-animation: pulse-white 1s -.83s infinite linear;
+  -o-animation: pulse-white 1s -.83s infinite linear;
   animation: pulse-white 1s -.83s infinite linear;
 }
 .platform-ios .alert-loading.white-loading .loading-circle path:nth-of-type(12) {
+  -webkit-animation: pulse-white 1s -.913s infinite linear;
+  -moz-animation: pulse-white 1s -.913s infinite linear;
+  -o-animation: pulse-white 1s -.913s infinite linear;
   animation: pulse-white 1s -.913s infinite linear;
 }
 
+@-webkit-keyframes pulse {
+  50% { fill: #868686; }
+  to { fill: rgba(134,134,134,.4); }
+}
+@-moz-keyframes pulse {
+  50% { fill: #868686; }
+  to { fill: rgba(134,134,134,.4); }
+}
+@-o-keyframes pulse {
+  50% { fill: #868686; }
+  to { fill: rgba(134,134,134,.4); }
+}
 @keyframes pulse {
   50% { fill: #868686; }
   to { fill: rgba(134,134,134,.4); }
+}
+@-webkit-keyframes pulse-white {
+  50% { fill: rgba(255,255,255,0.8); }
+  to { fill: rgba(255,255,255,0.2); }
+}
+@-moz-keyframes pulse-white {
+  50% { fill: rgba(255,255,255,0.8); }
+  to { fill: rgba(255,255,255,0.2); }
+}
+@-o-keyframes pulse-white {
+  50% { fill: rgba(255,255,255,0.8); }
+  to { fill: rgba(255,255,255,0.2); }
 }
 @keyframes pulse-white {
   50% { fill: rgba(255,255,255,0.8); }
   to { fill: rgba(255,255,255,0.2); }
 }
 
+@-webkit-keyframes iosIntro {
+  from {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+@-moz-keyframes iosIntro {
+  from {
+    -moz-transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    -moz-transform: scale(1);
+    opacity: 1;
+  }
+}
+@-o-keyframes iosIntro {
+  from {
+    -o-transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    -o-transform: scale(1);
+    opacity: 1;
+  }
+}
 @keyframes iosIntro {
   from {
     transform: scale(0);
@@ -149,6 +281,48 @@ button .loading-circle.loading-element {
   margin: 0;
   margin-top: 15px !important;
   text-align: center;
+}
+@-webkit-keyframes dash {
+	0% {
+		stroke-dasharray: 1,95;
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dasharray: 85,95;
+		stroke-dashoffset: -25;
+	}
+	100% {
+		stroke-dasharray: 85,95;
+		stroke-dashoffset: -93;
+	}
+}
+@-moz-keyframes dash {
+	0% {
+		stroke-dasharray: 1,95;
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dasharray: 85,95;
+		stroke-dashoffset: -25;
+	}
+	100% {
+		stroke-dasharray: 85,95;
+		stroke-dashoffset: -93;
+	}
+}
+@-o-keyframes dash {
+	0% {
+		stroke-dasharray: 1,95;
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dasharray: 85,95;
+		stroke-dashoffset: -25;
+	}
+	100% {
+		stroke-dasharray: 85,95;
+		stroke-dashoffset: -93;
+	}
 }
 @keyframes dash {
 	0% {
@@ -165,6 +339,18 @@ button .loading-circle.loading-element {
 	}
 }
 
+@-webkit-keyframes rotate {
+	0% {-webkit-transform: rotate(0deg); }
+	100% {-webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes rotate {
+	0% {-moz-transform: rotate(0deg); }
+	100% {-moz-transform: rotate(360deg); }
+}
+@-o-keyframes rotate {
+	0% {-o-transform: rotate(0deg); }
+	100% {-o-transform: rotate(360deg); }
+}
 @keyframes rotate {
 	0% {transform: rotate(0deg); }
 	100% {transform: rotate(360deg); }

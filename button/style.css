@@ -152,24 +152,38 @@ button.huge.icon-text i {
   background: rgba(255,255,255,.25);
   border-radius: 100%;
   -webkit-transform: scale(0);
+  -moz-transform: scale(0);
   -ms-transform: scale(0);
+  -o-transform: scale(0);
   transform: scale(0);
   pointer-events: none;
 }
 .ripple.show {
   -webkit-animation: ripple .5s ease-out;
+  -moz-animation: ripple .5s ease-out;
+  -o-animation: ripple .5s ease-out;
   animation: ripple .5s ease-out;
 }
 @-webkit-keyframes
   ripple { to {
    -webkit-transform: scale(1.5);
-   transform: scale(1.5);
+   opacity: 0;
+  }
+}
+@-moz-keyframes
+  ripple { to {
+   -moz-transform: scale(1.5);
+   opacity: 0;
+  }
+}
+@-o-keyframes
+  ripple { to {
+   -o-transform: scale(1.5);
    opacity: 0;
   }
 }
 @keyframes
   ripple { to {
-   -webkit-transform: scale(1.5);
    transform: scale(1.5);
    opacity: 0;
   }
