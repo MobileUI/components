@@ -1129,7 +1129,7 @@
     background-color: #78909c !important
 }
 .transparent {
-  background-color: rgba( !important0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 
 .blue-grey-500, input[type="checkbox"].blue-grey-500.switch::after {
