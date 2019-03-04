@@ -80,6 +80,11 @@
           "path":"./base/badge.html"
         },
         {
+          "key": "simple",
+          "label": "Simple",
+          "path": "./simple/index.html"
+        },
+        {
           "key":"cover",
           "label":"Cover",
           "path":"./cover/index.html"
