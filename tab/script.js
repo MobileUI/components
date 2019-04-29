@@ -1,6 +1,10 @@
 window.openTab = function(t){
   var button = event.target;
   while (!button.parentNode.classList.contains('tab')) {
+    if(button.nodeName == 'BODY') {
+      console.error('The component tab not found, please check your code.');
+      return false;
+     }
     button = button.parentNode
   }
   var tabContent = document.getElementById(t).parentNode.getElementsByClassName('tab-content');
