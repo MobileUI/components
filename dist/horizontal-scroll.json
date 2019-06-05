@@ -1,0 +1,7 @@
+{
+  "name":"horizontal-scroll",
+  "author": "Yash-Handa",
+  "dependencies": [
+    "base"
+  ]
+}

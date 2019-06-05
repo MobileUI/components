@@ -120,6 +120,11 @@
           "path":"./alert/index.html"
         },
         {
+          "key":"toast",
+          "label":"Toast",
+          "path":"./toast/index.html"
+        },
+        {
           "key":"loading",
           "label":"Loading",
           "path":"./loading/index.html"
