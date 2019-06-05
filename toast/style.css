@@ -1,5 +1,6 @@
 /* Show a Toast message (a little text popup) */
 .toast {
+  z-index: 999999;
   position: absolute;
   left: 0;
   padding: 20px;
@@ -36,7 +37,7 @@
 }
 .toast div {
   padding: 10px;
-  display: inline;
+  display: inline-block;
 }
 .toast .full {
   display: block;
