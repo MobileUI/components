@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway:400,700|Roboto:300,400,500,600,900," rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+  <link rel="stylesheet" href="../base/reset.css">
+  <link rel="stylesheet" href="../base/mobileui.css">
+  <link rel="stylesheet" href="../base/colors.css">
+  <link rel="stylesheet" href="../base/icons.css">
+  <link rel="stylesheet" href="../header/style.css">
+  <link rel="stylesheet" href="../button/style.css">
+  <link rel="stylesheet" href="../list/style.css">
+  <link rel="stylesheet" href="../input/style.css">
+  <link rel="stylesheet" href="../cover/style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../assets/css/master.css">
+  <style>
+    .content {
+      margin-left: 50px
+    }
+  </style>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body class="content">
+  <!-- BEGIN -->
+  <h2 class="title-doc" id="_DOC_GENERATE_SPACE_">Toast</h2>
+  <p>
+      A toast provides simple feedback about an operation in a small popup. It only fills the amount of space required for the message and the current activity remains visible and interactive. Toasts automatically disappear after a timeout.
+  </p>
+  <div class="dependency tooltip">
+    <strong>Dependency:</strong> <code>base</code>.
+    <span class="tooltiptext">The dependencies will be installed together with this module</span>
+  </div>
+  <p>
+    To use this component you need install with the command:
+  </p>
+  <pre>mobileui install toast</pre>
+  <!-- _DOC_GENERATE_CSS_DOC -->
+  <p>
+    To use, you need to call the function <code>openToast('YOUR MESSAGE')</code> or <code>openToast(objectCustomized)</code>.
+  </p>
+  <p>
+    See this small example:
+  </p>
+<textarea class="bind-code" mode="text/html" header-absolute="true" replace="body,div|padding,padding body" border="true" height-preview="400px" multiplatform="true">
+  <body class="padding body">
+  <button class="blue full radius margin-bottom" onclick="openToast('Simple message here!')">Show toast</button>
+  <button class="blue full radius margin-bottom" onclick="openToastTop()">Show toast top</button>
+  <button class="blue full radius margin-bottom" onclick="openToastCenter()">Show toast center</button>
+  <button class="blue full radius margin-bottom" onclick="openToastRed()">Show toast red</button>
+  <button class="blue full radius margin-bottom" onclick="openCustomToast()">Show custom toast</button>
+
+  <script>
+    function openToastTop() {
+      openToast({
+        message: 'Simple message in top!',
+        position: 'top'
+      })
+    }
+    function openToastCenter() {
+      openToast({
+        message: 'Simple message in center!',
+        position: 'center'
+      })
+    }
+    function openToastRed() {
+      openToast({
+        message: 'Simple red message!',
+        class: 'red radius-big'
+      })
+    }
+    function openCustomToast() {
+      openToast({
+        message: 'Custom message',
+        class: 'full text-big text-strong black-opacity-70 text-white',
+        position: 'top',
+      })
+    }
+  </script>
+</body>
+</textarea>
+
+  <!-- DONE -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+  <script type="text/javascript" src="../assets/js/main.js"></script>
+</body>
+</html>

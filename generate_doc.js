@@ -60,7 +60,7 @@ for (var i in docs.docs) {
 }
 var index = template.replace(`<!-- SPACE-GENERATE-DOCS -->`, `<div class="menuland font-raleway"><div class="list radius grey-50"><div class="item space-small icon ion-search" id="searchComponent"><input type="text" placeholder="Search..." autofocus="autofocus"></div></div>${menu}</div><div class="content-land font-raleway">${content}</div>`)
 index = index.replace(new RegExp(`../assets/`, 'g'), `/`)
-fs.writeFile(path.join(docs.site_dir, 'index.html'), index)
+fs.writeFileSync(path.join(docs.site_dir, 'index.html'), index)
 
 if (!fs.existsSync(path.join(docs.site_dir, 'mobileui/'))) {
   fs.mkdirSync(path.join(docs.site_dir, 'mobileui/'))
