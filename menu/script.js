@@ -118,8 +118,20 @@ window.menu.handleTouchMove = function (evt, name) {
   window.menu.xDown = null
   window.menu.yDown = null
 }
+window.menu.swiperName = null
+window.menu.isSwiperInited = false
+
 window.menu.enableSwiper = function (name) {
-  document.querySelector('body').addEventListener('touchmove', function (evt) {
-    window.menu.handleTouchMove(evt, name)
-  }, false)
+  window.menu.swiperName = name
+  if(!window.menu.isSwiperInited) {
+    document.querySelector('body').addEventListener('touchmove', function (evt) {
+      if(window.menu.swiperName !== null) {
+        window.menu.handleTouchMove(evt, window.menu.swiperName)
+      }
+    }, false)
+  }
+}
+
+window.menu.disableSwiper = function (name) {
+  window.menu.swiperName = null
 }
