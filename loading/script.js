@@ -44,9 +44,8 @@ window.loadingElement = function(e, message, position, color){
   var withMessage = message ? 'with-message' : '';
   if(!color){
     color = 'white-loading';
-  } else {
-    color = '';
-  }
+  } 
+  
   if(!position) {
     position = '';
   }
